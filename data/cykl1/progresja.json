@@ -1,0 +1,334 @@
+{
+  "cykl": 1,
+  "sekcje": {
+    "l1": {
+      "label": "🍑 Lower 1",
+      "badge_class": "prog-title-l1",
+      "naglowki": ["05/04","28/03","21/03","05/03","28/02","21/02","14/02"],
+      "cwiczenia": [
+        {
+          "nazwa": "Hip thrust ze sztangą",
+          "zakres": "4×8–10",
+          "sesje": [
+            { "ico": "→", "kg": "65",   "serie": "10×4" },
+            { "ico": "★", "kg": "65",   "serie": "10×4🚀" },
+            { "ico": "↑", "kg": "62,5", "serie": "10×4" },
+            { "ico": "↑", "kg": "60",   "serie": "10×4" },
+            { "ico": "↑", "kg": "57,5", "serie": "10×4" },
+            { "ico": "★", "kg": "55",   "serie": "10×4" },
+            { "ico": "→", "kg": "50",   "serie": "10×4" }
+          ]
+        },
+        {
+          "nazwa": "RDL ze sztangą",
+          "zakres": "4×8–10",
+          "sesje": [
+            { "ico": "↑", "kg": "40",   "serie": "10×4" },
+            { "ico": "→", "kg": "37,5", "serie": "10×4" },
+            { "ico": "→", "kg": "37,5", "serie": "10×4" },
+            { "ico": "↑", "kg": "35",   "serie": "10×4" },
+            { "ico": "↑", "kg": "32,5", "serie": "10×4" },
+            { "ico": "↑", "kg": "30",   "serie": "10×4" },
+            { "ico": "→", "kg": "25",   "serie": "10×4" }
+          ]
+        },
+        {
+          "nazwa": "Wykroki bułgarskie",
+          "zakres": "3×10–12",
+          "sesje": [
+            { "ico": "↑", "kg": "12",   "serie": "12×3" },
+            { "ico": "→", "kg": "12,5", "serie": "10×3" },
+            { "ico": "→", "kg": "12,5", "serie": "8×3⚠️" },
+            { "ico": "→", "kg": "10",   "serie": "10×3" },
+            { "ico": "→", "kg": "10",   "serie": "10×3" },
+            { "ico": "↑", "kg": "8",    "serie": "10×3" },
+            { "ico": "→", "kg": "7",    "serie": "12×3" }
+          ]
+        },
+        {
+          "nazwa": "Odwodzenie wyciąg",
+          "zakres": "3×12–15",
+          "sesje": [
+            { "ico": "↑", "kg": "18",   "serie": "8-8⚠️" },
+            { "ico": "↑", "kg": "17,5", "serie": "15-15" },
+            { "ico": "→", "kg": "15",   "serie": "15×3" },
+            { "ico": "→", "kg": "15",   "serie": "12×3" },
+            { "ico": "↑", "kg": "12,5", "serie": "15-15" },
+            { "ico": "→", "kg": "10",   "serie": "15×3" },
+            { "ico": "→", "kg": "15",   "serie": "12×3" }
+          ]
+        },
+        {
+          "nazwa": "Kickbacki wyciąg",
+          "zakres": "3×12–15",
+          "sesje": [
+            { "ico": "→", "kg": "27",   "serie": "10-10" },
+            { "ico": "→", "kg": "27,5", "serie": "15-15" },
+            { "ico": "→", "kg": "27,5", "serie": "15×3" },
+            { "ico": "↑", "kg": "25",   "serie": "12×3" },
+            { "ico": "→", "kg": "20",   "serie": "15-15" },
+            { "ico": "→", "kg": "20",   "serie": "15×3" },
+            { "ico": "↓", "kg": "30",   "serie": "10-10⚠️" }
+          ]
+        },
+        {
+          "nazwa": "Przywodzenie maszyna",
+          "zakres": "3×10–15",
+          "sesje": [
+            { "ico": "→", "kg": "30",   "serie": "15-15-10" },
+            { "ico": "→", "kg": "30",   "serie": "15×3" },
+            { "ico": "→", "kg": "30",   "serie": "20-15-10" },
+            { "ico": "→", "kg": "30",   "serie": "15-12-12" },
+            { "ico": "★", "kg": "25",   "serie": "20×3" },
+            { "ico": "→", "kg": "25",   "serie": "20-15" },
+            { "ico": "→", "kg": "30",   "serie": "15-10-10" }
+          ]
+        },
+        {
+          "nazwa": "Odwodzenie maszyna",
+          "zakres": "3×10–15",
+          "sesje": [
+            { "ico": "→", "kg": "60",   "serie": "12×3" },
+            { "ico": "→", "kg": "60",   "serie": "13×3" },
+            { "ico": "↓", "kg": "70",   "serie": "8×3⚠️" },
+            { "ico": "↑", "kg": "65",   "serie": "12×3" },
+            { "ico": "→", "kg": "60",   "serie": "12×3" },
+            { "ico": "→", "kg": "60",   "serie": "10×3" },
+            { "ico": "↑", "kg": "55",   "serie": "15×3" }
+          ]
+        }
+      ]
+    },
+    "l2": {
+      "label": "🦵 Lower 2",
+      "badge_class": "prog-title-l2",
+      "naglowki": ["07/04","02/04","23/03","16/03","02/03","23/02","17/02"],
+      "cwiczenia": [
+        {
+          "nazwa": "Przysiad ze sztangą",
+          "zakres": "4×6–8",
+          "sesje": [
+            { "ico": "→", "kg": "42,5", "serie": "plan" },
+            { "ico": "→", "kg": "42,5", "serie": "8×4" },
+            { "ico": "→", "kg": "42,5", "serie": "7×4" },
+            { "ico": "→", "kg": "42,5", "serie": "6×4" },
+            { "ico": "↑", "kg": "40",   "serie": "8×4🚀" },
+            { "ico": "↑", "kg": "37,5", "serie": "8×4" },
+            { "ico": "→", "kg": "35",   "serie": "10×4" }
+          ]
+        },
+        {
+          "nazwa": "Sumo martwy ciąg",
+          "zakres": "3×10–12",
+          "sesje": [
+            { "ico": "→", "kg": "26",   "serie": "plan" },
+            { "ico": "↑", "kg": "26",   "serie": "12×3" },
+            { "ico": "★", "kg": "25",   "serie": "12×4" },
+            { "ico": "→", "kg": "24",   "serie": "12×4" },
+            { "ico": "→", "kg": "24",   "serie": "15×4" },
+            { "ico": "↑", "kg": "22,5", "serie": "12×4" },
+            { "ico": "→", "kg": "20",   "serie": "12×3" }
+          ]
+        },
+        {
+          "nazwa": "Step-ups z hantlami",
+          "zakres": "3×10–12",
+          "sesje": [
+            { "ico": "→", "kg": "14",   "serie": "plan" },
+            { "ico": "→", "kg": "14",   "serie": "12×3" },
+            { "ico": "↑", "kg": "15",   "serie": "12×3" },
+            { "ico": "→", "kg": "12,5", "serie": "12×3" },
+            { "ico": "→", "kg": "12,5", "serie": "12×3" },
+            { "ico": "→", "kg": "12,5", "serie": "12×3" },
+            { "ico": "↑", "kg": "10",   "serie": "12×3" }
+          ]
+        },
+        {
+          "nazwa": "Suwnica — leg press",
+          "zakres": "3×8–12",
+          "sesje": [
+            { "ico": "↑", "kg": "80",   "serie": "plan" },
+            { "ico": "↓", "kg": "70",   "serie": "12×3⚠️" },
+            { "ico": "★", "kg": "80",   "serie": "12×3" },
+            { "ico": "→", "kg": "80",   "serie": "12-10-10" },
+            { "ico": "→", "kg": "80",   "serie": "12-12-10" },
+            { "ico": "★", "kg": "80",   "serie": "10×4" },
+            { "ico": "→", "kg": "80",   "serie": "8×3" }
+          ]
+        },
+        {
+          "nazwa": "Ławka rzymska",
+          "zakres": "3×10–12",
+          "sesje": [
+            { "ico": "→", "kg": "24",   "serie": "plan" },
+            { "ico": "→", "kg": "24",   "serie": "12×3" },
+            { "ico": "★", "kg": "25",   "serie": "12×3" },
+            { "ico": "→", "kg": "22,5", "serie": "12×3" },
+            { "ico": "→", "kg": "20",   "serie": "12×3" },
+            { "ico": "→", "kg": "20",   "serie": "12×3" },
+            { "ico": "→", "kg": "20",   "serie": "12×2⚠️" }
+          ]
+        },
+        {
+          "nazwa": "RDL z hantlami SS1",
+          "zakres": "3×15–20",
+          "sesje": [
+            { "ico": "→", "kg": "24",   "serie": "plan" },
+            { "ico": "→", "kg": "24",   "serie": "20×3" },
+            { "ico": "★", "kg": "28",   "serie": "20×3" },
+            { "ico": "→", "kg": "28",   "serie": "20×3" },
+            { "ico": "↑", "kg": "25",   "serie": "18-16-16" },
+            { "ico": "→", "kg": "20",   "serie": "20×3" },
+            { "ico": "→", "kg": "20",   "serie": "20×3" }
+          ]
+        },
+        {
+          "nazwa": "Prostowanie nóg SS1",
+          "zakres": "3×12–15",
+          "sesje": [
+            { "ico": "→", "kg": "40",   "serie": "plan" },
+            { "ico": "↑", "kg": "40",   "serie": "10×3" },
+            { "ico": "★", "kg": "35",   "serie": "15×3" },
+            { "ico": "→", "kg": "35",   "serie": "12×3" },
+            { "ico": "↑", "kg": "30",   "serie": "15×3" },
+            { "ico": "↑", "kg": "25",   "serie": "12×3" },
+            { "ico": "→", "kg": "20",   "serie": "12×3" }
+          ]
+        }
+      ]
+    },
+    "upper": {
+      "label": "💪 Upper",
+      "badge_class": "prog-title-upper",
+      "naglowki": ["02/04","29/03","26/03","18/03","15/03","04/03","25/02","18/02"],
+      "cwiczenia": [
+        {
+          "nazwa": "Wyciskanie płaska",
+          "zakres": "4×6–8",
+          "sesje": [
+            { "ico": "↓", "kg": "24",   "serie": "8×4⚠️" },
+            { "ico": "★", "kg": "25",   "serie": "8×4" },
+            { "ico": "→", "kg": "25",   "serie": "8-7-7-7" },
+            { "ico": "→", "kg": "25",   "serie": "7×4" },
+            { "ico": "→", "kg": "25",   "serie": "8×4" },
+            { "ico": "→", "kg": "25",   "serie": "8×4" },
+            { "ico": "↑", "kg": "22,5", "serie": "8×4" },
+            { "ico": "↑", "kg": "20",   "serie": "10×4" }
+          ]
+        },
+        {
+          "nazwa": "Skos hantlami",
+          "zakres": "3×10–12",
+          "sesje": [
+            { "ico": "↓", "kg": "9",    "serie": "12×4" },
+            { "ico": "↑", "kg": "10",   "serie": "12×3" },
+            { "ico": "↑", "kg": "10",   "serie": "10×3" },
+            { "ico": "→", "kg": "9",    "serie": "12-12-12-9" },
+            { "ico": "→", "kg": "9",    "serie": "12-12-9-9" },
+            { "ico": "→", "kg": "9",    "serie": "12×4" },
+            { "ico": "→", "kg": "9",    "serie": "12-12-11" },
+            { "ico": "↑", "kg": "8",    "serie": "12×3" }
+          ]
+        },
+        {
+          "nazwa": "OHP hantlami",
+          "zakres": "3×10–12",
+          "sesje": [
+            { "ico": "→", "kg": "8",    "serie": "10×3" },
+            { "ico": "→", "kg": "8",    "serie": "12×3" },
+            { "ico": "→", "kg": "8",    "serie": "10×3" },
+            { "ico": "→", "kg": "8",    "serie": "10-10-9" },
+            { "ico": "→", "kg": "8",    "serie": "10×3" },
+            { "ico": "→", "kg": "8",    "serie": "12-9-9" },
+            { "ico": "→", "kg": "8",    "serie": "10-8-8" },
+            { "ico": "→", "kg": "8",    "serie": "12-10-10" }
+          ]
+        },
+        {
+          "nazwa": "Laterals",
+          "zakres": "3×12–15",
+          "sesje": [
+            { "ico": "↓", "kg": "6",    "serie": "12×3" },
+            { "ico": "→", "kg": "7",    "serie": "12×3" },
+            { "ico": "→", "kg": "7",    "serie": "12×3" },
+            { "ico": "→", "kg": "7",    "serie": "10×3" },
+            { "ico": "↓", "kg": "6",    "serie": "12×3" },
+            { "ico": "→", "kg": "7",    "serie": "10-10-9" },
+            { "ico": "↑", "kg": "6",    "serie": "12×3" },
+            { "ico": "↑", "kg": "5",    "serie": "15×3" }
+          ]
+        },
+        {
+          "nazwa": "Wiosłowanie",
+          "zakres": "3×8–10",
+          "sesje": [
+            { "ico": "↑", "kg": "37,5", "serie": "10×4" },
+            { "ico": "→", "kg": "35",   "serie": "10×4" },
+            { "ico": "★", "kg": "35",   "serie": "10×4🚀" },
+            { "ico": "→", "kg": "35",   "serie": "10×3" },
+            { "ico": "→", "kg": "35",   "serie": "10×4" },
+            { "ico": "★", "kg": "35",   "serie": "8×4" },
+            { "ico": "↑", "kg": "30",   "serie": "10×4" },
+            { "ico": "↑", "kg": "25",   "serie": "10×4" }
+          ]
+        },
+        {
+          "nazwa": "Przyciąganie linki",
+          "zakres": "3×10–12",
+          "sesje": [
+            { "ico": "→", "kg": "35",   "serie": "8×3" },
+            { "ico": "→", "kg": "35",   "serie": "10-10-9" },
+            { "ico": "→", "kg": "35",   "serie": "10-8-7" },
+            { "ico": "→", "kg": "35",   "serie": "8×3" },
+            { "ico": "↓", "kg": "26",   "serie": "12×3⚠️" },
+            { "ico": "→", "kg": "30",   "serie": "12×3" },
+            { "ico": "→", "kg": "30",   "serie": "12-12-10" },
+            { "ico": "↑", "kg": "25",   "serie": "12×3" }
+          ]
+        },
+        {
+          "nazwa": "Face pulls",
+          "zakres": "3×12–15",
+          "sesje": [
+            { "ico": "↑", "kg": "25",   "serie": "15×3" },
+            { "ico": "↑", "kg": "22,5", "serie": "15×3" },
+            { "ico": "→", "kg": "20",   "serie": "15×3" },
+            { "ico": "→", "kg": "20",   "serie": "15×3" },
+            { "ico": "↓", "kg": "10",   "serie": "15×3⚠️" },
+            { "ico": "↑", "kg": "20",   "serie": "12×3" },
+            { "ico": "↑", "kg": "17,5", "serie": "15×3" },
+            { "ico": "↑", "kg": "15",   "serie": "15×3" }
+          ]
+        },
+        {
+          "nazwa": "Biceps SS1",
+          "zakres": "3×10–12",
+          "sesje": [
+            { "ico": "↓", "kg": "12,5", "serie": "12×3" },
+            { "ico": "↑", "kg": "22,5", "serie": "12×3" },
+            { "ico": "★", "kg": "20",   "serie": "12×3" },
+            { "ico": "★", "kg": "20",   "serie": "12×3" },
+            { "ico": "↓", "kg": "10",   "serie": "12×3⚠️" },
+            { "ico": "↑", "kg": "20",   "serie": "10-9-8" },
+            { "ico": "→", "kg": "17,5", "serie": "12×3" },
+            { "ico": "↑", "kg": "15",   "serie": "12×3" }
+          ]
+        },
+        {
+          "nazwa": "Triceps SS1",
+          "zakres": "3×10–12",
+          "sesje": [
+            { "ico": "↓", "kg": "12,5", "serie": "12×3" },
+            { "ico": "↑", "kg": "22,5", "serie": "12×3" },
+            { "ico": "★", "kg": "20",   "serie": "12×3" },
+            { "ico": "★", "kg": "20",   "serie": "12×3" },
+            { "ico": "↓", "kg": "10",   "serie": "12×3⚠️" },
+            { "ico": "→", "kg": "20",   "serie": "10×3" },
+            { "ico": "→", "kg": "17,5", "serie": "12×3" },
+            { "ico": "↑", "kg": "15",   "serie": "12×3" }
+          ]
+        }
+      ]
+    }
+  }
+}
