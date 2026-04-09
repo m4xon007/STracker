@@ -263,12 +263,71 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);font-size:14
       <div class="subtabs" id="stabs-plan-cykl">
         <div class="stab active" onclick="showStab('plan-cykl','c2',this)">Cykl 2</div>
         <div class="stab" onclick="showStab('plan-cykl','c1',this)">Cykl 1</div>
+        <div class="stab" onclick="showStab('plan-cykl','szablony',this)">📝 Szablony</div>
       </div>
       <div class="subview active" id="sv-plan-cykl-c2">
         <div id="plan-c2-container"><div class="loading-msg">⏳ Ładowanie…</div></div>
       </div>
       <div class="subview" id="sv-plan-cykl-c1">
         <div id="plan-c1-container"><div class="loading-msg">⏳ Ładowanie…</div></div>
+      </div>
+      <div class="subview" id="sv-plan-cykl-szablony">
+        <div class="alert alert-info" style="margin-bottom:12px">Skopiuj prompt i wklej do chatu z AI razem z raportem z treningu.</div>
+        <div class="accordion open">
+          <button class="accordion-trigger" onclick="toggleAccordion(this)">🤖 Prompt — aktualizacja po treningu <span class="accordion-icon">▼</span></button>
+          <div class="accordion-content">
+            <textarea id="tmpl-prompt" style="display:none">Zaktualizuj dane w plikach JSON po odbytym treningu.
+
+[WKLEJ RAPORT TUTAJ]
+
+════ PLIKI DO AKTUALIZACJI ════
+
+── 1. data/cykl1/treningi.json ──
+• nastepny: zmień typ, label, numer, badge_class, alert
+• nastepny.cwiczenia: zaktualizuj poprzedni_kg, poprzedni_serie, progresja (zwieksz/utrzymaj/zmniejsz), placeholder_kg, placeholder_reps
+• poprzedni: przenieś aktualne nastepny → poprzedni (tytul, typ, numer, tydzien, kcal, czas_min, tetno, obciazenie_aerobowe, ocena, opis, wnioski)
+• poprzedni.cwiczenia: kg, wykonano, ocena_tekst, progresja_tekst (format: "→ X kg (N/2)" lub "→ X kg ✅"), status (rekord/progresja/utrzymaj/uwaga)
+• historia: dodaj nowy wpis NA POCZĄTKU tablicy (data, data_label, typ, numer, tydzien, ocena, kcal, czas_min, tetno, obciazenie_aerobowe, notatka, cwiczenia[])
+• meta: zaktualizuj tydzien, lacznie, header_sub, header_badge
+
+── 2. data/cykl1/plan.json ──
+• Dla ćwiczeń z progresją (status ✅): zaktualizuj kg na nowy ciężar, zresetuj status na "0/2"
+• Zaktualizuj statusy pozostałych (0/2 → 1/2 → 2/2 → ✅ 0/2)
+
+── 3. data/cykl1/progresja.json ──
+• W odpowiedniej sekcji (l1/l2/upper): dodaj nową kolumnę NA POCZĄTKU naglowki[]
+• Dodaj nową sesję NA POCZĄTKU sesje[] dla każdego ćwiczenia
+• Jeśli sesji > 8: usuń ostatnią (najstarszą)
+
+── 4. data/harmonogram.json ──
+• W odpowiednim miesiącu zmień typ dnia: "plan" → "l1"/"l2"/"upper"
+• Zaktualizuj tekst: "L1 ✓" / "L2 ✓" / "U ✓"
+• Zaktualizuj bilans: l1/l2/upper/lacznie
+
+── 5. data/waga.json (opcjonalnie) ──
+• Dodaj nowy pomiar do pomiary[]: {"data": "DD.MM", "waga": 00.00}
+• Zaktualizuj statystyki.ostatnia i ostatnia_data
+
+════ ANALIZA ════
+
+PROGRESJA (patrz na trend 3–5 sesji):
+• 1× górny zakres → status 1/2, czekamy na potwierdzenie
+• 2× z rzędu górny zakres → progresja: zwiększ kg na następny trening
+• Plateau >4 sesje → zanotuj w wnioski, rozważyć zmianę w Cyklu 2
+
+WZORCE:
+• Czy sesja odbiega od trendu (lepsza/gorsza i dlaczego)
+• Sygnały zmęczenia CNS (sypanie końcowych serii)
+• Sygnały przeciążenia (lędźwie, chwyt, stawy)
+
+NASTĘPNY TRENING:
+• Konkretne ćwiczenia do progresji ciężaru
+• Na co zwrócić uwagę (technika, kolejność, przerwy)</textarea>
+            <div style="background:var(--surface2);border-radius:var(--radius-sm);padding:12px;font-size:11px;color:var(--text2);line-height:1.8;font-family:var(--mono);white-space:pre-wrap;margin-bottom:10px" id="prompt-preview"></div>
+            <button onclick="copyTmpl('prompt')" style="width:100%;padding:9px;background:var(--rose);color:#fff;border:none;border-radius:8px;font-family:var(--mono);font-size:11px;font-weight:600;cursor:pointer">📋 Kopiuj prompt</button>
+          </div>
+        </div>
+        <div id="szablony-container"></div>
       </div>
     </div>
     <div class="view" id="view-harmonogram">
@@ -358,6 +417,52 @@ let DATA={},DATA_C2={},EX_COUNT=0,TRAIN_LABEL='',weightChartInstance=null;
 function showView(name,el){document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));document.querySelectorAll('.nav-item').forEach(n=>n.classList.remove('active'));document.getElementById('view-'+name).classList.add('active');el.classList.add('active');document.querySelector('.app-content').scrollTo({top:0,behavior:'smooth'});}
 function showStab(viewId,name,el){const prefix='sv-'+viewId+'-';document.querySelectorAll('[id^="'+prefix+'"]').forEach(v=>v.classList.remove('active'));el.closest('.subtabs').querySelectorAll('.stab').forEach(t=>t.classList.remove('active'));const target=document.getElementById(prefix+name);if(target)target.classList.add('active');el.classList.add('active');}
 function toggleAccordion(btn){btn.closest('.accordion').classList.toggle('open');}
+function copyPromptText(){const el=document.getElementById('tmpl-prompt');if(el)navigator.clipboard.writeText(el.value).then(()=>showToast('✓ Skopiowano prompt!')).catch(()=>showToast('⚠️ Błąd'));}
+function copyTmpl(id){const el=document.getElementById('tmpl-'+id);if(el)navigator.clipboard.writeText(el.value).then(()=>showToast('✓ Skopiowano!')).catch(()=>showToast('⚠️ Błąd'));}
+function renderSzablony(plan){
+  // Wypełnij podgląd promptu
+  const promptEl=document.getElementById('tmpl-prompt');
+  const preview=document.getElementById('prompt-preview');
+  if(promptEl&&preview)preview.textContent=promptEl.value;
+  if(!plan||!plan.sekcje){document.getElementById('szablony-container').innerHTML='<div class="loading-msg">Brak danych planu.</div>';return;}
+  const meta={
+    l2:{emoji:'🦵',label:'Lower 2',pompka:'Pompka quad: __/10 | Pompka pośladki: __/10 | Uwagi:'},
+    upper:{emoji:'💪',label:'Upper',pompka:'Pompka klatka: __/10 | Pompka plecy: __/10 | Uwagi:'},
+    l1:{emoji:'🍑',label:'Lower 1',pompka:'Pompka pośladki: __/10 | Pompka tyłuda: __/10 | Uwagi:'}
+  };
+  let html='';
+  ['l2','upper','l1'].forEach(key=>{
+    const sek=plan.sekcje[key];if(!sek||!sek.cwiczenia||!sek.cwiczenia.length)return;
+    const m=meta[key]||{emoji:'',label:key,pompka:'Uwagi:'};
+    const tmplId='tmpl-dyn-'+key;
+    // Buduj tekst szablonu dynamicznie
+    const lines=[m.label+' [DATA] | Czas: ___ min | Kcal: ___ | Tętno śr: ___ | Obciążenie aerobowe: ___',''];
+    sek.cwiczenia.forEach((ex,i)=>{
+      const nr=(i+1)+'.';
+      const pad=nr.padEnd(3);
+      lines.push(pad+' '+ex.nazwa+':  __ kg × __');
+    });
+    lines.push('',''+m.pompka);
+    const tmplText=lines.join('\n');
+    // Wizualne wiersze
+    const visRows=sek.cwiczenia.map((ex,i)=>{
+      const ssChip=ex.ss?'<span class="ss-chip">'+ex.ss+'</span>':'';
+      return'<div style="display:flex;justify-content:space-between;align-items:center;padding:5px 8px;background:var(--surface2);border-radius:5px;font-size:11px;margin-bottom:4px">'
+        +'<span>'+(i+1)+'. '+ex.nazwa+ssChip+'</span>'
+        +'<span style="font-family:var(--mono);color:var(--muted)">'+ex.kg+' kg × __</span>'
+      +'</div>';
+    }).join('');
+    html+='<div class="accordion">'
+      +'<button class="accordion-trigger" onclick="toggleAccordion(this)">'+m.emoji+' Szablon — '+m.label+' <span class="accordion-icon">▼</span></button>'
+      +'<div class="accordion-content">'
+        +'<textarea id="'+tmplId+'" style="display:none">'+tmplText+'</textarea>'
+        +'<div style="margin-bottom:10px">'+visRows+'</div>'
+        +'<button onclick="copyTmpl(\'dyn-'+key+'\')" style="width:100%;padding:9px;background:var(--rose);color:#fff;border:none;border-radius:8px;font-family:var(--mono);font-size:11px;font-weight:600;cursor:pointer">📋 Kopiuj szablon '+m.label+'</button>'
+      +'</div>'
+    +'</div>';
+  });
+  document.getElementById('szablony-container').innerHTML=html;
+}
 function showToast(msg){const t=document.createElement('div');t.textContent=msg;t.style.cssText='position:fixed;bottom:80px;left:50%;transform:translateX(-50%);background:var(--rose);color:#fff;padding:8px 16px;border-radius:20px;font-family:var(--mono);font-size:11px;z-index:9999;animation:fadeIn .2s ease';document.body.appendChild(t);setTimeout(()=>t.remove(),2000);}
 function filterProg(n,btn){btn.closest('.chip-row').querySelectorAll('.chip').forEach(c=>c.classList.remove('active'));btn.classList.add('active');document.querySelectorAll('.prog-tbl').forEach(tbl=>{tbl.querySelectorAll('tr').forEach(row=>{row.querySelectorAll('th,td').forEach((cell,i)=>{if(i<2){cell.style.display='';return;}cell.style.display=(i-2<n)?'':'none';});});});}
 function toggleLog(i){const log=document.getElementById('log-'+i),icon=document.getElementById('lti-'+i),isOpen=log.classList.contains('open');log.classList.toggle('open',!isOpen);icon.textContent=isOpen?'＋':'－';}
@@ -413,7 +518,40 @@ function renderPoprzedni(poprzedni,progresja){
   const legenda='<div class="prog-legend" style="margin-bottom:12px"><span>★ <span style="color:var(--yellow)">rekord</span></span><span>↑ <span style="color:var(--green)">progresja</span></span><span>⚠ <span style="color:var(--orange)">uwaga</span></span><span>→ <span style="color:var(--muted)">bez zmian</span></span></div>';
   const metaParts=[poprzedni.numer?'Trening '+poprzedni.numer:null,poprzedni.tydzien?'Tydzień '+poprzedni.tydzien:null,poprzedni.kcal?poprzedni.kcal+' kcal':null,poprzedni.czas_min?poprzedni.czas_min+' min':null,poprzedni.tetno?'tętno '+poprzedni.tetno:null].filter(Boolean).join(' · ');
   const header='<div class="prev-header"><div class="prev-title">'+poprzedni.tytul+'</div><div class="prev-meta">'+metaParts+'</div><div><span class="stars">'+stars(poprzedni.ocena)+'</span> <strong>'+poprzedni.ocena+'/10</strong></div><div class="prev-desc">'+poprzedni.opis+'</div>'+(poprzedni.wnioski?'<div class="prev-wnioski">💡 '+poprzedni.wnioski+'</div>':'')+'</div>';
-  const cwiczenia=(poprzedni.cwiczenia||[]).map((ex,i)=>{const nameColor=statusColor(ex.status);const ssChip=ex.ss?'<span class="ss-chip">'+ex.ss+'</span>':'';const typ=poprzedni.typ||'upper';const sekcja=progresja&&progresja.sekcje?progresja.sekcje[typ]:null;let analysisRows='';if(sekcja){const found=sekcja.cwiczenia.find(c=>c.nazwa.toLowerCase().includes(ex.nazwa.toLowerCase().split(' ')[0])||ex.nazwa.toLowerCase().includes(c.nazwa.toLowerCase().split(' ')[0]));if(found&&found.sesje){analysisRows=found.sesje.map((s,si)=>{const nagl=sekcja.naglowki[si]||'';const icoClass=s.ico==='↑'?'ico-up':s.ico==='★'?'ico-star':s.ico==='↓'?'ico-down':'ico-same';return'<div class="analysis-row"><span class="analysis-date">'+nagl+'</span><span class="analysis-ico"><span class="'+icoClass+'">'+s.ico+'</span></span><span class="analysis-kg">'+s.kg+' kg</span><span class="analysis-serie">'+s.serie+'</span></div>';}).join('');}}const analysis=analysisRows?'<div class="prev-ex-analysis" id="pa-'+i+'"><div class="analysis-title">📈 Historia ćwiczenia</div>'+analysisRows+'</div>':'';return'<div class="prev-ex-card" onclick="togglePrevAnalysis('+i+')"><div class="prev-ex-header"><span class="prev-ex-name '+nameColor+'">'+(i+1)+'. '+ex.nazwa+' '+ssChip+'</span><span class="prev-ex-kg">'+ex.kg+' kg</span></div><div class="prev-ex-body"><div class="prev-ex-cell"><span class="prev-ex-cell-lbl">Wykonano</span><span class="prev-ex-cell-val">'+ex.wykonano+'</span></div><div class="prev-ex-cell"><span class="prev-ex-cell-lbl">Ocena</span><span class="prev-ex-cell-val '+nameColor+'">'+ex.ocena_tekst+'</span></div><div class="prev-ex-cell"><span class="prev-ex-cell-lbl">Progresja</span><span class="prev-ex-cell-val prog">'+ex.progresja_tekst+'</span></div></div>'+analysis+'</div>';}).join('');
+  // Pobierz plan dla tego typu treningu żeby pokazać zakres
+  const typ=poprzedni.typ||'upper';
+  const planSekcja=DATA.plan&&DATA.plan.sekcje?DATA.plan.sekcje[typ]:null;
+  const cwiczenia=(poprzedni.cwiczenia||[]).map((ex,i)=>{
+    const nameColor=statusColor(ex.status);
+    const ssChip=ex.ss?'<span class="ss-chip">'+ex.ss+'</span>':'';
+    // Znajdź zakres z planu
+    const planEx=planSekcja?planSekcja.cwiczenia.find(p=>p.nazwa.toLowerCase().includes(ex.nazwa.toLowerCase().split(' ')[0])||ex.nazwa.toLowerCase().includes(p.nazwa.toLowerCase().split(' ')[0])):null;
+    const zakres=planEx?planEx.serie:'—';
+    // Progresja: parsuj tekst "→ X kg (N/2)" albo "→ X kg ✅"
+    const prog=ex.progresja_tekst||'';
+    let progDisplay=prog;
+    if(prog.includes('✅'))progDisplay='<span style="color:var(--rose)">✅ zaliczone</span>';
+    else if(prog.includes('2/2'))progDisplay='<span style="color:var(--green);font-weight:700">2/2 ✅</span>';
+    else if(prog.includes('1/2'))progDisplay='<span style="color:var(--yellow);font-weight:700">1/2</span>';
+    else if(prog.includes('0/2'))progDisplay='<span style="color:var(--muted)">0/2</span>';
+    // Inline historia z progresji
+    const sekcja=DATA.progresja&&DATA.progresja.sekcje?DATA.progresja.sekcje[typ]:null;
+    let analysisRows='';
+    if(sekcja){const found=sekcja.cwiczenia.find(c=>c.nazwa.toLowerCase().includes(ex.nazwa.toLowerCase().split(' ')[0])||ex.nazwa.toLowerCase().includes(c.nazwa.toLowerCase().split(' ')[0]));if(found&&found.sesje){analysisRows=found.sesje.map((s,si)=>{const nagl=sekcja.naglowki[si]||'';const icoClass=s.ico==='↑'?'ico-up':s.ico==='★'?'ico-star':s.ico==='↓'?'ico-down':'ico-same';return'<div class="analysis-row"><span class="analysis-date">'+nagl+'</span><span class="analysis-ico"><span class="'+icoClass+'">'+s.ico+'</span></span><span class="analysis-kg">'+s.kg+' kg</span><span class="analysis-serie">'+s.serie+'</span></div>';}).join('');}}
+    const analysis=analysisRows?'<div class="prev-ex-analysis" id="pa-'+i+'"><div class="analysis-title">📈 Historia ćwiczenia</div>'+analysisRows+'</div>':'';
+    return'<div class="prev-ex-card" onclick="togglePrevAnalysis('+i+')">'
+      +'<div class="prev-ex-header">'
+        +'<span class="prev-ex-name '+nameColor+'">'+(i+1)+'. '+ex.nazwa+' '+ssChip+'</span>'
+        +'<span class="prev-ex-kg">'+ex.kg+' kg</span>'
+      +'</div>'
+      +'<div class="prev-ex-body">'
+        +'<div class="prev-ex-cell"><span class="prev-ex-cell-lbl">Plan (zakres)</span><span class="prev-ex-cell-val" style="font-size:10px">'+zakres+'</span></div>'
+        +'<div class="prev-ex-cell"><span class="prev-ex-cell-lbl">Wykonano</span><span class="prev-ex-cell-val">'+ex.wykonano+'</span></div>'
+        +'<div class="prev-ex-cell"><span class="prev-ex-cell-lbl">Progresja</span><span class="prev-ex-cell-val">'+progDisplay+'</span></div>'
+      +'</div>'
+      +analysis
+    +'</div>';
+  }).join('');
   document.getElementById('poprzedni-container').innerHTML=legenda+header+cwiczenia;
 }
 function togglePrevAnalysis(i){const el=document.getElementById('pa-'+i);if(el)el.classList.toggle('open');}
@@ -526,6 +664,7 @@ async function loadData(){
     renderHistoria(treningi.historia);
     renderPlan(plan,'plan-c1-container');
     renderPlan(DATA_C2.plan,'plan-c2-container');
+    renderSzablony(plan);
     renderHarmonogram(harmonogram);
     renderDieta(dieta,'dieta-c1-container');
     renderDieta(DATA_C2.dieta,'dieta-c2-container');
