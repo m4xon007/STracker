@@ -7,102 +7,17 @@
     "data_koniec_planowana": "12.04.2026",
     "deload_od": "13.04.2026",
     "deload_do": "19.04.2026",
-    "header_sub": "Cykl 1 · koniec · deload",
-    "header_badge": "Pn 13.04"
+    "header_sub": "Cykl 1 ✓ · deload zakończony",
+    "header_badge": "Cykl 2 → 20.04"
   },
   "nastepny": {
     "typ": "l2",
-    "emoji": "🦵",
-    "label": "Deload L2 — Pn 13.04.2026",
+    "emoji": "🚀",
+    "label": "Cykl 2 — start 20.04.2026",
     "numer": 24,
     "badge_class": "badge-l2",
-    "alert": "DELOAD: 50–60% ciężaru, 2–3 serie, swobodne tempo. Cel: regeneracja CNS przed Cyklem 2 (start 20.04). Bez wychodzenia poza strefę komfortu.",
-    "cwiczenia": [
-      {
-        "nazwa": "Przysiad ze sztangą",
-        "highlight": false,
-        "ss": null,
-        "poprzedni_kg": 45,
-        "poprzedni_serie": "plan",
-        "progresja": "zmniejsz",
-        "serie": "2×8",
-        "przerwa": "90s",
-        "placeholder_kg": "25",
-        "placeholder_reps": "8-8"
-      },
-      {
-        "nazwa": "Sumo martwy ciąg",
-        "highlight": false,
-        "ss": null,
-        "poprzedni_kg": 27.5,
-        "poprzedni_serie": "plan",
-        "progresja": "zmniejsz",
-        "serie": "2×10",
-        "przerwa": "90s",
-        "placeholder_kg": "15",
-        "placeholder_reps": "10-10"
-      },
-      {
-        "nazwa": "Step-ups z hantlami",
-        "highlight": false,
-        "ss": null,
-        "poprzedni_kg": 15,
-        "poprzedni_serie": "plan",
-        "progresja": "zmniejsz",
-        "serie": "2×10",
-        "przerwa": "60s",
-        "placeholder_kg": "8",
-        "placeholder_reps": "10-10"
-      },
-      {
-        "nazwa": "Suwnica — leg press",
-        "highlight": false,
-        "ss": null,
-        "poprzedni_kg": 70,
-        "poprzedni_serie": "12-12-12",
-        "progresja": "zmniejsz",
-        "serie": "2×10",
-        "przerwa": "60s",
-        "placeholder_kg": "40",
-        "placeholder_reps": "10-10"
-      },
-      {
-        "nazwa": "Ławka rzymska",
-        "highlight": false,
-        "ss": null,
-        "poprzedni_kg": 25,
-        "poprzedni_serie": "plan",
-        "progresja": "zmniejsz",
-        "serie": "2×10",
-        "przerwa": "60s",
-        "placeholder_kg": "12",
-        "placeholder_reps": "10-10"
-      },
-      {
-        "nazwa": "RDL z hantlami",
-        "highlight": false,
-        "ss": null,
-        "poprzedni_kg": 25,
-        "poprzedni_serie": "plan",
-        "progresja": "zmniejsz",
-        "serie": "2×15",
-        "przerwa": "60s",
-        "placeholder_kg": "14",
-        "placeholder_reps": "15-15"
-      },
-      {
-        "nazwa": "Prostowanie nóg",
-        "highlight": false,
-        "ss": null,
-        "poprzedni_kg": 40,
-        "poprzedni_serie": "10-10-10",
-        "progresja": "zmniejsz",
-        "serie": "2×10",
-        "przerwa": "60s",
-        "placeholder_kg": "22",
-        "placeholder_reps": "10-10"
-      }
-    ]
+    "alert": "Deload zakończony ✓. Cykl 2 startuje 20.04. Plan zostanie uzupełniony przed pierwszym treningiem.",
+    "cwiczenia": []
   },
   "poprzedni": {
     "data": "08.04.2026",
