@@ -1,0 +1,904 @@
+{
+  "cykl": 2,
+  "nazwa": "Faza 2 — Siła + Deficyt",
+  "aktywna_od": "06.04.2026",
+  "aktywna_do": "15.06.2026",
+  "makra": {
+    "kcal_trening": 1679,
+    "kcal_odpoczynek": 1340,
+    "bialko_min_g": 118,
+    "tdee_szac": 2100,
+    "deficyt_dzien": 418,
+    "tempo_kg_tyg": "0.3–0.5",
+    "kreatyna": "5g/dzień",
+    "suplementy": "WPC 82 (Olimp)",
+    "tabela_tygodnia": [
+      {
+        "dzien": "Pn",
+        "kcal": 1679,
+        "bialko_g": 137,
+        "typ": "l2"
+      },
+      {
+        "dzien": "Wt",
+        "kcal": 1357,
+        "bialko_g": 118,
+        "typ": "odpoczynek"
+      },
+      {
+        "dzien": "Śr",
+        "kcal": 1614,
+        "bialko_g": 130,
+        "typ": "upper"
+      },
+      {
+        "dzien": "Czw",
+        "kcal": 1295,
+        "bialko_g": 130,
+        "typ": "odpoczynek"
+      },
+      {
+        "dzien": "Pt",
+        "kcal": 1315,
+        "bialko_g": 113,
+        "typ": "odpoczynek"
+      },
+      {
+        "dzien": "Sob",
+        "kcal": 1807,
+        "bialko_g": 110,
+        "typ": "l1"
+      },
+      {
+        "dzien": "Nd",
+        "kcal": 1358,
+        "bialko_g": 91,
+        "typ": "odpoczynek"
+      }
+    ]
+  },
+  "dni": {
+    "pn": {
+      "label": "🏋️ Pn — Lower 2",
+      "typ": "l2",
+      "posilki": [
+        {
+          "pora": "Śniadanie",
+          "kcal": 515,
+          "bialko_g": 46,
+          "skladniki": [
+            {
+              "nazwa": "Płatki błyskawiczne",
+              "ilosc": "50g"
+            },
+            {
+              "nazwa": "Mleko HP Pilos",
+              "ilosc": "200ml"
+            },
+            {
+              "nazwa": "WPC 82",
+              "ilosc": "10g"
+            },
+            {
+              "nazwa": "Siemię lniane",
+              "ilosc": "10g"
+            },
+            {
+              "nazwa": "Skyr malinowy Pilos",
+              "ilosc": "150g"
+            },
+            {
+              "nazwa": "Borówki",
+              "ilosc": "80g"
+            }
+          ]
+        },
+        {
+          "pora": "II śniadanie",
+          "kcal": 78,
+          "bialko_g": 1,
+          "skladniki": [
+            {
+              "nazwa": "Jabłko",
+              "ilosc": "150g"
+            }
+          ]
+        },
+        {
+          "pora": "Obiad",
+          "kcal": 387,
+          "bialko_g": 45,
+          "skladniki": [
+            {
+              "nazwa": "Polędwiczki z kurczaka Wipasz",
+              "ilosc": "150g"
+            },
+            {
+              "nazwa": "Szpinak baby",
+              "ilosc": "150g"
+            },
+            {
+              "nazwa": "Fasolka mix mrożona",
+              "ilosc": "225g"
+            },
+            {
+              "nazwa": "Mus mango Freshona",
+              "ilosc": "100g"
+            },
+            {
+              "nazwa": "Oliwa z oliwek",
+              "ilosc": "5g"
+            },
+            {
+              "nazwa": "Curry + czosnek",
+              "ilosc": "do smaku"
+            }
+          ]
+        },
+        {
+          "pora": "Pre+Post workout",
+          "kcal": 257,
+          "bialko_g": 22,
+          "skladniki": [
+            {
+              "nazwa": "Banan",
+              "ilosc": "100g"
+            },
+            {
+              "nazwa": "Zott Drink",
+              "ilosc": "250ml"
+            }
+          ]
+        },
+        {
+          "pora": "Kolacja",
+          "kcal": 362,
+          "bialko_g": 22,
+          "skladniki": [
+            {
+              "nazwa": "Jajka gotowane",
+              "ilosc": "2 szt"
+            },
+            {
+              "nazwa": "Hummus Taverna",
+              "ilosc": "60g"
+            },
+            {
+              "nazwa": "Chleb chrupki Chaber",
+              "ilosc": "2 szt"
+            },
+            {
+              "nazwa": "Warzywa surowe",
+              "ilosc": "150g"
+            }
+          ]
+        },
+        {
+          "pora": "Inne",
+          "kcal": 80,
+          "bialko_g": 2,
+          "skladniki": [
+            {
+              "nazwa": "Cappuccino",
+              "ilosc": "2×"
+            }
+          ]
+        }
+      ],
+      "podsumowanie": {
+        "kcal": 1679,
+        "bialko_g": 137
+      }
+    },
+    "wt": {
+      "label": "😴 Wt — Odpoczynek",
+      "typ": "odpoczynek",
+      "posilki": [
+        {
+          "pora": "Śniadanie",
+          "kcal": 491,
+          "bialko_g": 41,
+          "skladniki": [
+            {
+              "nazwa": "Płatki owsiane",
+              "ilosc": "50g"
+            },
+            {
+              "nazwa": "Jajko",
+              "ilosc": "1 szt"
+            },
+            {
+              "nazwa": "Pasta orzechowa 100%",
+              "ilosc": "12g"
+            },
+            {
+              "nazwa": "Mleko HP Pilos",
+              "ilosc": "40ml"
+            },
+            {
+              "nazwa": "Twaróg chudy Pilos",
+              "ilosc": "70g"
+            },
+            {
+              "nazwa": "WPC 82",
+              "ilosc": "10g"
+            },
+            {
+              "nazwa": "Borówki",
+              "ilosc": "70g"
+            },
+            {
+              "nazwa": "Cynamon + proszek do pieczenia",
+              "ilosc": "szczypta"
+            }
+          ]
+        },
+        {
+          "pora": "II śniadanie",
+          "kcal": 78,
+          "bialko_g": 1,
+          "skladniki": [
+            {
+              "nazwa": "Jabłko",
+              "ilosc": "150g"
+            }
+          ]
+        },
+        {
+          "pora": "Obiad",
+          "kcal": 185,
+          "bialko_g": 25,
+          "skladniki": [
+            {
+              "nazwa": "Dorsz Atlantycki Lidl",
+              "ilosc": "100g"
+            },
+            {
+              "nazwa": "Fasolka mix mrożona",
+              "ilosc": "225g"
+            },
+            {
+              "nazwa": "Oliwa z oliwek",
+              "ilosc": "1 łyżeczka"
+            }
+          ]
+        },
+        {
+          "pora": "Przekąska",
+          "kcal": 150,
+          "bialko_g": 20,
+          "skladniki": [
+            {
+              "nazwa": "Zott Pudding proteinowy",
+              "ilosc": "200g"
+            }
+          ]
+        },
+        {
+          "pora": "Kolacja",
+          "kcal": 373,
+          "bialko_g": 30,
+          "skladniki": [
+            {
+              "nazwa": "Tuńczyk Calvo pomidorowy",
+              "ilosc": "160g"
+            },
+            {
+              "nazwa": "Chleb chrupki Chaber",
+              "ilosc": "2 szt"
+            },
+            {
+              "nazwa": "Warzywa surowe",
+              "ilosc": "150g"
+            }
+          ]
+        },
+        {
+          "pora": "Inne",
+          "kcal": 80,
+          "bialko_g": 2,
+          "skladniki": [
+            {
+              "nazwa": "Cappuccino",
+              "ilosc": "2×"
+            }
+          ]
+        }
+      ],
+      "podsumowanie": {
+        "kcal": 1357,
+        "bialko_g": 118
+      }
+    },
+    "sr": {
+      "label": "🏋️ Śr — Upper",
+      "typ": "upper",
+      "posilki": [
+        {
+          "pora": "Śniadanie",
+          "kcal": 515,
+          "bialko_g": 46,
+          "skladniki": [
+            {
+              "nazwa": "Płatki błyskawiczne",
+              "ilosc": "50g"
+            },
+            {
+              "nazwa": "Mleko HP Pilos",
+              "ilosc": "200ml"
+            },
+            {
+              "nazwa": "WPC 82",
+              "ilosc": "10g"
+            },
+            {
+              "nazwa": "Siemię lniane",
+              "ilosc": "10g"
+            },
+            {
+              "nazwa": "Skyr malinowy Pilos",
+              "ilosc": "150g"
+            },
+            {
+              "nazwa": "Borówki",
+              "ilosc": "80g"
+            }
+          ]
+        },
+        {
+          "pora": "II śniadanie",
+          "kcal": 78,
+          "bialko_g": 1,
+          "skladniki": [
+            {
+              "nazwa": "Jabłko",
+              "ilosc": "150g"
+            }
+          ]
+        },
+        {
+          "pora": "Obiad",
+          "kcal": 387,
+          "bialko_g": 45,
+          "skladniki": [
+            {
+              "nazwa": "Polędwiczki z kurczaka Wipasz",
+              "ilosc": "150g"
+            },
+            {
+              "nazwa": "Szpinak baby",
+              "ilosc": "150g"
+            },
+            {
+              "nazwa": "Fasolka mix mrożona",
+              "ilosc": "225g"
+            },
+            {
+              "nazwa": "Mus mango Freshona",
+              "ilosc": "100g"
+            },
+            {
+              "nazwa": "Oliwa z oliwek",
+              "ilosc": "5g"
+            },
+            {
+              "nazwa": "Curry + czosnek",
+              "ilosc": "do smaku"
+            }
+          ]
+        },
+        {
+          "pora": "Pre+Post workout",
+          "kcal": 257,
+          "bialko_g": 22,
+          "skladniki": [
+            {
+              "nazwa": "Banan",
+              "ilosc": "100g"
+            },
+            {
+              "nazwa": "Zott Drink",
+              "ilosc": "250ml"
+            }
+          ]
+        },
+        {
+          "pora": "Kolacja — Szakszuka",
+          "kcal": 297,
+          "bialko_g": 15,
+          "skladniki": [
+            {
+              "nazwa": "Jajka",
+              "ilosc": "2 szt"
+            },
+            {
+              "nazwa": "Pomidory świeże",
+              "ilosc": "200g"
+            },
+            {
+              "nazwa": "Cebula",
+              "ilosc": "30g"
+            },
+            {
+              "nazwa": "Papryka",
+              "ilosc": "50g"
+            },
+            {
+              "nazwa": "Oliwa z oliwek",
+              "ilosc": "1 łyżka"
+            }
+          ]
+        },
+        {
+          "pora": "Inne",
+          "kcal": 80,
+          "bialko_g": 2,
+          "skladniki": [
+            {
+              "nazwa": "Cappuccino",
+              "ilosc": "2×"
+            }
+          ]
+        }
+      ],
+      "podsumowanie": {
+        "kcal": 1614,
+        "bialko_g": 130
+      }
+    },
+    "czw": {
+      "label": "😴 Czw — Odpoczynek",
+      "typ": "odpoczynek",
+      "posilki": [
+        {
+          "pora": "Śniadanie",
+          "kcal": 364,
+          "bialko_g": 34,
+          "skladniki": [
+            {
+              "nazwa": "Kasza jaglana sucha",
+              "ilosc": "40g"
+            },
+            {
+              "nazwa": "Mleko HP Pilos",
+              "ilosc": "200ml"
+            },
+            {
+              "nazwa": "Pomarańcza",
+              "ilosc": "100g"
+            },
+            {
+              "nazwa": "WPC 82",
+              "ilosc": "15g"
+            },
+            {
+              "nazwa": "Erytrol + szczypta soli",
+              "ilosc": "do smaku"
+            }
+          ]
+        },
+        {
+          "pora": "II śniadanie",
+          "kcal": 78,
+          "bialko_g": 1,
+          "skladniki": [
+            {
+              "nazwa": "Jabłko",
+              "ilosc": "150g"
+            }
+          ]
+        },
+        {
+          "pora": "Obiad",
+          "kcal": 319,
+          "bialko_g": 34,
+          "skladniki": [
+            {
+              "nazwa": "Dorsz Atlantycki Lidl",
+              "ilosc": "150g"
+            },
+            {
+              "nazwa": "Warzywa na patelnię mrożone",
+              "ilosc": "225g"
+            },
+            {
+              "nazwa": "Oliwa z oliwek",
+              "ilosc": "1 łyżka"
+            }
+          ]
+        },
+        {
+          "pora": "Przekąska",
+          "kcal": 168,
+          "bialko_g": 21,
+          "skladniki": [
+            {
+              "nazwa": "Zott Drink",
+              "ilosc": "250ml"
+            }
+          ]
+        },
+        {
+          "pora": "Kolacja — Pancake",
+          "kcal": 286,
+          "bialko_g": 39,
+          "skladniki": [
+            {
+              "nazwa": "Skyr waniliowy Pilos",
+              "ilosc": "150g"
+            },
+            {
+              "nazwa": "Jajko",
+              "ilosc": "1 szt"
+            },
+            {
+              "nazwa": "Mąka owsiana",
+              "ilosc": "15g"
+            },
+            {
+              "nazwa": "WPC 82",
+              "ilosc": "20g"
+            }
+          ]
+        },
+        {
+          "pora": "Inne",
+          "kcal": 80,
+          "bialko_g": 2,
+          "skladniki": [
+            {
+              "nazwa": "Cappuccino",
+              "ilosc": "2×"
+            }
+          ]
+        }
+      ],
+      "podsumowanie": {
+        "kcal": 1295,
+        "bialko_g": 130
+      }
+    },
+    "pt": {
+      "label": "😴 Pt — Odpoczynek + Core",
+      "typ": "odpoczynek",
+      "posilki": [
+        {
+          "pora": "Śniadanie",
+          "kcal": 364,
+          "bialko_g": 34,
+          "skladniki": [
+            {
+              "nazwa": "Kasza jaglana sucha",
+              "ilosc": "40g"
+            },
+            {
+              "nazwa": "Mleko HP Pilos",
+              "ilosc": "200ml"
+            },
+            {
+              "nazwa": "Pomarańcza",
+              "ilosc": "100g"
+            },
+            {
+              "nazwa": "WPC 82",
+              "ilosc": "15g"
+            },
+            {
+              "nazwa": "Erytrol + szczypta soli",
+              "ilosc": "do smaku"
+            }
+          ]
+        },
+        {
+          "pora": "II śniadanie",
+          "kcal": 78,
+          "bialko_g": 1,
+          "skladniki": [
+            {
+              "nazwa": "Jabłko",
+              "ilosc": "150g"
+            }
+          ]
+        },
+        {
+          "pora": "Obiad",
+          "kcal": 385,
+          "bialko_g": 37,
+          "skladniki": [
+            {
+              "nazwa": "Polędwica wołowa",
+              "ilosc": "150g"
+            },
+            {
+              "nazwa": "Kasza gryczana sucha",
+              "ilosc": "20g"
+            },
+            {
+              "nazwa": "Pomidory świeże",
+              "ilosc": "150g"
+            },
+            {
+              "nazwa": "Papryka",
+              "ilosc": "50g"
+            },
+            {
+              "nazwa": "Cebula",
+              "ilosc": "30g"
+            },
+            {
+              "nazwa": "Oliwa z oliwek",
+              "ilosc": "1 łyżeczka"
+            }
+          ]
+        },
+        {
+          "pora": "Przekąska",
+          "kcal": 150,
+          "bialko_g": 20,
+          "skladniki": [
+            {
+              "nazwa": "Zott Pudding proteinowy",
+              "ilosc": "200g"
+            }
+          ]
+        },
+        {
+          "pora": "Kolacja — Jajecznica",
+          "kcal": 258,
+          "bialko_g": 20,
+          "skladniki": [
+            {
+              "nazwa": "Jajka",
+              "ilosc": "2 szt"
+            },
+            {
+              "nazwa": "Warzywa surowe",
+              "ilosc": "150g"
+            },
+            {
+              "nazwa": "Mozzarella light",
+              "ilosc": "20g"
+            },
+            {
+              "nazwa": "Oliwa z oliwek",
+              "ilosc": "1 łyżeczka"
+            }
+          ]
+        },
+        {
+          "pora": "Inne",
+          "kcal": 80,
+          "bialko_g": 2,
+          "skladniki": [
+            {
+              "nazwa": "Cappuccino",
+              "ilosc": "2×"
+            }
+          ]
+        }
+      ],
+      "podsumowanie": {
+        "kcal": 1315,
+        "bialko_g": 113
+      }
+    },
+    "sob": {
+      "label": "🏋️ Sob — Lower 1 + Cheat",
+      "typ": "l1",
+      "posilki": [
+        {
+          "pora": "Śniadanie",
+          "kcal": 459,
+          "bialko_g": 32,
+          "skladniki": [
+            {
+              "nazwa": "Grahamka Putka",
+              "ilosc": "70g"
+            },
+            {
+              "nazwa": "Szynka gotowana",
+              "ilosc": "40g"
+            },
+            {
+              "nazwa": "Ser żółty Gouda",
+              "ilosc": "20g"
+            },
+            {
+              "nazwa": "Jajka",
+              "ilosc": "2 szt"
+            },
+            {
+              "nazwa": "Warzywa surowe",
+              "ilosc": "100g"
+            }
+          ]
+        },
+        {
+          "pora": "Obiad",
+          "kcal": 300,
+          "bialko_g": 35,
+          "skladniki": [
+            {
+              "nazwa": "Mintaj polędwica",
+              "ilosc": "180g"
+            },
+            {
+              "nazwa": "Warzywa na patelnię mrożone",
+              "ilosc": "225g"
+            },
+            {
+              "nazwa": "Oliwa z oliwek",
+              "ilosc": "1,5 łyżeczki"
+            },
+            {
+              "nazwa": "Czosnek + tymianek + rozmaryn",
+              "ilosc": "do smaku"
+            },
+            {
+              "nazwa": "Papryka wędzona + cytryna",
+              "ilosc": "do smaku"
+            }
+          ]
+        },
+        {
+          "pora": "Przekąska",
+          "kcal": 168,
+          "bialko_g": 21,
+          "skladniki": [
+            {
+              "nazwa": "Zott Drink",
+              "ilosc": "250ml"
+            }
+          ]
+        },
+        {
+          "pora": "Kolacja",
+          "kcal": 340,
+          "bialko_g": 20,
+          "skladniki": [
+            {
+              "nazwa": "Tortilla pełnoziarnista",
+              "ilosc": "1 szt"
+            },
+            {
+              "nazwa": "Jajka",
+              "ilosc": "2 szt"
+            },
+            {
+              "nazwa": "Oliwa z oliwek",
+              "ilosc": "1 łyżeczka"
+            },
+            {
+              "nazwa": "Warzywa surowe",
+              "ilosc": "150g"
+            }
+          ]
+        },
+        {
+          "pora": "Inne",
+          "kcal": 540,
+          "bialko_g": 2,
+          "skladniki": [
+            {
+              "nazwa": "Cappuccino",
+              "ilosc": "2×"
+            },
+            {
+              "nazwa": "Aperol Spritz 🍹",
+              "ilosc": "2×"
+            }
+          ]
+        }
+      ],
+      "podsumowanie": {
+        "kcal": 1807,
+        "bialko_g": 110
+      }
+    },
+    "nd": {
+      "label": "😴 Nd — Odpoczynek + Core",
+      "typ": "odpoczynek",
+      "posilki": [
+        {
+          "pora": "Śniadanie",
+          "kcal": 459,
+          "bialko_g": 32,
+          "skladniki": [
+            {
+              "nazwa": "Grahamka Putka",
+              "ilosc": "70g"
+            },
+            {
+              "nazwa": "Szynka gotowana",
+              "ilosc": "40g"
+            },
+            {
+              "nazwa": "Ser żółty Gouda",
+              "ilosc": "20g"
+            },
+            {
+              "nazwa": "Jajka",
+              "ilosc": "2 szt"
+            },
+            {
+              "nazwa": "Warzywa surowe",
+              "ilosc": "100g"
+            }
+          ]
+        },
+        {
+          "pora": "Przekąska rano",
+          "kcal": 150,
+          "bialko_g": 20,
+          "skladniki": [
+            {
+              "nazwa": "Zott Pudding proteinowy",
+              "ilosc": "200g"
+            }
+          ]
+        },
+        {
+          "pora": "Obiad — Spaghetti",
+          "kcal": 460,
+          "bialko_g": 22,
+          "skladniki": [
+            {
+              "nazwa": "Spaghetti pełnoziarniste",
+              "ilosc": "60g"
+            },
+            {
+              "nazwa": "Ricotta Galbani",
+              "ilosc": "100g"
+            },
+            {
+              "nazwa": "Szpinak baby",
+              "ilosc": "150g"
+            },
+            {
+              "nazwa": "Czosnek + cebula",
+              "ilosc": "do smaku"
+            },
+            {
+              "nazwa": "Oliwa z oliwek",
+              "ilosc": "1 łyżeczka"
+            }
+          ]
+        },
+        {
+          "pora": "Kolacja",
+          "kcal": 209,
+          "bialko_g": 17,
+          "skladniki": [
+            {
+              "nazwa": "Sardynki GRAAL pomidorowe",
+              "ilosc": "110g"
+            },
+            {
+              "nazwa": "Chleb chrupki Chaber",
+              "ilosc": "2 szt"
+            },
+            {
+              "nazwa": "Warzywa surowe",
+              "ilosc": "150g"
+            }
+          ]
+        },
+        {
+          "pora": "Inne",
+          "kcal": 80,
+          "bialko_g": 2,
+          "skladniki": [
+            {
+              "nazwa": "Cappuccino",
+              "ilosc": "2×"
+            }
+          ]
+        }
+      ],
+      "podsumowanie": {
+        "kcal": 1358,
+        "bialko_g": 91
+      }
+    }
+  }
+}
