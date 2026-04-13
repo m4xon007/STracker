@@ -1,5 +1,5 @@
 {
-  "version": "2.1.1",
+  "version": "2.1.2",
   "data": "13.04.2026",
-  "changelog": "Dieta makra: 6 kafelek, profil metaboliczny BMR/TDEE, tabela z deficytem"
+  "changelog": "Trening: osobne pola per seria z klawiatura numeryczna"
 }
