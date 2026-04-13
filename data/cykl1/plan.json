@@ -88,8 +88,8 @@
           "kg": "25",
           "serie": "4×6–8",
           "przerwa": "120s",
-          "status": "✅ 0/2",
-          "status_color": "rose"
+          "status": "0/2",
+          "status_color": "muted"
         },
         {
           "nazwa": "Skos hantlami",
@@ -98,8 +98,8 @@
           "kg": "10",
           "serie": "3×10–12",
           "przerwa": "90s",
-          "status": "✅ 0/2",
-          "status_color": "rose"
+          "status": "0/2",
+          "status_color": "muted"
         },
         {
           "nazwa": "OHP hantlami",
@@ -108,8 +108,8 @@
           "kg": "8",
           "serie": "3×10–12",
           "przerwa": "90s",
-          "status": "✅ 0/2",
-          "status_color": "rose"
+          "status": "0/2",
+          "status_color": "muted"
         },
         {
           "nazwa": "Laterals",
@@ -118,14 +118,14 @@
           "kg": "7",
           "serie": "3×12–15",
           "przerwa": "75s",
-          "status": "✅ 0/2",
-          "status_color": "rose"
+          "status": "0/2",
+          "status_color": "muted"
         },
         {
           "nazwa": "Wiosłowanie",
           "bold": true,
           "ss": null,
-          "kg": "37,5",
+          "kg": "40",
           "serie": "3×8–10",
           "przerwa": "120s",
           "status": "0/2",
@@ -138,14 +138,14 @@
           "kg": "35",
           "serie": "3×10–12",
           "przerwa": "90s",
-          "status": "0/2",
-          "status_color": "muted"
+          "status": "1/2",
+          "status_color": "yellow"
         },
         {
           "nazwa": "Face pulls",
           "bold": false,
           "ss": null,
-          "kg": "25",
+          "kg": "27,5",
           "serie": "3×12–15",
           "przerwa": "60s",
           "status": "0/2",
@@ -165,7 +165,7 @@
           "nazwa": "Triceps",
           "bold": false,
           "ss": "SS1",
-          "kg": "12,5",
+          "kg": "13,75",
           "serie": "3×10–12",
           "przerwa": "75s po SS",
           "status": "0/2",

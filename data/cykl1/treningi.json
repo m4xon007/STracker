@@ -2,213 +2,277 @@
   "meta": {
     "cykl": 1,
     "tydzien": 9,
-    "lacznie": 22,
+    "lacznie": 23,
     "data_start": "14.02.2026",
     "data_koniec_planowana": "12.04.2026",
     "deload_od": "13.04.2026",
     "deload_do": "19.04.2026",
-    "header_sub": "Cykl 1 · tydzień 9",
-    "header_badge": "Śr 09.04"
+    "header_sub": "Cykl 1 · koniec · deload",
+    "header_badge": "Pn 13.04"
   },
   "nastepny": {
-    "typ": "upper",
-    "emoji": "💪",
-    "label": "Upper — Śr 09.04.2026",
-    "numer": 23,
-    "badge_class": "badge-upper",
-    "alert": "Wyciskanie 25 kg utrzymaj (1/2). Skos 9 kg utrzymaj (1/2). OHP 8 kg utrzymaj (1/2). Laterals 7 kg. Wiosłowanie 37,5 kg → debiut. Face pulls 25 kg (1/2). Biceps+Triceps 12,5 kg (1/2).",
+    "typ": "l2",
+    "emoji": "🦵",
+    "label": "Deload L2 — Pn 13.04.2026",
+    "numer": 24,
+    "badge_class": "badge-l2",
+    "alert": "DELOAD: 50–60% ciężaru, 2–3 serie, swobodne tempo. Cel: regeneracja CNS przed Cyklem 2 (start 20.04). Bez wychodzenia poza strefę komfortu.",
     "cwiczenia": [
       {
-        "nazwa": "Wyciskanie płaska",
-        "highlight": true,
-        "ss": null,
-        "poprzedni_kg": 24.0,
-        "poprzedni_serie": "8-8-8-8",
-        "progresja": "utrzymaj",
-        "serie": "4×6–8",
-        "przerwa": "120s",
-        "placeholder_kg": "24.0",
-        "placeholder_reps": "8-8-8-8"
-      },
-      {
-        "nazwa": "Skos hantlami",
+        "nazwa": "Przysiad ze sztangą",
         "highlight": false,
         "ss": null,
-        "poprzedni_kg": 9.0,
-        "poprzedni_serie": "12-12-12-12",
-        "progresja": "zwieksz",
-        "serie": "3×10–12",
+        "poprzedni_kg": 45,
+        "poprzedni_serie": "plan",
+        "progresja": "zmniejsz",
+        "serie": "2×8",
         "przerwa": "90s",
-        "placeholder_kg": "9.0",
-        "placeholder_reps": "12-12-12-12"
+        "placeholder_kg": "25",
+        "placeholder_reps": "8-8"
       },
       {
-        "nazwa": "OHP hantlami",
+        "nazwa": "Sumo martwy ciąg",
         "highlight": false,
         "ss": null,
-        "poprzedni_kg": 8.0,
-        "poprzedni_serie": "10-10-10",
-        "progresja": "utrzymaj",
-        "serie": "3×10–12",
+        "poprzedni_kg": 27.5,
+        "poprzedni_serie": "plan",
+        "progresja": "zmniejsz",
+        "serie": "2×10",
         "przerwa": "90s",
-        "placeholder_kg": "8.0",
-        "placeholder_reps": "10-10-10"
+        "placeholder_kg": "15",
+        "placeholder_reps": "10-10"
       },
       {
-        "nazwa": "Laterals",
+        "nazwa": "Step-ups z hantlami",
         "highlight": false,
         "ss": null,
-        "poprzedni_kg": 6.0,
-        "poprzedni_serie": "12-12-12",
-        "progresja": "utrzymaj",
-        "serie": "3×12–15",
-        "przerwa": "75s",
-        "placeholder_kg": "6.0",
-        "placeholder_reps": "12-12-12"
-      },
-      {
-        "nazwa": "Wiosłowanie",
-        "highlight": true,
-        "ss": null,
-        "poprzedni_kg": 37.5,
-        "poprzedni_serie": "10-10-10-10",
-        "progresja": "zwieksz",
-        "serie": "3×8–10",
-        "przerwa": "120s",
-        "placeholder_kg": "37.5",
-        "placeholder_reps": "10-10-10-10"
-      },
-      {
-        "nazwa": "Przyciąganie linki",
-        "highlight": false,
-        "ss": null,
-        "poprzedni_kg": 35.0,
-        "poprzedni_serie": "8-8-8",
-        "progresja": "utrzymaj",
-        "serie": "3×10–12",
-        "przerwa": "90s",
-        "placeholder_kg": "35.0",
-        "placeholder_reps": "8-8-8"
-      },
-      {
-        "nazwa": "Face pulls",
-        "highlight": false,
-        "ss": null,
-        "poprzedni_kg": 25.0,
-        "poprzedni_serie": "15-15-15",
-        "progresja": "zwieksz",
-        "serie": "3×12–15",
+        "poprzedni_kg": 15,
+        "poprzedni_serie": "plan",
+        "progresja": "zmniejsz",
+        "serie": "2×10",
         "przerwa": "60s",
-        "placeholder_kg": "25.0",
-        "placeholder_reps": "15-15-15"
+        "placeholder_kg": "8",
+        "placeholder_reps": "10-10"
       },
       {
-        "nazwa": "Biceps",
+        "nazwa": "Suwnica — leg press",
         "highlight": false,
-        "ss": "SS1",
-        "poprzedni_kg": 12.5,
+        "ss": null,
+        "poprzedni_kg": 70,
         "poprzedni_serie": "12-12-12",
-        "progresja": "zwieksz",
-        "serie": "3×10–12",
-        "przerwa": "bez przerwy",
-        "placeholder_kg": "12.5",
-        "placeholder_reps": "12-12-12"
+        "progresja": "zmniejsz",
+        "serie": "2×10",
+        "przerwa": "60s",
+        "placeholder_kg": "40",
+        "placeholder_reps": "10-10"
       },
       {
-        "nazwa": "Triceps",
+        "nazwa": "Ławka rzymska",
         "highlight": false,
-        "ss": "SS1",
-        "poprzedni_kg": 12.5,
-        "poprzedni_serie": "12-12-12",
-        "progresja": "zwieksz",
-        "serie": "3×10–12",
-        "przerwa": "75s po SS",
-        "placeholder_kg": "12.5",
-        "placeholder_reps": "12-12-12"
+        "ss": null,
+        "poprzedni_kg": 25,
+        "poprzedni_serie": "plan",
+        "progresja": "zmniejsz",
+        "serie": "2×10",
+        "przerwa": "60s",
+        "placeholder_kg": "12",
+        "placeholder_reps": "10-10"
+      },
+      {
+        "nazwa": "RDL z hantlami",
+        "highlight": false,
+        "ss": null,
+        "poprzedni_kg": 25,
+        "poprzedni_serie": "plan",
+        "progresja": "zmniejsz",
+        "serie": "2×15",
+        "przerwa": "60s",
+        "placeholder_kg": "14",
+        "placeholder_reps": "15-15"
+      },
+      {
+        "nazwa": "Prostowanie nóg",
+        "highlight": false,
+        "ss": null,
+        "poprzedni_kg": 40,
+        "poprzedni_serie": "10-10-10",
+        "progresja": "zmniejsz",
+        "serie": "2×10",
+        "przerwa": "60s",
+        "placeholder_kg": "22",
+        "placeholder_reps": "10-10"
       }
     ]
   },
   "poprzedni": {
-    "data": "07.04.2026",
-    "data_label": "Pn 07.04.2026",
-    "typ": "l2",
-    "tytul": "🦵 Lower 2 — Pn 07.04.2026",
-    "numer": 22,
+    "data": "08.04.2026",
+    "data_label": "Wt 08.04.2026",
+    "typ": "upper",
+    "tytul": "💪 Upper — Wt 08.04.2026",
+    "numer": 23,
     "tydzien": 9,
-    "kcal": 809,
-    "czas_min": 102,
-    "tetno": 135,
-    "obciazenie_aerobowe": 3.7,
-    "ocena": 9,
-    "opis": "Świetny trening zamykający tydzień 9! Przysiad 4×8 po raz drugi z rzędu 🎉. Sumo, Step-ups, Ławka, RDL — wszystko 2/2. 5 progresji naraz. Suwnica wraca na właściwy tor.",
-    "wnioski": "Następny L2: Przysiad → 45 kg, Sumo → 27,5 kg, Step-ups → 15 kg, Ławka → 25 kg, RDL → 25 kg. Suwnica utrzymaj 70 kg (1/2). Prostowanie — utrzymaj 40 kg, popraw serię do 12.",
+    "kcal": 814,
+    "czas_min": 112,
+    "tetno": 129,
+    "obciazenie_aerobowe": 3.4,
+    "ocena": 8,
+    "opis": "Długa sesja kończąca Cykl 1! Wyciskanie 25kg sypie się na 3-4 serii — zmęczenie akumulacyjne. 4 progresje: Skos→10kg, Wiosłowanie→40kg, Face pulls→27,5kg, Triceps→13,75kg.",
+    "wnioski": "Wyciskanie wymaga świeżości — Cykl 2 zaczynamy od 25kg z pełnym wypoczynkiem po deloadzie. Laterals 7kg 0/2 — cel na Cykl 2. Biceps 15kg debiut słaby (10-10-8) — 0/2.",
     "cwiczenia": [
       {
-        "nazwa": "Przysiad ze sztangą",
-        "status": "rekord",
+        "nazwa": "Wyciskanie płaska",
+        "status": "uwaga",
         "ss": null,
-        "kg": 42.5,
-        "wykonano": "8-8-8-8",
-        "ocena_tekst": "★ 2/2 komplet!",
-        "progresja_tekst": "→ 45 kg ✅"
+        "kg": 25,
+        "wykonano": "8-8-6-6",
+        "ocena_tekst": "⚠ sypie końcówka",
+        "progresja_tekst": "→ 25 kg (0/2)"
       },
       {
-        "nazwa": "Sumo martwy ciąg",
+        "nazwa": "Skos hantlami",
         "status": "progresja",
         "ss": null,
-        "kg": 26,
+        "kg": 9,
+        "wykonano": "12-12-12-12",
+        "ocena_tekst": "✅ 2/2",
+        "progresja_tekst": "→ 10 kg ✅"
+      },
+      {
+        "nazwa": "OHP hantlami",
+        "status": "utrzymaj",
+        "ss": null,
+        "kg": 8,
+        "wykonano": "12-12-10",
+        "ocena_tekst": "→ 0/2",
+        "progresja_tekst": "→ 8 kg (0/2)"
+      },
+      {
+        "nazwa": "Laterals",
+        "status": "utrzymaj",
+        "ss": null,
+        "kg": 7,
         "wykonano": "12-12-12",
+        "ocena_tekst": "→ 0/2",
+        "progresja_tekst": "→ 7 kg (0/2)"
+      },
+      {
+        "nazwa": "Wiosłowanie",
+        "status": "progresja",
+        "ss": null,
+        "kg": 37.5,
+        "wykonano": "10-10-10-10",
+        "ocena_tekst": "✅ 2/2",
+        "progresja_tekst": "→ 40 kg ✅"
+      },
+      {
+        "nazwa": "Przyciąganie linki",
+        "status": "progresja",
+        "ss": null,
+        "kg": 35,
+        "wykonano": "12-12-12",
+        "ocena_tekst": "↑ 1/2",
+        "progresja_tekst": "→ 35 kg (1/2)"
+      },
+      {
+        "nazwa": "Face pulls",
+        "status": "progresja",
+        "ss": null,
+        "kg": 25,
+        "wykonano": "15-15-15",
         "ocena_tekst": "✅ 2/2",
         "progresja_tekst": "→ 27,5 kg ✅"
       },
       {
-        "nazwa": "Step-ups z hantlami",
-        "status": "progresja",
-        "ss": null,
-        "kg": 14,
-        "wykonano": "12-12-12",
-        "ocena_tekst": "✅ 2/2",
-        "progresja_tekst": "→ 15 kg ✅"
-      },
-      {
-        "nazwa": "Suwnica — leg press",
-        "status": "utrzymaj",
-        "ss": null,
-        "kg": 70,
-        "wykonano": "12-12-12",
-        "ocena_tekst": "↑ wraca",
-        "progresja_tekst": "→ 70 kg (1/2)"
-      },
-      {
-        "nazwa": "Ławka rzymska",
-        "status": "progresja",
-        "ss": null,
-        "kg": 24,
-        "wykonano": "12-12-12",
-        "ocena_tekst": "✅ 2/2",
-        "progresja_tekst": "→ 25 kg ✅"
-      },
-      {
-        "nazwa": "RDL z hantlami",
-        "status": "progresja",
-        "ss": "SS1",
-        "kg": 24,
-        "wykonano": "20-20-20",
-        "ocena_tekst": "✅ 2/2",
-        "progresja_tekst": "→ 25 kg ✅"
-      },
-      {
-        "nazwa": "Prostowanie nóg",
+        "nazwa": "Biceps",
         "status": "uwaga",
         "ss": "SS1",
-        "kg": 40,
-        "wykonano": "10-10-10",
-        "ocena_tekst": "⚠ nie komplet",
-        "progresja_tekst": "→ 40 kg (0/2)"
+        "kg": 15,
+        "wykonano": "10-10-8",
+        "ocena_tekst": "⚠ debiut",
+        "progresja_tekst": "→ 15 kg (0/2)"
+      },
+      {
+        "nazwa": "Triceps",
+        "status": "progresja",
+        "ss": "SS1",
+        "kg": 12.5,
+        "wykonano": "12-12-12",
+        "ocena_tekst": "✅ 2/2",
+        "progresja_tekst": "→ 13,75 kg ✅"
       }
     ]
   },
   "historia": [
+    {
+      "id": "upper_20260408",
+      "data": "08.04.2026",
+      "data_label": "08.04 Wt",
+      "typ": "upper",
+      "numer": 23,
+      "tydzien": 9,
+      "ocena": 8,
+      "kcal": 814,
+      "czas_min": 112,
+      "tetno": 129,
+      "obciazenie_aerobowe": 3.4,
+      "notatka": "Wyciskanie 25kg 8-8-6-6 — sypie się końcówka. Skos+Wiosłowanie+Face pulls+Triceps ✅ progresja! Biceps 15kg debiut.",
+      "cwiczenia": [
+        {
+          "nazwa": "Wyciskanie płaska",
+          "kg": 25,
+          "serie": "8-8-6-6",
+          "status": "uwaga"
+        },
+        {
+          "nazwa": "Skos hantlami",
+          "kg": 9,
+          "serie": "12-12-12-12",
+          "status": "progresja"
+        },
+        {
+          "nazwa": "OHP hantlami",
+          "kg": 8,
+          "serie": "12-12-10",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Laterals",
+          "kg": 7,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Wiosłowanie",
+          "kg": 37.5,
+          "serie": "10-10-10-10",
+          "status": "progresja"
+        },
+        {
+          "nazwa": "Przyciąganie linki",
+          "kg": 35,
+          "serie": "12-12-12",
+          "status": "progresja"
+        },
+        {
+          "nazwa": "Face pulls",
+          "kg": 25,
+          "serie": "15-15-15",
+          "status": "progresja"
+        },
+        {
+          "nazwa": "Biceps SS1",
+          "kg": 15,
+          "serie": "10-10-8",
+          "status": "uwaga"
+        },
+        {
+          "nazwa": "Triceps SS1",
+          "kg": 12.5,
+          "serie": "12-12-12",
+          "status": "progresja"
+        }
+      ]
+    },
     {
       "id": "l2_20260407",
       "data": "07.04.2026",
@@ -1805,28 +1869,28 @@
     }
   },
   "ostatni_upper": {
-    "data": "02.04.2026",
+    "data": "08.04.2026",
     "cwiczenia": {
       "Wyciskanie płaska": {
-        "kg": 24.0,
-        "serie": "8-8-8-8",
+        "kg": 25,
+        "serie": "8-8-6-6",
         "status_przed": "0/2",
-        "status_po": "1/2"
+        "status_po": "0/2"
       },
       "Skos hantlami": {
-        "kg": 9.0,
+        "kg": 9,
         "serie": "12-12-12-12",
-        "status_przed": "1/2",
-        "status_po": "2/2"
+        "status_przed": "2/2",
+        "status_po": "✅"
       },
       "OHP hantlami": {
-        "kg": 8.0,
-        "serie": "10-10-10",
-        "status_przed": "1/2",
+        "kg": 8,
+        "serie": "12-12-10",
+        "status_przed": "0/2",
         "status_po": "0/2"
       },
       "Laterals": {
-        "kg": 6.0,
+        "kg": 7,
         "serie": "12-12-12",
         "status_przed": "0/2",
         "status_po": "0/2"
@@ -1834,32 +1898,32 @@
       "Wiosłowanie": {
         "kg": 37.5,
         "serie": "10-10-10-10",
-        "status_przed": "1/2",
-        "status_po": "2/2"
+        "status_przed": "2/2",
+        "status_po": "✅"
       },
       "Przyciąganie linki": {
-        "kg": 35.0,
-        "serie": "8-8-8",
+        "kg": 35,
+        "serie": "12-12-12",
+        "status_przed": "0/2",
+        "status_po": "1/2"
+      },
+      "Face pulls": {
+        "kg": 25,
+        "serie": "15-15-15",
+        "status_przed": "2/2",
+        "status_po": "✅"
+      },
+      "Biceps": {
+        "kg": 15,
+        "serie": "10-10-8",
         "status_przed": "0/2",
         "status_po": "0/2"
       },
-      "Face pulls": {
-        "kg": 25.0,
-        "serie": "15-15-15",
-        "status_przed": "1/2",
-        "status_po": "2/2"
-      },
-      "Biceps SS1": {
+      "Triceps": {
         "kg": 12.5,
         "serie": "12-12-12",
-        "status_przed": "1/2",
-        "status_po": "2/2"
-      },
-      "Triceps SS1": {
-        "kg": 12.5,
-        "serie": "12-12-12",
-        "status_przed": "1/2",
-        "status_po": "2/2"
+        "status_przed": "2/2",
+        "status_po": "✅"
       }
     }
   }

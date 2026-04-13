@@ -13,10 +13,10 @@
       "open": true,
       "bilans": {
         "l2": 8,
-        "upper": 8,
+        "upper": 9,
         "l1": 7,
         "core": 0,
-        "lacznie": 22
+        "lacznie": 23
       },
       "miesiace": [
         {
