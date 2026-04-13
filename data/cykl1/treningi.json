@@ -10,7 +10,6 @@
     "header_sub": "Cykl 1 · tydzień 8",
     "header_badge": "Sob 05.04"
   },
-
   "nastepny": {
     "typ": "l2",
     "emoji": "🦵",
@@ -105,7 +104,44 @@
       }
     ]
   },
-
+  "ostatni_l2": {
+    "data": "02.04.2026",
+    "cwiczenia": {
+      "Przysiad ze sztangą":   { "kg": 42.5, "serie": "8-8-8-8",    "status": "0/2" },
+      "Sumo martwy ciąg":      { "kg": 26,   "serie": "12-12-12",   "status": "1/2" },
+      "Step-ups z hantlami":   { "kg": 14,   "serie": "12-12-12",   "status": "0/2" },
+      "Suwnica — leg press":   { "kg": 70,   "serie": "12-12-12",   "status": "0/2" },
+      "Ławka rzymska":          { "kg": 24,   "serie": "12-12-12",   "status": "0/2" },
+      "RDL z hantlami":         { "kg": 24,   "serie": "20-20-20",   "status": "0/2" },
+      "Prostowanie nóg":        { "kg": 40,   "serie": "10-10-10",   "status": "0/2" }
+    }
+  },
+  "ostatni_upper": {
+    "data": "29.03.2026",
+    "cwiczenia": {
+      "Wyciskanie płaska":      { "kg": 25,   "serie": "8-8-8-8",    "status": "✅" },
+      "Skos hantlami":          { "kg": 9,    "serie": "12-12-12-12","status": "0/2" },
+      "OHP hantlami":           { "kg": 8,    "serie": "12-12-12",   "status": "0/2" },
+      "Laterals":               { "kg": 6,    "serie": "12-12-12",   "status": "0/2" },
+      "Wiosłowanie":            { "kg": 37.5, "serie": "10-10-10-10","status": "0/2" },
+      "Przyciąganie linki":     { "kg": 35,   "serie": "8-8-8",      "status": "0/2" },
+      "Face pulls":             { "kg": 25,   "serie": "15-15-15",   "status": "0/2" },
+      "Biceps":                 { "kg": 12.5, "serie": "12-12-12",   "status": "0/2" },
+      "Triceps":                { "kg": 12.5, "serie": "12-12-12",   "status": "0/2" }
+    }
+  },
+  "ostatni_l1": {
+    "data": "05.04.2026",
+    "cwiczenia": {
+      "Hip thrust ze sztangą":  { "kg": 65,   "serie": "10-10-10-10","status": "2/2" },
+      "RDL ze sztangą":         { "kg": 40,   "serie": "10-10-10-10","status": "✅" },
+      "Wykroki bułgarskie":     { "kg": 12,   "serie": "12-12-12",   "status": "1/2" },
+      "Odwodzenie wyciąg":      { "kg": 18,   "serie": "8-8",        "status": "0/2" },
+      "Kickbacki wyciąg":       { "kg": 27,   "serie": "10-10",      "status": "0/2" },
+      "Przywodzenie maszyna":   { "kg": 30,   "serie": "15-15-10",   "status": "0/2" },
+      "Odwodzenie maszyna":     { "kg": 60,   "serie": "12-12-12",   "status": "0/2" }
+    }
+  },
   "poprzedni": {
     "data": "05.04.2026",
     "data_label": "Sob 05.04.2026",
@@ -186,7 +222,6 @@
       }
     ]
   },
-
   "historia": [
     {
       "id": "l1_20260405",
@@ -202,13 +237,48 @@
       "obciazenie_aerobowe": 3.6,
       "notatka": "Hip thrust 65 kg 4×10 · RDL 40 kg komplet · Wykroki wzrost 12 kg",
       "cwiczenia": [
-        { "nazwa": "Hip thrust ze sztangą",  "kg": 65,  "serie": "10-10-10-10", "status": "utrzymaj" },
-        { "nazwa": "RDL ze sztangą",          "kg": 40,  "serie": "10-10-10-10", "status": "progresja" },
-        { "nazwa": "Wykroki bułgarskie",      "kg": 12,  "serie": "12-12-12",    "status": "progresja" },
-        { "nazwa": "Odwodzenie wyciąg",       "kg": 18,  "serie": "8-8",         "status": "uwaga" },
-        { "nazwa": "Kickbacki wyciąg",        "kg": 27,  "serie": "10-10",       "status": "utrzymaj" },
-        { "nazwa": "Przywodzenie maszyna",    "kg": 30,  "serie": "15-15-10",    "status": "utrzymaj" },
-        { "nazwa": "Odwodzenie maszyna",      "kg": 60,  "serie": "12-12-12",    "status": "utrzymaj" }
+        {
+          "nazwa": "Hip thrust ze sztangą",
+          "kg": 65,
+          "serie": "10-10-10-10",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "RDL ze sztangą",
+          "kg": 40,
+          "serie": "10-10-10-10",
+          "status": "progresja"
+        },
+        {
+          "nazwa": "Wykroki bułgarskie",
+          "kg": 12,
+          "serie": "12-12-12",
+          "status": "progresja"
+        },
+        {
+          "nazwa": "Odwodzenie wyciąg",
+          "kg": 18,
+          "serie": "8-8",
+          "status": "uwaga"
+        },
+        {
+          "nazwa": "Kickbacki wyciąg",
+          "kg": 27,
+          "serie": "10-10",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Przywodzenie maszyna",
+          "kg": 30,
+          "serie": "15-15-10",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Odwodzenie maszyna",
+          "kg": 60,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        }
       ]
     },
     {
@@ -225,13 +295,48 @@
       "obciazenie_aerobowe": 3.7,
       "notatka": "Przysiad 42,5 kg 4×8 · Sumo 26 kg · Prostowanie 40 kg nowy ciężar",
       "cwiczenia": [
-        { "nazwa": "Przysiad ze sztangą",  "kg": 42.5, "serie": "8-8-8-8",    "status": "utrzymaj" },
-        { "nazwa": "Sumo martwy ciąg",     "kg": 26,   "serie": "12-12-12",   "status": "progresja" },
-        { "nazwa": "Step-ups z hantlami",  "kg": 14,   "serie": "12-12-12",   "status": "utrzymaj" },
-        { "nazwa": "Suwnica leg press",    "kg": 70,   "serie": "12-12-12",   "status": "uwaga" },
-        { "nazwa": "Ławka rzymska",         "kg": 24,   "serie": "12-12-12",   "status": "utrzymaj" },
-        { "nazwa": "RDL z hantlami SS1",   "kg": 24,   "serie": "20-20-20",   "status": "utrzymaj" },
-        { "nazwa": "Prostowanie nóg SS1",  "kg": 40,   "serie": "10-10-10",   "status": "progresja" }
+        {
+          "nazwa": "Przysiad ze sztangą",
+          "kg": 42.5,
+          "serie": "8-8-8-8",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Sumo martwy ciąg",
+          "kg": 26,
+          "serie": "12-12-12",
+          "status": "progresja"
+        },
+        {
+          "nazwa": "Step-ups z hantlami",
+          "kg": 14,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Suwnica leg press",
+          "kg": 70,
+          "serie": "12-12-12",
+          "status": "uwaga"
+        },
+        {
+          "nazwa": "Ławka rzymska",
+          "kg": 24,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "RDL z hantlami SS1",
+          "kg": 24,
+          "serie": "20-20-20",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Prostowanie nóg SS1",
+          "kg": 40,
+          "serie": "10-10-10",
+          "status": "progresja"
+        }
       ]
     },
     {
@@ -248,15 +353,60 @@
       "obciazenie_aerobowe": 3.0,
       "notatka": "Wyciskanie 25 kg 4×8 · Wiosłowanie 37,5 kg · Biceps/Triceps 12,5 kg nowy ciężar",
       "cwiczenia": [
-        { "nazwa": "Wyciskanie płaska",       "kg": 25,   "serie": "8-8-8-8",    "status": "utrzymaj" },
-        { "nazwa": "Skos hantlami",           "kg": 9,    "serie": "12-12-12-12","status": "utrzymaj" },
-        { "nazwa": "OHP hantlami",            "kg": 8,    "serie": "12-12-12",   "status": "utrzymaj" },
-        { "nazwa": "Laterals",                "kg": 6,    "serie": "12-12-12",   "status": "uwaga" },
-        { "nazwa": "Wiosłowanie",             "kg": 37.5, "serie": "10-10-10-10","status": "progresja" },
-        { "nazwa": "Przyciąganie linki",      "kg": 35,   "serie": "8-8-8",      "status": "utrzymaj" },
-        { "nazwa": "Face pulls",              "kg": 25,   "serie": "15-15-15",   "status": "progresja" },
-        { "nazwa": "Biceps SS1",              "kg": 12.5, "serie": "12-12-12",   "status": "progresja" },
-        { "nazwa": "Triceps SS1",             "kg": 12.5, "serie": "12-12-12",   "status": "progresja" }
+        {
+          "nazwa": "Wyciskanie płaska",
+          "kg": 25,
+          "serie": "8-8-8-8",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Skos hantlami",
+          "kg": 9,
+          "serie": "12-12-12-12",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "OHP hantlami",
+          "kg": 8,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Laterals",
+          "kg": 6,
+          "serie": "12-12-12",
+          "status": "uwaga"
+        },
+        {
+          "nazwa": "Wiosłowanie",
+          "kg": 37.5,
+          "serie": "10-10-10-10",
+          "status": "progresja"
+        },
+        {
+          "nazwa": "Przyciąganie linki",
+          "kg": 35,
+          "serie": "8-8-8",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Face pulls",
+          "kg": 25,
+          "serie": "15-15-15",
+          "status": "progresja"
+        },
+        {
+          "nazwa": "Biceps SS1",
+          "kg": 12.5,
+          "serie": "12-12-12",
+          "status": "progresja"
+        },
+        {
+          "nazwa": "Triceps SS1",
+          "kg": 12.5,
+          "serie": "12-12-12",
+          "status": "progresja"
+        }
       ]
     },
     {
@@ -273,13 +423,48 @@
       "obciazenie_aerobowe": 3.7,
       "notatka": "Hip thrust 65 kg 4×10 🚀 · RDL 37,5 kg · Kickbacki 27,5 kg",
       "cwiczenia": [
-        { "nazwa": "Hip thrust ze sztangą",  "kg": 65,   "serie": "10-10-10-10", "status": "rekord" },
-        { "nazwa": "RDL ze sztangą",          "kg": 37.5, "serie": "10-10-10-10", "status": "utrzymaj" },
-        { "nazwa": "Wykroki bułgarskie",      "kg": 12.5, "serie": "10-10-10",    "status": "utrzymaj" },
-        { "nazwa": "Odwodzenie wyciąg",       "kg": 17.5, "serie": "15-15",       "status": "progresja" },
-        { "nazwa": "Kickbacki wyciąg",        "kg": 27.5, "serie": "15-15",       "status": "utrzymaj" },
-        { "nazwa": "Przywodzenie maszyna",    "kg": 30,   "serie": "15-15-15",    "status": "utrzymaj" },
-        { "nazwa": "Odwodzenie maszyna",      "kg": 60,   "serie": "13-13-13",    "status": "utrzymaj" }
+        {
+          "nazwa": "Hip thrust ze sztangą",
+          "kg": 65,
+          "serie": "10-10-10-10",
+          "status": "rekord"
+        },
+        {
+          "nazwa": "RDL ze sztangą",
+          "kg": 37.5,
+          "serie": "10-10-10-10",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Wykroki bułgarskie",
+          "kg": 12.5,
+          "serie": "10-10-10",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Odwodzenie wyciąg",
+          "kg": 17.5,
+          "serie": "15-15",
+          "status": "progresja"
+        },
+        {
+          "nazwa": "Kickbacki wyciąg",
+          "kg": 27.5,
+          "serie": "15-15",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Przywodzenie maszyna",
+          "kg": 30,
+          "serie": "15-15-15",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Odwodzenie maszyna",
+          "kg": 60,
+          "serie": "13-13-13",
+          "status": "utrzymaj"
+        }
       ]
     },
     {
@@ -296,15 +481,60 @@
       "obciazenie_aerobowe": 3.1,
       "notatka": "Wiosłowanie 35 kg 4×10 · Biceps+Triceps 20 kg ✅",
       "cwiczenia": [
-        { "nazwa": "Wyciskanie płaska",       "kg": 25,   "serie": "8-7-7-7",    "status": "utrzymaj" },
-        { "nazwa": "Skos hantlami",           "kg": 10,   "serie": "10-10-10",   "status": "progresja" },
-        { "nazwa": "OHP hantlami",            "kg": 8,    "serie": "10-10-10",   "status": "utrzymaj" },
-        { "nazwa": "Laterals",                "kg": 7,    "serie": "12-12-12",   "status": "progresja" },
-        { "nazwa": "Wiosłowanie",             "kg": 35,   "serie": "10-10-10-10","status": "rekord" },
-        { "nazwa": "Przyciąganie linki",      "kg": 35,   "serie": "10-8-7",     "status": "uwaga" },
-        { "nazwa": "Face pulls",              "kg": 20,   "serie": "15-15-15",   "status": "utrzymaj" },
-        { "nazwa": "Biceps SS1",              "kg": 20,   "serie": "12-12-12",   "status": "progresja" },
-        { "nazwa": "Triceps SS1",             "kg": 20,   "serie": "12-12-12",   "status": "progresja" }
+        {
+          "nazwa": "Wyciskanie płaska",
+          "kg": 25,
+          "serie": "8-7-7-7",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Skos hantlami",
+          "kg": 10,
+          "serie": "10-10-10",
+          "status": "progresja"
+        },
+        {
+          "nazwa": "OHP hantlami",
+          "kg": 8,
+          "serie": "10-10-10",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Laterals",
+          "kg": 7,
+          "serie": "12-12-12",
+          "status": "progresja"
+        },
+        {
+          "nazwa": "Wiosłowanie",
+          "kg": 35,
+          "serie": "10-10-10-10",
+          "status": "rekord"
+        },
+        {
+          "nazwa": "Przyciąganie linki",
+          "kg": 35,
+          "serie": "10-8-7",
+          "status": "uwaga"
+        },
+        {
+          "nazwa": "Face pulls",
+          "kg": 20,
+          "serie": "15-15-15",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Biceps SS1",
+          "kg": 20,
+          "serie": "12-12-12",
+          "status": "progresja"
+        },
+        {
+          "nazwa": "Triceps SS1",
+          "kg": 20,
+          "serie": "12-12-12",
+          "status": "progresja"
+        }
       ]
     },
     {
@@ -321,13 +551,48 @@
       "obciazenie_aerobowe": 3.3,
       "notatka": "3 progresje jednocześnie · Przysiad 42,5 kg 7x4 · Sumo 25 kg 12×4 · Suwnica 80 kg ✅",
       "cwiczenia": [
-        { "nazwa": "Przysiad ze sztangą",  "kg": 42.5, "serie": "7-7-7-7",    "status": "utrzymaj" },
-        { "nazwa": "Sumo martwy ciąg",     "kg": 25,   "serie": "12-12-12-12","status": "rekord" },
-        { "nazwa": "Step-ups z hantlami",  "kg": 15,   "serie": "12-12-12",   "status": "progresja" },
-        { "nazwa": "Suwnica leg press",    "kg": 80,   "serie": "12-12-12",   "status": "rekord" },
-        { "nazwa": "Ławka rzymska",         "kg": 22.5, "serie": "12-12-12",   "status": "progresja" },
-        { "nazwa": "RDL z hantlami SS1",   "kg": 28,   "serie": "20-20-20",   "status": "utrzymaj" },
-        { "nazwa": "Prostowanie nóg SS1",  "kg": 35,   "serie": "15-15-15",   "status": "progresja" }
+        {
+          "nazwa": "Przysiad ze sztangą",
+          "kg": 42.5,
+          "serie": "7-7-7-7",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Sumo martwy ciąg",
+          "kg": 25,
+          "serie": "12-12-12-12",
+          "status": "rekord"
+        },
+        {
+          "nazwa": "Step-ups z hantlami",
+          "kg": 15,
+          "serie": "12-12-12",
+          "status": "progresja"
+        },
+        {
+          "nazwa": "Suwnica leg press",
+          "kg": 80,
+          "serie": "12-12-12",
+          "status": "rekord"
+        },
+        {
+          "nazwa": "Ławka rzymska",
+          "kg": 22.5,
+          "serie": "12-12-12",
+          "status": "progresja"
+        },
+        {
+          "nazwa": "RDL z hantlami SS1",
+          "kg": 28,
+          "serie": "20-20-20",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Prostowanie nóg SS1",
+          "kg": 35,
+          "serie": "15-15-15",
+          "status": "progresja"
+        }
       ]
     },
     {
@@ -344,13 +609,48 @@
       "obciazenie_aerobowe": 3.9,
       "notatka": "Hip thrust 62,5 kg 4×10 🚀 · Wykroki 12,5 kg 8-8-8",
       "cwiczenia": [
-        { "nazwa": "Hip thrust ze sztangą",  "kg": 62.5, "serie": "10-10-10-10", "status": "rekord" },
-        { "nazwa": "RDL ze sztangą",          "kg": 37.5, "serie": "10-10-10-10", "status": "utrzymaj" },
-        { "nazwa": "Wykroki bułgarskie",      "kg": 12.5, "serie": "8-8-8",       "status": "uwaga" },
-        { "nazwa": "Odwodzenie wyciąg",       "kg": 15,   "serie": "15-15-15",    "status": "utrzymaj" },
-        { "nazwa": "Kickbacki wyciąg",        "kg": 27.5, "serie": "15-15-15",    "status": "utrzymaj" },
-        { "nazwa": "Przywodzenie maszyna",    "kg": 30,   "serie": "20-15-10",    "status": "utrzymaj" },
-        { "nazwa": "Odwodzenie maszyna",      "kg": 70,   "serie": "8-8-8",       "status": "uwaga" }
+        {
+          "nazwa": "Hip thrust ze sztangą",
+          "kg": 62.5,
+          "serie": "10-10-10-10",
+          "status": "rekord"
+        },
+        {
+          "nazwa": "RDL ze sztangą",
+          "kg": 37.5,
+          "serie": "10-10-10-10",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Wykroki bułgarskie",
+          "kg": 12.5,
+          "serie": "8-8-8",
+          "status": "uwaga"
+        },
+        {
+          "nazwa": "Odwodzenie wyciąg",
+          "kg": 15,
+          "serie": "15-15-15",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Kickbacki wyciąg",
+          "kg": 27.5,
+          "serie": "15-15-15",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Przywodzenie maszyna",
+          "kg": 30,
+          "serie": "20-15-10",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Odwodzenie maszyna",
+          "kg": 70,
+          "serie": "8-8-8",
+          "status": "uwaga"
+        }
       ]
     },
     {
@@ -367,15 +667,60 @@
       "obciazenie_aerobowe": 3.2,
       "notatka": "Biceps+Triceps 20 kg ✅ · Wiosłowanie 35 kg 3×10",
       "cwiczenia": [
-        { "nazwa": "Wyciskanie płaska",       "kg": 25,   "serie": "7-7-7-7",    "status": "utrzymaj" },
-        { "nazwa": "Skos hantlami",           "kg": 9,    "serie": "12-12-12-9", "status": "utrzymaj" },
-        { "nazwa": "OHP hantlami",            "kg": 8,    "serie": "10-10-9",    "status": "utrzymaj" },
-        { "nazwa": "Laterals",                "kg": 7,    "serie": "10-10-10",   "status": "utrzymaj" },
-        { "nazwa": "Wiosłowanie",             "kg": 35,   "serie": "10-10-10",   "status": "utrzymaj" },
-        { "nazwa": "Przyciąganie linki",      "kg": 35,   "serie": "8-8-8",      "status": "utrzymaj" },
-        { "nazwa": "Face pulls",              "kg": 20,   "serie": "15-15-15",   "status": "utrzymaj" },
-        { "nazwa": "Biceps SS1",              "kg": 20,   "serie": "12-12-12",   "status": "progresja" },
-        { "nazwa": "Triceps SS1",             "kg": 20,   "serie": "12-12-12",   "status": "progresja" }
+        {
+          "nazwa": "Wyciskanie płaska",
+          "kg": 25,
+          "serie": "7-7-7-7",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Skos hantlami",
+          "kg": 9,
+          "serie": "12-12-12-9",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "OHP hantlami",
+          "kg": 8,
+          "serie": "10-10-9",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Laterals",
+          "kg": 7,
+          "serie": "10-10-10",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Wiosłowanie",
+          "kg": 35,
+          "serie": "10-10-10",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Przyciąganie linki",
+          "kg": 35,
+          "serie": "8-8-8",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Face pulls",
+          "kg": 20,
+          "serie": "15-15-15",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Biceps SS1",
+          "kg": 20,
+          "serie": "12-12-12",
+          "status": "progresja"
+        },
+        {
+          "nazwa": "Triceps SS1",
+          "kg": 20,
+          "serie": "12-12-12",
+          "status": "progresja"
+        }
       ]
     },
     {
@@ -392,13 +737,48 @@
       "obciazenie_aerobowe": 3.2,
       "notatka": "Przysiad 42,5 kg 6×4 · Sumo 24 kg 12×4",
       "cwiczenia": [
-        { "nazwa": "Przysiad ze sztangą",  "kg": 42.5, "serie": "6-6-6-6",    "status": "utrzymaj" },
-        { "nazwa": "Sumo martwy ciąg",     "kg": 24,   "serie": "12-12-12-12","status": "utrzymaj" },
-        { "nazwa": "Step-ups z hantlami",  "kg": 12.5, "serie": "12-12-12",   "status": "utrzymaj" },
-        { "nazwa": "Suwnica leg press",    "kg": 80,   "serie": "12-10-10",   "status": "utrzymaj" },
-        { "nazwa": "Ławka rzymska",         "kg": 22.5, "serie": "12-12-12",   "status": "utrzymaj" },
-        { "nazwa": "RDL z hantlami SS1",   "kg": 28,   "serie": "20-20-20",   "status": "utrzymaj" },
-        { "nazwa": "Prostowanie nóg SS1",  "kg": 35,   "serie": "12-12-12",   "status": "utrzymaj" }
+        {
+          "nazwa": "Przysiad ze sztangą",
+          "kg": 42.5,
+          "serie": "6-6-6-6",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Sumo martwy ciąg",
+          "kg": 24,
+          "serie": "12-12-12-12",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Step-ups z hantlami",
+          "kg": 12.5,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Suwnica leg press",
+          "kg": 80,
+          "serie": "12-10-10",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Ławka rzymska",
+          "kg": 22.5,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "RDL z hantlami SS1",
+          "kg": 28,
+          "serie": "20-20-20",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Prostowanie nóg SS1",
+          "kg": 35,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        }
       ]
     },
     {
@@ -415,15 +795,60 @@
       "obciazenie_aerobowe": 2.6,
       "notatka": "Powrót po kontuzji szyi 🩹 · ostrożnie ze wszystkim",
       "cwiczenia": [
-        { "nazwa": "Wyciskanie płaska",       "kg": 25,   "serie": "8-8-8-8",    "status": "utrzymaj" },
-        { "nazwa": "Skos hantlami",           "kg": 9,    "serie": "12-12-9-9",  "status": "uwaga" },
-        { "nazwa": "OHP hantlami",            "kg": 8,    "serie": "10-10-10",   "status": "utrzymaj" },
-        { "nazwa": "Laterals",                "kg": 6,    "serie": "12-12-12",   "status": "uwaga" },
-        { "nazwa": "Wiosłowanie",             "kg": 35,   "serie": "10-10-10-10","status": "utrzymaj" },
-        { "nazwa": "Przyciąganie linki",      "kg": 26,   "serie": "12-12-12",   "status": "uwaga" },
-        { "nazwa": "Face pulls",              "kg": 10,   "serie": "15-15-15",   "status": "uwaga" },
-        { "nazwa": "Biceps SS1",              "kg": 10,   "serie": "12-12-12",   "status": "uwaga" },
-        { "nazwa": "Triceps SS1",             "kg": 10,   "serie": "12-12-12",   "status": "uwaga" }
+        {
+          "nazwa": "Wyciskanie płaska",
+          "kg": 25,
+          "serie": "8-8-8-8",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Skos hantlami",
+          "kg": 9,
+          "serie": "12-12-9-9",
+          "status": "uwaga"
+        },
+        {
+          "nazwa": "OHP hantlami",
+          "kg": 8,
+          "serie": "10-10-10",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Laterals",
+          "kg": 6,
+          "serie": "12-12-12",
+          "status": "uwaga"
+        },
+        {
+          "nazwa": "Wiosłowanie",
+          "kg": 35,
+          "serie": "10-10-10-10",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Przyciąganie linki",
+          "kg": 26,
+          "serie": "12-12-12",
+          "status": "uwaga"
+        },
+        {
+          "nazwa": "Face pulls",
+          "kg": 10,
+          "serie": "15-15-15",
+          "status": "uwaga"
+        },
+        {
+          "nazwa": "Biceps SS1",
+          "kg": 10,
+          "serie": "12-12-12",
+          "status": "uwaga"
+        },
+        {
+          "nazwa": "Triceps SS1",
+          "kg": 10,
+          "serie": "12-12-12",
+          "status": "uwaga"
+        }
       ]
     },
     {
@@ -440,13 +865,48 @@
       "obciazenie_aerobowe": 3.7,
       "notatka": "Hip thrust 60 kg 🚀 · RDL 35 kg · Odwodzenie 15 kg 12×3",
       "cwiczenia": [
-        { "nazwa": "Hip thrust ze sztangą",  "kg": 60,   "serie": "10-10-10-10", "status": "rekord" },
-        { "nazwa": "RDL ze sztangą",          "kg": 35,   "serie": "10-10-10-10", "status": "progresja" },
-        { "nazwa": "Wykroki bułgarskie",      "kg": 10,   "serie": "10-10-10",    "status": "utrzymaj" },
-        { "nazwa": "Odwodzenie wyciąg",       "kg": 15,   "serie": "12-12-12",    "status": "utrzymaj" },
-        { "nazwa": "Kickbacki wyciąg",        "kg": 25,   "serie": "12-12-12",    "status": "utrzymaj" },
-        { "nazwa": "Przywodzenie maszyna",    "kg": 30,   "serie": "15-12-12",    "status": "utrzymaj" },
-        { "nazwa": "Odwodzenie maszyna",      "kg": 65,   "serie": "12-12-12",    "status": "utrzymaj" }
+        {
+          "nazwa": "Hip thrust ze sztangą",
+          "kg": 60,
+          "serie": "10-10-10-10",
+          "status": "rekord"
+        },
+        {
+          "nazwa": "RDL ze sztangą",
+          "kg": 35,
+          "serie": "10-10-10-10",
+          "status": "progresja"
+        },
+        {
+          "nazwa": "Wykroki bułgarskie",
+          "kg": 10,
+          "serie": "10-10-10",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Odwodzenie wyciąg",
+          "kg": 15,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Kickbacki wyciąg",
+          "kg": 25,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Przywodzenie maszyna",
+          "kg": 30,
+          "serie": "15-12-12",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Odwodzenie maszyna",
+          "kg": 65,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        }
       ]
     },
     {
@@ -463,15 +923,60 @@
       "obciazenie_aerobowe": 2.4,
       "notatka": "Wiosłowanie 35 kg 🚀 · Face pulls 20 kg",
       "cwiczenia": [
-        { "nazwa": "Wyciskanie płaska",       "kg": 25,   "serie": "8-8-8-8",    "status": "utrzymaj" },
-        { "nazwa": "Skos hantlami",           "kg": 9,    "serie": "12-12-12-12","status": "utrzymaj" },
-        { "nazwa": "OHP hantlami",            "kg": 8,    "serie": "12-9-9",     "status": "uwaga" },
-        { "nazwa": "Laterals",                "kg": 7,    "serie": "10-10-9",    "status": "uwaga" },
-        { "nazwa": "Wiosłowanie",             "kg": 35,   "serie": "8-8-8-8",    "status": "rekord" },
-        { "nazwa": "Przyciąganie linki",      "kg": 30,   "serie": "12-12-12",   "status": "utrzymaj" },
-        { "nazwa": "Face pulls",              "kg": 20,   "serie": "12-12-12",   "status": "progresja" },
-        { "nazwa": "Biceps SS1",              "kg": 20,   "serie": "10-9-8",     "status": "uwaga" },
-        { "nazwa": "Triceps SS1",             "kg": 20,   "serie": "10-10-10",   "status": "utrzymaj" }
+        {
+          "nazwa": "Wyciskanie płaska",
+          "kg": 25,
+          "serie": "8-8-8-8",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Skos hantlami",
+          "kg": 9,
+          "serie": "12-12-12-12",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "OHP hantlami",
+          "kg": 8,
+          "serie": "12-9-9",
+          "status": "uwaga"
+        },
+        {
+          "nazwa": "Laterals",
+          "kg": 7,
+          "serie": "10-10-9",
+          "status": "uwaga"
+        },
+        {
+          "nazwa": "Wiosłowanie",
+          "kg": 35,
+          "serie": "8-8-8-8",
+          "status": "rekord"
+        },
+        {
+          "nazwa": "Przyciąganie linki",
+          "kg": 30,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Face pulls",
+          "kg": 20,
+          "serie": "12-12-12",
+          "status": "progresja"
+        },
+        {
+          "nazwa": "Biceps SS1",
+          "kg": 20,
+          "serie": "10-9-8",
+          "status": "uwaga"
+        },
+        {
+          "nazwa": "Triceps SS1",
+          "kg": 20,
+          "serie": "10-10-10",
+          "status": "utrzymaj"
+        }
       ]
     },
     {
@@ -488,13 +993,48 @@
       "obciazenie_aerobowe": 3.6,
       "notatka": "Przysiad 40 kg 4×8 🚀 · Sumo 24 kg 15×4",
       "cwiczenia": [
-        { "nazwa": "Przysiad ze sztangą",  "kg": 40,   "serie": "8-8-8-8",    "status": "rekord" },
-        { "nazwa": "Sumo martwy ciąg",     "kg": 24,   "serie": "15-15-15-15","status": "utrzymaj" },
-        { "nazwa": "Step-ups z hantlami",  "kg": 12.5, "serie": "12-12-12",   "status": "utrzymaj" },
-        { "nazwa": "Suwnica leg press",    "kg": 80,   "serie": "12-12-10",   "status": "utrzymaj" },
-        { "nazwa": "Ławka rzymska",         "kg": 20,   "serie": "12-12-12",   "status": "utrzymaj" },
-        { "nazwa": "RDL z hantlami SS1",   "kg": 25,   "serie": "18-16-16",   "status": "utrzymaj" },
-        { "nazwa": "Prostowanie nóg SS1",  "kg": 30,   "serie": "15-15-15",   "status": "utrzymaj" }
+        {
+          "nazwa": "Przysiad ze sztangą",
+          "kg": 40,
+          "serie": "8-8-8-8",
+          "status": "rekord"
+        },
+        {
+          "nazwa": "Sumo martwy ciąg",
+          "kg": 24,
+          "serie": "15-15-15-15",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Step-ups z hantlami",
+          "kg": 12.5,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Suwnica leg press",
+          "kg": 80,
+          "serie": "12-12-10",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Ławka rzymska",
+          "kg": 20,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "RDL z hantlami SS1",
+          "kg": 25,
+          "serie": "18-16-16",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Prostowanie nóg SS1",
+          "kg": 30,
+          "serie": "15-15-15",
+          "status": "utrzymaj"
+        }
       ]
     },
     {
@@ -511,13 +1051,48 @@
       "obciazenie_aerobowe": 3.9,
       "notatka": "Hip thrust 57,5 kg · Przywodzenie 3×20 ✅ · RDL 32,5 kg",
       "cwiczenia": [
-        { "nazwa": "Hip thrust ze sztangą",  "kg": 57.5, "serie": "10-10-10-10", "status": "progresja" },
-        { "nazwa": "RDL ze sztangą",          "kg": 32.5, "serie": "10-10-10-10", "status": "progresja" },
-        { "nazwa": "Wykroki bułgarskie",      "kg": 10,   "serie": "10-10-10",    "status": "utrzymaj" },
-        { "nazwa": "Odwodzenie wyciąg",       "kg": 12.5, "serie": "15-15",       "status": "utrzymaj" },
-        { "nazwa": "Kickbacki wyciąg",        "kg": 20,   "serie": "15-15",       "status": "utrzymaj" },
-        { "nazwa": "Przywodzenie maszyna",    "kg": 25,   "serie": "20-20-20",    "status": "rekord" },
-        { "nazwa": "Odwodzenie maszyna",      "kg": 60,   "serie": "12-12-12",    "status": "utrzymaj" }
+        {
+          "nazwa": "Hip thrust ze sztangą",
+          "kg": 57.5,
+          "serie": "10-10-10-10",
+          "status": "progresja"
+        },
+        {
+          "nazwa": "RDL ze sztangą",
+          "kg": 32.5,
+          "serie": "10-10-10-10",
+          "status": "progresja"
+        },
+        {
+          "nazwa": "Wykroki bułgarskie",
+          "kg": 10,
+          "serie": "10-10-10",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Odwodzenie wyciąg",
+          "kg": 12.5,
+          "serie": "15-15",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Kickbacki wyciąg",
+          "kg": 20,
+          "serie": "15-15",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Przywodzenie maszyna",
+          "kg": 25,
+          "serie": "20-20-20",
+          "status": "rekord"
+        },
+        {
+          "nazwa": "Odwodzenie maszyna",
+          "kg": 60,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        }
       ]
     },
     {
@@ -534,15 +1109,60 @@
       "obciazenie_aerobowe": 2.6,
       "notatka": "Wiosłowanie 30 kg 🚀 · Skos 9 kg 12×3",
       "cwiczenia": [
-        { "nazwa": "Wyciskanie płaska",       "kg": 22.5, "serie": "8-8-8-8",    "status": "utrzymaj" },
-        { "nazwa": "Skos hantlami",           "kg": 9,    "serie": "12-12-11",   "status": "utrzymaj" },
-        { "nazwa": "OHP hantlami",            "kg": 8,    "serie": "10-8-8",     "status": "uwaga" },
-        { "nazwa": "Laterals",                "kg": 6,    "serie": "12-12-12",   "status": "utrzymaj" },
-        { "nazwa": "Wiosłowanie",             "kg": 30,   "serie": "10-10-10-10","status": "rekord" },
-        { "nazwa": "Przyciąganie linki",      "kg": 30,   "serie": "12-12-10",   "status": "utrzymaj" },
-        { "nazwa": "Face pulls",              "kg": 17.5, "serie": "15-15-15",   "status": "utrzymaj" },
-        { "nazwa": "Biceps SS1",              "kg": 17.5, "serie": "12-12-12",   "status": "utrzymaj" },
-        { "nazwa": "Triceps SS1",             "kg": 17.5, "serie": "12-12-12",   "status": "utrzymaj" }
+        {
+          "nazwa": "Wyciskanie płaska",
+          "kg": 22.5,
+          "serie": "8-8-8-8",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Skos hantlami",
+          "kg": 9,
+          "serie": "12-12-11",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "OHP hantlami",
+          "kg": 8,
+          "serie": "10-8-8",
+          "status": "uwaga"
+        },
+        {
+          "nazwa": "Laterals",
+          "kg": 6,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Wiosłowanie",
+          "kg": 30,
+          "serie": "10-10-10-10",
+          "status": "rekord"
+        },
+        {
+          "nazwa": "Przyciąganie linki",
+          "kg": 30,
+          "serie": "12-12-10",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Face pulls",
+          "kg": 17.5,
+          "serie": "15-15-15",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Biceps SS1",
+          "kg": 17.5,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Triceps SS1",
+          "kg": 17.5,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        }
       ]
     },
     {
@@ -559,13 +1179,48 @@
       "obciazenie_aerobowe": 3.5,
       "notatka": "Suwnica 80 kg 4×10 · Przysiad 37,5 kg 4×8",
       "cwiczenia": [
-        { "nazwa": "Przysiad ze sztangą",  "kg": 37.5, "serie": "8-8-8-8",    "status": "progresja" },
-        { "nazwa": "Sumo martwy ciąg",     "kg": 22.5, "serie": "12-12-12-12","status": "utrzymaj" },
-        { "nazwa": "Step-ups z hantlami",  "kg": 12.5, "serie": "12-12-12",   "status": "utrzymaj" },
-        { "nazwa": "Suwnica leg press",    "kg": 80,   "serie": "10-10-10-10","status": "rekord" },
-        { "nazwa": "Ławka rzymska",         "kg": 20,   "serie": "12-12-12",   "status": "utrzymaj" },
-        { "nazwa": "RDL z hantlami SS1",   "kg": 20,   "serie": "20-20-20",   "status": "utrzymaj" },
-        { "nazwa": "Prostowanie nóg SS1",  "kg": 25,   "serie": "12-12-12",   "status": "utrzymaj" }
+        {
+          "nazwa": "Przysiad ze sztangą",
+          "kg": 37.5,
+          "serie": "8-8-8-8",
+          "status": "progresja"
+        },
+        {
+          "nazwa": "Sumo martwy ciąg",
+          "kg": 22.5,
+          "serie": "12-12-12-12",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Step-ups z hantlami",
+          "kg": 12.5,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Suwnica leg press",
+          "kg": 80,
+          "serie": "10-10-10-10",
+          "status": "rekord"
+        },
+        {
+          "nazwa": "Ławka rzymska",
+          "kg": 20,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "RDL z hantlami SS1",
+          "kg": 20,
+          "serie": "20-20-20",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Prostowanie nóg SS1",
+          "kg": 25,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        }
       ]
     },
     {
@@ -582,13 +1237,48 @@
       "obciazenie_aerobowe": 4.0,
       "notatka": "Hip thrust 55 kg 4×10 💯 · RDL 30 kg komplet",
       "cwiczenia": [
-        { "nazwa": "Hip thrust ze sztangą",  "kg": 55,   "serie": "10-10-10-10", "status": "rekord" },
-        { "nazwa": "RDL ze sztangą",          "kg": 30,   "serie": "10-10-10-10", "status": "progresja" },
-        { "nazwa": "Wykroki bułgarskie",      "kg": 8,    "serie": "10-10-10",    "status": "utrzymaj" },
-        { "nazwa": "Odwodzenie wyciąg",       "kg": 10,   "serie": "15-15-15",    "status": "utrzymaj" },
-        { "nazwa": "Kickbacki wyciąg",        "kg": 20,   "serie": "15-15-15",    "status": "utrzymaj" },
-        { "nazwa": "Przywodzenie maszyna",    "kg": 25,   "serie": "20-15",       "status": "utrzymaj" },
-        { "nazwa": "Odwodzenie maszyna",      "kg": 60,   "serie": "10-10-10",    "status": "utrzymaj" }
+        {
+          "nazwa": "Hip thrust ze sztangą",
+          "kg": 55,
+          "serie": "10-10-10-10",
+          "status": "rekord"
+        },
+        {
+          "nazwa": "RDL ze sztangą",
+          "kg": 30,
+          "serie": "10-10-10-10",
+          "status": "progresja"
+        },
+        {
+          "nazwa": "Wykroki bułgarskie",
+          "kg": 8,
+          "serie": "10-10-10",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Odwodzenie wyciąg",
+          "kg": 10,
+          "serie": "15-15-15",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Kickbacki wyciąg",
+          "kg": 20,
+          "serie": "15-15-15",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Przywodzenie maszyna",
+          "kg": 25,
+          "serie": "20-15",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Odwodzenie maszyna",
+          "kg": 60,
+          "serie": "10-10-10",
+          "status": "utrzymaj"
+        }
       ]
     },
     {
@@ -605,15 +1295,60 @@
       "obciazenie_aerobowe": 3.2,
       "notatka": "Wyciskanie 20 kg 10×4 · Wiosłowanie 25 kg",
       "cwiczenia": [
-        { "nazwa": "Wyciskanie płaska",       "kg": 20,   "serie": "10-10-10-10","status": "utrzymaj" },
-        { "nazwa": "Skos hantlami",           "kg": 8,    "serie": "12-12-12",   "status": "utrzymaj" },
-        { "nazwa": "OHP hantlami",            "kg": 8,    "serie": "12-10-10",   "status": "utrzymaj" },
-        { "nazwa": "Laterals",                "kg": 5,    "serie": "15-15-15",   "status": "utrzymaj" },
-        { "nazwa": "Wiosłowanie",             "kg": 25,   "serie": "10-10-10-10","status": "utrzymaj" },
-        { "nazwa": "Przyciąganie linki",      "kg": 25,   "serie": "12-12-12",   "status": "utrzymaj" },
-        { "nazwa": "Face pulls",              "kg": 15,   "serie": "15-15-15",   "status": "utrzymaj" },
-        { "nazwa": "Biceps SS1",              "kg": 15,   "serie": "12-12-12",   "status": "utrzymaj" },
-        { "nazwa": "Triceps SS1",             "kg": 15,   "serie": "12-12-12",   "status": "utrzymaj" }
+        {
+          "nazwa": "Wyciskanie płaska",
+          "kg": 20,
+          "serie": "10-10-10-10",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Skos hantlami",
+          "kg": 8,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "OHP hantlami",
+          "kg": 8,
+          "serie": "12-10-10",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Laterals",
+          "kg": 5,
+          "serie": "15-15-15",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Wiosłowanie",
+          "kg": 25,
+          "serie": "10-10-10-10",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Przyciąganie linki",
+          "kg": 25,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Face pulls",
+          "kg": 15,
+          "serie": "15-15-15",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Biceps SS1",
+          "kg": 15,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Triceps SS1",
+          "kg": 15,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        }
       ]
     },
     {
@@ -630,13 +1365,48 @@
       "obciazenie_aerobowe": 3.9,
       "notatka": "Przysiad 35 kg · ciśnienie · trudna sesja",
       "cwiczenia": [
-        { "nazwa": "Przysiad ze sztangą",  "kg": 35,   "serie": "10-10-10-10","status": "utrzymaj" },
-        { "nazwa": "Sumo martwy ciąg",     "kg": 20,   "serie": "12-12-12",   "status": "utrzymaj" },
-        { "nazwa": "Step-ups z hantlami",  "kg": 10,   "serie": "12-12-12",   "status": "utrzymaj" },
-        { "nazwa": "Suwnica leg press",    "kg": 80,   "serie": "8-8-8",      "status": "uwaga" },
-        { "nazwa": "Ławka rzymska",         "kg": 20,   "serie": "12-12",      "status": "uwaga" },
-        { "nazwa": "RDL z hantlami SS1",   "kg": 20,   "serie": "20-20-20",   "status": "utrzymaj" },
-        { "nazwa": "Prostowanie nóg SS1",  "kg": 20,   "serie": "12-12-12",   "status": "utrzymaj" }
+        {
+          "nazwa": "Przysiad ze sztangą",
+          "kg": 35,
+          "serie": "10-10-10-10",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Sumo martwy ciąg",
+          "kg": 20,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Step-ups z hantlami",
+          "kg": 10,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Suwnica leg press",
+          "kg": 80,
+          "serie": "8-8-8",
+          "status": "uwaga"
+        },
+        {
+          "nazwa": "Ławka rzymska",
+          "kg": 20,
+          "serie": "12-12",
+          "status": "uwaga"
+        },
+        {
+          "nazwa": "RDL z hantlami SS1",
+          "kg": 20,
+          "serie": "20-20-20",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Prostowanie nóg SS1",
+          "kg": 20,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        }
       ]
     },
     {
@@ -653,13 +1423,48 @@
       "obciazenie_aerobowe": 3.5,
       "notatka": "Solidny start Cyklu 1 · Przysiad 35 kg",
       "cwiczenia": [
-        { "nazwa": "Przysiad ze sztangą",  "kg": 35,   "serie": "10-10-10-10","status": "utrzymaj" },
-        { "nazwa": "Sumo martwy ciąg",     "kg": 20,   "serie": "12-12-12",   "status": "utrzymaj" },
-        { "nazwa": "Step-ups z hantlami",  "kg": 10,   "serie": "12-12-12",   "status": "utrzymaj" },
-        { "nazwa": "Suwnica leg press",    "kg": 80,   "serie": "10-10-10-10","status": "utrzymaj" },
-        { "nazwa": "Ławka rzymska",         "kg": 20,   "serie": "12-12-12",   "status": "utrzymaj" },
-        { "nazwa": "RDL z hantlami SS1",   "kg": 20,   "serie": "20-20-20",   "status": "utrzymaj" },
-        { "nazwa": "Prostowanie nóg SS1",  "kg": 20,   "serie": "12-12-12",   "status": "utrzymaj" }
+        {
+          "nazwa": "Przysiad ze sztangą",
+          "kg": 35,
+          "serie": "10-10-10-10",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Sumo martwy ciąg",
+          "kg": 20,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Step-ups z hantlami",
+          "kg": 10,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Suwnica leg press",
+          "kg": 80,
+          "serie": "10-10-10-10",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Ławka rzymska",
+          "kg": 20,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "RDL z hantlami SS1",
+          "kg": 20,
+          "serie": "20-20-20",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Prostowanie nóg SS1",
+          "kg": 20,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        }
       ]
     },
     {
@@ -676,15 +1481,60 @@
       "obciazenie_aerobowe": 3.2,
       "notatka": "Inna siłownia 🩹 · trudne warunki · start cyklu",
       "cwiczenia": [
-        { "nazwa": "Wyciskanie płaska",       "kg": 20,   "serie": "10-10-10-10","status": "utrzymaj" },
-        { "nazwa": "Skos hantlami",           "kg": 8,    "serie": "12-12-12",   "status": "utrzymaj" },
-        { "nazwa": "OHP hantlami",            "kg": 8,    "serie": "12-10-10",   "status": "utrzymaj" },
-        { "nazwa": "Laterals",                "kg": 5,    "serie": "15-15-15",   "status": "utrzymaj" },
-        { "nazwa": "Wiosłowanie",             "kg": 25,   "serie": "10-10-10-10","status": "utrzymaj" },
-        { "nazwa": "Przyciąganie linki",      "kg": 25,   "serie": "12-12-12",   "status": "utrzymaj" },
-        { "nazwa": "Face pulls",              "kg": 15,   "serie": "15-15-15",   "status": "utrzymaj" },
-        { "nazwa": "Biceps SS1",              "kg": 15,   "serie": "12-12-12",   "status": "utrzymaj" },
-        { "nazwa": "Triceps SS1",             "kg": 15,   "serie": "12-12-12",   "status": "utrzymaj" }
+        {
+          "nazwa": "Wyciskanie płaska",
+          "kg": 20,
+          "serie": "10-10-10-10",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Skos hantlami",
+          "kg": 8,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "OHP hantlami",
+          "kg": 8,
+          "serie": "12-10-10",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Laterals",
+          "kg": 5,
+          "serie": "15-15-15",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Wiosłowanie",
+          "kg": 25,
+          "serie": "10-10-10-10",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Przyciąganie linki",
+          "kg": 25,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Face pulls",
+          "kg": 15,
+          "serie": "15-15-15",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Biceps SS1",
+          "kg": 15,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Triceps SS1",
+          "kg": 15,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        }
       ]
     },
     {
@@ -701,14 +1551,182 @@
       "obciazenie_aerobowe": 3.9,
       "notatka": "Start cyklu 🌸 · Hip thrust 50 kg · RDL 25 kg · baza",
       "cwiczenia": [
-        { "nazwa": "Hip thrust ze sztangą",  "kg": 50,   "serie": "10-10-10-10", "status": "utrzymaj" },
-        { "nazwa": "RDL ze sztangą",          "kg": 25,   "serie": "10-10-10-10", "status": "utrzymaj" },
-        { "nazwa": "Wykroki bułgarskie",      "kg": 7,    "serie": "12-12-12",    "status": "utrzymaj" },
-        { "nazwa": "Odwodzenie wyciąg",       "kg": 15,   "serie": "12-12-12",    "status": "utrzymaj" },
-        { "nazwa": "Kickbacki wyciąg",        "kg": 30,   "serie": "10-10",       "status": "uwaga" },
-        { "nazwa": "Przywodzenie maszyna",    "kg": 30,   "serie": "15-10-10",    "status": "uwaga" },
-        { "nazwa": "Odwodzenie maszyna",      "kg": 55,   "serie": "15-15-15",    "status": "utrzymaj" }
+        {
+          "nazwa": "Hip thrust ze sztangą",
+          "kg": 50,
+          "serie": "10-10-10-10",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "RDL ze sztangą",
+          "kg": 25,
+          "serie": "10-10-10-10",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Wykroki bułgarskie",
+          "kg": 7,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Odwodzenie wyciąg",
+          "kg": 15,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Kickbacki wyciąg",
+          "kg": 30,
+          "serie": "10-10",
+          "status": "uwaga"
+        },
+        {
+          "nazwa": "Przywodzenie maszyna",
+          "kg": 30,
+          "serie": "15-10-10",
+          "status": "uwaga"
+        },
+        {
+          "nazwa": "Odwodzenie maszyna",
+          "kg": 55,
+          "serie": "15-15-15",
+          "status": "utrzymaj"
+        }
       ]
     }
-  ]
+  ],
+  "ostatni_l1": {
+    "data": "05.04.2026",
+    "data_label": "Sob 05.04",
+    "cwiczenia": {
+      "Hip thrust ze sztangą": {
+        "kg": 65,
+        "serie": "10-10-10-10",
+        "status": "2/2"
+      },
+      "RDL ze sztangą": {
+        "kg": 40,
+        "serie": "10-10-10-10",
+        "status": "0/2"
+      },
+      "Wykroki bułgarskie": {
+        "kg": 12,
+        "serie": "12-12-12",
+        "status": "1/2"
+      },
+      "Odwodzenie wyciąg": {
+        "kg": 18,
+        "serie": "8-8",
+        "status": "0/2"
+      },
+      "Kickbacki wyciąg": {
+        "kg": 27,
+        "serie": "10-10",
+        "status": "0/2"
+      },
+      "Przywodzenie maszyna": {
+        "kg": 30,
+        "serie": "15-15-10",
+        "status": "0/2"
+      },
+      "Odwodzenie maszyna": {
+        "kg": 60,
+        "serie": "12-12-12",
+        "status": "0/2"
+      }
+    }
+  },
+  "ostatni_l2": {
+    "data": "02.04.2026",
+    "data_label": "Czw 02.04",
+    "cwiczenia": {
+      "Przysiad ze sztangą": {
+        "kg": 42.5,
+        "serie": "8-8-8-8",
+        "status": "0/2"
+      },
+      "Sumo martwy ciąg": {
+        "kg": 26,
+        "serie": "12-12-12",
+        "status": "0/2"
+      },
+      "Step-ups z hantlami": {
+        "kg": 14,
+        "serie": "12-12-12",
+        "status": "0/2"
+      },
+      "Suwnica leg press": {
+        "kg": 70,
+        "serie": "12-12-12",
+        "status": "0/2"
+      },
+      "Ławka rzymska": {
+        "kg": 24,
+        "serie": "12-12-12",
+        "status": "0/2"
+      },
+      "RDL z hantlami": {
+        "kg": 24,
+        "serie": "20-20-20",
+        "status": "0/2"
+      },
+      "Prostowanie nóg": {
+        "kg": 40,
+        "serie": "10-10-10",
+        "status": "0/2"
+      }
+    }
+  },
+  "ostatni_upper": {
+    "data": "29.03.2026",
+    "data_label": "Nd 29.03",
+    "cwiczenia": {
+      "Wyciskanie płaska": {
+        "kg": 25,
+        "serie": "8-8-8-8",
+        "status": "0/2"
+      },
+      "Skos hantlami": {
+        "kg": 9,
+        "serie": "12-12-12-12",
+        "status": "0/2"
+      },
+      "OHP hantlami": {
+        "kg": 8,
+        "serie": "12-12-12",
+        "status": "0/2"
+      },
+      "Laterals": {
+        "kg": 6,
+        "serie": "12-12-12",
+        "status": "0/2"
+      },
+      "Wiosłowanie": {
+        "kg": 37.5,
+        "serie": "10-10-10-10",
+        "status": "0/2"
+      },
+      "Przyciąganie linki": {
+        "kg": 35,
+        "serie": "8-8-8",
+        "status": "0/2"
+      },
+      "Face pulls": {
+        "kg": 25,
+        "serie": "15-15-15",
+        "status": "0/2"
+      },
+      "Biceps SS1": {
+        "kg": 12.5,
+        "serie": "12-12-12",
+        "status": "0/2"
+      },
+      "Triceps SS1": {
+        "kg": 12.5,
+        "serie": "12-12-12",
+        "status": "0/2"
+      }
+    }
+  }
 }

@@ -1,11 +1,22 @@
 {
   "cykle": [
     {
+      "nr": 2,
+      "label": "Cykl 2 — start 20.04.2026",
+      "open": false,
+      "bilans": null,
+      "miesiace": []
+    },
+    {
       "nr": 1,
       "label": "Cykl 1 — Luty–Kwiecień 2026",
       "open": true,
       "bilans": {
-        "l2": 7, "upper": 8, "l1": 7, "core": 0, "lacznie": 22
+        "l2": 7,
+        "upper": 8,
+        "l1": 7,
+        "core": 0,
+        "lacznie": 22
       },
       "miesiace": [
         {
@@ -16,40 +27,136 @@
               "label": "DL",
               "label_color": "yellow",
               "dni": [
-                { "n": 13, "typ": "dl",    "tekst": "D·L2" },
-                { "n": 14, "typ": "empty", "tekst": "" },
-                { "n": 15, "typ": "dl",    "tekst": "D·U" },
-                { "n": 16, "typ": "empty", "tekst": "" },
-                { "n": 17, "typ": "empty", "tekst": "" },
-                { "n": 18, "typ": "dl",    "tekst": "D·L1" },
-                { "n": 19, "typ": "empty", "tekst": "" }
+                {
+                  "n": 13,
+                  "typ": "dl",
+                  "tekst": "D·L2"
+                },
+                {
+                  "n": 14,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 15,
+                  "typ": "dl",
+                  "tekst": "D·U"
+                },
+                {
+                  "n": 16,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 17,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 18,
+                  "typ": "dl",
+                  "tekst": "D·L1"
+                },
+                {
+                  "n": 19,
+                  "typ": "empty",
+                  "tekst": ""
+                }
               ]
             },
             {
               "label": "T8",
               "label_color": "muted",
               "dni": [
-                { "n": 6,  "typ": "plan",  "tekst": "L2" },
-                { "n": 7,  "typ": "empty", "tekst": "" },
-                { "n": 8,  "typ": "plan",  "tekst": "U" },
-                { "n": 9,  "typ": "empty", "tekst": "" },
-                { "n": 10, "typ": "empty", "tekst": "" },
-                { "n": 11, "typ": "l1",    "tekst": "L1 ✓" },
-                { "n": 12, "typ": "empty", "tekst": "" }
+                {
+                  "n": 6,
+                  "typ": "plan",
+                  "tekst": "L2"
+                },
+                {
+                  "n": 7,
+                  "typ": "pomiary",
+                  "tekst": "📐"
+                },
+                {
+                  "n": 8,
+                  "typ": "waga",
+                  "tekst": "⚖️"
+                },
+                {
+                  "n": 9,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 10,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 11,
+                  "typ": "l1",
+                  "tekst": "L1 ✓"
+                },
+                {
+                  "n": 12,
+                  "typ": "empty",
+                  "tekst": ""
+                }
               ]
             },
             {
               "label": "T7",
               "label_color": "muted",
               "dni": [
-                { "n": null, "typ": "spacer", "tekst": "" },
-                { "n": null, "typ": "spacer", "tekst": "" },
-                { "n": 1,    "typ": "plan",   "tekst": "U" },
-                { "n": 2,    "typ": "l2",     "tekst": "L2 ✓" },
-                { "n": 3,    "typ": "empty",  "tekst": "" },
-                { "n": 4,    "typ": "plan",   "tekst": "L1" },
-                { "n": 5,    "typ": "l1",     "tekst": "L1 ✓" }
+                {
+                  "n": null,
+                  "typ": "spacer",
+                  "tekst": ""
+                },
+                {
+                  "n": null,
+                  "typ": "spacer",
+                  "tekst": ""
+                },
+                {
+                  "n": 1,
+                  "typ": "plan",
+                  "tekst": "U"
+                },
+                {
+                  "n": 2,
+                  "typ": "l2",
+                  "tekst": "L2 ✓"
+                },
+                {
+                  "n": 3,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 4,
+                  "typ": "plan",
+                  "tekst": "L1"
+                },
+                {
+                  "n": 5,
+                  "typ": "l1",
+                  "tekst": "L1 ✓"
+                }
               ]
+            }
+          ],
+          "waga_dni": [
+            {
+              "n": 8,
+              "typ": "waga",
+              "tekst": "⚖️"
+            },
+            {
+              "n": 7,
+              "typ": "pomiary",
+              "tekst": "📐"
             }
           ]
         },
@@ -61,78 +168,246 @@
               "label": "→",
               "label_color": "muted",
               "dni": [
-                { "n": 30, "typ": "upper", "tekst": "U ✓" },
-                { "n": 31, "typ": "empty", "tekst": "" },
-                { "n": null, "typ": "spacer", "tekst": "" },
-                { "n": null, "typ": "spacer", "tekst": "" },
-                { "n": null, "typ": "spacer", "tekst": "" },
-                { "n": null, "typ": "spacer", "tekst": "" },
-                { "n": null, "typ": "spacer", "tekst": "" }
+                {
+                  "n": 30,
+                  "typ": "upper",
+                  "tekst": "U ✓"
+                },
+                {
+                  "n": 31,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": null,
+                  "typ": "spacer",
+                  "tekst": ""
+                },
+                {
+                  "n": null,
+                  "typ": "spacer",
+                  "tekst": ""
+                },
+                {
+                  "n": null,
+                  "typ": "spacer",
+                  "tekst": ""
+                },
+                {
+                  "n": null,
+                  "typ": "spacer",
+                  "tekst": ""
+                },
+                {
+                  "n": null,
+                  "typ": "spacer",
+                  "tekst": ""
+                }
               ]
             },
             {
               "label": "T7",
               "label_color": "rose",
               "dni": [
-                { "n": 23, "typ": "l2",    "tekst": "L2 ✓" },
-                { "n": 24, "typ": "empty", "tekst": "" },
-                { "n": 25, "typ": "empty", "tekst": "" },
-                { "n": 26, "typ": "upper", "tekst": "U ✓" },
-                { "n": 27, "typ": "empty", "tekst": "" },
-                { "n": 28, "typ": "l1",    "tekst": "L1 ✓" },
-                { "n": 29, "typ": "upper", "tekst": "U ✓" }
+                {
+                  "n": 23,
+                  "typ": "l2",
+                  "tekst": "L2 ✓"
+                },
+                {
+                  "n": 24,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 25,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 26,
+                  "typ": "upper",
+                  "tekst": "U ✓"
+                },
+                {
+                  "n": 27,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 28,
+                  "typ": "l1",
+                  "tekst": "L1 ✓"
+                },
+                {
+                  "n": 29,
+                  "typ": "upper",
+                  "tekst": "U ✓"
+                }
               ]
             },
             {
               "label": "T6",
               "label_color": "muted",
               "dni": [
-                { "n": 16, "typ": "l2",    "tekst": "L2 ✓" },
-                { "n": 17, "typ": "empty", "tekst": "" },
-                { "n": 18, "typ": "upper", "tekst": "U ✓" },
-                { "n": 19, "typ": "empty", "tekst": "" },
-                { "n": 20, "typ": "empty", "tekst": "" },
-                { "n": 21, "typ": "l1",    "tekst": "L1 ✓" },
-                { "n": 22, "typ": "empty", "tekst": "" }
+                {
+                  "n": 16,
+                  "typ": "l2",
+                  "tekst": "L2 ✓"
+                },
+                {
+                  "n": 17,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 18,
+                  "typ": "upper",
+                  "tekst": "U ✓"
+                },
+                {
+                  "n": 19,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 20,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 21,
+                  "typ": "l1",
+                  "tekst": "L1 ✓"
+                },
+                {
+                  "n": 22,
+                  "typ": "empty",
+                  "tekst": ""
+                }
               ]
             },
             {
               "label": "T5",
               "label_color": "muted",
               "dni": [
-                { "n": 9,  "typ": "empty", "tekst": "" },
-                { "n": 10, "typ": "empty", "tekst": "" },
-                { "n": 11, "typ": "empty", "tekst": "" },
-                { "n": 12, "typ": "empty", "tekst": "" },
-                { "n": 13, "typ": "empty", "tekst": "" },
-                { "n": 14, "typ": "empty", "tekst": "" },
-                { "n": 15, "typ": "upper", "tekst": "U 🩹" }
+                {
+                  "n": 9,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 10,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 11,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 12,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 13,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 14,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 15,
+                  "typ": "upper",
+                  "tekst": "U 🩹"
+                }
               ]
             },
             {
               "label": "T4",
               "label_color": "muted",
               "dni": [
-                { "n": 2, "typ": "l2",    "tekst": "L2 ✓" },
-                { "n": 3, "typ": "empty", "tekst": "" },
-                { "n": 4, "typ": "upper", "tekst": "U ✓" },
-                { "n": 5, "typ": "l1",    "tekst": "L1 ✓" },
-                { "n": 6, "typ": "empty", "tekst": "" },
-                { "n": 7, "typ": "empty", "tekst": "" },
-                { "n": 8, "typ": "empty", "tekst": "" }
+                {
+                  "n": 2,
+                  "typ": "l2",
+                  "tekst": "L2 ✓"
+                },
+                {
+                  "n": 3,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 4,
+                  "typ": "upper",
+                  "tekst": "U ✓"
+                },
+                {
+                  "n": 5,
+                  "typ": "l1",
+                  "tekst": "L1 ✓"
+                },
+                {
+                  "n": 6,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 7,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 8,
+                  "typ": "empty",
+                  "tekst": ""
+                }
               ]
             },
             {
               "label": "—",
               "label_color": "muted",
               "dni": [
-                { "n": null, "typ": "spacer", "tekst": "" },
-                { "n": null, "typ": "spacer", "tekst": "" },
-                { "n": null, "typ": "spacer", "tekst": "" },
-                { "n": null, "typ": "spacer", "tekst": "" },
-                { "n": null, "typ": "spacer", "tekst": "" },
-                { "n": null, "typ": "spacer", "tekst": "" },
-                { "n": 1,    "typ": "empty",  "tekst": "" }
+                {
+                  "n": null,
+                  "typ": "spacer",
+                  "tekst": ""
+                },
+                {
+                  "n": null,
+                  "typ": "spacer",
+                  "tekst": ""
+                },
+                {
+                  "n": null,
+                  "typ": "spacer",
+                  "tekst": ""
+                },
+                {
+                  "n": null,
+                  "typ": "spacer",
+                  "tekst": ""
+                },
+                {
+                  "n": null,
+                  "typ": "spacer",
+                  "tekst": ""
+                },
+                {
+                  "n": null,
+                  "typ": "spacer",
+                  "tekst": ""
+                },
+                {
+                  "n": 1,
+                  "typ": "empty",
+                  "tekst": ""
+                }
               ]
             }
           ]
@@ -145,64 +420,169 @@
               "label": "T3",
               "label_color": "muted",
               "dni": [
-                { "n": 23, "typ": "l2",    "tekst": "L2 ✓" },
-                { "n": 24, "typ": "upper", "tekst": "U ✓" },
-                { "n": 25, "typ": "upper", "tekst": "U ✓" },
-                { "n": 26, "typ": "empty", "tekst": "" },
-                { "n": 27, "typ": "empty", "tekst": "" },
-                { "n": 28, "typ": "l1",    "tekst": "L1 ✓" },
-                { "n": null, "typ": "spacer", "tekst": "" }
+                {
+                  "n": 23,
+                  "typ": "l2",
+                  "tekst": "L2 ✓"
+                },
+                {
+                  "n": 24,
+                  "typ": "upper",
+                  "tekst": "U ✓"
+                },
+                {
+                  "n": 25,
+                  "typ": "upper",
+                  "tekst": "U ✓"
+                },
+                {
+                  "n": 26,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 27,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 28,
+                  "typ": "l1",
+                  "tekst": "L1 ✓"
+                },
+                {
+                  "n": null,
+                  "typ": "spacer",
+                  "tekst": ""
+                }
               ]
             },
             {
               "label": "T2",
               "label_color": "muted",
               "dni": [
-                { "n": 16, "typ": "l2",    "tekst": "L2 ✓" },
-                { "n": 17, "typ": "l2",    "tekst": "L2 ✓" },
-                { "n": 18, "typ": "upper", "tekst": "U ✓" },
-                { "n": 19, "typ": "empty", "tekst": "" },
-                { "n": 20, "typ": "empty", "tekst": "" },
-                { "n": 21, "typ": "l1",    "tekst": "L1 ✓" },
-                { "n": 22, "typ": "empty", "tekst": "" }
+                {
+                  "n": 16,
+                  "typ": "l2",
+                  "tekst": "L2 ✓"
+                },
+                {
+                  "n": 17,
+                  "typ": "l2",
+                  "tekst": "L2 ✓"
+                },
+                {
+                  "n": 18,
+                  "typ": "upper",
+                  "tekst": "U ✓"
+                },
+                {
+                  "n": 19,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 20,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 21,
+                  "typ": "l1",
+                  "tekst": "L1 ✓"
+                },
+                {
+                  "n": 22,
+                  "typ": "empty",
+                  "tekst": ""
+                }
               ]
             },
             {
               "label": "T1",
               "label_color": "muted",
               "dni": [
-                { "n": 9,  "typ": "empty", "tekst": "" },
-                { "n": 10, "typ": "empty", "tekst": "" },
-                { "n": 11, "typ": "empty", "tekst": "" },
-                { "n": 12, "typ": "empty", "tekst": "" },
-                { "n": 13, "typ": "empty", "tekst": "" },
-                { "n": 14, "typ": "l1",    "tekst": "L1 🌸" },
-                { "n": 15, "typ": "upper", "tekst": "U 🩹" }
+                {
+                  "n": 9,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 10,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 11,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 12,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 13,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 14,
+                  "typ": "l1",
+                  "tekst": "L1 🌸"
+                },
+                {
+                  "n": 15,
+                  "typ": "upper",
+                  "tekst": "U 🩹"
+                }
               ]
             },
             {
               "label": "—",
               "label_color": "muted",
               "dni": [
-                { "n": null, "typ": "spacer", "tekst": "" },
-                { "n": null, "typ": "spacer", "tekst": "" },
-                { "n": null, "typ": "spacer", "tekst": "" },
-                { "n": null, "typ": "spacer", "tekst": "" },
-                { "n": null, "typ": "spacer", "tekst": "" },
-                { "n": 1,    "typ": "empty",  "tekst": "" },
-                { "n": null, "typ": "spacer", "tekst": "" }
+                {
+                  "n": null,
+                  "typ": "spacer",
+                  "tekst": ""
+                },
+                {
+                  "n": null,
+                  "typ": "spacer",
+                  "tekst": ""
+                },
+                {
+                  "n": null,
+                  "typ": "spacer",
+                  "tekst": ""
+                },
+                {
+                  "n": null,
+                  "typ": "spacer",
+                  "tekst": ""
+                },
+                {
+                  "n": null,
+                  "typ": "spacer",
+                  "tekst": ""
+                },
+                {
+                  "n": 1,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": null,
+                  "typ": "spacer",
+                  "tekst": ""
+                }
               ]
             }
           ]
         }
       ]
-    },
-    {
-      "nr": 2,
-      "label": "Cykl 2 — start 20.04.2026",
-      "open": false,
-      "bilans": null,
-      "miesiace": []
     }
   ]
 }
