@@ -104,44 +104,6 @@
       }
     ]
   },
-  "ostatni_l2": {
-    "data": "02.04.2026",
-    "cwiczenia": {
-      "Przysiad ze sztangą":   { "kg": 42.5, "serie": "8-8-8-8",    "status": "0/2" },
-      "Sumo martwy ciąg":      { "kg": 26,   "serie": "12-12-12",   "status": "1/2" },
-      "Step-ups z hantlami":   { "kg": 14,   "serie": "12-12-12",   "status": "0/2" },
-      "Suwnica — leg press":   { "kg": 70,   "serie": "12-12-12",   "status": "0/2" },
-      "Ławka rzymska":          { "kg": 24,   "serie": "12-12-12",   "status": "0/2" },
-      "RDL z hantlami":         { "kg": 24,   "serie": "20-20-20",   "status": "0/2" },
-      "Prostowanie nóg":        { "kg": 40,   "serie": "10-10-10",   "status": "0/2" }
-    }
-  },
-  "ostatni_upper": {
-    "data": "29.03.2026",
-    "cwiczenia": {
-      "Wyciskanie płaska":      { "kg": 25,   "serie": "8-8-8-8",    "status": "✅" },
-      "Skos hantlami":          { "kg": 9,    "serie": "12-12-12-12","status": "0/2" },
-      "OHP hantlami":           { "kg": 8,    "serie": "12-12-12",   "status": "0/2" },
-      "Laterals":               { "kg": 6,    "serie": "12-12-12",   "status": "0/2" },
-      "Wiosłowanie":            { "kg": 37.5, "serie": "10-10-10-10","status": "0/2" },
-      "Przyciąganie linki":     { "kg": 35,   "serie": "8-8-8",      "status": "0/2" },
-      "Face pulls":             { "kg": 25,   "serie": "15-15-15",   "status": "0/2" },
-      "Biceps":                 { "kg": 12.5, "serie": "12-12-12",   "status": "0/2" },
-      "Triceps":                { "kg": 12.5, "serie": "12-12-12",   "status": "0/2" }
-    }
-  },
-  "ostatni_l1": {
-    "data": "05.04.2026",
-    "cwiczenia": {
-      "Hip thrust ze sztangą":  { "kg": 65,   "serie": "10-10-10-10","status": "2/2" },
-      "RDL ze sztangą":         { "kg": 40,   "serie": "10-10-10-10","status": "✅" },
-      "Wykroki bułgarskie":     { "kg": 12,   "serie": "12-12-12",   "status": "1/2" },
-      "Odwodzenie wyciąg":      { "kg": 18,   "serie": "8-8",        "status": "0/2" },
-      "Kickbacki wyciąg":       { "kg": 27,   "serie": "10-10",      "status": "0/2" },
-      "Przywodzenie maszyna":   { "kg": 30,   "serie": "15-15-10",   "status": "0/2" },
-      "Odwodzenie maszyna":     { "kg": 60,   "serie": "12-12-12",   "status": "0/2" }
-    }
-  },
   "poprzedni": {
     "data": "05.04.2026",
     "data_label": "Sob 05.04.2026",
@@ -1598,7 +1560,6 @@
   ],
   "ostatni_l1": {
     "data": "05.04.2026",
-    "data_label": "Sob 05.04",
     "cwiczenia": {
       "Hip thrust ze sztangą": {
         "kg": 65,
@@ -1608,7 +1569,7 @@
       "RDL ze sztangą": {
         "kg": 40,
         "serie": "10-10-10-10",
-        "status": "0/2"
+        "status": "✅"
       },
       "Wykroki bułgarskie": {
         "kg": 12,
@@ -1639,7 +1600,6 @@
   },
   "ostatni_l2": {
     "data": "02.04.2026",
-    "data_label": "Czw 02.04",
     "cwiczenia": {
       "Przysiad ze sztangą": {
         "kg": 42.5,
@@ -1649,14 +1609,14 @@
       "Sumo martwy ciąg": {
         "kg": 26,
         "serie": "12-12-12",
-        "status": "0/2"
+        "status": "1/2"
       },
       "Step-ups z hantlami": {
         "kg": 14,
         "serie": "12-12-12",
         "status": "0/2"
       },
-      "Suwnica leg press": {
+      "Suwnica — leg press": {
         "kg": 70,
         "serie": "12-12-12",
         "status": "0/2"
@@ -1680,12 +1640,11 @@
   },
   "ostatni_upper": {
     "data": "29.03.2026",
-    "data_label": "Nd 29.03",
     "cwiczenia": {
       "Wyciskanie płaska": {
         "kg": 25,
         "serie": "8-8-8-8",
-        "status": "0/2"
+        "status": "✅"
       },
       "Skos hantlami": {
         "kg": 9,
@@ -1717,12 +1676,12 @@
         "serie": "15-15-15",
         "status": "0/2"
       },
-      "Biceps SS1": {
+      "Biceps": {
         "kg": 12.5,
         "serie": "12-12-12",
         "status": "0/2"
       },
-      "Triceps SS1": {
+      "Triceps": {
         "kg": 12.5,
         "serie": "12-12-12",
         "status": "0/2"
