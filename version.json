@@ -1,5 +1,5 @@
 {
-  "version": "2.0.4",
+  "version": "2.0.6",
   "data": "13.04.2026",
-  "changelog": "status_przed/status_po w ostatni_typ, renderer czyta status_po"
+  "changelog": "upper 02.04 kompletne dane sesji w historii"
 }

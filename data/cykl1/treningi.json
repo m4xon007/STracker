@@ -22,48 +22,48 @@
         "nazwa": "Wyciskanie płaska",
         "highlight": true,
         "ss": null,
-        "poprzedni_kg": 25,
+        "poprzedni_kg": 24.0,
         "poprzedni_serie": "8-8-8-8",
         "progresja": "utrzymaj",
         "serie": "4×6–8",
         "przerwa": "120s",
-        "placeholder_kg": "25",
+        "placeholder_kg": "24.0",
         "placeholder_reps": "8-8-8-8"
       },
       {
         "nazwa": "Skos hantlami",
         "highlight": false,
         "ss": null,
-        "poprzedni_kg": 9,
+        "poprzedni_kg": 9.0,
         "poprzedni_serie": "12-12-12-12",
-        "progresja": "utrzymaj",
+        "progresja": "zwieksz",
         "serie": "3×10–12",
         "przerwa": "90s",
-        "placeholder_kg": "9",
-        "placeholder_reps": "12-12-12"
+        "placeholder_kg": "9.0",
+        "placeholder_reps": "12-12-12-12"
       },
       {
         "nazwa": "OHP hantlami",
         "highlight": false,
         "ss": null,
-        "poprzedni_kg": 8,
-        "poprzedni_serie": "12-12-12",
+        "poprzedni_kg": 8.0,
+        "poprzedni_serie": "10-10-10",
         "progresja": "utrzymaj",
         "serie": "3×10–12",
         "przerwa": "90s",
-        "placeholder_kg": "8",
-        "placeholder_reps": "12-12-12"
+        "placeholder_kg": "8.0",
+        "placeholder_reps": "10-10-10"
       },
       {
         "nazwa": "Laterals",
         "highlight": false,
         "ss": null,
-        "poprzedni_kg": 6,
+        "poprzedni_kg": 6.0,
         "poprzedni_serie": "12-12-12",
-        "progresja": "zwieksz",
+        "progresja": "utrzymaj",
         "serie": "3×12–15",
         "przerwa": "75s",
-        "placeholder_kg": "7",
+        "placeholder_kg": "6.0",
         "placeholder_reps": "12-12-12"
       },
       {
@@ -72,34 +72,34 @@
         "ss": null,
         "poprzedni_kg": 37.5,
         "poprzedni_serie": "10-10-10-10",
-        "progresja": "utrzymaj",
+        "progresja": "zwieksz",
         "serie": "3×8–10",
         "przerwa": "120s",
         "placeholder_kg": "37.5",
-        "placeholder_reps": "10-10-10"
+        "placeholder_reps": "10-10-10-10"
       },
       {
         "nazwa": "Przyciąganie linki",
         "highlight": false,
         "ss": null,
-        "poprzedni_kg": 35,
+        "poprzedni_kg": 35.0,
         "poprzedni_serie": "8-8-8",
         "progresja": "utrzymaj",
         "serie": "3×10–12",
         "przerwa": "90s",
-        "placeholder_kg": "35",
-        "placeholder_reps": "10-10-10"
+        "placeholder_kg": "35.0",
+        "placeholder_reps": "8-8-8"
       },
       {
         "nazwa": "Face pulls",
         "highlight": false,
         "ss": null,
-        "poprzedni_kg": 25,
+        "poprzedni_kg": 25.0,
         "poprzedni_serie": "15-15-15",
-        "progresja": "utrzymaj",
+        "progresja": "zwieksz",
         "serie": "3×12–15",
         "przerwa": "60s",
-        "placeholder_kg": "25",
+        "placeholder_kg": "25.0",
         "placeholder_reps": "15-15-15"
       },
       {
@@ -108,7 +108,7 @@
         "ss": "SS1",
         "poprzedni_kg": 12.5,
         "poprzedni_serie": "12-12-12",
-        "progresja": "utrzymaj",
+        "progresja": "zwieksz",
         "serie": "3×10–12",
         "przerwa": "bez przerwy",
         "placeholder_kg": "12.5",
@@ -120,7 +120,7 @@
         "ss": "SS1",
         "poprzedni_kg": 12.5,
         "poprzedni_serie": "12-12-12",
-        "progresja": "utrzymaj",
+        "progresja": "zwieksz",
         "serie": "3×10–12",
         "przerwa": "75s po SS",
         "placeholder_kg": "12.5",
@@ -264,6 +264,76 @@
           "kg": 40,
           "serie": "10-10-10",
           "status": "uwaga"
+        }
+      ]
+    },
+    {
+      "id": "upper_20260402",
+      "data": "02.04.2026",
+      "data_label": "02.04 Czw",
+      "typ": "upper",
+      "numer": 20,
+      "tydzien": 8,
+      "ocena": 8,
+      "kcal": 606,
+      "czas_min": 93,
+      "tetno": 121,
+      "obciazenie_aerobowe": 2.8,
+      "notatka": "Wyciskanie 24kg 8×4 (1/2) · Wiosłowanie 37,5kg 10×4 🚀 (2/2) · Face pulls+Biceps+Triceps 2/2",
+      "cwiczenia": [
+        {
+          "nazwa": "Wyciskanie płaska",
+          "kg": 24,
+          "serie": "8-8-8-8",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Skos hantlami",
+          "kg": 9,
+          "serie": "12-12-12-12",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "OHP hantlami",
+          "kg": 8,
+          "serie": "10-10-10",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Laterals",
+          "kg": 6,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Wiosłowanie",
+          "kg": 37.5,
+          "serie": "10-10-10-10",
+          "status": "progresja"
+        },
+        {
+          "nazwa": "Przyciąganie linki",
+          "kg": 35,
+          "serie": "8-8-8",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Face pulls",
+          "kg": 25,
+          "serie": "15-15-15",
+          "status": "progresja"
+        },
+        {
+          "nazwa": "Biceps SS1",
+          "kg": 12.5,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Triceps SS1",
+          "kg": 12.5,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
         }
       ]
     },
@@ -1735,28 +1805,28 @@
     }
   },
   "ostatni_upper": {
-    "data": "29.03.2026",
+    "data": "02.04.2026",
     "cwiczenia": {
       "Wyciskanie płaska": {
-        "kg": 25,
+        "kg": 24.0,
         "serie": "8-8-8-8",
+        "status_przed": "0/2",
+        "status_po": "1/2"
+      },
+      "Skos hantlami": {
+        "kg": 9.0,
+        "serie": "12-12-12-12",
         "status_przed": "1/2",
         "status_po": "2/2"
       },
-      "Skos hantlami": {
-        "kg": 9,
-        "serie": "12-12-12-12",
-        "status_przed": "0/2",
-        "status_po": "1/2"
-      },
       "OHP hantlami": {
-        "kg": 8,
-        "serie": "12-12-12",
-        "status_przed": "0/2",
-        "status_po": "1/2"
+        "kg": 8.0,
+        "serie": "10-10-10",
+        "status_przed": "1/2",
+        "status_po": "0/2"
       },
       "Laterals": {
-        "kg": 6,
+        "kg": 6.0,
         "serie": "12-12-12",
         "status_przed": "0/2",
         "status_po": "0/2"
@@ -1764,32 +1834,32 @@
       "Wiosłowanie": {
         "kg": 37.5,
         "serie": "10-10-10-10",
-        "status_przed": "0/2",
-        "status_po": "1/2"
+        "status_przed": "1/2",
+        "status_po": "2/2"
       },
       "Przyciąganie linki": {
-        "kg": 35,
+        "kg": 35.0,
         "serie": "8-8-8",
         "status_przed": "0/2",
         "status_po": "0/2"
       },
       "Face pulls": {
-        "kg": 25,
+        "kg": 25.0,
         "serie": "15-15-15",
-        "status_przed": "0/2",
-        "status_po": "1/2"
+        "status_przed": "1/2",
+        "status_po": "2/2"
       },
-      "Biceps": {
+      "Biceps SS1": {
         "kg": 12.5,
         "serie": "12-12-12",
-        "status_przed": "0/2",
-        "status_po": "1/2"
+        "status_przed": "1/2",
+        "status_po": "2/2"
       },
-      "Triceps": {
+      "Triceps SS1": {
         "kg": 12.5,
         "serie": "12-12-12",
-        "status_przed": "0/2",
-        "status_po": "1/2"
+        "status_przed": "1/2",
+        "status_po": "2/2"
       }
     }
   }
