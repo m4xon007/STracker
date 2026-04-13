@@ -12,7 +12,7 @@
       "label": "Cykl 1 — Luty–Kwiecień 2026",
       "open": true,
       "bilans": {
-        "l2": 7,
+        "l2": 8,
         "upper": 8,
         "l1": 7,
         "core": 0,
@@ -70,8 +70,8 @@
               "dni": [
                 {
                   "n": 6,
-                  "typ": "plan",
-                  "tekst": "L2"
+                  "typ": "l2",
+                  "tekst": "L2 ✓"
                 },
                 {
                   "n": 7,

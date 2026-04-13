@@ -5,41 +5,248 @@
       "label": "Lower 2 — Pn",
       "czas": "~65–75 min",
       "cwiczenia": [
-        { "nazwa": "Przysiad ze sztangą",  "bold": true,  "ss": null,  "kg": "42,5", "serie": "4×6–8",   "przerwa": "240s",       "status": "0/2",    "status_color": "muted" },
-        { "nazwa": "Sumo martwy ciąg",     "bold": false, "ss": null,  "kg": "26",   "serie": "3×10–12", "przerwa": "90s",        "status": "✅ 0/2", "status_color": "rose" },
-        { "nazwa": "Step-ups z hantlami",  "bold": false, "ss": null,  "kg": "14",   "serie": "3×10–12", "przerwa": "90s",        "status": "0/2",    "status_color": "muted" },
-        { "nazwa": "Suwnica — leg press",  "bold": false, "ss": null,  "kg": "70",   "serie": "3×8–12",  "przerwa": "90s",        "status": "→ 80",   "status_color": "yellow" },
-        { "nazwa": "Ławka rzymska",         "bold": false, "ss": null,  "kg": "24",   "serie": "3×10–12", "przerwa": "90s",        "status": "0/2",    "status_color": "muted" },
-        { "nazwa": "RDL z hantlami",        "bold": false, "ss": "SS1", "kg": "24",   "serie": "3×15–20", "przerwa": "bez przerwy","status": "0/2",    "status_color": "muted" },
-        { "nazwa": "Prostowanie nóg",       "bold": false, "ss": "SS1", "kg": "40",   "serie": "3×12–15", "przerwa": "75s po SS",  "status": "0/2",    "status_color": "muted" }
+        {
+          "nazwa": "Przysiad ze sztangą",
+          "bold": true,
+          "ss": null,
+          "kg": "45",
+          "serie": "4×6–8",
+          "przerwa": "240s",
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "nazwa": "Sumo martwy ciąg",
+          "bold": false,
+          "ss": null,
+          "kg": "27,5",
+          "serie": "3×10–12",
+          "przerwa": "90s",
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "nazwa": "Step-ups z hantlami",
+          "bold": false,
+          "ss": null,
+          "kg": "15",
+          "serie": "3×10–12",
+          "przerwa": "90s",
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "nazwa": "Suwnica — leg press",
+          "bold": false,
+          "ss": null,
+          "kg": "70",
+          "serie": "3×8–12",
+          "przerwa": "90s",
+          "status": "1/2",
+          "status_color": "yellow"
+        },
+        {
+          "nazwa": "Ławka rzymska",
+          "bold": false,
+          "ss": null,
+          "kg": "25",
+          "serie": "3×10–12",
+          "przerwa": "90s",
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "nazwa": "RDL z hantlami",
+          "bold": false,
+          "ss": "SS1",
+          "kg": "25",
+          "serie": "3×15–20",
+          "przerwa": "bez przerwy",
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "nazwa": "Prostowanie nóg",
+          "bold": false,
+          "ss": "SS1",
+          "kg": "40",
+          "serie": "3×12–15",
+          "przerwa": "75s po SS",
+          "status": "0/2",
+          "status_color": "muted"
+        }
       ]
     },
     "upper": {
       "label": "Upper — Śr",
       "czas": "~65–75 min",
       "cwiczenia": [
-        { "nazwa": "Wyciskanie płaska",    "bold": true,  "ss": null,  "kg": "25",   "serie": "4×6–8",   "przerwa": "120s",       "status": "✅ 0/2", "status_color": "rose" },
-        { "nazwa": "Skos hantlami",        "bold": false, "ss": null,  "kg": "10",   "serie": "3×10–12", "przerwa": "90s",        "status": "✅ 0/2", "status_color": "rose" },
-        { "nazwa": "OHP hantlami",         "bold": false, "ss": null,  "kg": "8",    "serie": "3×10–12", "przerwa": "90s",        "status": "✅ 0/2", "status_color": "rose" },
-        { "nazwa": "Laterals",             "bold": false, "ss": null,  "kg": "7",    "serie": "3×12–15", "przerwa": "75s",        "status": "✅ 0/2", "status_color": "rose" },
-        { "nazwa": "Wiosłowanie",          "bold": true,  "ss": null,  "kg": "37,5", "serie": "3×8–10",  "przerwa": "120s",       "status": "0/2",    "status_color": "muted" },
-        { "nazwa": "Przyciąganie linki",   "bold": false, "ss": null,  "kg": "35",   "serie": "3×10–12", "przerwa": "90s",        "status": "0/2",    "status_color": "muted" },
-        { "nazwa": "Face pulls",           "bold": false, "ss": null,  "kg": "25",   "serie": "3×12–15", "przerwa": "60s",        "status": "0/2",    "status_color": "muted" },
-        { "nazwa": "Biceps",               "bold": false, "ss": "SS1", "kg": "12,5", "serie": "3×10–12", "przerwa": "bez przerwy","status": "0/2",    "status_color": "muted" },
-        { "nazwa": "Triceps",              "bold": false, "ss": "SS1", "kg": "12,5", "serie": "3×10–12", "przerwa": "75s po SS",  "status": "0/2",    "status_color": "muted" }
+        {
+          "nazwa": "Wyciskanie płaska",
+          "bold": true,
+          "ss": null,
+          "kg": "25",
+          "serie": "4×6–8",
+          "przerwa": "120s",
+          "status": "✅ 0/2",
+          "status_color": "rose"
+        },
+        {
+          "nazwa": "Skos hantlami",
+          "bold": false,
+          "ss": null,
+          "kg": "10",
+          "serie": "3×10–12",
+          "przerwa": "90s",
+          "status": "✅ 0/2",
+          "status_color": "rose"
+        },
+        {
+          "nazwa": "OHP hantlami",
+          "bold": false,
+          "ss": null,
+          "kg": "8",
+          "serie": "3×10–12",
+          "przerwa": "90s",
+          "status": "✅ 0/2",
+          "status_color": "rose"
+        },
+        {
+          "nazwa": "Laterals",
+          "bold": false,
+          "ss": null,
+          "kg": "7",
+          "serie": "3×12–15",
+          "przerwa": "75s",
+          "status": "✅ 0/2",
+          "status_color": "rose"
+        },
+        {
+          "nazwa": "Wiosłowanie",
+          "bold": true,
+          "ss": null,
+          "kg": "37,5",
+          "serie": "3×8–10",
+          "przerwa": "120s",
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "nazwa": "Przyciąganie linki",
+          "bold": false,
+          "ss": null,
+          "kg": "35",
+          "serie": "3×10–12",
+          "przerwa": "90s",
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "nazwa": "Face pulls",
+          "bold": false,
+          "ss": null,
+          "kg": "25",
+          "serie": "3×12–15",
+          "przerwa": "60s",
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "nazwa": "Biceps",
+          "bold": false,
+          "ss": "SS1",
+          "kg": "12,5",
+          "serie": "3×10–12",
+          "przerwa": "bez przerwy",
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "nazwa": "Triceps",
+          "bold": false,
+          "ss": "SS1",
+          "kg": "12,5",
+          "serie": "3×10–12",
+          "przerwa": "75s po SS",
+          "status": "0/2",
+          "status_color": "muted"
+        }
       ]
     },
     "l1": {
       "label": "Lower 1 — Sob",
       "czas": "~65–75 min",
       "cwiczenia": [
-        { "nazwa": "Hip thrust ze sztangą",  "bold": true,  "ss": null,  "kg": "65",   "serie": "4×8–10",  "przerwa": "120s",       "status": "2/2",    "status_color": "green" },
-        { "nazwa": "RDL ze sztangą",          "bold": true,  "ss": null,  "kg": "40",   "serie": "4×8–10",  "przerwa": "120s",       "status": "✅ 0/2", "status_color": "rose" },
-        { "nazwa": "Wykroki bułgarskie",      "bold": false, "ss": null,  "kg": "12",   "serie": "3×10–12", "przerwa": "90s",        "status": "1/2",    "status_color": "yellow" },
-        { "nazwa": "Odwodzenie wyciąg",       "bold": false, "ss": "SS1", "kg": "18",   "serie": "3×12–15", "przerwa": "bez przerwy","status": "0/2",    "status_color": "muted" },
-        { "nazwa": "Kickbacki wyciąg",        "bold": false, "ss": "SS1", "kg": "27",   "serie": "3×12–15", "przerwa": "60s po SS",  "status": "0/2",    "status_color": "muted" },
-        { "nazwa": "Przywodzenie maszyna",    "bold": false, "ss": "SS2", "kg": "30",   "serie": "3×10–15", "przerwa": "bez przerwy","status": "0/2",    "status_color": "muted" },
-        { "nazwa": "Odwodzenie maszyna",      "bold": false, "ss": "SS2", "kg": "60",   "serie": "3×10–15", "przerwa": "60s po SS",  "status": "0/2",    "status_color": "muted" }
+        {
+          "nazwa": "Hip thrust ze sztangą",
+          "bold": true,
+          "ss": null,
+          "kg": "65",
+          "serie": "4×8–10",
+          "przerwa": "120s",
+          "status": "2/2",
+          "status_color": "green"
+        },
+        {
+          "nazwa": "RDL ze sztangą",
+          "bold": true,
+          "ss": null,
+          "kg": "40",
+          "serie": "4×8–10",
+          "przerwa": "120s",
+          "status": "✅ 0/2",
+          "status_color": "rose"
+        },
+        {
+          "nazwa": "Wykroki bułgarskie",
+          "bold": false,
+          "ss": null,
+          "kg": "12",
+          "serie": "3×10–12",
+          "przerwa": "90s",
+          "status": "1/2",
+          "status_color": "yellow"
+        },
+        {
+          "nazwa": "Odwodzenie wyciąg",
+          "bold": false,
+          "ss": "SS1",
+          "kg": "18",
+          "serie": "3×12–15",
+          "przerwa": "bez przerwy",
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "nazwa": "Kickbacki wyciąg",
+          "bold": false,
+          "ss": "SS1",
+          "kg": "27",
+          "serie": "3×12–15",
+          "przerwa": "60s po SS",
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "nazwa": "Przywodzenie maszyna",
+          "bold": false,
+          "ss": "SS2",
+          "kg": "30",
+          "serie": "3×10–15",
+          "przerwa": "bez przerwy",
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "nazwa": "Odwodzenie maszyna",
+          "bold": false,
+          "ss": "SS2",
+          "kg": "60",
+          "serie": "3×10–15",
+          "przerwa": "60s po SS",
+          "status": "0/2",
+          "status_color": "muted"
+        }
       ]
     }
   }

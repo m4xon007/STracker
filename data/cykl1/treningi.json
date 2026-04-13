@@ -1,190 +1,272 @@
 {
   "meta": {
     "cykl": 1,
-    "tydzien": 8,
-    "lacznie": 21,
+    "tydzien": 9,
+    "lacznie": 22,
     "data_start": "14.02.2026",
     "data_koniec_planowana": "12.04.2026",
     "deload_od": "13.04.2026",
     "deload_do": "19.04.2026",
-    "header_sub": "Cykl 1 · tydzień 8",
-    "header_badge": "Sob 05.04"
+    "header_sub": "Cykl 1 · tydzień 9",
+    "header_badge": "Śr 09.04"
   },
   "nastepny": {
-    "typ": "l2",
-    "emoji": "🦵",
-    "label": "Lower 2 — Pn 07.04.2026",
-    "numer": 22,
-    "badge_class": "badge-l2",
-    "alert": "Przysiad 42,5 kg — utrzymaj 4×8. Sumo 26 kg potwierdzamy (1/2→2/2). Step-ups 14 kg utrzymaj. Suwnica 70 kg → cel 80 kg. Ławka 24 kg utrzymaj. RDL 24 kg utrzymaj. Prostowanie 40 kg — utrzymaj.",
+    "typ": "upper",
+    "emoji": "💪",
+    "label": "Upper — Śr 09.04.2026",
+    "numer": 23,
+    "badge_class": "badge-upper",
+    "alert": "Wyciskanie 25 kg utrzymaj (1/2). Skos 9 kg utrzymaj (1/2). OHP 8 kg utrzymaj (1/2). Laterals 7 kg. Wiosłowanie 37,5 kg → debiut. Face pulls 25 kg (1/2). Biceps+Triceps 12,5 kg (1/2).",
     "cwiczenia": [
       {
-        "nazwa": "Przysiad ze sztangą",
+        "nazwa": "Wyciskanie płaska",
         "highlight": true,
         "ss": null,
-        "poprzedni_kg": 42.5,
+        "poprzedni_kg": 25,
         "poprzedni_serie": "8-8-8-8",
         "progresja": "utrzymaj",
         "serie": "4×6–8",
-        "przerwa": "240s",
-        "placeholder_kg": "42.5",
+        "przerwa": "120s",
+        "placeholder_kg": "25",
         "placeholder_reps": "8-8-8-8"
       },
       {
-        "nazwa": "Sumo martwy ciąg",
+        "nazwa": "Skos hantlami",
         "highlight": false,
         "ss": null,
-        "poprzedni_kg": 26,
+        "poprzedni_kg": 9,
+        "poprzedni_serie": "12-12-12-12",
+        "progresja": "utrzymaj",
+        "serie": "3×10–12",
+        "przerwa": "90s",
+        "placeholder_kg": "9",
+        "placeholder_reps": "12-12-12"
+      },
+      {
+        "nazwa": "OHP hantlami",
+        "highlight": false,
+        "ss": null,
+        "poprzedni_kg": 8,
         "poprzedni_serie": "12-12-12",
         "progresja": "utrzymaj",
         "serie": "3×10–12",
         "przerwa": "90s",
-        "placeholder_kg": "26",
+        "placeholder_kg": "8",
         "placeholder_reps": "12-12-12"
       },
       {
-        "nazwa": "Step-ups z hantlami",
+        "nazwa": "Laterals",
         "highlight": false,
         "ss": null,
-        "poprzedni_kg": 14,
-        "poprzedni_serie": "12-12-12",
-        "progresja": "utrzymaj",
-        "serie": "3×10–12",
-        "przerwa": "90s",
-        "placeholder_kg": "14",
-        "placeholder_reps": "12-12-12"
-      },
-      {
-        "nazwa": "Suwnica — leg press",
-        "highlight": false,
-        "ss": null,
-        "poprzedni_kg": 70,
+        "poprzedni_kg": 6,
         "poprzedni_serie": "12-12-12",
         "progresja": "zwieksz",
-        "serie": "3×8–12",
-        "przerwa": "90s",
-        "placeholder_kg": "80",
+        "serie": "3×12–15",
+        "przerwa": "75s",
+        "placeholder_kg": "7",
         "placeholder_reps": "12-12-12"
       },
       {
-        "nazwa": "Ławka rzymska",
+        "nazwa": "Wiosłowanie",
+        "highlight": true,
+        "ss": null,
+        "poprzedni_kg": 37.5,
+        "poprzedni_serie": "10-10-10-10",
+        "progresja": "utrzymaj",
+        "serie": "3×8–10",
+        "przerwa": "120s",
+        "placeholder_kg": "37.5",
+        "placeholder_reps": "10-10-10"
+      },
+      {
+        "nazwa": "Przyciąganie linki",
         "highlight": false,
         "ss": null,
-        "poprzedni_kg": 24,
-        "poprzedni_serie": "12-12-12",
+        "poprzedni_kg": 35,
+        "poprzedni_serie": "8-8-8",
         "progresja": "utrzymaj",
         "serie": "3×10–12",
         "przerwa": "90s",
-        "placeholder_kg": "24",
+        "placeholder_kg": "35",
+        "placeholder_reps": "10-10-10"
+      },
+      {
+        "nazwa": "Face pulls",
+        "highlight": false,
+        "ss": null,
+        "poprzedni_kg": 25,
+        "poprzedni_serie": "15-15-15",
+        "progresja": "utrzymaj",
+        "serie": "3×12–15",
+        "przerwa": "60s",
+        "placeholder_kg": "25",
+        "placeholder_reps": "15-15-15"
+      },
+      {
+        "nazwa": "Biceps",
+        "highlight": false,
+        "ss": "SS1",
+        "poprzedni_kg": 12.5,
+        "poprzedni_serie": "12-12-12",
+        "progresja": "utrzymaj",
+        "serie": "3×10–12",
+        "przerwa": "bez przerwy",
+        "placeholder_kg": "12.5",
         "placeholder_reps": "12-12-12"
       },
       {
-        "nazwa": "RDL z hantlami",
+        "nazwa": "Triceps",
         "highlight": false,
         "ss": "SS1",
-        "poprzedni_kg": 24,
-        "poprzedni_serie": "20-20-20",
+        "poprzedni_kg": 12.5,
+        "poprzedni_serie": "12-12-12",
         "progresja": "utrzymaj",
-        "serie": "3×15–20",
-        "przerwa": "→ SS",
-        "placeholder_kg": "24",
-        "placeholder_reps": "20-20-20"
-      },
-      {
-        "nazwa": "Prostowanie nóg",
-        "highlight": false,
-        "ss": "SS1",
-        "poprzedni_kg": 40,
-        "poprzedni_serie": "10-10-10",
-        "progresja": "utrzymaj",
-        "serie": "3×12–15",
+        "serie": "3×10–12",
         "przerwa": "75s po SS",
-        "placeholder_kg": "40",
-        "placeholder_reps": "10-10-10"
+        "placeholder_kg": "12.5",
+        "placeholder_reps": "12-12-12"
       }
     ]
   },
   "poprzedni": {
-    "data": "05.04.2026",
-    "data_label": "Sob 05.04.2026",
-    "typ": "l1",
-    "tytul": "🍑 Lower 1 — Sob 05.04.2026",
-    "numer": 21,
-    "tydzien": 8,
-    "kcal": 785,
-    "czas_min": 100,
-    "tetno": 132,
-    "obciazenie_aerobowe": 3.6,
+    "data": "07.04.2026",
+    "data_label": "Pn 07.04.2026",
+    "typ": "l2",
+    "tytul": "🦵 Lower 2 — Pn 07.04.2026",
+    "numer": 22,
+    "tydzien": 9,
+    "kcal": 809,
+    "czas_min": 102,
+    "tetno": 135,
+    "obciazenie_aerobowe": 3.7,
     "ocena": 9,
-    "opis": "Solidna sesja zamykająca tydzień 8. Hip thrust utrzymany 65 kg 4×10. RDL ze sztangą 40 kg komplet. Wykroki wzrost do 12 kg.",
-    "wnioski": "Hip thrust gotowy do progresji przy kolejnym L1 jeśli forma dobra. RDL sztanga 40 kg potwierdzone — progresja na 42,5 kg za tydzień. Odwodzenie wyciąg wróciło do 18 kg — sprawdzamy ponownie.",
+    "opis": "Świetny trening zamykający tydzień 9! Przysiad 4×8 po raz drugi z rzędu 🎉. Sumo, Step-ups, Ławka, RDL — wszystko 2/2. 5 progresji naraz. Suwnica wraca na właściwy tor.",
+    "wnioski": "Następny L2: Przysiad → 45 kg, Sumo → 27,5 kg, Step-ups → 15 kg, Ławka → 25 kg, RDL → 25 kg. Suwnica utrzymaj 70 kg (1/2). Prostowanie — utrzymaj 40 kg, popraw serię do 12.",
     "cwiczenia": [
       {
-        "nazwa": "Hip thrust ze sztangą",
-        "status": "utrzymaj",
+        "nazwa": "Przysiad ze sztangą",
+        "status": "rekord",
         "ss": null,
-        "kg": 65,
-        "wykonano": "10-10-10-10",
-        "ocena_tekst": "utrzymany ✓",
-        "progresja_tekst": "→ 65 kg (2/2 przy następnym)"
+        "kg": 42.5,
+        "wykonano": "8-8-8-8",
+        "ocena_tekst": "★ 2/2 komplet!",
+        "progresja_tekst": "→ 45 kg ✅"
       },
       {
-        "nazwa": "RDL ze sztangą",
+        "nazwa": "Sumo martwy ciąg",
         "status": "progresja",
         "ss": null,
+        "kg": 26,
+        "wykonano": "12-12-12",
+        "ocena_tekst": "✅ 2/2",
+        "progresja_tekst": "→ 27,5 kg ✅"
+      },
+      {
+        "nazwa": "Step-ups z hantlami",
+        "status": "progresja",
+        "ss": null,
+        "kg": 14,
+        "wykonano": "12-12-12",
+        "ocena_tekst": "✅ 2/2",
+        "progresja_tekst": "→ 15 kg ✅"
+      },
+      {
+        "nazwa": "Suwnica — leg press",
+        "status": "utrzymaj",
+        "ss": null,
+        "kg": 70,
+        "wykonano": "12-12-12",
+        "ocena_tekst": "↑ wraca",
+        "progresja_tekst": "→ 70 kg (1/2)"
+      },
+      {
+        "nazwa": "Ławka rzymska",
+        "status": "progresja",
+        "ss": null,
+        "kg": 24,
+        "wykonano": "12-12-12",
+        "ocena_tekst": "✅ 2/2",
+        "progresja_tekst": "→ 25 kg ✅"
+      },
+      {
+        "nazwa": "RDL z hantlami",
+        "status": "progresja",
+        "ss": "SS1",
+        "kg": 24,
+        "wykonano": "20-20-20",
+        "ocena_tekst": "✅ 2/2",
+        "progresja_tekst": "→ 25 kg ✅"
+      },
+      {
+        "nazwa": "Prostowanie nóg",
+        "status": "uwaga",
+        "ss": "SS1",
         "kg": 40,
-        "wykonano": "10-10-10-10",
-        "ocena_tekst": "✅ komplet",
-        "progresja_tekst": "→ 42,5 kg ✅"
-      },
-      {
-        "nazwa": "Wykroki bułgarskie",
-        "status": "progresja",
-        "ss": null,
-        "kg": 12,
-        "wykonano": "12-12-12",
-        "ocena_tekst": "↑ wzrost!",
-        "progresja_tekst": "→ 12 kg (1/2)"
-      },
-      {
-        "nazwa": "Odwodzenie wyciąg",
-        "status": "utrzymaj",
-        "ss": "SS1",
-        "kg": 18,
-        "wykonano": "8-8",
-        "ocena_tekst": "skrócone",
-        "progresja_tekst": "→ 18 kg (0/2)"
-      },
-      {
-        "nazwa": "Kickbacki wyciąg",
-        "status": "utrzymaj",
-        "ss": "SS1",
-        "kg": 27,
-        "wykonano": "10-10",
-        "ocena_tekst": "utrzymany",
-        "progresja_tekst": "→ 27 kg (0/2)"
-      },
-      {
-        "nazwa": "Przywodzenie maszyna",
-        "status": "utrzymaj",
-        "ss": "SS2",
-        "kg": 30,
-        "wykonano": "15-15-10",
-        "ocena_tekst": "ok",
-        "progresja_tekst": "→ 30 kg (0/2)"
-      },
-      {
-        "nazwa": "Odwodzenie maszyna",
-        "status": "utrzymaj",
-        "ss": "SS2",
-        "kg": 60,
-        "wykonano": "12-12-12",
-        "ocena_tekst": "ok",
-        "progresja_tekst": "→ 60 kg (0/2)"
+        "wykonano": "10-10-10",
+        "ocena_tekst": "⚠ nie komplet",
+        "progresja_tekst": "→ 40 kg (0/2)"
       }
     ]
   },
   "historia": [
+    {
+      "id": "l2_20260407",
+      "data": "07.04.2026",
+      "data_label": "07.04 Pn",
+      "typ": "l2",
+      "numer": 22,
+      "tydzien": 9,
+      "ocena": 9,
+      "kcal": 809,
+      "czas_min": 102,
+      "tetno": 135,
+      "obciazenie_aerobowe": 3.7,
+      "notatka": "Świetny trening! Przysiad 2/2 → progresja. Sumo, Step-ups, Ławka, RDL 2/2 → progresja. Suwnica 70kg 12×3 stabilnie.",
+      "cwiczenia": [
+        {
+          "nazwa": "Przysiad ze sztangą",
+          "kg": 42.5,
+          "serie": "8-8-8-8",
+          "status": "progresja"
+        },
+        {
+          "nazwa": "Sumo martwy ciąg",
+          "kg": 26,
+          "serie": "12-12-12",
+          "status": "progresja"
+        },
+        {
+          "nazwa": "Step-ups z hantlami",
+          "kg": 14,
+          "serie": "12-12-12",
+          "status": "progresja"
+        },
+        {
+          "nazwa": "Suwnica — leg press",
+          "kg": 70,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Ławka rzymska",
+          "kg": 24,
+          "serie": "12-12-12",
+          "status": "progresja"
+        },
+        {
+          "nazwa": "RDL z hantlami SS1",
+          "kg": 24,
+          "serie": "20-20-20",
+          "status": "progresja"
+        },
+        {
+          "nazwa": "Prostowanie nóg SS1",
+          "kg": 40,
+          "serie": "10-10-10",
+          "status": "uwaga"
+        }
+      ]
+    },
     {
       "id": "l1_20260405",
       "data": "05.04.2026",
@@ -1599,37 +1681,37 @@
     }
   },
   "ostatni_l2": {
-    "data": "02.04.2026",
+    "data": "07.04.2026",
     "cwiczenia": {
       "Przysiad ze sztangą": {
         "kg": 42.5,
         "serie": "8-8-8-8",
-        "status": "1/2"
+        "status": "✅"
       },
       "Sumo martwy ciąg": {
         "kg": 26,
         "serie": "12-12-12",
-        "status": "1/2"
+        "status": "✅"
       },
       "Step-ups z hantlami": {
         "kg": 14,
         "serie": "12-12-12",
-        "status": "1/2"
+        "status": "✅"
       },
       "Suwnica — leg press": {
         "kg": 70,
         "serie": "12-12-12",
-        "status": "uwaga"
+        "status": "1/2"
       },
       "Ławka rzymska": {
         "kg": 24,
         "serie": "12-12-12",
-        "status": "1/2"
+        "status": "✅"
       },
       "RDL z hantlami": {
         "kg": 24,
         "serie": "20-20-20",
-        "status": "1/2"
+        "status": "✅"
       },
       "Prostowanie nóg": {
         "kg": 40,
