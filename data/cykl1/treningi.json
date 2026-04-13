@@ -1646,37 +1646,44 @@
       "Hip thrust ze sztangą": {
         "kg": 65,
         "serie": "10-10-10-10",
-        "status": "2/2"
+        "status_przed": "1/2",
+        "status_po": "2/2"
       },
       "RDL ze sztangą": {
         "kg": 40,
         "serie": "10-10-10-10",
-        "status": "1/2"
+        "status_przed": "0/2",
+        "status_po": "1/2"
       },
       "Wykroki bułgarskie": {
         "kg": 12,
         "serie": "12-12-12",
-        "status": "1/2"
+        "status_przed": "0/2",
+        "status_po": "1/2"
       },
       "Odwodzenie wyciąg": {
         "kg": 18,
         "serie": "8-8",
-        "status": "0/2"
+        "status_przed": "0/2",
+        "status_po": "0/2"
       },
       "Kickbacki wyciąg": {
         "kg": 27,
         "serie": "10-10",
-        "status": "0/2"
+        "status_przed": "0/2",
+        "status_po": "0/2"
       },
       "Przywodzenie maszyna": {
         "kg": 30,
         "serie": "15-15-10",
-        "status": "0/2"
+        "status_przed": "0/2",
+        "status_po": "0/2"
       },
       "Odwodzenie maszyna": {
         "kg": 60,
         "serie": "12-12-12",
-        "status": "0/2"
+        "status_przed": "0/2",
+        "status_po": "0/2"
       }
     }
   },
@@ -1686,37 +1693,44 @@
       "Przysiad ze sztangą": {
         "kg": 42.5,
         "serie": "8-8-8-8",
-        "status": "✅"
+        "status_przed": "1/2",
+        "status_po": "2/2"
       },
       "Sumo martwy ciąg": {
         "kg": 26,
         "serie": "12-12-12",
-        "status": "✅"
+        "status_przed": "1/2",
+        "status_po": "2/2"
       },
       "Step-ups z hantlami": {
         "kg": 14,
         "serie": "12-12-12",
-        "status": "✅"
+        "status_przed": "1/2",
+        "status_po": "2/2"
       },
       "Suwnica — leg press": {
         "kg": 70,
         "serie": "12-12-12",
-        "status": "1/2"
+        "status_przed": "0/2",
+        "status_po": "1/2"
       },
       "Ławka rzymska": {
         "kg": 24,
         "serie": "12-12-12",
-        "status": "✅"
+        "status_przed": "1/2",
+        "status_po": "2/2"
       },
       "RDL z hantlami": {
         "kg": 24,
         "serie": "20-20-20",
-        "status": "✅"
+        "status_przed": "1/2",
+        "status_po": "2/2"
       },
       "Prostowanie nóg": {
         "kg": 40,
         "serie": "10-10-10",
-        "status": "0/2"
+        "status_przed": "0/2",
+        "status_po": "0/2"
       }
     }
   },
@@ -1726,47 +1740,56 @@
       "Wyciskanie płaska": {
         "kg": 25,
         "serie": "8-8-8-8",
-        "status": "1/2"
+        "status_przed": "1/2",
+        "status_po": "2/2"
       },
       "Skos hantlami": {
         "kg": 9,
         "serie": "12-12-12-12",
-        "status": "1/2"
+        "status_przed": "0/2",
+        "status_po": "1/2"
       },
       "OHP hantlami": {
         "kg": 8,
         "serie": "12-12-12",
-        "status": "1/2"
+        "status_przed": "0/2",
+        "status_po": "1/2"
       },
       "Laterals": {
         "kg": 6,
         "serie": "12-12-12",
-        "status": "0/2"
+        "status_przed": "0/2",
+        "status_po": "0/2"
       },
       "Wiosłowanie": {
         "kg": 37.5,
         "serie": "10-10-10-10",
-        "status": "0/2"
+        "status_przed": "0/2",
+        "status_po": "1/2"
       },
       "Przyciąganie linki": {
         "kg": 35,
         "serie": "8-8-8",
-        "status": "0/2"
+        "status_przed": "0/2",
+        "status_po": "0/2"
       },
       "Face pulls": {
         "kg": 25,
         "serie": "15-15-15",
-        "status": "1/2"
+        "status_przed": "0/2",
+        "status_po": "1/2"
       },
       "Biceps": {
         "kg": 12.5,
         "serie": "12-12-12",
-        "status": "1/2"
+        "status_przed": "0/2",
+        "status_po": "1/2"
       },
       "Triceps": {
         "kg": 12.5,
         "serie": "12-12-12",
-        "status": "1/2"
+        "status_przed": "0/2",
+        "status_po": "1/2"
       }
     }
   }
