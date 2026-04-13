@@ -1,0 +1,245 @@
+{
+  "cykl": 2,
+  "nazwa": "Cykl 2 — Siła + Deficyt",
+  "aktywny_od": "20.04.2026",
+  "sekcje": {
+    "l2": {
+      "label": "🦵 Lower 2 — Nogi dominujące",
+      "czas": "~90 min",
+      "cwiczenia": [
+        {
+          "nazwa": "Martwy ciąg trap bar",
+          "kg": "35",
+          "serie": "4×6–8",
+          "przerwa": "240s",
+          "ss": null,
+          "bold": true,
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "nazwa": "Zakroki wsteczne Smith",
+          "kg": "15",
+          "serie": "3×8–10",
+          "przerwa": "90s",
+          "ss": null,
+          "bold": false,
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "nazwa": "Martwy ciąg jednonóż hantle",
+          "kg": "10",
+          "serie": "3×10–12",
+          "przerwa": "90s",
+          "ss": null,
+          "bold": false,
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "nazwa": "Przysiad przedni wyciąg",
+          "kg": "15–20",
+          "serie": "3×10–12",
+          "przerwa": "90s",
+          "ss": null,
+          "bold": false,
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "nazwa": "Wyprosty tułowia",
+          "kg": "20",
+          "serie": "3×10–12",
+          "przerwa": "90s",
+          "ss": null,
+          "bold": false,
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "nazwa": "Prostowanie nóg maszyna",
+          "kg": "30",
+          "serie": "3×12–15",
+          "przerwa": "→SS",
+          "ss": "SS1",
+          "bold": false,
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "nazwa": "Pull-through wyciąg",
+          "kg": "20",
+          "serie": "3×15–20",
+          "przerwa": "90s",
+          "ss": "SS1",
+          "bold": false,
+          "status": "0/2",
+          "status_color": "muted"
+        }
+      ]
+    },
+    "upper": {
+      "label": "💪 Upper — Górna partia",
+      "czas": "~90 min",
+      "cwiczenia": [
+        {
+          "nazwa": "Wyciskanie hantlami płaskie",
+          "kg": "10",
+          "serie": "4×6–8",
+          "przerwa": "240s",
+          "ss": null,
+          "bold": true,
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "nazwa": "Podciąganie australijskie",
+          "kg": "masa",
+          "serie": "3×8–10",
+          "przerwa": "120s",
+          "ss": null,
+          "bold": false,
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "nazwa": "Ściąganie drążka maszyna",
+          "kg": "—",
+          "serie": "3×8–10",
+          "przerwa": "120s",
+          "ss": null,
+          "bold": false,
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "nazwa": "OHP hantlami",
+          "kg": "9",
+          "serie": "3×8–10",
+          "przerwa": "90s",
+          "ss": null,
+          "bold": false,
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "nazwa": "Odwodzenie ramion wyciąg",
+          "kg": "5",
+          "serie": "3×12–15",
+          "przerwa": "90s",
+          "ss": null,
+          "bold": false,
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "nazwa": "Face pull klęk jednonóż",
+          "kg": "15",
+          "serie": "3×12–15",
+          "przerwa": "90s",
+          "ss": null,
+          "bold": false,
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "nazwa": "Cable crunch",
+          "kg": "15",
+          "serie": "3×12–15",
+          "przerwa": "→SS",
+          "ss": "SS1",
+          "bold": false,
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "nazwa": "Pallof press",
+          "kg": "10",
+          "serie": "3×12–15",
+          "przerwa": "60s",
+          "ss": "SS1",
+          "bold": false,
+          "status": "0/2",
+          "status_color": "muted"
+        }
+      ]
+    },
+    "l1": {
+      "label": "🍑 Lower 1 — Pośladki dominujące",
+      "czas": "~90 min",
+      "cwiczenia": [
+        {
+          "nazwa": "Hip thrust sztanga",
+          "kg": "57,5",
+          "serie": "4×6–8",
+          "przerwa": "240s",
+          "ss": null,
+          "bold": true,
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "nazwa": "Sumo RDL sztanga",
+          "kg": "35",
+          "serie": "3×8–10",
+          "przerwa": "120s",
+          "ss": null,
+          "bold": false,
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "nazwa": "Hip thrust jednostronny hantel",
+          "kg": "16",
+          "serie": "3×10–12",
+          "przerwa": "90s",
+          "ss": null,
+          "bold": false,
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "nazwa": "Odwodzenie maszyna",
+          "kg": "50",
+          "serie": "3×12–15",
+          "przerwa": "→SS",
+          "ss": "SS1",
+          "bold": false,
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "nazwa": "Przywodzenie maszyna",
+          "kg": "27,5",
+          "serie": "3×12–15",
+          "przerwa": "75s",
+          "ss": "SS1",
+          "bold": false,
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "nazwa": "Cable donkey kick",
+          "kg": "10",
+          "serie": "3×12–15",
+          "przerwa": "→SS",
+          "ss": "SS2",
+          "bold": false,
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "nazwa": "Odwodzenie stojąc wyciąg",
+          "kg": "7,5",
+          "serie": "3×15–20",
+          "przerwa": "75s",
+          "ss": "SS2",
+          "bold": false,
+          "status": "0/2",
+          "status_color": "muted"
+        }
+      ]
+    }
+  }
+}

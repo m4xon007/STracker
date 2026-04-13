@@ -650,7 +650,8 @@ function renderPoprzedni(poprzedni,progresja){
   const header='<div class="prev-header"><div class="prev-title">'+poprzedni.tytul+'</div><div class="prev-meta">'+metaParts+'</div><div><span class="stars">'+stars(poprzedni.ocena)+'</span> <strong>'+poprzedni.ocena+'/10</strong></div><div class="prev-desc">'+poprzedni.opis+'</div>'+(poprzedni.wnioski?'<div class="prev-wnioski">💡 '+poprzedni.wnioski+'</div>':'')+'</div>';
   // Pobierz plan dla tego typu treningu żeby pokazać zakres
   const typ=poprzedni.typ||'upper';
-  const planSekcja=DATA.plan&&DATA.plan.sekcje?DATA.plan.sekcje[typ]:null;
+  const activePlan=DATA.planAktywny||DATA.plan;
+  const planSekcja=activePlan&&activePlan.sekcje?activePlan.sekcje[typ]:null;
   const cwiczenia=(poprzedni.cwiczenia||[]).map((ex,i)=>{
     const nameColor=statusColor(ex.status);
     const ssChip=ex.ss?'<span class="ss-chip">'+ex.ss+'</span>':'';
@@ -832,7 +833,7 @@ function renderWaga(waga){
 }
 async function loadData(){
   try{
-    const [config,treningi,plan,progresja,dieta,harmonogram,wagaData,planC2,dietaC2,version]=await Promise.all([
+    const [config,treningi,plan,progresja,dieta,harmonogram,wagaData,planC2,dietaC2,treningiC2,progresjaC2,version]=await Promise.all([
       fetch('data/config.json').then(r=>r.json()),
       fetch('data/cykl1/treningi.json').then(r=>r.json()),
       fetch('data/cykl1/plan.json').then(r=>r.json()),
@@ -842,24 +843,31 @@ async function loadData(){
       fetch('data/waga.json').then(r=>r.json()),
       fetch('data/cykl2/plan.json').then(r=>r.json()).catch(()=>null),
       fetch('data/cykl2/dieta.json').then(r=>r.json()).catch(()=>null),
+      fetch('data/cykl2/treningi.json').then(r=>r.json()).catch(()=>null),
+      fetch('data/cykl2/progresja.json').then(r=>r.json()).catch(()=>null),
       fetch('version.json').then(r=>r.json()).catch(()=>({version:'—'}))
     ]);
-    DATA={config,treningi,plan,progresja,dieta,harmonogram,waga:wagaData};
-    DATA_C2={plan:planC2,dieta:dietaC2};
+    // Cykl 2 jest aktywny — używamy jego danych jako głównych
+    const treningiAktywny = treningiC2 || treningi;
+    const planAktywny = planC2 || plan;
+    const progresjaAktywna = progresjaC2 || progresja;
+    DATA={config,treningi,plan,progresja,dieta,harmonogram,waga:wagaData,
+          treningiC2,planAktywny,progresjaAktywna};
+    DATA_C2={plan:planC2,dieta:dietaC2,treningi:treningiC2,progresja:progresjaC2};
     // Wersja w headerze
     const vEl=document.getElementById('header-version');
     if(vEl)vEl.textContent='v'+version.version;
-    renderHeader(treningi.meta||{});
-    renderNastepny(treningi.nastepny,treningi);
-    renderPoprzedni(treningi.poprzedni,progresja);
-    renderProgresja(progresja);
-    renderHistoria(treningi.historia);
+    renderHeader(treningiAktywny.meta||{});
+    renderNastepny(treningiAktywny.nastepny, treningiAktywny);
+    renderPoprzedni(treningiAktywny.poprzedni, progresjaAktywna);
+    renderProgresja(progresjaAktywna);
+    renderHistoria(treningiAktywny.historia);
     renderPlan(plan,'plan-c1-container');
-    renderPlan(DATA_C2.plan,'plan-c2-container');
-    renderSzablony(plan);
+    renderPlan(planC2,'plan-c2-container');
+    renderSzablony(planAktywny);
     renderHarmonogram(harmonogram);
     renderDieta(dieta,'dieta-c1-container');
-    renderDieta(DATA_C2.dieta,'dieta-c2-container');
+    renderDieta(dietaC2,'dieta-c2-container');
     renderWaga(wagaData);
   }catch(e){
     console.error('Błąd:',e);

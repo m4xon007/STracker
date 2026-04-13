@@ -1,0 +1,136 @@
+{
+  "cykl": 2,
+  "sekcje": {
+    "l2": {
+      "label": "🦵 Lower 2",
+      "badge_class": "prog-title-l2",
+      "naglowki": [],
+      "cwiczenia": [
+        {
+          "nazwa": "Martwy ciąg trap bar",
+          "zakres": "4×6–8",
+          "sesje": []
+        },
+        {
+          "nazwa": "Zakroki wsteczne Smith",
+          "zakres": "3×8–10",
+          "sesje": []
+        },
+        {
+          "nazwa": "Martwy ciąg jednonóż hantle",
+          "zakres": "3×10–12",
+          "sesje": []
+        },
+        {
+          "nazwa": "Przysiad przedni wyciąg",
+          "zakres": "3×10–12",
+          "sesje": []
+        },
+        {
+          "nazwa": "Wyprosty tułowia",
+          "zakres": "3×10–12",
+          "sesje": []
+        },
+        {
+          "nazwa": "Prostowanie nóg maszyna",
+          "zakres": "3×12–15",
+          "sesje": []
+        },
+        {
+          "nazwa": "Pull-through wyciąg",
+          "zakres": "3×15–20",
+          "sesje": []
+        }
+      ]
+    },
+    "upper": {
+      "label": "💪 Upper",
+      "badge_class": "prog-title-upper",
+      "naglowki": [],
+      "cwiczenia": [
+        {
+          "nazwa": "Wyciskanie hantlami płaskie",
+          "zakres": "4×6–8",
+          "sesje": []
+        },
+        {
+          "nazwa": "Podciąganie australijskie",
+          "zakres": "3×8–10",
+          "sesje": []
+        },
+        {
+          "nazwa": "Ściąganie drążka maszyna",
+          "zakres": "3×8–10",
+          "sesje": []
+        },
+        {
+          "nazwa": "OHP hantlami",
+          "zakres": "3×8–10",
+          "sesje": []
+        },
+        {
+          "nazwa": "Odwodzenie ramion wyciąg",
+          "zakres": "3×12–15",
+          "sesje": []
+        },
+        {
+          "nazwa": "Face pull klęk jednonóż",
+          "zakres": "3×12–15",
+          "sesje": []
+        },
+        {
+          "nazwa": "Cable crunch",
+          "zakres": "3×12–15",
+          "sesje": []
+        },
+        {
+          "nazwa": "Pallof press",
+          "zakres": "3×12–15",
+          "sesje": []
+        }
+      ]
+    },
+    "l1": {
+      "label": "🍑 Lower 1",
+      "badge_class": "prog-title-l1",
+      "naglowki": [],
+      "cwiczenia": [
+        {
+          "nazwa": "Hip thrust sztanga",
+          "zakres": "4×6–8",
+          "sesje": []
+        },
+        {
+          "nazwa": "Sumo RDL sztanga",
+          "zakres": "3×8–10",
+          "sesje": []
+        },
+        {
+          "nazwa": "Hip thrust jednostronny hantel",
+          "zakres": "3×10–12",
+          "sesje": []
+        },
+        {
+          "nazwa": "Odwodzenie maszyna",
+          "zakres": "3×12–15",
+          "sesje": []
+        },
+        {
+          "nazwa": "Przywodzenie maszyna",
+          "zakres": "3×12–15",
+          "sesje": []
+        },
+        {
+          "nazwa": "Cable donkey kick",
+          "zakres": "3×12–15",
+          "sesje": []
+        },
+        {
+          "nazwa": "Odwodzenie stojąc wyciąg",
+          "zakres": "3×15–20",
+          "sesje": []
+        }
+      ]
+    }
+  }
+}
