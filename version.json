@@ -1,5 +1,5 @@
 {
-  "version": "2.0.1",
+  "version": "2.0.2",
   "data": "13.04.2026",
-  "changelog": "Szablony dynamiczne z plan.json, Poprzedni zakres+progresja N/2, sekcja logowania sesji, ostatni_typ w treningi.json, harmonogram wagi/pomiarów, version.json"
+  "changelog": "Poprawne statusy 0/2 1/2 2/2 dla ostatni_upper i ostatni_l1"
 }
