@@ -681,12 +681,70 @@ function renderDieta(dieta,containerId){
   if(!dieta){document.getElementById(containerId).innerHTML='<div class="loading-msg">Brak danych diety.</div>';return;}
   const typBadge={l2:'badge-l2-sm',upper:'badge-upper-sm',l1:'badge-l1-sm',odpoczynek:'badge-upper-sm',core:'badge-upper-sm'};
   const dniLabels={pn:'Pn',wt:'Wt',sr:'Śr',czw:'Czw',pt:'Pt',sob:'Sob',nd:'Nd'};
-  const statGrid='<div class="stat-grid" style="margin-bottom:12px"><div class="stat-box"><span class="stat-val">'+dieta.makra.kcal_trening+'</span><span class="stat-lbl">kcal trening</span></div><div class="stat-box"><span class="stat-val">'+dieta.makra.kcal_odpoczynek+'</span><span class="stat-lbl">kcal odpoczynek</span></div><div class="stat-box"><span class="stat-val">'+dieta.makra.bialko_min_g+'g</span><span class="stat-lbl">białko min.</span></div></div><div class="alert alert-info" style="margin-bottom:12px">'+dieta.nazwa+' · '+dieta.aktywna_od+(dieta.aktywna_do?' → '+dieta.aktywna_do:'')+'</div>';
+  const m=dieta.makra;
+  // Stat grid — 6 kafelków
+  const statGrid='<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px">'
+    +'<div class="stat-box"><span class="stat-val" style="font-size:16px">'+m.kcal_trening+'</span><span class="stat-lbl">🏋️ śr. kcal</span></div>'
+    +'<div class="stat-box"><span class="stat-val" style="font-size:16px">'+m.kcal_odpoczynek+'</span><span class="stat-lbl">😴 śr. kcal</span></div>'
+    +'<div class="stat-box"><span class="stat-val" style="font-size:16px">'+m.bialko_min_g+'g</span><span class="stat-lbl">🥛 śr. białko</span></div>'
+    +(m.tdee_tygodniowe_sr?'<div class="stat-box"><span class="stat-val" style="font-size:16px">'+m.tdee_tygodniowe_sr+'</span><span class="stat-lbl">⚡ TDEE śr.</span></div>':'')
+    +(m.deficyt_dzien?'<div class="stat-box"><span class="stat-val" style="font-size:16px;color:var(--green)">-'+m.deficyt_dzien+'</span><span class="stat-lbl">📉 deficyt/dzień</span></div>':'')
+    +(m.tempo_kg_tyg?'<div class="stat-box"><span class="stat-val" style="font-size:16px">'+m.tempo_kg_tyg+'</span><span class="stat-lbl">⚖️ kg/tydz.</span></div>':'')
+    +'</div>'
+    +'<div class="alert alert-info" style="margin-bottom:12px">'+dieta.nazwa+' · '+dieta.aktywna_od+(dieta.aktywna_do?' → '+dieta.aktywna_do:'')+'</div>';
   const dniKeys=Object.keys(dieta.dni||{});
   const stabsHtml='<div class="subtabs" style="margin-bottom:12px">'+dniKeys.map((k,i)=>'<div class="stab '+(i===0?'active':'')+'" onclick="showStab(\'dieta-'+containerId+'\',\''+k+'\',this)">'+(dniLabels[k]||k)+'</div>').join('')+'<div class="stab" onclick="showStab(\'dieta-'+containerId+'\',\'makra\',this)">📊 Makra</div></div>';
-  const dniHtml=dniKeys.map((k,i)=>{const dzien=dieta.dni[k];const badgeType=typBadge[dzien.typ]||'badge-upper-sm';const posilkiHtml=(dzien.posilki||[]).map(p=>{if(p.warianty){const warHtml=p.warianty.map(w=>'<div style="margin-bottom:8px"><div style="font-size:10px;color:var(--muted);padding:3px 0;font-family:var(--mono)">── '+w.label+' ──</div>'+w.skladniki.map(s=>'<div class="meal-row"><span class="meal-name">'+s.nazwa+'</span><span class="meal-cals">'+s.ilosc+'</span></div>').join('')+'</div>').join('');return'<div class="meal-day"><div class="meal-day-title">'+p.pora+(p.kcal?' — '+p.kcal+' kcal':'')+'</div>'+warHtml+'</div>';}const skladniki=(p.skladniki||[]).map(s=>'<div class="meal-row"><span class="meal-name">'+s.nazwa+'</span><span class="meal-cals">'+s.ilosc+'</span></div>').join('');return'<div class="meal-day"><div class="meal-day-title">'+p.pora+(p.kcal?' — '+p.kcal+' kcal':'')+(p.bialko_g?' · '+p.bialko_g+'g B':'')+'</div>'+skladniki+'</div>';}).join('');const summary=dzien.podsumowanie?'<div class="meal-summary">~'+dzien.podsumowanie.kcal+' kcal · ~'+dzien.podsumowanie.bialko_g+'g białka</div>':'';return'<div class="subview '+(i===0?'active':'')+'" id="sv-dieta-'+containerId+'-'+k+'"><div class="hist-badge '+badgeType+'" style="margin-bottom:10px;display:inline-block">'+dzien.label+'</div>'+posilkiHtml+summary+'</div>';}).join('');
-  const makra=dieta.makra;const tabTyg=(makra.tabela_tygodnia||[]).map(r=>'<tr style="border-bottom:1px solid var(--border)"><td style="padding:6px 8px;font-family:var(--mono)">'+r.dzien+'</td><td style="padding:6px 8px;text-align:center;font-family:var(--mono);font-weight:600">'+r.kcal+'</td><td style="padding:6px 8px;text-align:center;font-family:var(--mono);color:'+(r.bialko_g>=120?'var(--green)':'var(--orange)')+'">'+r.bialko_g+'g</td><td style="padding:6px 8px"><span class="hist-badge badge-'+(r.typ==='odpoczynek'||r.typ==='core'||r.typ==='core+cheat'?'upper':r.typ)+'-sm">'+r.typ+'</span></td></tr>').join('');
-  const makraHtml='<div class="subview" id="sv-dieta-'+containerId+'-makra"><div class="card" style="margin-bottom:10px"><div class="card-header"><span class="card-title">⚡ TDEE &amp; Deficyt</span></div><div class="card-body" style="padding:0 14px"><div class="meal-row"><span class="meal-name">TDEE (szacowany)</span><span class="meal-cals" style="font-weight:600">~'+makra.tdee_szac+' kcal</span></div>'+(makra.deficyt_dzien?'<div class="meal-row"><span class="meal-name">Efektywny deficyt</span><span class="meal-cals" style="font-weight:600;color:var(--green)">~'+makra.deficyt_dzien+' kcal/dzień</span></div>':'')+(makra.tempo_kg_tyg?'<div class="meal-row"><span class="meal-name">Tempo utraty</span><span class="meal-cals" style="font-weight:600">~'+makra.tempo_kg_tyg+' kg/tydz.</span></div>':'')+'<div class="meal-row"><span class="meal-name">Białko min.</span><span class="meal-cals" style="font-weight:600">'+makra.bialko_min_g+'+ g/dzień</span></div>'+(makra.kreatyna?'<div class="meal-row"><span class="meal-name">Kreatyna</span><span class="meal-cals">'+makra.kreatyna+'</span></div>':'')+(makra.suplementy?'<div class="meal-row"><span class="meal-name">Supl.</span><span class="meal-cals">'+makra.suplementy+'</span></div>':'')+'</div></div>'+(tabTyg?'<div class="card"><div class="card-header"><span class="card-title">📊 Tydzień</span></div><div style="overflow-x:auto"><table style="width:100%;min-width:300px;border-collapse:collapse;font-size:11px"><tr style="background:linear-gradient(135deg,#fce4ec,#f8bbd0)"><th style="padding:7px 8px;text-align:left;font-family:var(--mono);font-size:9px;color:var(--rose);border-bottom:1px solid var(--border)">Dzień</th><th style="padding:7px 8px;text-align:center;font-family:var(--mono);font-size:9px;color:var(--rose);border-bottom:1px solid var(--border)">kcal</th><th style="padding:7px 8px;text-align:center;font-family:var(--mono);font-size:9px;color:var(--rose);border-bottom:1px solid var(--border)">Białko</th><th style="padding:7px 8px;text-align:left;font-family:var(--mono);font-size:9px;color:var(--rose);border-bottom:1px solid var(--border)">Typ</th></tr>'+tabTyg+'</table></div></div>':'')+'</div>';
+  const dniHtml=dniKeys.map((k,i)=>{
+    const dzien=dieta.dni[k];
+    const badgeType=typBadge[dzien.typ]||'badge-upper-sm';
+    const posilkiHtml=(dzien.posilki||[]).map(p=>{
+      if(p.warianty){const warHtml=p.warianty.map(w=>'<div style="margin-bottom:8px"><div style="font-size:10px;color:var(--muted);padding:3px 0;font-family:var(--mono)">── '+w.label+' ──</div>'+w.skladniki.map(s=>'<div class="meal-row"><span class="meal-name">'+s.nazwa+'</span><span class="meal-cals">'+s.ilosc+'</span></div>').join('')+'</div>').join('');return'<div class="meal-day"><div class="meal-day-title">'+p.pora+(p.kcal?' — '+p.kcal+' kcal':'')+'</div>'+warHtml+'</div>';}
+      const skladniki=(p.skladniki||[]).map(s=>'<div class="meal-row"><span class="meal-name">'+s.nazwa+'</span><span class="meal-cals">'+s.ilosc+'</span></div>').join('');
+      return'<div class="meal-day"><div class="meal-day-title">'+p.pora+(p.kcal?' — '+p.kcal+' kcal':'')+(p.bialko_g?' · '+p.bialko_g+'g B':'')+'</div>'+skladniki+'</div>';
+    }).join('');
+    const summary=dzien.podsumowanie?'<div class="meal-summary">~'+dzien.podsumowanie.kcal+' kcal · ~'+dzien.podsumowanie.bialko_g+'g białka</div>':'';
+    return'<div class="subview '+(i===0?'active':'')+'" id="sv-dieta-'+containerId+'-'+k+'"><div class="hist-badge '+badgeType+'" style="margin-bottom:10px;display:inline-block">'+dzien.label+'</div>'+posilkiHtml+summary+'</div>';
+  }).join('');
+  // Makra — rozbudowana sekcja
+  const tabTyg=(m.tabela_tygodnia||[]).map(r=>{
+    const defStr=r.deficyt?'<span style="color:'+(r.deficyt<-400?'var(--green)':'var(--muted)')+'">'+r.deficyt+'</span>':'—';
+    const tdeeStr=r.tdee||'—';
+    return'<tr style="border-bottom:1px solid var(--border)">'
+      +'<td style="padding:6px 8px;font-family:var(--mono)">'+r.dzien+'</td>'
+      +'<td style="padding:6px 8px;text-align:center;font-family:var(--mono);font-weight:600">'+r.kcal+'</td>'
+      +'<td style="padding:6px 8px;text-align:center;font-family:var(--mono);color:'+(r.bialko_g>=120?'var(--green)':'var(--orange)')+'">'+r.bialko_g+'g</td>'
+      +'<td style="padding:6px 8px;text-align:center;font-family:var(--mono);color:var(--muted);font-size:10px">'+tdeeStr+'</td>'
+      +'<td style="padding:6px 8px;text-align:center;font-family:var(--mono);font-size:10px">'+defStr+'</td>'
+      +'<td style="padding:6px 8px"><span class="hist-badge badge-'+(r.typ==='odpoczynek'||r.typ==='core'?'upper':r.typ)+'-sm">'+r.typ+'</span></td>'
+      +'</tr>';
+  }).join('');
+  const makraHtml='<div class="subview" id="sv-dieta-'+containerId+'-makra">'
+    // Profil metaboliczny
+    +(m.bmr?'<div class="card" style="margin-bottom:10px"><div class="card-header"><span class="card-title">🔥 Profil metaboliczny</span></div><div class="card-body" style="padding:0 14px">'
+      +'<div class="meal-row"><span class="meal-name">BMR (Katch-McArdle)</span><span class="meal-cals" style="font-weight:600">'+m.bmr+' kcal</span></div>'
+      +'<div class="meal-row"><span class="meal-name">Aktywność dzienna</span><span class="meal-cals">+'+m.aktywnosc_dzienna+' kcal</span></div>'
+      +'<div class="meal-row"><span class="meal-name">TDEE dni treningowe</span><span class="meal-cals" style="font-weight:600;color:var(--orange)">~'+m.tdee_trening_sr+' kcal</span></div>'
+      +'<div class="meal-row"><span class="meal-name">TDEE dni odpoczynku</span><span class="meal-cals" style="font-weight:600">'+m.tdee_odpoczynek+' kcal</span></div>'
+      +'<div class="meal-row"><span class="meal-name">TDEE średnie tygodniowe</span><span class="meal-cals" style="font-weight:600;color:var(--rose)">~'+m.tdee_tygodniowe_sr+' kcal</span></div>'
+      +'</div></div>':'')
+    // Strategia deficytu
+    +'<div class="card" style="margin-bottom:10px"><div class="card-header"><span class="card-title">📉 Strategia deficytu</span></div><div class="card-body" style="padding:0 14px">'
+      +'<div class="meal-row"><span class="meal-name">Śr. deficyt dzienny</span><span class="meal-cals" style="font-weight:600;color:var(--green)">-'+m.deficyt_dzien+' kcal</span></div>'
+      +'<div class="meal-row"><span class="meal-name">Tempo utraty</span><span class="meal-cals" style="font-weight:600">~'+m.tempo_kg_tyg+' kg/tydz.</span></div>'
+      +(m.kreatyna?'<div class="meal-row"><span class="meal-name">Kreatyna</span><span class="meal-cals">'+m.kreatyna+'</span></div>':'')
+      +(m.suplementy?'<div class="meal-row"><span class="meal-name">Suplementy</span><span class="meal-cals">'+m.suplementy+'</span></div>':'')
+    +'</div></div>'
+    // Tabela tygodnia
+    +(tabTyg?'<div class="card"><div class="card-header"><span class="card-title">📊 Tydzień</span></div><div style="overflow-x:auto"><table style="width:100%;min-width:360px;border-collapse:collapse;font-size:11px">'
+      +'<tr style="background:linear-gradient(135deg,#fce4ec,#f8bbd0)">'
+        +'<th style="padding:7px 8px;text-align:left;font-family:var(--mono);font-size:9px;color:var(--rose);border-bottom:1px solid var(--border)">Dzień</th>'
+        +'<th style="padding:7px 8px;text-align:center;font-family:var(--mono);font-size:9px;color:var(--rose);border-bottom:1px solid var(--border)">kcal</th>'
+        +'<th style="padding:7px 8px;text-align:center;font-family:var(--mono);font-size:9px;color:var(--rose);border-bottom:1px solid var(--border)">B</th>'
+        +'<th style="padding:7px 8px;text-align:center;font-family:var(--mono);font-size:9px;color:var(--rose);border-bottom:1px solid var(--border)">TDEE</th>'
+        +'<th style="padding:7px 8px;text-align:center;font-family:var(--mono);font-size:9px;color:var(--rose);border-bottom:1px solid var(--border)">def.</th>'
+        +'<th style="padding:7px 8px;text-align:left;font-family:var(--mono);font-size:9px;color:var(--rose);border-bottom:1px solid var(--border)">Typ</th>'
+      +'</tr>'+tabTyg+'</table></div></div>':'')
+    +'</div>';
   document.getElementById(containerId).innerHTML=statGrid+stabsHtml+dniHtml+makraHtml;
 }
 function renderWaga(waga){

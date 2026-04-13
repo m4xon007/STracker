@@ -4,12 +4,16 @@
   "aktywna_od": "06.04.2026",
   "aktywna_do": "15.06.2026",
   "makra": {
-    "kcal_trening": 1679,
-    "kcal_odpoczynek": 1340,
+    "kcal_trening": 1700,
+    "kcal_odpoczynek": 1331,
     "bialko_min_g": 118,
-    "tdee_szac": 2100,
+    "bmr": 1266,
+    "aktywnosc_dzienna": 340,
+    "tdee_trening_sr": 2309,
+    "tdee_odpoczynek": 1606,
+    "tdee_tygodniowe_sr": 1907,
     "deficyt_dzien": 418,
-    "tempo_kg_tyg": "0.3–0.5",
+    "tempo_kg_tyg": "~0,38",
     "kreatyna": "5g/dzień",
     "suplementy": "WPC 82 (Olimp)",
     "tabela_tygodnia": [
@@ -17,43 +21,57 @@
         "dzien": "Pn",
         "kcal": 1679,
         "bialko_g": 137,
-        "typ": "l2"
+        "typ": "l2",
+        "tdee": 2306,
+        "deficyt": -627
       },
       {
         "dzien": "Wt",
         "kcal": 1357,
         "bialko_g": 118,
-        "typ": "odpoczynek"
+        "typ": "odpoczynek",
+        "tdee": 1606,
+        "deficyt": -249
       },
       {
         "dzien": "Śr",
         "kcal": 1614,
         "bialko_g": 130,
-        "typ": "upper"
+        "typ": "upper",
+        "tdee": 2224,
+        "deficyt": -610
       },
       {
         "dzien": "Czw",
         "kcal": 1295,
         "bialko_g": 130,
-        "typ": "odpoczynek"
+        "typ": "odpoczynek",
+        "tdee": 1606,
+        "deficyt": -311
       },
       {
         "dzien": "Pt",
         "kcal": 1315,
         "bialko_g": 113,
-        "typ": "odpoczynek"
+        "typ": "odpoczynek",
+        "tdee": 1606,
+        "deficyt": -291
       },
       {
         "dzien": "Sob",
         "kcal": 1807,
         "bialko_g": 110,
-        "typ": "l1"
+        "typ": "l1",
+        "tdee": 2396,
+        "deficyt": -589
       },
       {
         "dzien": "Nd",
         "kcal": 1358,
         "bialko_g": 91,
-        "typ": "odpoczynek"
+        "typ": "odpoczynek",
+        "tdee": 1606,
+        "deficyt": -248
       }
     ]
   },
