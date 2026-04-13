@@ -500,7 +500,11 @@ function statusColor(s){if(s==='rekord'||s==='progresja')return'green';if(s==='u
 function progresjaIco(p){if(p==='zwieksz')return'<span style="color:var(--green);font-weight:700">↑</span>';if(p==='zmniejsz')return'<span style="color:var(--red);font-weight:700">↓</span>';return'<span style="color:var(--muted)">→</span>';}
 function statusDot(s){const map={rekord:'<span style="color:var(--yellow)">★</span>',progresja:'<span style="color:var(--green)">↑</span>',uwaga:'<span style="color:var(--orange)">⚠</span>',utrzymaj:'<span style="color:var(--muted)">→</span>'};return map[s]||'';}
 function planStatusStyle(color){const map={muted:'color:var(--muted)',rose:'color:var(--rose)',yellow:'color:var(--yellow)',green:'color:var(--green);font-weight:700',orange:'color:var(--orange)'};return map[color]||'';}
+<<<<<<< HEAD
 function renderHeader(meta){document.getElementById('header-sub').textContent=meta.header_sub||'';}
+=======
+function renderHeader(meta){document.getElementById('header-sub').textContent=meta.header_sub||'';document.getElementById('header-badge').textContent=meta.header_badge||'';}
+>>>>>>> 00a4b84d9b8bf0aa85429e8fe865ac6d274f5e6f
 function renderNastepny(nastepny,treningi){
   if(!nastepny){document.getElementById('nastepny-container').innerHTML='<div class="loading-msg">Brak danych.</div>';return;}
   const cwiczenia=nastepny.cwiczenia||[];EX_COUNT=cwiczenia.length;TRAIN_LABEL=nastepny.emoji+' '+nastepny.label;
