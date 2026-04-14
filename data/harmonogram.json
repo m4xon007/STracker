@@ -41,13 +41,13 @@
                 },
                 {
                   "n": 25,
-                  "typ": "waga",
-                  "tekst": "⚖️"
+                  "typ": "plan",
+                  "tekst": "L1"
                 },
                 {
                   "n": 26,
-                  "typ": "plan",
-                  "tekst": "L1"
+                  "typ": "waga",
+                  "tekst": "⚖️"
                 }
               ]
             },
@@ -119,8 +119,8 @@
                 },
                 {
                   "n": 3,
-                  "typ": "empty",
-                  "tekst": ""
+                  "typ": "waga",
+                  "tekst": "⚖️"
                 }
               ]
             },
@@ -160,8 +160,8 @@
                 },
                 {
                   "n": 10,
-                  "typ": "empty",
-                  "tekst": ""
+                  "typ": "waga",
+                  "tekst": "⚖️"
                 }
               ]
             },
@@ -171,13 +171,13 @@
               "dni": [
                 {
                   "n": 11,
-                  "typ": "pomiary",
-                  "tekst": "📐"
+                  "typ": "plan",
+                  "tekst": "L2"
                 },
                 {
                   "n": 12,
-                  "typ": "empty",
-                  "tekst": ""
+                  "typ": "pomiary",
+                  "tekst": "📐"
                 },
                 {
                   "n": 13,
@@ -196,13 +196,13 @@
                 },
                 {
                   "n": 16,
-                  "typ": "waga",
-                  "tekst": "⚖️"
+                  "typ": "plan",
+                  "tekst": "L1"
                 },
                 {
                   "n": 17,
-                  "typ": "plan",
-                  "tekst": "L1"
+                  "typ": "waga",
+                  "tekst": "⚖️"
                 }
               ]
             },
@@ -242,8 +242,8 @@
                 },
                 {
                   "n": 24,
-                  "typ": "empty",
-                  "tekst": ""
+                  "typ": "waga",
+                  "tekst": "⚖️"
                 }
               ]
             },
@@ -283,8 +283,8 @@
                 },
                 {
                   "n": 31,
-                  "typ": "empty",
-                  "tekst": ""
+                  "typ": "waga",
+                  "tekst": "⚖️"
                 }
               ]
             }
@@ -330,8 +330,8 @@
                 },
                 {
                   "n": 7,
-                  "typ": "empty",
-                  "tekst": ""
+                  "typ": "waga",
+                  "tekst": "⚖️"
                 }
               ]
             },
@@ -366,13 +366,13 @@
                 },
                 {
                   "n": 13,
-                  "typ": "waga",
-                  "tekst": "⚖️"
+                  "typ": "plan",
+                  "tekst": "L1"
                 },
                 {
                   "n": 14,
-                  "typ": "plan",
-                  "tekst": "L1"
+                  "typ": "waga",
+                  "tekst": "⚖️"
                 }
               ]
             },
