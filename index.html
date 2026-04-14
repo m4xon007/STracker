@@ -565,23 +565,41 @@ function progresjaIco(p){if(p==='zwieksz')return'<span style="color:var(--green)
 function statusDot(s){const map={rekord:'<span style="color:var(--yellow)">★</span>',progresja:'<span style="color:var(--green)">↑</span>',uwaga:'<span style="color:var(--orange)">⚠</span>',utrzymaj:'<span style="color:var(--muted)">→</span>'};return map[s]||'';}
 function planStatusStyle(color){const map={muted:'color:var(--muted)',rose:'color:var(--rose)',yellow:'color:var(--yellow)',green:'color:var(--green);font-weight:700',orange:'color:var(--orange)'};return map[color]||'';}
 function renderHeader(meta){document.getElementById('header-sub').textContent=meta.header_sub||'';}
+function calcProgresja(nazwa, ostatni, ostatniPrev){
+  if(!ostatni||!ostatni.cwiczenia) return {prog:'same',ico:'→'};
+  const matchOst=Object.entries(ostatni.cwiczenia).find(([k])=>
+    k.toLowerCase().includes(nazwa.toLowerCase().split(' ')[0])||
+    nazwa.toLowerCase().includes(k.toLowerCase().split(' ')[0])
+  );
+  if(!matchOst) return {prog:'same',ico:'→'};
+  const dOst=matchOst[1];
+  if(!dOst.w_zakresie) return {prog:'same',ico:'→'};
+  if(!ostatniPrev||!ostatniPrev.cwiczenia) return {prog:'same',ico:'→'};
+  const matchPrev=Object.entries(ostatniPrev.cwiczenia).find(([k])=>
+    k.toLowerCase().includes(nazwa.toLowerCase().split(' ')[0])||
+    nazwa.toLowerCase().includes(k.toLowerCase().split(' ')[0])
+  );
+  if(!matchPrev) return {prog:'same',ico:'→'};
+  const dPrev=matchPrev[1];
+  if(Math.abs((dOst.kg||0)-(dPrev.kg||0))>0.01) return {prog:'same',ico:'→'};
+  if(dPrev.w_zakresie) return {prog:'up',ico:'↑'};
+  return {prog:'same',ico:'→'};
+}
 function renderNastepny(nastepny,treningi){
   if(!nastepny){document.getElementById('nastepny-container').innerHTML='<div class="loading-msg">Brak danych.</div>';return;}
   const cwiczenia=nastepny.cwiczenia||[];EX_COUNT=cwiczenia.length;TRAIN_LABEL=nastepny.emoji+' '+nastepny.label;
-  // Pobierz ostatni trening tego typu
   const ostKey='ostatni_'+nastepny.typ;
+  const ostPrevKey='ostatni_'+nastepny.typ+'_prev';
   const ostatniTyp=treningi&&treningi[ostKey]?treningi[ostKey]:null;
-  const legenda='<div class="prog-legend"><span>↑ <span style="color:var(--green)">zwiększ</span></span><span>→ <span style="color:var(--muted)">utrzymaj</span></span><span>↓ <span style="color:var(--red)">zmniejsz</span></span><span style="font-size:9px;color:var(--muted)">SS = superseria</span></div>';
+  const ostatniPrev=treningi&&treningi[ostPrevKey]?treningi[ostPrevKey]:null;
+  const legenda='<div class="prog-legend"><span>↑ <span style="color:var(--green)">zwiększ</span></span><span>→ <span style="color:var(--muted)">utrzymaj</span></span><span style="font-size:9px;color:var(--muted)">prog. obliczana automatycznie</span></div>';
   const header='<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px"><span class="training-type-badge '+(nastepny.badge_class||'')+'">'+nastepny.emoji+' '+nastepny.label+'</span><span style="font-family:var(--mono);font-size:10px;color:var(--muted)">trening '+nastepny.numer+'</span></div>';
   const logProgress='<div class="log-progress" id="log-progress">Dotknij ćwiczenie · <span id="log-count">0</span>/'+EX_COUNT+' zapisanych</div>';
   const exCards=cwiczenia.map((ex,i)=>{
     const cardClass=['ex-card',ex.highlight?'highlight':'',ex.ss?'ss':''].filter(Boolean).join(' ');
     const nameClass=['ex-name',ex.highlight?'highlight':'',ex.ss?'ss-color':''].filter(Boolean).join(' ');
     const ssChip=ex.ss?'<span class="ss-badge">'+ex.ss+'</span>':'';
-    const progIco=progresjaIco(ex.progresja);
-    const ostatniKg=ex.poprzedni_kg!==null&&ex.poprzedni_kg!==undefined?ex.poprzedni_kg+' kg':'—';
-    // Znajdź ostatnią serię z ostatni_typ
-    let ostatniSerie='—'; let statusVal=''; let statusBadge='';
+    let ostatniKg='—',ostatniSerie='—',statusBadge='',wZakresie=false,kgNum=null;
     if(ostatniTyp&&ostatniTyp.cwiczenia){
       const match=Object.entries(ostatniTyp.cwiczenia).find(([k])=>
         k.toLowerCase().includes(ex.nazwa.toLowerCase().split(' ')[0])||
@@ -589,50 +607,51 @@ function renderNastepny(nastepny,treningi){
       );
       if(match){
         const d=match[1];
+        kgNum=d.kg;
+        ostatniKg=(d.kg!=null?d.kg+' kg':'—');
         ostatniSerie=d.serie||'—';
-        statusVal=d.status_po||d.status||'';
-        if(statusVal==='✅')statusBadge='<span style="color:var(--rose);font-weight:700">✅</span>';
-        else if(statusVal==='2/2')statusBadge='<span style="color:var(--green);font-weight:700">2/2</span>';
-        else if(statusVal==='1/2')statusBadge='<span style="color:var(--yellow);font-weight:700">1/2</span>';
-        else if(statusVal==='0/2')statusBadge='<span style="color:var(--muted)">0/2</span>';
-        else if(statusVal==='uwaga')statusBadge='<span style="color:var(--orange)">⚠</span>';
+        wZakresie=!!d.w_zakresie;
+        const sv=d.status_po||d.status||'';
+        if(sv==='✅')statusBadge='<span style="color:var(--rose);font-weight:700">✅</span>';
+        else if(sv==='2/2')statusBadge='<span style="color:var(--green);font-weight:700">2/2</span>';
+        else if(sv==='1/2')statusBadge='<span style="color:var(--yellow);font-weight:700">1/2</span>';
+        else if(sv==='0/2')statusBadge='<span style="color:var(--muted)">0/2</span>';
+        else statusBadge=wZakresie?'<span style="color:var(--green);font-size:12px">✓</span>':'<span style="color:var(--muted)">—</span>';
       }
     }
+    const {prog}=calcProgresja(ex.nazwa,ostatniTyp,ostatniPrev);
+    const progIcoHtml=prog==='up'
+      ?'<span style="color:var(--green);font-weight:700;font-size:16px">↑</span>'
+      :'<span style="color:var(--muted);font-size:16px">→</span>';
+    const phKg=prog==='up'&&kgNum!=null?(kgNum+2.5)+'':ex.placeholder_kg||'';
+    const setsMatch=ex.serie.match(/^(\d+)[×x]/);
+    const sets=setsMatch?parseInt(setsMatch[1]):4;
+    const prevReps=(ostatniSerie!=='—'?ostatniSerie:ex.placeholder_reps||'').split('-');
+    let serieInputs='<div style="display:flex;gap:4px;align-items:flex-end;flex-wrap:wrap;flex:2">';
+    serieInputs+='<div style="font-family:var(--mono);font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;width:100%;margin-bottom:2px">Powtórzenia</div>';
+    for(let s=0;s<sets;s++){
+      const ph=prevReps[s]||prevReps[0]||'';
+      serieInputs+='<div style="display:flex;flex-direction:column;align-items:center;gap:2px;flex:1;min-width:32px">'
+        +'<input type="number" id="lr-'+i+'-'+s+'" placeholder="'+ph+'" inputmode="numeric" min="0" max="99" onclick="event.stopPropagation()" oninput="markSeriaFilled('+i+','+sets+')" style="width:100%;padding:6px 2px;text-align:center;border:1px solid var(--border2);border-radius:6px;font-family:var(--mono);font-size:14px;font-weight:700;color:var(--text);background:var(--surface);outline:none">'
+        +'<span style="font-family:var(--mono);font-size:8px;color:var(--muted)">'+(s+1)+'</span>'
+      +'</div>';
+    }
+    serieInputs+='</div>';
     return'<div class="'+cardClass+'" id="ec-'+i+'" onclick="toggleLog('+i+')">'
       +'<div class="ex-card-main">'
         +'<div class="'+nameClass+'"><span class="ex-num">'+(i+1)+'.</span>'+ex.nazwa+' '+ssChip+'</div>'
-        +'<div style="display:flex;align-items:center;gap:8px">'
-          +'<span style="font-size:16px">'+progIco+'</span>'
-          +'<span class="log-toggle-icon" id="lti-'+i+'">＋</span>'
-        +'</div>'
+        +'<div style="display:flex;align-items:center;gap:8px">'+progIcoHtml+'<span class="log-toggle-icon" id="lti-'+i+'">＋</span></div>'
       +'</div>'
       +'<div class="ex-card-stats">'
         +'<div class="ex-stat"><span class="ex-stat-val">'+ostatniKg+'</span><span class="ex-stat-lbl">Ostatni kg</span></div>'
         +'<div class="ex-stat"><span class="ex-stat-val" style="font-size:11px">'+ostatniSerie+'</span><span class="ex-stat-lbl">Ostatnie serie</span></div>'
-        +'<div class="ex-stat"><span class="ex-stat-val">'+statusBadge+'</span><span class="ex-stat-lbl">Status</span></div>'
+        +'<div class="ex-stat"><span class="ex-stat-val">'+statusBadge+'</span><span class="ex-stat-lbl">W zakresie</span></div>'
         +'<div class="ex-stat"><span class="ex-stat-val" style="font-size:11px">'+ex.serie+'</span><span class="ex-stat-lbl">Plan</span></div>'
       +'</div>'
       +'<div class="ex-card-log" id="log-'+i+'">'
-        // Ciężar
-        +'<div class="log-field" style="min-width:80px;flex:1"><label>Ciężar (kg)</label><input type="number" step="0.5" id="lw-'+i+'" placeholder="'+(ex.placeholder_kg||'')+'" inputmode="decimal" onclick="event.stopPropagation()" oninput="markFilled(this);updateProgress()"></div>'
-        // Dynamiczne pola serii — wyciągnij liczbę serii z planu
-        +(()=>{
-          const setsMatch=ex.serie.match(/^(\d+)[×x]/);
-          const sets=setsMatch?parseInt(setsMatch[1]):4;
-          const prevReps=(ex.placeholder_reps||'').split('-');
-          let html='<div style="display:flex;gap:4px;align-items:flex-end;flex-wrap:wrap;flex:2">';
-          html+='<div style="font-family:var(--mono);font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;width:100%;margin-bottom:2px">Powtórzenia</div>';
-          for(let s=0;s<sets;s++){
-            const ph=prevReps[s]||prevReps[0]||'';
-            html+='<div style="display:flex;flex-direction:column;align-items:center;gap:2px;flex:1;min-width:32px">'
-              +'<input type="number" id="lr-'+i+'-'+s+'" placeholder="'+ph+'" inputmode="numeric" min="0" max="99" onclick="event.stopPropagation()" oninput="markSeriaFilled('+i+','+sets+')" style="width:100%;padding:6px 2px;text-align:center;border:1px solid var(--border2);border-radius:6px;font-family:var(--mono);font-size:14px;font-weight:700;color:var(--text);background:var(--surface);outline:none">'
-              +'<span style="font-family:var(--mono);font-size:8px;color:var(--muted)">'+(s+1)+'</span>'
-            +'</div>';
-          }
-          html+='</div>';
-          return html;
-        })()
-        +'<button class="log-save-btn" style="align-self:flex-end" onclick="event.stopPropagation();saveLog('+i+','+( ()=>{const sm=ex.serie.match(/^(\d+)[×x]/);return sm?parseInt(sm[1]):4;} )() +')">✓</button>'
+        +'<div class="log-field" style="min-width:80px;flex:1"><label>Ciężar (kg)</label><input type="number" step="0.5" id="lw-'+i+'" placeholder="'+phKg+'" inputmode="decimal" onclick="event.stopPropagation()" oninput="markFilled(this);updateProgress()"></div>'
+        +serieInputs
+        +'<button class="log-save-btn" style="align-self:flex-end" onclick="event.stopPropagation();saveLog('+i+','+sets+')">✓</button>'
       +'</div>'
     +'</div>';
   }).join('');

@@ -114,5 +114,17 @@
   "ostatni_l1": {
     "data": null,
     "cwiczenia": {}
+  },
+  "ostatni_l1_prev": {
+    "data": null,
+    "cwiczenia": {}
+  },
+  "ostatni_l2_prev": {
+    "data": null,
+    "cwiczenia": {}
+  },
+  "ostatni_upper_prev": {
+    "data": null,
+    "cwiczenia": {}
   }
 }
