@@ -3,14 +3,428 @@
     {
       "nr": 2,
       "label": "Cykl 2 — start 20.04.2026",
-      "open": false,
+      "open": true,
       "bilans": null,
-      "miesiace": []
+      "miesiace": [
+        {
+          "nazwa": "Kwiecień 2026",
+          "suffix": "start 20.04",
+          "tygodnie": [
+            {
+              "label": "T1",
+              "label_color": "rose",
+              "dni": [
+                {
+                  "n": 20,
+                  "typ": "plan",
+                  "tekst": "L2"
+                },
+                {
+                  "n": 21,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 22,
+                  "typ": "plan",
+                  "tekst": "U"
+                },
+                {
+                  "n": 23,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 24,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 25,
+                  "typ": "waga",
+                  "tekst": "⚖️"
+                },
+                {
+                  "n": 26,
+                  "typ": "plan",
+                  "tekst": "L1"
+                }
+              ]
+            },
+            {
+              "label": "T2",
+              "label_color": "muted",
+              "dni": [
+                {
+                  "n": 27,
+                  "typ": "plan",
+                  "tekst": "L2"
+                },
+                {
+                  "n": 28,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 29,
+                  "typ": "plan",
+                  "tekst": "U"
+                },
+                {
+                  "n": 30,
+                  "typ": "empty",
+                  "tekst": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "nazwa": "Maj 2026",
+          "suffix": null,
+          "tygodnie": [
+            {
+              "label": "T2",
+              "label_color": "muted",
+              "dni": [
+                {
+                  "n": "spacer",
+                  "typ": "spacer",
+                  "tekst": ""
+                },
+                {
+                  "n": "spacer",
+                  "typ": "spacer",
+                  "tekst": ""
+                },
+                {
+                  "n": "spacer",
+                  "typ": "spacer",
+                  "tekst": ""
+                },
+                {
+                  "n": "spacer",
+                  "typ": "spacer",
+                  "tekst": ""
+                },
+                {
+                  "n": 1,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 2,
+                  "typ": "plan",
+                  "tekst": "L1"
+                },
+                {
+                  "n": 3,
+                  "typ": "empty",
+                  "tekst": ""
+                }
+              ]
+            },
+            {
+              "label": "T3",
+              "label_color": "muted",
+              "dni": [
+                {
+                  "n": 4,
+                  "typ": "plan",
+                  "tekst": "L2"
+                },
+                {
+                  "n": 5,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 6,
+                  "typ": "plan",
+                  "tekst": "U"
+                },
+                {
+                  "n": 7,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 8,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 9,
+                  "typ": "plan",
+                  "tekst": "L1"
+                },
+                {
+                  "n": 10,
+                  "typ": "empty",
+                  "tekst": ""
+                }
+              ]
+            },
+            {
+              "label": "T4",
+              "label_color": "muted",
+              "dni": [
+                {
+                  "n": 11,
+                  "typ": "pomiary",
+                  "tekst": "📐"
+                },
+                {
+                  "n": 12,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 13,
+                  "typ": "plan",
+                  "tekst": "U"
+                },
+                {
+                  "n": 14,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 15,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 16,
+                  "typ": "waga",
+                  "tekst": "⚖️"
+                },
+                {
+                  "n": 17,
+                  "typ": "plan",
+                  "tekst": "L1"
+                }
+              ]
+            },
+            {
+              "label": "T5",
+              "label_color": "muted",
+              "dni": [
+                {
+                  "n": 18,
+                  "typ": "plan",
+                  "tekst": "L2"
+                },
+                {
+                  "n": 19,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 20,
+                  "typ": "plan",
+                  "tekst": "U"
+                },
+                {
+                  "n": 21,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 22,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 23,
+                  "typ": "plan",
+                  "tekst": "L1"
+                },
+                {
+                  "n": 24,
+                  "typ": "empty",
+                  "tekst": ""
+                }
+              ]
+            },
+            {
+              "label": "T6",
+              "label_color": "muted",
+              "dni": [
+                {
+                  "n": 25,
+                  "typ": "plan",
+                  "tekst": "L2"
+                },
+                {
+                  "n": 26,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 27,
+                  "typ": "plan",
+                  "tekst": "U"
+                },
+                {
+                  "n": 28,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 29,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 30,
+                  "typ": "plan",
+                  "tekst": "L1"
+                },
+                {
+                  "n": 31,
+                  "typ": "empty",
+                  "tekst": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "nazwa": "Czerwiec 2026",
+          "suffix": "cel 15.06",
+          "tygodnie": [
+            {
+              "label": "T7",
+              "label_color": "muted",
+              "dni": [
+                {
+                  "n": 1,
+                  "typ": "plan",
+                  "tekst": "L2"
+                },
+                {
+                  "n": 2,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 3,
+                  "typ": "plan",
+                  "tekst": "U"
+                },
+                {
+                  "n": 4,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 5,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 6,
+                  "typ": "plan",
+                  "tekst": "L1"
+                },
+                {
+                  "n": 7,
+                  "typ": "empty",
+                  "tekst": ""
+                }
+              ]
+            },
+            {
+              "label": "T8",
+              "label_color": "muted",
+              "dni": [
+                {
+                  "n": 8,
+                  "typ": "plan",
+                  "tekst": "L2"
+                },
+                {
+                  "n": 9,
+                  "typ": "pomiary",
+                  "tekst": "📐"
+                },
+                {
+                  "n": 10,
+                  "typ": "plan",
+                  "tekst": "U"
+                },
+                {
+                  "n": 11,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 12,
+                  "typ": "empty",
+                  "tekst": ""
+                },
+                {
+                  "n": 13,
+                  "typ": "waga",
+                  "tekst": "⚖️"
+                },
+                {
+                  "n": 14,
+                  "typ": "plan",
+                  "tekst": "L1"
+                }
+              ]
+            },
+            {
+              "label": "FIN",
+              "label_color": "rose",
+              "dni": [
+                {
+                  "n": 15,
+                  "typ": "pomiary",
+                  "tekst": "🎯"
+                },
+                {
+                  "n": "spacer",
+                  "typ": "spacer",
+                  "tekst": ""
+                },
+                {
+                  "n": "spacer",
+                  "typ": "spacer",
+                  "tekst": ""
+                },
+                {
+                  "n": "spacer",
+                  "typ": "spacer",
+                  "tekst": ""
+                },
+                {
+                  "n": "spacer",
+                  "typ": "spacer",
+                  "tekst": ""
+                },
+                {
+                  "n": "spacer",
+                  "typ": "spacer",
+                  "tekst": ""
+                },
+                {
+                  "n": "spacer",
+                  "typ": "spacer",
+                  "tekst": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "nr": 1,
       "label": "Cykl 1 — Luty–Kwiecień 2026",
-      "open": true,
+      "open": false,
       "bilans": {
         "l2": 8,
         "upper": 9,
