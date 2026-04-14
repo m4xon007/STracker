@@ -291,53 +291,79 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);font-size:14
 
 [WKLEJ RAPORT TUTAJ]
 
+════ AKTYWNY CYKL: cykl2 ════
+Wszystkie pliki w data/cykl2/ (nie cykl1!)
+
 ════ PLIKI DO AKTUALIZACJI ════
 
-── 1. data/cykl1/treningi.json ──
-• nastepny: zmień typ, label, numer, badge_class, alert
-• nastepny.cwiczenia: zaktualizuj poprzedni_kg, poprzedni_serie, progresja (zwieksz/utrzymaj/zmniejsz), placeholder_kg, placeholder_reps
-• poprzedni: przenieś aktualne nastepny → poprzedni (tytul, typ, numer, tydzien, kcal, czas_min, tetno, obciazenie_aerobowe, ocena, opis, wnioski)
-• ostatni_l1/l2/upper: zaktualizuj cwiczenia — dla każdego ćwiczenia:
-  - "kg": ciężar z tego treningu
-  - "serie": wykonane serie
-  - "status_przed": status PRZED tym treningiem (z poprzedniego ostatni_typ.status_po)
-  - "status_po": oblicz: jeśli osiągnięto górny zakres → status_przed+1 (0/2→1/2→2/2→✅), jeśli nie → 0/2
-• historia: dodaj nowy wpis NA POCZĄTKU tablicy (data, data_label, typ, numer, tydzien, ocena, kcal, czas_min, tetno, obciazenie_aerobowe, notatka, cwiczenia[])
-• meta: zaktualizuj tydzien, lacznie, header_sub, header_badge
+── 1. data/cykl2/treningi.json ──
 
-── 2. data/cykl1/plan.json ──
-• Dla ćwiczeń z progresją (status ✅): zaktualizuj kg na nowy ciężar, zresetuj status na "0/2"
-• Zaktualizuj statusy pozostałych (0/2 → 1/2 → 2/2 → ✅ 0/2)
+▸ ostatni_[typ] — NAJWAŻNIEJSZE, z tego liczy się progresja:
+  Dla każdego ćwiczenia zaktualizuj:
+  • "kg": ciężar wykonany w tym treningu
+  • "serie": wykonane serie (format "8-8-8-8")
+  • "w_zakresie": true jeśli WSZYSTKIE serie ≥ górny zakres z planu, false jeśli nie
+  • "zakres": zostaw bez zmian (pobierany z plan.json)
+  Przykład: zakres "4×6–8", wykonano 8-8-8-8 → w_zakresie: true
+  Przykład: zakres "3×10–12", wykonano 12-12-10 → w_zakresie: false
 
-── 3. data/cykl1/progresja.json ──
-• W odpowiedniej sekcji (l1/l2/upper): dodaj nową kolumnę NA POCZĄTKU naglowki[]
-• Dodaj nową sesję NA POCZĄTKU sesje[] dla każdego ćwiczenia
-• Jeśli sesji > 8: usuń ostatnią (najstarszą)
+▸ ostatni_[typ]_prev — przesuń aktualne ostatni_[typ] tutaj PRZED nadpisaniem
+  (to jest "poprzednia sesja" potrzebna do obliczenia podwójnej progresji)
+
+▸ poprzedni — dane do wyświetlenia w zakładce Poprzedni:
+  tytul, typ, numer, tydzien, kcal, czas_min, tetno, obciazenie_aerobowe, ocena, opis, wnioski
+  cwiczenia[]: nazwa, kg, wykonano, ocena_tekst, progresja_tekst, status, ss
+
+▸ nastepny — kolejny trening (typ, emoji, label, numer, badge_class, alert)
+  cwiczenia[]: nazwa, highlight, ss, poprzedni_kg, poprzedni_serie, serie, przerwa, placeholder_kg, placeholder_reps
+  UWAGA: pole "progresja" NIE jest już używane — aplikacja oblicza je automatycznie z ostatni_[typ]
+
+▸ historia — dodaj nowy wpis NA POCZĄTKU tablicy:
+  id, data, data_label, typ, numer, tydzien, ocena, kcal, czas_min, tetno, obciazenie_aerobowe, notatka
+  cwiczenia[]: nazwa, kg, serie, status (rekord/progresja/utrzymaj/uwaga)
+
+▸ meta — zaktualizuj: tydzien, lacznie, header_sub, header_badge
+
+── 2. data/cykl2/plan.json ──
+  Nie aktualizuj statusów — progresja obliczana z ostatni_[typ].w_zakresie
+  Zaktualizuj kg tylko gdy ćwiczenie osiągnęło podwójną progresję (oba w_zakresie: true przy tym samym kg)
+  Skok: sztanga +2,5 kg · hantle +2 kg · maszyny/wyciągi +2,5–5 kg
+
+── 3. data/cykl2/progresja.json ──
+  W sekcji [l1/l2/upper]:
+  • Dodaj datę NA POCZĄTKU naglowki[] (format "DD/MM")
+  • Dla każdego ćwiczenia dodaj sesję NA POCZĄTKU sesje[]:
+    { "ico": "★"/"↑"/"→"/"↓", "kg": "XX", "serie": "8×4" lub "8-8-8-8" }
+  • Ikony: ★ = rekord (nowy ciężar lub max powt.) · ↑ = wzrost · → = plateau · ↓ = regres
+  • Jeśli sesji > 8: usuń ostatnią
 
 ── 4. data/harmonogram.json ──
-• W odpowiednim miesiącu zmień typ dnia: "plan" → "l1"/"l2"/"upper"
-• Zaktualizuj tekst: "L1 ✓" / "L2 ✓" / "U ✓"
-• Zaktualizuj bilans: l1/l2/upper/lacznie
+  Zmień typ dnia: "plan" → "l1"/"l2"/"upper"
+  Zaktualizuj tekst: "L1 ✓" / "L2 ✓" / "U ✓"
+  Zaktualizuj bilans cyklu: l1/l2/upper/lacznie
 
-── 5. data/waga.json (opcjonalnie) ──
-• Dodaj nowy pomiar do pomiary[]: {"data": "DD.MM", "waga": 00.00}
-• Zaktualizuj statystyki.ostatnia i ostatnia_data
+── 5. data/waga.json (gdy masz pomiar) ──
+  Dodaj do pomiary[]: {"data": "DD.MM", "waga": 00.00}  ← NA POCZĄTKU tablicy
+  Zaktualizuj statystyki.ostatnia i ostatnia_data
+
+── 6. version.json + service-worker.js ──
+  Zwiększ wersję o 0.0.1
+  Zaktualizuj CACHE_VERSION w service-worker.js
 
 ════ ANALIZA ════
 
-PROGRESJA (patrz na trend 3–5 sesji):
-• 1× górny zakres → status 1/2, czekamy na potwierdzenie
-• 2× z rzędu górny zakres → progresja: zwiększ kg na następny trening
-• Plateau >4 sesje → zanotuj w wnioski, rozważyć zmianę w Cyklu 2
+PROGRESJA — algorytm automatyczny (nie wpisuj ręcznie):
+  ↑ = ostatni.w_zakresie: true AND prev.w_zakresie: true AND ten sam kg
+  → = nowy ciężar LUB brak prev LUB w_zakresie: false
 
-WZORCE:
-• Czy sesja odbiega od trendu (lepsza/gorsza i dlaczego)
-• Sygnały zmęczenia CNS (sypanie końcowych serii)
-• Sygnały przeciążenia (lędźwie, chwyt, stawy)
+WZORCE (opisz w "wnioski"):
+  • Sypanie końcowych serii → zmęczenie CNS
+  • Plateau >4 sesje → rozważyć zmianę w kolejnym cyklu
+  • Asymetria serii (8-8-6-6) → technika lub zmęczenie
 
 NASTĘPNY TRENING:
-• Konkretne ćwiczenia do progresji ciężaru
-• Na co zwrócić uwagę (technika, kolejność, przerwy)</textarea>
+  • Ćwiczenia z ↑ progresją: ustaw placeholder_kg = ostatni_kg + 2,5
+  • Na co zwrócić uwagę (technika, przerwy)</textarea>
             <div style="background:var(--surface2);border-radius:var(--radius-sm);padding:12px;font-size:11px;color:var(--text2);line-height:1.8;font-family:var(--mono);white-space:pre-wrap;margin-bottom:10px" id="prompt-preview"></div>
             <button onclick="copyTmpl('prompt')" style="width:100%;padding:9px;background:var(--rose);color:#fff;border:none;border-radius:8px;font-family:var(--mono);font-size:11px;font-weight:600;cursor:pointer">📋 Kopiuj prompt</button>
           </div>
