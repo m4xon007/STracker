@@ -4,7 +4,12 @@
       "nr": 2,
       "label": "Cykl 2 — start 20.04.2026",
       "open": true,
-      "bilans": null,
+      "bilans": {
+        "l2": 1,
+        "upper": 0,
+        "l1": 0,
+        "lacznie": 1
+      },
       "miesiace": [
         {
           "nazwa": "Kwiecień 2026",
@@ -16,8 +21,8 @@
               "dni": [
                 {
                   "n": 20,
-                  "typ": "plan",
-                  "tekst": "L2"
+                  "typ": "l2",
+                  "tekst": "L2 ✓"
                 },
                 {
                   "n": 21,
@@ -222,8 +227,8 @@
                 },
                 {
                   "n": 20,
-                  "typ": "plan",
-                  "tekst": "U"
+                  "typ": "l2",
+                  "tekst": "L2 ✓"
                 },
                 {
                   "n": 21,
