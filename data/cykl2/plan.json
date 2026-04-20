@@ -61,8 +61,8 @@
           "nazwa": "Prostowanie nóg maszyna",
           "kg": "30",
           "serie": "3×12–15",
-          "przerwa": "→SS",
-          "ss": "SS1",
+          "przerwa": "90s",
+          "ss": null,
           "bold": false,
           "status": "0/2",
           "status_color": "muted"
@@ -71,25 +71,24 @@
           "nazwa": "Pull-through wyciąg",
           "kg": "20",
           "serie": "3×15–20",
-          "przerwa": "90s",
+          "przerwa": "→SS",
+          "ss": "SS1",
+          "bold": false,
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "nazwa": "Cable crunch",
+          "kg": "20",
+          "serie": "3×12–15",
+          "przerwa": "60s",
           "ss": "SS1",
           "bold": false,
           "status": "0/2",
           "status_color": "muted"
         }
       ],
-      "opcjonalne": [
-        {
-          "nazwa": "Unoszenie nóg w zwisie",
-          "kg": "masa",
-          "serie": "3×10–15",
-          "przerwa": "60s",
-          "ss": null,
-          "bold": false,
-          "status": "opcjonalne",
-          "status_color": "muted"
-        }
-      ]
+      "opcjonalne": []
     },
     "upper": {
       "label": "💪 Upper — Górna partia",
