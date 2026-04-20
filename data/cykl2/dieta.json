@@ -918,5 +918,40 @@
         "bialko_g": 91
       }
     }
+  },
+  "analiza_postepu": {
+    "data_aktualizacji": "19.04.2026",
+    "okres": "06.04–19.04.2026",
+    "waga_start": 62.95,
+    "waga_aktualna": 61.5,
+    "zmiana_kg": -1.45,
+    "tygodnie": 2,
+    "tempo_kg_tyg_rzeczywiste": "-0,73",
+    "tempo_kg_tyg_planowane": "-0,38",
+    "ocena": "Szybsza redukcja niż zakładana. Możliwa głębsza retencja oddana po tygodniach treningowych Cyklu 1.",
+    "min_folikularne_kwiecien": 61.05,
+    "komentarz_min_fol": "Nowe minimum cyklu — pierwsze zejście poniżej 61,1. Deficyt zaczyna działać skutecznie.",
+    "retencja_sobotnia": "Charakterystyczny skok 06.04 (62,95) po Sob L1 + Aperol — retencja ~0,9 kg odchodząca w 2–3 dni.",
+    "trend": [
+      {
+        "tydzien": "W1 Kwi (06–12.04)",
+        "min": 61.65,
+        "max": 62.95,
+        "sr": 62.1
+      },
+      {
+        "tydzien": "W2 Kwi (13–19.04)",
+        "min": 61.05,
+        "max": 62.1,
+        "sr": 61.6
+      }
+    ],
+    "wnioski": [
+      "Waga bazowa zejście: ~62,4 → ~61,6 w ciągu ~6 tygodni Cyklu 1",
+      "Min. folikularne sty→lut→mar→kwi: 61,5 → 61,5 → 61,6 → 61,05 — przełom w kwietniu",
+      "Deficyt działa — tempo wyższe niż planowane, monitorować czy nie za szybko",
+      "Retencja sobotnia przewidywalna i przemijająca — nie reagować paniką",
+      "Białko min 118g/dzień utrzymane — ochrona mięśni przy deficycie"
+    ]
   }
 }

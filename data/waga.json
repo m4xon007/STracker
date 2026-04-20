@@ -1,11 +1,11 @@
 {
   "statystyki": {
-    "ostatnia": "62,6",
-    "ostatnia_data": "23.03",
+    "ostatnia": "61,5",
+    "ostatnia_data": "19.04",
     "minimum": "61,2",
     "bf_procent": "33,4%"
   },
-  "nastepny_pomiar": "po deloadzie ~20.04",
+  "nastepny_pomiar": "~20.04 (pomiar obwodów)",
   "analiza": [
     {
       "miesiac": "Styczeń",
@@ -18,10 +18,114 @@
     {
       "miesiac": "Marzec",
       "tekst": "Min. folikularne ~61,6 (14.03). Skok 22.03 (63,2) = retencja. Waga bazowa 61,6–62,4."
+    },
+    {
+      "miesiac": "Kwiecień",
+      "tekst": "Max retencja 06.04 (62,95 — po sobocie). Trend zniżkowy w trakcie miesiąca: 62,95 → 61,5. Min. folikularne ~61,05–61,1 (15–16.04). Waga bazowa ~61,5–62,0."
     }
   ],
-  "wniosek": "Min. folikularne sty→lut→mar: 61,5→61,5→61,6 — praktycznie bez zmiany. Aktywna rekomposycja — tłuszcz ↓ mięsień ↑ równolegle.",
+  "wniosek": "Min. folikularne sty→lut→mar→kwi: 61,5→61,5→61,6→61,05 — pierwsze wyraźne zejście. Trend deficytu zaczyna działać. Aktywna rekomposycja — tłuszcz ↓ mięsień ↑ równolegle.",
   "pomiary": [
+    {
+      "data": "19.04",
+      "waga": 61.5
+    },
+    {
+      "data": "18.04",
+      "waga": 61.75
+    },
+    {
+      "data": "17.04",
+      "waga": 62.0
+    },
+    {
+      "data": "16.04",
+      "waga": 61.1
+    },
+    {
+      "data": "15.04",
+      "waga": 61.05
+    },
+    {
+      "data": "14.04",
+      "waga": 61.75
+    },
+    {
+      "data": "13.04",
+      "waga": 62.1
+    },
+    {
+      "data": "12.04",
+      "waga": 62.05
+    },
+    {
+      "data": "11.04",
+      "waga": 61.65
+    },
+    {
+      "data": "10.04",
+      "waga": 61.85
+    },
+    {
+      "data": "09.04",
+      "waga": 61.95
+    },
+    {
+      "data": "08.04",
+      "waga": 62.1
+    },
+    {
+      "data": "07.04",
+      "waga": 62.75
+    },
+    {
+      "data": "06.04",
+      "waga": 62.95
+    },
+    {
+      "data": "03.04",
+      "waga": 62.55
+    },
+    {
+      "data": "02.04",
+      "waga": 62.2
+    },
+    {
+      "data": "01.04",
+      "waga": 62.75
+    },
+    {
+      "data": "31.03",
+      "waga": 62.85
+    },
+    {
+      "data": "30.03",
+      "waga": 63.25
+    },
+    {
+      "data": "29.03",
+      "waga": 62.3
+    },
+    {
+      "data": "28.03",
+      "waga": 61.6
+    },
+    {
+      "data": "27.03",
+      "waga": 62.0
+    },
+    {
+      "data": "26.03",
+      "waga": 62.2
+    },
+    {
+      "data": "25.03",
+      "waga": 62.65
+    },
+    {
+      "data": "24.03",
+      "waga": 62.6
+    },
     {
       "data": "23.03",
       "waga": 62.6
@@ -285,6 +389,7 @@
   ],
   "obwody": {
     "naglowki": [
+      "20.04.26★",
       "05.04.26★",
       "08.03.26★",
       "21.02.26",
@@ -295,6 +400,7 @@
       {
         "pomiar": "Waga",
         "wartosci": [
+          "~61,5",
           "~62,6",
           "~62,4",
           "~62",
@@ -302,6 +408,7 @@
           "~62"
         ],
         "trendy": [
+          null,
           null,
           "up",
           null,
@@ -312,6 +419,7 @@
       {
         "pomiar": "Talia",
         "wartosci": [
+          "86",
           "82",
           "81",
           "77",
@@ -319,6 +427,7 @@
           "83"
         ],
         "trendy": [
+          "up",
           "down",
           "up",
           "down",
@@ -330,12 +439,14 @@
         "pomiar": "Biodra",
         "wartosci": [
           "92",
+          "92",
           "93",
           "93",
           "92",
           "92"
         ],
         "trendy": [
+          null,
           "down",
           null,
           "up",
@@ -347,12 +458,14 @@
         "pomiar": "Udo (L)",
         "wartosci": [
           "56",
+          "56",
           "57",
           "56",
           "56",
           "56"
         ],
         "trendy": [
+          null,
           null,
           "up",
           null,
@@ -363,6 +476,7 @@
       {
         "pomiar": "Łydka (L)",
         "wartosci": [
+          "37",
           "—",
           "36",
           "36",
@@ -370,6 +484,7 @@
           "36"
         ],
         "trendy": [
+          "up",
           null,
           null,
           null,
@@ -380,6 +495,7 @@
       {
         "pomiar": "Klatka",
         "wartosci": [
+          "90",
           "92",
           "91",
           "86",
@@ -387,6 +503,7 @@
           "91"
         ],
         "trendy": [
+          "down",
           "up",
           "up",
           "down",
@@ -397,6 +514,7 @@
       {
         "pomiar": "Biceps (L)",
         "wartosci": [
+          "30",
           "29",
           "30",
           "28",
@@ -404,6 +522,7 @@
           "29"
         ],
         "trendy": [
+          "up",
           null,
           "up",
           "down",
@@ -415,12 +534,14 @@
         "pomiar": "BF%",
         "wartosci": [
           "~33%",
+          "~33%",
           "~33,4%",
           "~33%",
           "~33%",
           "~33%"
         ],
         "trendy": [
+          null,
           null,
           "up",
           null,
@@ -430,5 +551,5 @@
       }
     ]
   },
-  "nastepny_pomiar_obwody": "~20.04.2026"
+  "nastepny_pomiar_obwody": "~za 4–6 tygodni (Cykl 2)"
 }
