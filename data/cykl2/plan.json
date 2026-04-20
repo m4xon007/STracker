@@ -77,6 +77,18 @@
           "status": "0/2",
           "status_color": "muted"
         }
+      ],
+      "opcjonalne": [
+        {
+          "nazwa": "Unoszenie nóg w zwisie",
+          "kg": "masa",
+          "serie": "3×10–15",
+          "przerwa": "60s",
+          "ss": null,
+          "bold": false,
+          "status": "opcjonalne",
+          "status_color": "muted"
+        }
       ]
     },
     "upper": {
@@ -163,6 +175,48 @@
           "status": "0/2",
           "status_color": "muted"
         }
+      ],
+      "opcjonalne": [
+        {
+          "nazwa": "Skos hantlami",
+          "kg": "8",
+          "serie": "2–3×10–12",
+          "przerwa": "75s",
+          "ss": null,
+          "bold": false,
+          "status": "opcjonalne",
+          "status_color": "muted"
+        },
+        {
+          "nazwa": "Rozpiętki na maszynie",
+          "kg": "20",
+          "serie": "2–3×12–15",
+          "przerwa": "75s",
+          "ss": null,
+          "bold": false,
+          "status": "opcjonalne",
+          "status_color": "muted"
+        },
+        {
+          "nazwa": "Uginanie ramion EZ-bar",
+          "kg": "10+gryf",
+          "serie": "2–3×10–12",
+          "przerwa": "60s",
+          "ss": null,
+          "bold": false,
+          "status": "opcjonalne",
+          "status_color": "muted"
+        },
+        {
+          "nazwa": "Prostowanie ramion wyciąg",
+          "kg": "15",
+          "serie": "2–3×10–12",
+          "przerwa": "60s",
+          "ss": null,
+          "bold": false,
+          "status": "opcjonalne",
+          "status_color": "muted"
+        }
       ]
     },
     "l1": {
@@ -237,6 +291,18 @@
           "ss": "SS2",
           "bold": false,
           "status": "0/2",
+          "status_color": "muted"
+        }
+      ],
+      "opcjonalne": [
+        {
+          "nazwa": "Unoszenie nóg w zwisie",
+          "kg": "masa",
+          "serie": "3×10–15",
+          "przerwa": "60s",
+          "ss": null,
+          "bold": false,
+          "status": "opcjonalne",
           "status_color": "muted"
         }
       ]
