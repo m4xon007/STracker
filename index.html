@@ -287,83 +287,157 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);font-size:14
         <div class="accordion open">
           <button class="accordion-trigger" onclick="toggleAccordion(this)">🤖 Prompt — aktualizacja po treningu <span class="accordion-icon">▼</span></button>
           <div class="accordion-content">
-            <textarea id="tmpl-prompt" style="display:none">Zaktualizuj dane w plikach JSON po odbytym treningu.
+            <textarea id="tmpl-prompt" style="display:none">Zaktualizuj dane w plikach JSON po odbytym treningu. Zwróć pliki JSON + git commit + SQL do Supabase.
 
 [WKLEJ RAPORT TUTAJ]
 
 ════ AKTYWNY CYKL: cykl2 ════
 Wszystkie pliki w data/cykl2/ (nie cykl1!)
+User ID Sylwia: 28a1f5aa-0216-4393-afb9-5548b58cabb1
 
-════ PLIKI DO AKTUALIZACJI ════
+════════════════════════════════════
+ALGORYTM PROGRESJI (deterministyczny)
+════════════════════════════════════
+
+↑ zwiększ  = ostatni.w_zakresie: true AND prev.w_zakresie: true AND ostatni.kg == prev.kg
+→ utrzymaj = nowy ciężar LUB brak prev LUB w_zakresie: false
+
+w_zakresie: true = WSZYSTKIE serie ≥ górny zakres z planu
+Przykład: zakres "4×6–8", wykonano "8-8-8-8" → true
+Przykład: zakres "3×10–12", wykonano "12-12-10" → false
+
+Skok ciężaru przy ↑: sztanga +2,5 kg · hantle +2 kg · maszyny/wyciągi +2,5–5 kg
+
+WZORCE (opisz w "wnioski"):
+• Sypanie końcowych serii → zmęczenie CNS
+• Plateau >4 sesje → rozważyć zmianę w kolejnym cyklu
+• Asymetria serii (8-8-6-6) → technika lub zmęczenie
+
+════════════════════════════════════
+CZĘŚĆ 1 — PLIKI JSON
+════════════════════════════════════
 
 ── 1. data/cykl2/treningi.json ──
 
-▸ ostatni_[typ] — NAJWAŻNIEJSZE, z tego liczy się progresja:
-  Dla każdego ćwiczenia zaktualizuj:
+▸ ostatni_[typ]_prev ← skopiuj aktualne ostatni_[typ] PRZED nadpisaniem
+
+▸ ostatni_[typ] ← nowe dane sesji:
   • "kg": ciężar wykonany w tym treningu
   • "serie": wykonane serie (format "8-8-8-8")
-  • "w_zakresie": true jeśli WSZYSTKIE serie ≥ górny zakres z planu, false jeśli nie
-  • "zakres": zostaw bez zmian (pobierany z plan.json)
-  Przykład: zakres "4×6–8", wykonano 8-8-8-8 → w_zakresie: true
-  Przykład: zakres "3×10–12", wykonano 12-12-10 → w_zakresie: false
+  • "w_zakresie": true/false (oblicz z zakresu w plan.json)
+  • "zakres": zostaw bez zmian
 
-▸ ostatni_[typ]_prev — przesuń aktualne ostatni_[typ] tutaj PRZED nadpisaniem
-  (to jest "poprzednia sesja" potrzebna do obliczenia podwójnej progresji)
-
-▸ poprzedni — dane do wyświetlenia w zakładce Poprzedni:
+▸ poprzedni ← dane do wyświetlenia w zakładce Poprzedni:
   tytul, typ, numer, tydzien, kcal, czas_min, tetno, obciazenie_aerobowe, ocena, opis, wnioski
   cwiczenia[]: nazwa, kg, wykonano, ocena_tekst, progresja_tekst, status, ss
 
-▸ nastepny — kolejny trening (typ, emoji, label, numer, badge_class, alert)
+▸ nastepny ← kolejny trening:
+  typ, emoji, label, numer, badge_class, alert
   cwiczenia[]: nazwa, highlight, ss, poprzedni_kg, poprzedni_serie, serie, przerwa, placeholder_kg, placeholder_reps
-  UWAGA: pole "progresja" NIE jest już używane — aplikacja oblicza je automatycznie z ostatni_[typ]
+  UWAGA: pole "progresja" NIE jest używane — aplikacja oblicza automatycznie
+  - poprzedni_kg = kg z ostatni_[typ]
+  - placeholder_kg = kg+2,5 jeśli ↑, inaczej ostatni kg
+  - placeholder_reps = seria z ostatni_[typ]
 
-▸ historia — dodaj nowy wpis NA POCZĄTKU tablicy:
+▸ historia[] ← nowy wpis NA POCZĄTKU tablicy:
   id, data, data_label, typ, numer, tydzien, ocena, kcal, czas_min, tetno, obciazenie_aerobowe, notatka
   cwiczenia[]: nazwa, kg, serie, status (rekord/progresja/utrzymaj/uwaga)
 
-▸ meta — zaktualizuj: tydzien, lacznie, header_sub, header_badge
+▸ meta ← tydzien, lacznie, header_sub, header_badge
 
 ── 2. data/cykl2/plan.json ──
-  Nie aktualizuj statusów — progresja obliczana z ostatni_[typ].w_zakresie
+  Nie aktualizuj statusów — progresja obliczana automatycznie
   Zaktualizuj kg tylko gdy ćwiczenie osiągnęło podwójną progresję (oba w_zakresie: true przy tym samym kg)
   Skok: sztanga +2,5 kg · hantle +2 kg · maszyny/wyciągi +2,5–5 kg
 
 ── 3. data/cykl2/progresja.json ──
-  W sekcji [l1/l2/upper]:
   • Dodaj datę NA POCZĄTKU naglowki[] (format "DD/MM")
   • Dla każdego ćwiczenia dodaj sesję NA POCZĄTKU sesje[]:
-    { "ico": "★"/"↑"/"→"/"↓", "kg": "XX", "serie": "8×4" lub "8-8-8-8" }
-  • Ikony: ★ = rekord (nowy ciężar lub max powt.) · ↑ = wzrost · → = plateau · ↓ = regres
+    { "ico": "★"/"↑"/"→"/"↓", "kg": "XX", "serie": "8×4" }
+  • Ikony: ★ rekord · ↑ wzrost · → plateau · ↓ regres
   • Jeśli sesji > 8: usuń ostatnią
 
 ── 4. data/harmonogram.json ──
-  Zmień typ dnia: "plan" → "l1"/"l2"/"upper"
-  Zaktualizuj tekst: "L1 ✓" / "L2 ✓" / "U ✓"
-  Zaktualizuj bilans cyklu: l1/l2/upper/lacznie
+  • Zaktualizuj bilans cyklu: l1/l2/upper/lacznie +1
+  • Oznacz dzień: ukonczone: true dla właściwej daty
 
-── 5. data/waga.json (gdy masz pomiar) ──
-  Dodaj do pomiary[]: {"data": "DD.MM", "waga": 00.00}  ← NA POCZĄTKU tablicy
-  Zaktualizuj statystyki.ostatnia i ostatnia_data
+── 5. data/waga.json (tylko gdy podano pomiar) ──
+  • Dodaj NA POCZĄTKU pomiary[]: {"data": "DD.MM", "waga": 00.00}
+  • Zaktualizuj statystyki.ostatnia i ostatnia_data
 
-── 6. version.json + service-worker.js ──
-  Zwiększ wersję o 0.0.1
-  Zaktualizuj CACHE_VERSION w service-worker.js
+── 6. version.json + service-worker.js — ZAWSZE ──
+  • Zwiększ wersję o 0.0.1
+  • Zaktualizuj CACHE_VERSION w service-worker.js na ten sam numer
 
-════ ANALIZA ════
+════════════════════════════════════
+CZĘŚĆ 2 — GIT COMMIT
+════════════════════════════════════
 
-PROGRESJA — algorytm automatyczny (nie wpisuj ręcznie):
-  ↑ = ostatni.w_zakresie: true AND prev.w_zakresie: true AND ten sam kg
-  → = nowy ciężar LUB brak prev LUB w_zakresie: false
+git add data/cykl2/treningi.json data/cykl2/plan.json data/cykl2/progresja.json data/harmonogram.json version.json service-worker.js
+git commit -m "trening: [TYP] #[NR] [DD.MM] | [główne ćwiczenie] [kg]kg [serie] | ocena [X]/10 | v[X.X.X]"
+git push
 
-WZORCE (opisz w "wnioski"):
-  • Sypanie końcowych serii → zmęczenie CNS
-  • Plateau >4 sesje → rozważyć zmianę w kolejnym cyklu
-  • Asymetria serii (8-8-6-6) → technika lub zmęczenie
+Dodaj data/waga.json jeśli był pomiar wagi.
+Pomiń data/cykl2/plan.json jeśli brak zmian kg (brak podwójnej progresji).
 
-NASTĘPNY TRENING:
-  • Ćwiczenia z ↑ progresją: ustaw placeholder_kg = ostatni_kg + 2,5
-  • Na co zwrócić uwagę (technika, przerwy)</textarea>
+════════════════════════════════════
+CZĘŚĆ 3 — SQL DO SUPABASE
+════════════════════════════════════
+
+--- SUPABASE SQL ---
+
+-- 1. Nowa sesja treningowa
+INSERT INTO public.workout_sessions (user_id, cycle_id, session_date, type, rating, duration_min, notes)
+VALUES (
+  '28a1f5aa-0216-4393-afb9-5548b58cabb1',
+  (SELECT id FROM public.cycles WHERE user_id = '28a1f5aa-0216-4393-afb9-5548b58cabb1' AND is_active = true),
+  'YYYY-MM-DD',
+  'l1|l2|upper',
+  9,
+  78,
+  'notatka z raportu'
+) RETURNING id;
+
+-- 2. Zestawy — INSERT dla każdego ćwiczenia (każda seria osobno)
+-- Wklej session_id z RETURNING powyżej w miejsce SESSION_ID_Z_RETURNING
+INSERT INTO public.session_sets (session_id, exercise_name, set_number, kg, reps, completed)
+VALUES
+  ('SESSION_ID_Z_RETURNING', 'Nazwa ćwiczenia', 1, 57.5, 8, true),
+  ('SESSION_ID_Z_RETURNING', 'Nazwa ćwiczenia', 2, 57.5, 8, true);
+
+-- 3. Progresja ćwiczeń głównych (bold: true w planie)
+INSERT INTO public.exercise_progression (user_id, cycle_id, session_id, exercise_name, session_date, kg, sets_reps_achieved, progression_status)
+VALUES (
+  '28a1f5aa-0216-4393-afb9-5548b58cabb1',
+  (SELECT id FROM public.cycles WHERE user_id = '28a1f5aa-0216-4393-afb9-5548b58cabb1' AND is_active = true),
+  'SESSION_ID_Z_RETURNING',
+  'Nazwa ćwiczenia',
+  'YYYY-MM-DD',
+  57.5,
+  '4×8',
+  'maintain|progress'
+);
+
+-- 4. Oznacz sesję jako ukończoną w harmonogramie
+UPDATE public.schedule_entries
+SET completed = true
+WHERE user_id = '28a1f5aa-0216-4393-afb9-5548b58cabb1'
+  AND planned_date = 'YYYY-MM-DD'
+  AND session_type = 'l1|l2|upper';
+
+-- 5. Pomiar wagi (tylko gdy podany w raporcie)
+INSERT INTO public.weight_logs (user_id, measured_at, value_kg)
+VALUES ('28a1f5aa-0216-4393-afb9-5548b58cabb1', 'YYYY-MM-DD', 00.0)
+ON CONFLICT (user_id, measured_at) DO UPDATE SET value_kg = EXCLUDED.value_kg;
+
+--- KONIEC SQL ---
+
+WAŻNE:
+• Wypełnij WSZYSTKIE wartości z raportu — daty, ciężary, serie, ocena, czas
+• session_id z kroku 1 (RETURNING) wklej ręcznie do kroków 2 i 3
+• progression_status: 'progress' gdy ↑, 'maintain' gdy →
+• Pomiń krok 5 jeśli brak pomiaru wagi
+• Pomiń krok 3 jeśli brak ćwiczeń głównych (bold: true) w sesji</textarea>
             <div style="background:var(--surface2);border-radius:var(--radius-sm);padding:12px;font-size:11px;color:var(--text2);line-height:1.8;font-family:var(--mono);white-space:pre-wrap;margin-bottom:10px" id="prompt-preview"></div>
             <button onclick="copyTmpl('prompt')" style="width:100%;padding:9px;background:var(--rose);color:#fff;border:none;border-radius:8px;font-family:var(--mono);font-size:11px;font-weight:600;cursor:pointer">📋 Kopiuj prompt</button>
           </div>
