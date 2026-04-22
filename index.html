@@ -384,48 +384,67 @@ Pomiń data/cykl2/plan.json jeśli brak zmian kg (brak podwójnej progresji).
 CZĘŚĆ 3 — SQL DO SUPABASE
 ════════════════════════════════════
 
+Na końcu odpowiedzi dodaj gotowy SQL w jednej transakcji CTE.
+Cały blok uruchamia się jednym kliknięciem Run — bez ręcznego kopiowania UUID.
+
 --- SUPABASE SQL ---
 
--- 1. Nowa sesja treningowa
-INSERT INTO public.workout_sessions (user_id, cycle_id, session_date, type, rating, duration_min, notes)
-VALUES (
-  '28a1f5aa-0216-4393-afb9-5548b58cabb1',
-  (SELECT id FROM public.cycles WHERE user_id = '28a1f5aa-0216-4393-afb9-5548b58cabb1' AND is_active = true),
-  'YYYY-MM-DD',
-  'l1|l2|upper',
-  9,
-  78,
-  'notatka z raportu'
-) RETURNING id;
-
--- 2. Zestawy — INSERT dla każdego ćwiczenia (każda seria osobno)
--- Wklej session_id z RETURNING powyżej w miejsce SESSION_ID_Z_RETURNING
-INSERT INTO public.session_sets (session_id, exercise_name, set_number, kg, reps, completed)
-VALUES
-  ('SESSION_ID_Z_RETURNING', 'Nazwa ćwiczenia', 1, 57.5, 8, true),
-  ('SESSION_ID_Z_RETURNING', 'Nazwa ćwiczenia', 2, 57.5, 8, true);
-
--- 3. Progresja ćwiczeń głównych (bold: true w planie)
-INSERT INTO public.exercise_progression (user_id, cycle_id, session_id, exercise_name, session_date, kg, sets_reps_achieved, progression_status)
-VALUES (
-  '28a1f5aa-0216-4393-afb9-5548b58cabb1',
-  (SELECT id FROM public.cycles WHERE user_id = '28a1f5aa-0216-4393-afb9-5548b58cabb1' AND is_active = true),
-  'SESSION_ID_Z_RETURNING',
-  'Nazwa ćwiczenia',
-  'YYYY-MM-DD',
-  57.5,
-  '4×8',
-  'maintain|progress'
-);
-
--- 4. Oznacz sesję jako ukończoną w harmonogramie
+WITH new_session AS (
+  INSERT INTO public.workout_sessions
+    (user_id, cycle_id, session_date, type, rating, duration_min, kcal, avg_hr, rpe, notes)
+  VALUES (
+    '28a1f5aa-0216-4393-afb9-5548b58cabb1',
+    (SELECT id FROM public.cycles
+     WHERE user_id = '28a1f5aa-0216-4393-afb9-5548b58cabb1' AND is_active = true),
+    'YYYY-MM-DD',      -- data z raportu
+    'l1|l2|upper',     -- typ z raportu
+    9,                 -- ocena z raportu
+    90,                -- czas w minutach z raportu
+    null,              -- kcal (null jeśli brak w raporcie)
+    null,              -- tętno (null jeśli brak)
+    null,              -- obciążenie aerobowe (null jeśli brak)
+    'notatki'          -- krótki opis
+  )
+  RETURNING id
+),
+sets AS (
+  INSERT INTO public.session_sets
+    (session_id, exercise_name, set_number, kg, reps, completed)
+  SELECT s.id, e.exercise_name, e.set_number, e.kg, e.reps, e.completed
+  FROM new_session s
+  CROSS JOIN (VALUES
+    -- Wstaw osobny wiersz dla każdej serii każdego ćwiczenia:
+    ('Hip thrust sztanga',          1, 57.5,  8, true),
+    ('Hip thrust sztanga',          2, 57.5,  8, true),
+    ('Hip thrust sztanga',          3, 57.5,  8, true),
+    ('Hip thrust sztanga',          4, 57.5,  8, true),
+    ('Sumo RDL sztanga',            1, 35.0, 10, true),
+    -- ... kolejne ćwiczenia i serie
+    ('Odwodzenie stojąc wyciąg',    3,  7.5, 20, true)
+  ) AS e(exercise_name, set_number, kg, reps, completed)
+),
+progression AS (
+  INSERT INTO public.exercise_progression
+    (user_id, cycle_id, session_id, exercise_name, session_date, kg, sets_reps_achieved, progression_status)
+  -- Tylko ćwiczenia główne (highlight: true): Hip thrust, Martwy ciąg trap bar, Wyciskanie hantlami
+  -- Pomiń jeśli sesja nie zawiera żadnego ćwiczenia głównego
+  SELECT
+    '28a1f5aa-0216-4393-afb9-5548b58cabb1',
+    (SELECT id FROM public.cycles WHERE user_id = '28a1f5aa-0216-4393-afb9-5548b58cabb1' AND is_active = true),
+    s.id, e.exercise_name, e.session_date::date, e.kg, e.sets_reps, e.status
+  FROM new_session s
+  CROSS JOIN (VALUES
+    ('Hip thrust sztanga', 'YYYY-MM-DD', 57.5, '4×8', 'maintain')
+    -- progression_status: 'progress' gdy ↑, 'maintain' gdy →
+  ) AS e(exercise_name, session_date, kg, sets_reps, status)
+)
 UPDATE public.schedule_entries
 SET completed = true
 WHERE user_id = '28a1f5aa-0216-4393-afb9-5548b58cabb1'
   AND planned_date = 'YYYY-MM-DD'
   AND session_type = 'l1|l2|upper';
 
--- 5. Pomiar wagi (tylko gdy podany w raporcie)
+-- Pomiar wagi (dodaj tylko gdy raport zawiera wagę, inaczej usuń ten blok)
 INSERT INTO public.weight_logs (user_id, measured_at, value_kg)
 VALUES ('28a1f5aa-0216-4393-afb9-5548b58cabb1', 'YYYY-MM-DD', 00.0)
 ON CONFLICT (user_id, measured_at) DO UPDATE SET value_kg = EXCLUDED.value_kg;
@@ -434,10 +453,10 @@ ON CONFLICT (user_id, measured_at) DO UPDATE SET value_kg = EXCLUDED.value_kg;
 
 WAŻNE:
 • Wypełnij WSZYSTKIE wartości z raportu — daty, ciężary, serie, ocena, czas
-• session_id z kroku 1 (RETURNING) wklej ręcznie do kroków 2 i 3
-• progression_status: 'progress' gdy ↑, 'maintain' gdy →
-• Pomiń krok 5 jeśli brak pomiaru wagi
-• Pomiń krok 3 jeśli brak ćwiczeń głównych (bold: true) w sesji</textarea>
+• W CROSS JOIN (VALUES ...) wstaw osobny wiersz dla każdej serii każdego ćwiczenia
+• progression_status: 'progress' gdy ↑ (podwójna progresja), 'maintain' gdy →
+• Usuń blok INSERT weight_logs jeśli raport nie zawiera pomiaru wagi
+• Usuń blok progression jeśli sesja nie zawiera ćwiczeń głównych (highlight: true)</textarea>
             <div style="background:var(--surface2);border-radius:var(--radius-sm);padding:12px;font-size:11px;color:var(--text2);line-height:1.8;font-family:var(--mono);white-space:pre-wrap;margin-bottom:10px" id="prompt-preview"></div>
             <button onclick="copyTmpl('prompt')" style="width:100%;padding:9px;background:var(--rose);color:#fff;border:none;border-radius:8px;font-family:var(--mono);font-size:11px;font-weight:600;cursor:pointer">📋 Kopiuj prompt</button>
           </div>
