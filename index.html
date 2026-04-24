@@ -322,10 +322,8 @@ CZĘŚĆ 1 — PLIKI JSON
 ▸ ostatni_[typ]_prev ← skopiuj aktualne ostatni_[typ] PRZED nadpisaniem
 
 ▸ ostatni_[typ] ← nowe dane sesji:
-  • "kg": ciężar wykonany w tym treningu
-  • "serie": wykonane serie (format "8-8-8-8")
-  • "w_zakresie": true/false (oblicz z zakresu w plan.json)
-  • "zakres": zostaw bez zmian
+  cwiczenia{}: { kg, serie, w_zakresie, zakres }
+  • w_zakresie: true jeśli WSZYSTKIE serie ≥ górny zakres z planu, false jeśli nie
 
 ▸ poprzedni ← dane do wyświetlenia w zakładce Poprzedni:
   tytul, typ, numer, tydzien, kcal, czas_min, tetno, obciazenie_aerobowe, ocena, opis, wnioski
@@ -346,20 +344,19 @@ CZĘŚĆ 1 — PLIKI JSON
 ▸ meta ← tydzien, lacznie, header_sub, header_badge
 
 ── 2. data/cykl2/plan.json ──
-  Nie aktualizuj statusów — progresja obliczana automatycznie
-  Zaktualizuj kg tylko gdy ćwiczenie osiągnęło podwójną progresję (oba w_zakresie: true przy tym samym kg)
+  Zaktualizuj kg tylko gdy podwójna progresja (oba w_zakresie: true przy tym samym kg)
   Skok: sztanga +2,5 kg · hantle +2 kg · maszyny/wyciągi +2,5–5 kg
 
 ── 3. data/cykl2/progresja.json ──
   • Dodaj datę NA POCZĄTKU naglowki[] (format "DD/MM")
   • Dla każdego ćwiczenia dodaj sesję NA POCZĄTKU sesje[]:
-    { "ico": "★"/"↑"/"→"/"↓", "kg": "XX", "serie": "8×4" }
+    { "ico": "★"/"↑"/"→"/"↓", "kg": "XX", "serie": "8-8-8-8" }
   • Ikony: ★ rekord · ↑ wzrost · → plateau · ↓ regres
   • Jeśli sesji > 8: usuń ostatnią
 
 ── 4. data/harmonogram.json ──
-  • Zaktualizuj bilans cyklu: l1/l2/upper/lacznie +1
-  • Oznacz dzień: ukonczone: true dla właściwej daty
+  • Zaktualizuj bilans: l1/l2/upper/lacznie +1
+  • Oznacz sesję: ukonczone: true dla właściwej daty
 
 ── 5. data/waga.json (tylko gdy podano pomiar) ──
   • Dodaj NA POCZĄTKU pomiary[]: {"data": "DD.MM", "waga": 00.00}
@@ -384,8 +381,26 @@ Pomiń data/cykl2/plan.json jeśli brak zmian kg (brak podwójnej progresji).
 CZĘŚĆ 3 — SQL DO SUPABASE
 ════════════════════════════════════
 
-Na końcu odpowiedzi dodaj gotowy SQL w jednej transakcji CTE.
-Cały blok uruchamia się jednym kliknięciem Run — bez ręcznego kopiowania UUID.
+Na końcu odpowiedzi wygeneruj gotowy SQL. Użyj CTE — jeden Run w SQL Editor.
+
+WAŻNE — NAZWY ĆWICZEŃ:
+Kolumna exercise_name w session_sets MUSI używać dokładnie short_name z tabeli exercises.
+Poniżej mapa short_name dla ćwiczeń Sylwii:
+
+Lower 2 (L2):
+  Martwy ciąg trap bar | Zakroki wsteczne Smith | Martwy ciąg jednonóż hantle
+  Przysiad bułgarski | Wyprosty tułowia | Prostowanie nóg maszyna
+  Pull-through wyciąg | Cable Crunch
+
+Upper:
+  Wyciskanie hantlami | Podciąganie australijskie | Ściąganie drążka maszyna
+  OHP hantlami | Odwodzenie ramion wyciąg | Face pull klęk jednonóż
+  Cable Crunch | Pallof Press
+
+Lower 1 (L1):
+  Hip thrust sztanga | Sumo RDL sztanga | Hip thrust jednostronny
+  Odwodzenie maszyna | Przywodzenie maszyna | Cable donkey kick
+  Odwodzenie stojąc wyciąg
 
 --- SUPABASE SQL ---
 
@@ -396,47 +411,53 @@ WITH new_session AS (
     '28a1f5aa-0216-4393-afb9-5548b58cabb1',
     (SELECT id FROM public.cycles
      WHERE user_id = '28a1f5aa-0216-4393-afb9-5548b58cabb1' AND is_active = true),
-    'YYYY-MM-DD',      -- data z raportu
-    'l1|l2|upper',     -- typ z raportu
-    9,                 -- ocena z raportu
-    90,                -- czas w minutach z raportu
-    null,              -- kcal (null jeśli brak w raporcie)
-    null,              -- tętno (null jeśli brak)
-    null,              -- obciążenie aerobowe (null jeśli brak)
-    'notatki'          -- krótki opis
+    'YYYY-MM-DD',
+    'l1|l2|upper',
+    9,
+    90,
+    null,
+    null,
+    null,
+    'notatki'
   )
   RETURNING id
 ),
 sets AS (
   INSERT INTO public.session_sets
-    (session_id, exercise_name, set_number, kg, reps, completed)
-  SELECT s.id, e.exercise_name, e.set_number, e.kg, e.reps, e.completed
+    (session_id, exercise_name, exercise_id, set_number, kg, reps, completed)
+  SELECT
+    s.id,
+    e.short_name,
+    e.id,
+    v.set_number,
+    v.kg,
+    v.reps,
+    true
   FROM new_session s
   CROSS JOIN (VALUES
-    -- Wstaw osobny wiersz dla każdej serii każdego ćwiczenia:
-    ('Hip thrust sztanga',          1, 57.5,  8, true),
-    ('Hip thrust sztanga',          2, 57.5,  8, true),
-    ('Hip thrust sztanga',          3, 57.5,  8, true),
-    ('Hip thrust sztanga',          4, 57.5,  8, true),
-    ('Sumo RDL sztanga',            1, 35.0, 10, true),
-    -- ... kolejne ćwiczenia i serie
-    ('Odwodzenie stojąc wyciąg',    3,  7.5, 20, true)
-  ) AS e(exercise_name, set_number, kg, reps, completed)
+    ('Martwy ciąg trap bar', 1, 35.0, 8),
+    ('Martwy ciąg trap bar', 2, 35.0, 8),
+    -- ... wszystkie serie wszystkich ćwiczeń
+    ('Pull-through wyciąg', 3, 20.0, 12)
+  ) AS v(short_name, set_number, kg, reps)
+  JOIN public.exercises e ON e.short_name = v.short_name
 ),
 progression AS (
   INSERT INTO public.exercise_progression
-    (user_id, cycle_id, session_id, exercise_name, session_date, kg, sets_reps_achieved, progression_status)
-  -- Tylko ćwiczenia główne (highlight: true): Hip thrust, Martwy ciąg trap bar, Wyciskanie hantlami
-  -- Pomiń jeśli sesja nie zawiera żadnego ćwiczenia głównego
+    (user_id, cycle_id, session_id, exercise_name, exercise_id, session_date, kg, sets_reps_achieved, progression_status)
   SELECT
     '28a1f5aa-0216-4393-afb9-5548b58cabb1',
     (SELECT id FROM public.cycles WHERE user_id = '28a1f5aa-0216-4393-afb9-5548b58cabb1' AND is_active = true),
-    s.id, e.exercise_name, e.session_date::date, e.kg, e.sets_reps, e.status
+    s.id,
+    e.short_name,
+    e.id,
+    'YYYY-MM-DD',
+    35.0,
+    '4×8',
+    'maintain|progress'
   FROM new_session s
-  CROSS JOIN (VALUES
-    ('Hip thrust sztanga', 'YYYY-MM-DD', 57.5, '4×8', 'maintain')
-    -- progression_status: 'progress' gdy ↑, 'maintain' gdy →
-  ) AS e(exercise_name, session_date, kg, sets_reps, status)
+  JOIN public.exercises e ON e.short_name = 'Martwy ciąg trap bar'
+  -- Powtórz dla każdego ćwiczenia głównego (highlight: true)
 )
 UPDATE public.schedule_entries
 SET completed = true
@@ -444,7 +465,7 @@ WHERE user_id = '28a1f5aa-0216-4393-afb9-5548b58cabb1'
   AND planned_date = 'YYYY-MM-DD'
   AND session_type = 'l1|l2|upper';
 
--- Pomiar wagi (dodaj tylko gdy raport zawiera wagę, inaczej usuń ten blok)
+-- Pomiar wagi (tylko gdy raport zawiera wagę)
 INSERT INTO public.weight_logs (user_id, measured_at, value_kg)
 VALUES ('28a1f5aa-0216-4393-afb9-5548b58cabb1', 'YYYY-MM-DD', 00.0)
 ON CONFLICT (user_id, measured_at) DO UPDATE SET value_kg = EXCLUDED.value_kg;
@@ -452,11 +473,12 @@ ON CONFLICT (user_id, measured_at) DO UPDATE SET value_kg = EXCLUDED.value_kg;
 --- KONIEC SQL ---
 
 WAŻNE:
-• Wypełnij WSZYSTKIE wartości z raportu — daty, ciężary, serie, ocena, czas
+• exercise_name = short_name z mapy powyżej (dokładna pisownia!)
+• exercise_id pobierane przez JOIN na exercises.short_name — nie wpisuj UUID ręcznie
 • W CROSS JOIN (VALUES ...) wstaw osobny wiersz dla każdej serii każdego ćwiczenia
-• progression_status: 'progress' gdy ↑ (podwójna progresja), 'maintain' gdy →
-• Usuń blok INSERT weight_logs jeśli raport nie zawiera pomiaru wagi
-• Usuń blok progression jeśli sesja nie zawiera ćwiczeń głównych (highlight: true)</textarea>
+• progression_status: 'progress' gdy ↑, 'maintain' gdy →
+• Usuń blok weight_logs jeśli brak pomiaru wagi
+• Usuń blok progression jeśli brak ćwiczeń głównych (highlight: true)</textarea>
             <div style="background:var(--surface2);border-radius:var(--radius-sm);padding:12px;font-size:11px;color:var(--text2);line-height:1.8;font-family:var(--mono);white-space:pre-wrap;margin-bottom:10px" id="prompt-preview"></div>
             <button onclick="copyTmpl('prompt')" style="width:100%;padding:9px;background:var(--rose);color:#fff;border:none;border-radius:8px;font-family:var(--mono);font-size:11px;font-weight:600;cursor:pointer">📋 Kopiuj prompt</button>
           </div>

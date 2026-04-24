@@ -1,5 +1,5 @@
 {
-  "version": "2.2.6",
+  "version": "2.2.7",
   "data": "20.04.2026",
-  "changelog": "index: szablon SQL → CTE (jedna transakcja, bez ręcznego UUID)"
+  "changelog": "index: szablon SQL — exercise_id przez JOIN, mapa short_name ćwiczeń"
 }
