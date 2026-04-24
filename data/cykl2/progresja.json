@@ -90,47 +90,97 @@
     "upper": {
       "label": "💪 Upper",
       "badge_class": "prog-title-upper",
-      "naglowki": [],
+      "naglowki": [
+        "22/04"
+      ],
       "cwiczenia": [
         {
           "nazwa": "Wyciskanie hantlami płaskie",
           "zakres": "4×6–8",
-          "sesje": []
+          "sesje": [
+            {
+              "ico": "★",
+              "kg": "10",
+              "serie": "8-8-8-8"
+            }
+          ]
         },
         {
           "nazwa": "Podciąganie australijskie",
           "zakres": "3×8–10",
-          "sesje": []
+          "sesje": [
+            {
+              "ico": "★",
+              "kg": "—",
+              "serie": "5-7-7"
+            }
+          ]
         },
         {
           "nazwa": "Ściąganie drążka maszyna",
           "zakres": "3×8–10",
-          "sesje": []
+          "sesje": [
+            {
+              "ico": "★",
+              "kg": "25",
+              "serie": "10×3"
+            }
+          ]
         },
         {
           "nazwa": "OHP hantlami",
           "zakres": "3×8–10",
-          "sesje": []
+          "sesje": [
+            {
+              "ico": "★",
+              "kg": "9",
+              "serie": "10×3"
+            }
+          ]
         },
         {
           "nazwa": "Odwodzenie ramion wyciąg",
           "zakres": "3×12–15",
-          "sesje": []
+          "sesje": [
+            {
+              "ico": "★",
+              "kg": "2.5",
+              "serie": "12×3"
+            }
+          ]
         },
         {
           "nazwa": "Face pull klęk jednonóż",
           "zakres": "3×12–15",
-          "sesje": []
+          "sesje": [
+            {
+              "ico": "★",
+              "kg": "10",
+              "serie": "15×3"
+            }
+          ]
         },
         {
           "nazwa": "Cable crunch",
           "zakres": "3×12–15",
-          "sesje": []
+          "sesje": [
+            {
+              "ico": "★",
+              "kg": "15",
+              "serie": "15×3"
+            }
+          ]
         },
         {
           "nazwa": "Pallof press",
           "zakres": "3×12–15",
-          "sesje": []
+          "sesje": [
+            {
+              "ico": "★",
+              "kg": "7.5",
+              "serie": "15×3"
+            }
+          ]
         }
       ]
     },

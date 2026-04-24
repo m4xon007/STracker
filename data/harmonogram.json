@@ -6,9 +6,9 @@
       "open": true,
       "bilans": {
         "l2": 1,
-        "upper": 0,
+        "upper": 1,
         "l1": 0,
-        "lacznie": 1
+        "lacznie": 2
       },
       "miesiace": [
         {
@@ -32,7 +32,8 @@
                 {
                   "n": 22,
                   "typ": "plan",
-                  "tekst": "U"
+                  "tekst": "U",
+                  "ukonczone": true
                 },
                 {
                   "n": 23,
