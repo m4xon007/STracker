@@ -52,8 +52,9 @@
                 },
                 {
                   "n": 26,
-                  "typ": "waga",
-                  "tekst": "⚖️"
+                  "typ": "skip",
+                  "tekst": "L1 ⊘",
+                  "ukonczone": false
                 }
               ]
             },
@@ -264,8 +265,9 @@
                 },
                 {
                   "n": 26,
-                  "typ": "empty",
-                  "tekst": ""
+                  "typ": "skip",
+                  "tekst": "L1 ⊘",
+                  "ukonczone": false
                 },
                 {
                   "n": 27,
