@@ -1,5 +1,5 @@
 {
-  "version": "2.3.4",
-  "data": "27.04.2026",
-  "changelog": "fix: nastepny → Upper Śr 29.04 (był błędnie L1)"
+  "version": "2.3.8",
+  "data": "28.04.2026",
+  "changelog": "UI: zielone podświetlenie przy 2/2 + inputy w opcjonalnych"
 }
