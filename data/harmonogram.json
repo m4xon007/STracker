@@ -5,10 +5,10 @@
       "label": "Cykl 2 — start 20.04.2026",
       "open": true,
       "bilans": {
-        "l2": 1,
+        "l2": 2,
         "upper": 1,
         "l1": 0,
-        "lacznie": 2
+        "lacznie": 3
       },
       "miesiace": [
         {
@@ -65,7 +65,8 @@
                 {
                   "n": 27,
                   "typ": "plan",
-                  "tekst": "L2"
+                  "tekst": "L2",
+                  "ukonczone": true
                 },
                 {
                   "n": 28,
@@ -272,7 +273,8 @@
                 {
                   "n": 27,
                   "typ": "plan",
-                  "tekst": "U"
+                  "tekst": "U",
+                  "ukonczone": true
                 },
                 {
                   "n": 28,

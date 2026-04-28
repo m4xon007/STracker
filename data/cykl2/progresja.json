@@ -5,6 +5,7 @@
       "label": "🦵 Lower 2",
       "badge_class": "prog-title-l2",
       "naglowki": [
+        "27/04",
         "20/04"
       ],
       "cwiczenia": [
@@ -12,6 +13,11 @@
           "nazwa": "Martwy ciąg trap bar",
           "zakres": "4×6–8",
           "sesje": [
+            {
+              "ico": "↑",
+              "kg": "35",
+              "serie": "8-8-8-8"
+            },
             {
               "ico": "★",
               "kg": "35",
@@ -25,6 +31,11 @@
           "zakres": "3×8–10",
           "sesje": [
             {
+              "ico": "↑",
+              "kg": "9",
+              "serie": "10×3"
+            },
+            {
               "ico": "★",
               "kg": "9",
               "serie": "10×3"
@@ -36,6 +47,11 @@
           "nazwa": "Martwy ciąg jednonóż hantle",
           "zakres": "3×10–12",
           "sesje": [
+            {
+              "ico": "↑",
+              "kg": "12",
+              "serie": "12×3"
+            },
             {
               "ico": "★",
               "kg": "12",
@@ -50,6 +66,11 @@
           "sesje": [
             {
               "ico": "★",
+              "kg": "9",
+              "serie": "12×3"
+            },
+            {
+              "ico": "★",
               "kg": "12",
               "serie": "12-12-10"
             }
@@ -60,6 +81,11 @@
           "nazwa": "Wyprosty tułowia",
           "zakres": "3×10–12",
           "sesje": [
+            {
+              "ico": "↑",
+              "kg": "20",
+              "serie": "12×3"
+            },
             {
               "ico": "★",
               "kg": "20",
@@ -73,6 +99,11 @@
           "zakres": "3×12–15",
           "sesje": [
             {
+              "ico": "→",
+              "kg": "30",
+              "serie": "15×3"
+            },
+            {
               "ico": "★",
               "kg": "30",
               "serie": "15-12-10"
@@ -84,6 +115,11 @@
           "nazwa": "Pull-through wyciąg",
           "zakres": "3×15–20",
           "sesje": [
+            {
+              "ico": "★",
+              "kg": "25",
+              "serie": "15×3"
+            },
             {
               "ico": "★",
               "kg": "20",
