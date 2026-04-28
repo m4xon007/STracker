@@ -31,9 +31,8 @@
                 },
                 {
                   "n": 22,
-                  "typ": "plan",
-                  "tekst": "U",
-                  "ukonczone": true
+                  "typ": "upper",
+                  "tekst": "U ✓"
                 },
                 {
                   "n": 23,
@@ -47,14 +46,13 @@
                 },
                 {
                   "n": 25,
-                  "typ": "plan",
-                  "tekst": "L1"
+                  "typ": "skip",
+                  "tekst": "L1 ⊘"
                 },
                 {
                   "n": 26,
-                  "typ": "skip",
-                  "tekst": "L1 ⊘",
-                  "ukonczone": false
+                  "typ": "waga",
+                  "tekst": "⚖️"
                 }
               ]
             },
@@ -64,9 +62,8 @@
               "dni": [
                 {
                   "n": 27,
-                  "typ": "plan",
-                  "tekst": "L2",
-                  "ukonczone": true
+                  "typ": "l2",
+                  "tekst": "L2 ✓"
                 },
                 {
                   "n": 28,
@@ -230,8 +227,8 @@
                 },
                 {
                   "n": 20,
-                  "typ": "l2",
-                  "tekst": "L2 ✓"
+                  "typ": "plan",
+                  "tekst": "U"
                 },
                 {
                   "n": 21,
@@ -266,15 +263,13 @@
                 },
                 {
                   "n": 26,
-                  "typ": "skip",
-                  "tekst": "L1 ⊘",
-                  "ukonczone": false
+                  "typ": "empty",
+                  "tekst": ""
                 },
                 {
                   "n": 27,
                   "typ": "plan",
-                  "tekst": "U",
-                  "ukonczone": true
+                  "tekst": "U"
                 },
                 {
                   "n": 28,
