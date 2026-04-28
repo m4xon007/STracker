@@ -1,5 +1,5 @@
 {
-  "version": "2.3.8",
+  "version": "2.3.9",
   "data": "28.04.2026",
-  "changelog": "UI: zielone podświetlenie przy 2/2 + inputy w opcjonalnych"
+  "changelog": "fix: Poprzedni — zakres z planu po nazwie + progresja ikona+licznik"
 }

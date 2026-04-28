@@ -864,26 +864,27 @@ function renderPoprzedni(poprzedni,progresja){
   const cwiczenia=(poprzedni.cwiczenia||[]).map((ex,i)=>{
     const nameColor=statusColor(ex.status);
     const ssChip=ex.ss?'<span class="ss-chip">'+ex.ss+'</span>':'';
-    // Znajdź zakres z planu
-    const planEx=planSekcja?planSekcja.cwiczenia.find(p=>p.id&&ex.id&&p.id===ex.id):null;
+    // Znajdź ćwiczenie w planie po nazwie (poprzedni.cwiczenia nie ma id)
+    const planEx=planSekcja?planSekcja.cwiczenia.find(p=>p.nazwa===ex.nazwa):null;
+    const exId=planEx?planEx.id:null;
     const zakres=planEx?planEx.serie:'—';
-    // Progresja: ikona statusu + licznik 0/2·1/2·2/2 z ostatni/prev
+    // Progresja: ikona z pola status + licznik 0/2·1/2·2/2
     const ostTyp2=DATA.treningiAktywny&&DATA.treningiAktywny['ostatni_'+typ]?DATA.treningiAktywny['ostatni_'+typ]:null;
     const prevTyp2=DATA.treningiAktywny&&DATA.treningiAktywny['ostatni_'+typ+'_prev']?DATA.treningiAktywny['ostatni_'+typ+'_prev']:null;
-    let progDisplay='<span style="color:var(--muted)">—</span>';
-    if(ostTyp2&&ostTyp2.cwiczenia&&ex.id){
-      const dO=ostTyp2.cwiczenia[ex.id];
-      const dP=prevTyp2&&prevTyp2.cwiczenia?prevTyp2.cwiczenia[ex.id]:null;
+    const ico=ex.status==='rekord'?'★':ex.status==='progresja'?'↑':ex.status==='uwaga'?'⚠':ex.status==='utrzymaj'?'→':'→';
+    const icoColor=ex.status==='rekord'?'var(--yellow)':ex.status==='progresja'?'var(--green)':ex.status==='uwaga'?'var(--orange)':'var(--muted)';
+    let licznik='<span style="color:var(--muted)">0/2</span>';
+    if(exId&&ostTyp2&&ostTyp2.cwiczenia){
+      const dO=ostTyp2.cwiczenia[exId];
+      const dP=prevTyp2&&prevTyp2.cwiczenia?prevTyp2.cwiczenia[exId]:null;
       if(dO){
         const samKg2=dP&&Math.abs((dO.kg||0)-(dP.kg||0))<0.01;
         const o_ok=!!dO.w_zakresie;
         const p_ok=!!(dP&&dP.w_zakresie&&samKg2);
-        const ico=ex.status==='rekord'?'★':ex.status==='progresja'?'↑':ex.status==='uwaga'?'⚠':ex.status==='utrzymaj'?'→':'→';
-        const icoColor=ex.status==='rekord'?'var(--yellow)':ex.status==='progresja'?'var(--green)':ex.status==='uwaga'?'var(--orange)':'var(--muted)';
-        const licznik=o_ok&&p_ok?'<span style="color:var(--green);font-weight:700">2/2</span>':o_ok?'<span style="color:var(--yellow);font-weight:700">1/2</span>':'<span style="color:var(--muted)">0/2</span>';
-        progDisplay='<span style="color:'+icoColor+';font-weight:700;font-size:15px">'+ico+'</span> '+licznik;
+        licznik=o_ok&&p_ok?'<span style="color:var(--green);font-weight:700">2/2</span>':o_ok?'<span style="color:var(--yellow);font-weight:700">1/2</span>':'<span style="color:var(--muted)">0/2</span>';
       }
     }
+    const progDisplay='<span style="color:'+icoColor+';font-weight:700;font-size:15px">'+ico+'</span> '+licznik;
     // Inline historia z progresji
     const sekcja=DATA.progresja&&DATA.progresja.sekcje?DATA.progresja.sekcje[typ]:null;
     let analysisRows='';
