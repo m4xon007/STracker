@@ -24,7 +24,8 @@
         "serie": "4×6–8",
         "przerwa": "240s",
         "placeholder_kg": "35",
-        "placeholder_reps": "8"
+        "placeholder_reps": "8",
+        "id": "l2-trap-bar"
       },
       {
         "nazwa": "Zakroki wsteczne Smith",
@@ -35,7 +36,8 @@
         "serie": "3×8–10",
         "przerwa": "90s",
         "placeholder_kg": "9",
-        "placeholder_reps": "10"
+        "placeholder_reps": "10",
+        "id": "l2-zakroki-smith"
       },
       {
         "nazwa": "Martwy ciąg jednonóż hantle",
@@ -46,7 +48,8 @@
         "serie": "3×10–12",
         "przerwa": "90s",
         "placeholder_kg": "12",
-        "placeholder_reps": "12"
+        "placeholder_reps": "12",
+        "id": "l2-martwy-jednonoz"
       },
       {
         "nazwa": "Przysiad bułgarski",
@@ -57,7 +60,8 @@
         "serie": "3×10–12",
         "przerwa": "90s",
         "placeholder_kg": "12",
-        "placeholder_reps": "10"
+        "placeholder_reps": "10",
+        "id": "l2-przysiad-bulgarski"
       },
       {
         "nazwa": "Wyprosty tułowia",
@@ -68,7 +72,8 @@
         "serie": "3×10–12",
         "przerwa": "90s",
         "placeholder_kg": "20",
-        "placeholder_reps": "12"
+        "placeholder_reps": "12",
+        "id": "l2-wyprosty-tulow"
       },
       {
         "nazwa": "Prostowanie nóg maszyna",
@@ -79,7 +84,8 @@
         "serie": "3×12–15",
         "przerwa": "90s",
         "placeholder_kg": "30",
-        "placeholder_reps": "15"
+        "placeholder_reps": "15",
+        "id": "l2-prostowanie-nog"
       },
       {
         "nazwa": "Pull-through wyciąg",
@@ -90,7 +96,8 @@
         "serie": "3×15–20",
         "przerwa": "→SS",
         "placeholder_kg": "20",
-        "placeholder_reps": "12"
+        "placeholder_reps": "12",
+        "id": "l2-pull-through"
       },
       {
         "nazwa": "Cable crunch",
@@ -101,7 +108,8 @@
         "serie": "3×12–15",
         "przerwa": "60s",
         "placeholder_kg": "20",
-        "placeholder_reps": "15"
+        "placeholder_reps": "15",
+        "id": "l2-cable-crunch"
       }
     ]
   },
@@ -325,49 +333,49 @@
   "ostatni_l2": {
     "data": "20.04",
     "cwiczenia": {
-      "Martwy ciąg trap bar": {
+      "l2-trap-bar": {
         "kg": 35,
         "serie": "8-8-8-8",
         "w_zakresie": true,
         "zakres": "4×6–8"
       },
-      "Zakroki wsteczne Smith": {
+      "l2-zakroki-smith": {
         "kg": 9,
         "serie": "10-10-10",
         "w_zakresie": true,
         "zakres": "3×8–10"
       },
-      "Martwy ciąg jednonóż hantle": {
+      "l2-martwy-jednonoz": {
         "kg": 12,
         "serie": "12-12-12",
         "w_zakresie": true,
         "zakres": "3×10–12"
       },
-      "Przysiad bułgarski": {
+      "l2-przysiad-bulgarski": {
         "kg": 12,
         "serie": "12-12-10",
         "w_zakresie": false,
         "zakres": "3×10–12"
       },
-      "Wyprosty tułowia": {
+      "l2-wyprosty-tulow": {
         "kg": 20,
         "serie": "12-12-12",
         "w_zakresie": true,
         "zakres": "3×10–12"
       },
-      "Prostowanie nóg maszyna": {
+      "l2-prostowanie-nog": {
         "kg": 30,
         "serie": "15-12-10",
         "w_zakresie": false,
         "zakres": "3×12–15"
       },
-      "Pull-through wyciąg": {
+      "l2-pull-through": {
         "kg": 20,
         "serie": "12-12-12",
         "w_zakresie": false,
         "zakres": "3×15–20"
       },
-      "Cable Crunch": {
+      "l2-cable-crunch": {
         "kg": 20,
         "serie": "15-15-15",
         "w_zakresie": true,
@@ -378,49 +386,49 @@
   "ostatni_upper": {
     "data": "22.04",
     "cwiczenia": {
-      "Wyciskanie hantlami płaskie": {
+      "upper-wyciskanie": {
         "kg": 10,
         "serie": "8-8-8-8",
         "w_zakresie": true,
         "zakres": "4×6–8"
       },
-      "Podciąganie australijskie": {
+      "upper-podciaganie": {
         "kg": 0,
         "serie": "5-7-7",
         "w_zakresie": false,
         "zakres": "3×8–10"
       },
-      "Ściąganie drążka maszyna": {
+      "upper-sciaganie-drążka": {
         "kg": 25,
         "serie": "10-10-10",
         "w_zakresie": true,
         "zakres": "3×8–10"
       },
-      "OHP hantlami": {
+      "upper-ohp": {
         "kg": 9,
         "serie": "10-10-10",
         "w_zakresie": true,
         "zakres": "3×8–10"
       },
-      "Odwodzenie ramion wyciąg": {
+      "upper-odwodzenie-ramion": {
         "kg": 2.5,
         "serie": "12-12-12",
         "w_zakresie": false,
         "zakres": "3×12–15"
       },
-      "Face pull klęk jednonóż": {
+      "upper-face-pull": {
         "kg": 10,
         "serie": "15-15-15",
         "w_zakresie": true,
         "zakres": "3×12–15"
       },
-      "Cable crunch": {
+      "upper-cable-crunch": {
         "kg": 15,
         "serie": "15-15-15",
         "w_zakresie": true,
         "zakres": "3×12–15"
       },
-      "Pallof press": {
+      "upper-pallof": {
         "kg": 7.5,
         "serie": "15-15-15",
         "w_zakresie": true,
