@@ -1,0 +1,288 @@
+{
+  "cykl": 2,
+  "sekcje": {
+    "l2": {
+      "label": "🦵 Lower 2",
+      "badge_class": "prog-title-l2",
+      "naglowki": [
+        "27/04",
+        "20/04"
+      ],
+      "cwiczenia": [
+        {
+          "nazwa": "Martwy ciąg trap bar",
+          "zakres": "4×6–8",
+          "sesje": [
+            {
+              "ico": "↑",
+              "kg": "35",
+              "serie": "8-8-8-8"
+            },
+            {
+              "ico": "★",
+              "kg": "35",
+              "serie": "8×4"
+            }
+          ],
+          "id": "l2-trap-bar"
+        },
+        {
+          "nazwa": "Zakroki wsteczne Smith",
+          "zakres": "3×8–10",
+          "sesje": [
+            {
+              "ico": "↑",
+              "kg": "9",
+              "serie": "10×3"
+            },
+            {
+              "ico": "★",
+              "kg": "9",
+              "serie": "10×3"
+            }
+          ],
+          "id": "l2-zakroki-smith"
+        },
+        {
+          "nazwa": "Martwy ciąg jednonóż hantle",
+          "zakres": "3×10–12",
+          "sesje": [
+            {
+              "ico": "↑",
+              "kg": "12",
+              "serie": "12×3"
+            },
+            {
+              "ico": "★",
+              "kg": "12",
+              "serie": "12×3"
+            }
+          ],
+          "id": "l2-martwy-jednonoz"
+        },
+        {
+          "nazwa": "Przysiad bułgarski",
+          "zakres": "3×10–12",
+          "sesje": [
+            {
+              "ico": "★",
+              "kg": "9",
+              "serie": "12×3"
+            },
+            {
+              "ico": "★",
+              "kg": "12",
+              "serie": "12-12-10"
+            }
+          ],
+          "id": "l2-przysiad-bulgarski"
+        },
+        {
+          "nazwa": "Wyprosty tułowia",
+          "zakres": "3×10–12",
+          "sesje": [
+            {
+              "ico": "↑",
+              "kg": "20",
+              "serie": "12×3"
+            },
+            {
+              "ico": "★",
+              "kg": "20",
+              "serie": "12×3"
+            }
+          ],
+          "id": "l2-wyprosty-tulow"
+        },
+        {
+          "nazwa": "Prostowanie nóg maszyna",
+          "zakres": "3×12–15",
+          "sesje": [
+            {
+              "ico": "→",
+              "kg": "30",
+              "serie": "15×3"
+            },
+            {
+              "ico": "★",
+              "kg": "30",
+              "serie": "15-12-10"
+            }
+          ],
+          "id": "l2-prostowanie-nog"
+        },
+        {
+          "nazwa": "Pull-through wyciąg",
+          "zakres": "3×15–20",
+          "sesje": [
+            {
+              "ico": "★",
+              "kg": "25",
+              "serie": "15×3"
+            },
+            {
+              "ico": "★",
+              "kg": "20",
+              "serie": "12×3"
+            }
+          ],
+          "id": "l2-pull-through"
+        }
+      ]
+    },
+    "upper": {
+      "label": "💪 Upper",
+      "badge_class": "prog-title-upper",
+      "naglowki": [
+        "22/04"
+      ],
+      "cwiczenia": [
+        {
+          "nazwa": "Wyciskanie hantlami płaskie",
+          "zakres": "4×6–8",
+          "sesje": [
+            {
+              "ico": "★",
+              "kg": "10",
+              "serie": "8-8-8-8"
+            }
+          ],
+          "id": "upper-wyciskanie"
+        },
+        {
+          "nazwa": "Podciąganie australijskie",
+          "zakres": "3×8–10",
+          "sesje": [
+            {
+              "ico": "★",
+              "kg": "—",
+              "serie": "5-7-7"
+            }
+          ],
+          "id": "upper-podciaganie"
+        },
+        {
+          "nazwa": "Ściąganie drążka maszyna",
+          "zakres": "3×8–10",
+          "sesje": [
+            {
+              "ico": "★",
+              "kg": "25",
+              "serie": "10×3"
+            }
+          ],
+          "id": "upper-sciaganie-drążka"
+        },
+        {
+          "nazwa": "OHP hantlami",
+          "zakres": "3×8–10",
+          "sesje": [
+            {
+              "ico": "★",
+              "kg": "9",
+              "serie": "10×3"
+            }
+          ],
+          "id": "upper-ohp"
+        },
+        {
+          "nazwa": "Odwodzenie ramion wyciąg",
+          "zakres": "3×12–15",
+          "sesje": [
+            {
+              "ico": "★",
+              "kg": "2.5",
+              "serie": "12×3"
+            }
+          ],
+          "id": "upper-odwodzenie-ramion"
+        },
+        {
+          "nazwa": "Face pull klęk jednonóż",
+          "zakres": "3×12–15",
+          "sesje": [
+            {
+              "ico": "★",
+              "kg": "10",
+              "serie": "15×3"
+            }
+          ],
+          "id": "upper-face-pull"
+        },
+        {
+          "nazwa": "Cable crunch",
+          "zakres": "3×12–15",
+          "sesje": [
+            {
+              "ico": "★",
+              "kg": "15",
+              "serie": "15×3"
+            }
+          ],
+          "id": "upper-cable-crunch"
+        },
+        {
+          "nazwa": "Pallof press",
+          "zakres": "3×12–15",
+          "sesje": [
+            {
+              "ico": "★",
+              "kg": "7.5",
+              "serie": "15×3"
+            }
+          ],
+          "id": "upper-pallof"
+        }
+      ]
+    },
+    "l1": {
+      "label": "🍑 Lower 1",
+      "badge_class": "prog-title-l1",
+      "naglowki": [],
+      "cwiczenia": [
+        {
+          "nazwa": "Hip thrust sztanga",
+          "zakres": "4×6–8",
+          "sesje": [],
+          "id": "l1-hip-thrust"
+        },
+        {
+          "nazwa": "Sumo RDL sztanga",
+          "zakres": "3×8–10",
+          "sesje": [],
+          "id": "l1-sumo-rdl"
+        },
+        {
+          "nazwa": "Hip thrust jednostronny hantel",
+          "zakres": "3×10–12",
+          "sesje": [],
+          "id": "l1-hip-thrust-jednostronny"
+        },
+        {
+          "nazwa": "Odwodzenie maszyna",
+          "zakres": "3×12–15",
+          "sesje": [],
+          "id": "l1-odwodzenie-maszyna"
+        },
+        {
+          "nazwa": "Przywodzenie maszyna",
+          "zakres": "3×12–15",
+          "sesje": [],
+          "id": "l1-przywodzenie-maszyna"
+        },
+        {
+          "nazwa": "Cable donkey kick",
+          "zakres": "3×12–15",
+          "sesje": [],
+          "id": "l1-donkey-kick"
+        },
+        {
+          "nazwa": "Odwodzenie stojąc wyciąg",
+          "zakres": "3×15–20",
+          "sesje": [],
+          "id": "l1-odwodzenie-stojac"
+        }
+      ]
+    }
+  }
+}

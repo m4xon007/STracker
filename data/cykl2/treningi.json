@@ -1,0 +1,568 @@
+{
+  "meta": {
+    "cykl": 2,
+    "tydzien": 1,
+    "lacznie": 3,
+    "data_start": "20.04.2026",
+    "header_sub": "Cykl 2 · tydzień 1",
+    "header_badge": "Śr 29.04"
+  },
+  "nastepny": {
+    "typ": "upper",
+    "emoji": "💪",
+    "label": "Upper — Śr 29.04.2026",
+    "numer": 2,
+    "badge_class": "badge-upper",
+    "alert": "Upper #2. Poprzedni: wyciskanie 10kg 4×8 ✓. Cel: utrzymać jakość, skrócić do ~90 min.",
+    "cwiczenia": [
+      {
+        "id": "upper-wyciskanie",
+        "nazwa": "Wyciskanie hantlami płaskie",
+        "highlight": true,
+        "ss": null,
+        "poprzedni_kg": 10,
+        "poprzedni_serie": "8-8-8-8",
+        "serie": "4×6–8",
+        "przerwa": "240s",
+        "placeholder_kg": "10",
+        "placeholder_reps": "8"
+      },
+      {
+        "id": "upper-podciaganie",
+        "nazwa": "Podciąganie australijskie",
+        "highlight": false,
+        "ss": null,
+        "poprzedni_kg": 0,
+        "poprzedni_serie": "5-7-7",
+        "serie": "3×8–10",
+        "przerwa": "120s",
+        "placeholder_kg": "masa",
+        "placeholder_reps": "7"
+      },
+      {
+        "id": "upper-sciaganie-drążka",
+        "nazwa": "Ściąganie drążka maszyna",
+        "highlight": false,
+        "ss": null,
+        "poprzedni_kg": 25,
+        "poprzedni_serie": "10-10-10",
+        "serie": "3×8–10",
+        "przerwa": "120s",
+        "placeholder_kg": "25",
+        "placeholder_reps": "10"
+      },
+      {
+        "id": "upper-ohp",
+        "nazwa": "OHP hantlami",
+        "highlight": false,
+        "ss": null,
+        "poprzedni_kg": 9,
+        "poprzedni_serie": "10-10-10",
+        "serie": "3×8–10",
+        "przerwa": "90s",
+        "placeholder_kg": "9",
+        "placeholder_reps": "10"
+      },
+      {
+        "id": "upper-odwodzenie-ramion",
+        "nazwa": "Odwodzenie ramion wyciąg",
+        "highlight": false,
+        "ss": null,
+        "poprzedni_kg": 2.5,
+        "poprzedni_serie": "12-12-12",
+        "serie": "3×12–15",
+        "przerwa": "90s",
+        "placeholder_kg": "2.5",
+        "placeholder_reps": "12"
+      },
+      {
+        "id": "upper-face-pull",
+        "nazwa": "Face pull klęk jednonóż",
+        "highlight": false,
+        "ss": null,
+        "poprzedni_kg": 10,
+        "poprzedni_serie": "15-15-15",
+        "serie": "3×12–15",
+        "przerwa": "90s",
+        "placeholder_kg": "10",
+        "placeholder_reps": "15"
+      },
+      {
+        "id": "upper-cable-crunch",
+        "nazwa": "Cable crunch",
+        "highlight": false,
+        "ss": "SS1",
+        "poprzedni_kg": 15,
+        "poprzedni_serie": "15-15-15",
+        "serie": "3×12–15",
+        "przerwa": "→SS",
+        "placeholder_kg": "15",
+        "placeholder_reps": "15"
+      },
+      {
+        "id": "upper-pallof",
+        "nazwa": "Pallof press",
+        "highlight": false,
+        "ss": "SS1",
+        "poprzedni_kg": 7.5,
+        "poprzedni_serie": "15-15-15",
+        "serie": "3×12–15",
+        "przerwa": "60s",
+        "placeholder_kg": "7.5",
+        "placeholder_reps": "15"
+      }
+    ]
+  },
+  "poprzedni": {
+    "tytul": "🦵 Lower 2 — Pn 27.04",
+    "typ": "l2",
+    "numer": 2,
+    "tydzien": 1,
+    "kcal": 896,
+    "czas_min": 106,
+    "tetno": 142,
+    "obciazenie_aerobowe": 4.0,
+    "ocena": 10,
+    "opis": "L2 #2 — wszystkie ćwiczenia złożone w zakresie. Przysiad bułgarski obniżony do 9kg — pełny zakres 3×12. Pull-through 25kg ale seria 15 (poniżej zakresu 15–20).",
+    "wnioski": "106 min — nadal za długo. Podwójna progresja: trap bar, zakroki, martwy jednonóż, wyprosty tułowia → +ciężar w następnym L2. Przysiad bułgarski reset do 9kg — mądra decyzja, technika ważniejsza. Pull-through wymaga dociągnięcia do 20 powt.",
+    "cwiczenia": [
+      {
+        "nazwa": "Martwy ciąg trap bar",
+        "kg": 35,
+        "wykonano": "8-8-8-8",
+        "ocena_tekst": "Czyste 4×8",
+        "progresja_tekst": "↑ Podwójna progresja → 37,5 kg",
+        "status": "progresja",
+        "ss": null
+      },
+      {
+        "nazwa": "Zakroki wsteczne Smith",
+        "kg": 9,
+        "wykonano": "10-10-10",
+        "ocena_tekst": "W zakresie",
+        "progresja_tekst": "↑ Podwójna progresja → 11 kg",
+        "status": "progresja",
+        "ss": null
+      },
+      {
+        "nazwa": "Martwy ciąg jednonóż hantle",
+        "kg": 12,
+        "wykonano": "12-12-12",
+        "ocena_tekst": "Pełny zakres",
+        "progresja_tekst": "↑ Podwójna progresja → 14 kg",
+        "status": "progresja",
+        "ss": null
+      },
+      {
+        "nazwa": "Przysiad bułgarski",
+        "kg": 9,
+        "wykonano": "12-12-12",
+        "ocena_tekst": "Reset, pełny zakres",
+        "progresja_tekst": "→ Nowy ciężar",
+        "status": "rekord",
+        "ss": null
+      },
+      {
+        "nazwa": "Wyprosty tułowia",
+        "kg": 20,
+        "wykonano": "12-12-12",
+        "ocena_tekst": "W zakresie",
+        "progresja_tekst": "↑ Podwójna progresja → 22,5 kg",
+        "status": "progresja",
+        "ss": null
+      },
+      {
+        "nazwa": "Prostowanie nóg maszyna",
+        "kg": 30,
+        "wykonano": "15-15-15",
+        "ocena_tekst": "Pełny zakres",
+        "progresja_tekst": "→ Prev poza zakresem",
+        "status": "utrzymaj",
+        "ss": null
+      },
+      {
+        "nazwa": "Pull-through wyciąg",
+        "kg": 25,
+        "wykonano": "15-15-15",
+        "ocena_tekst": "Poniżej zakresu 15–20",
+        "progresja_tekst": "→ Nowy ciężar",
+        "status": "uwaga",
+        "ss": "SS1"
+      },
+      {
+        "nazwa": "Cable crunch",
+        "kg": 35,
+        "wykonano": "15-15-15",
+        "ocena_tekst": "W zakresie, +15kg!",
+        "progresja_tekst": "→ Nowy ciężar",
+        "status": "rekord",
+        "ss": "SS1"
+      }
+    ]
+  },
+  "historia": [
+    {
+      "id": "c2-l2-002",
+      "data": "27.04.2026",
+      "data_label": "Pn 27.04",
+      "typ": "l2",
+      "numer": 2,
+      "tydzien": 1,
+      "ocena": 10,
+      "kcal": 896,
+      "czas_min": 106,
+      "tetno": 142,
+      "obciazenie_aerobowe": 4.0,
+      "notatka": "L2 #2. Podwójna progresja: trap bar, zakroki, martwy jednonóż, wyprosty. Przysiad bułgarski reset 9kg→12×3 ✓",
+      "cwiczenia": [
+        {
+          "nazwa": "Martwy ciąg trap bar",
+          "kg": 35,
+          "serie": "8-8-8-8",
+          "status": "progresja"
+        },
+        {
+          "nazwa": "Zakroki wsteczne Smith",
+          "kg": 9,
+          "serie": "10-10-10",
+          "status": "progresja"
+        },
+        {
+          "nazwa": "Martwy ciąg jednonóż hantle",
+          "kg": 12,
+          "serie": "12-12-12",
+          "status": "progresja"
+        },
+        {
+          "nazwa": "Przysiad bułgarski",
+          "kg": 9,
+          "serie": "12-12-12",
+          "status": "rekord"
+        },
+        {
+          "nazwa": "Wyprosty tułowia",
+          "kg": 20,
+          "serie": "12-12-12",
+          "status": "progresja"
+        },
+        {
+          "nazwa": "Prostowanie nóg maszyna",
+          "kg": 30,
+          "serie": "15-15-15",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Pull-through wyciąg",
+          "kg": 25,
+          "serie": "15-15-15",
+          "status": "uwaga"
+        },
+        {
+          "nazwa": "Cable crunch",
+          "kg": 35,
+          "serie": "15-15-15",
+          "status": "rekord"
+        }
+      ]
+    },
+    {
+      "id": "c2-upper-001",
+      "data": "22.04.2026",
+      "data_label": "Śr 22.04",
+      "typ": "upper",
+      "numer": 1,
+      "tydzien": 1,
+      "ocena": 9,
+      "kcal": 733,
+      "czas_min": 103,
+      "tetno": 129,
+      "obciazenie_aerobowe": 3.4,
+      "notatka": "Start C2. Wyciskanie 10kg 4×8 ✓. Podciąganie australijskie za trudne (5-7-7). Odwodzenie 2,5kg za lekko.",
+      "cwiczenia": [
+        {
+          "nazwa": "Wyciskanie hantlami płaskie",
+          "kg": 10,
+          "serie": "8-8-8-8",
+          "status": "rekord"
+        },
+        {
+          "nazwa": "Podciąganie australijskie",
+          "kg": 0,
+          "serie": "5-7-7",
+          "status": "uwaga"
+        },
+        {
+          "nazwa": "Ściąganie drążka maszyna",
+          "kg": 25,
+          "serie": "10-10-10",
+          "status": "rekord"
+        },
+        {
+          "nazwa": "OHP hantlami",
+          "kg": 9,
+          "serie": "10-10-10",
+          "status": "rekord"
+        },
+        {
+          "nazwa": "Odwodzenie ramion wyciąg",
+          "kg": 2.5,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Face pull klęk jednonóż",
+          "kg": 10,
+          "serie": "15-15-15",
+          "status": "rekord"
+        },
+        {
+          "nazwa": "Cable crunch",
+          "kg": 15,
+          "serie": "15-15-15",
+          "status": "rekord"
+        },
+        {
+          "nazwa": "Pallof press",
+          "kg": 7.5,
+          "serie": "15-15-15",
+          "status": "rekord"
+        }
+      ]
+    },
+    {
+      "id": "c2-l2-001",
+      "data": "20.04.2026",
+      "data_label": "Pn 20.04",
+      "typ": "l2",
+      "numer": 1,
+      "tydzien": 1,
+      "ocena": 10,
+      "kcal": 1005,
+      "czas_min": 112,
+      "tetno": 142,
+      "obciazenie_aerobowe": 4.3,
+      "notatka": "Start C2. Trap bar 4×8 czyste. Sesja za długa (112 min). Pull-through i Leg Ext sypały.",
+      "cwiczenia": [
+        {
+          "nazwa": "Martwy ciąg trap bar",
+          "kg": 35,
+          "serie": "8-8-8-8",
+          "status": "rekord"
+        },
+        {
+          "nazwa": "Zakroki wsteczne Smith",
+          "kg": 9,
+          "serie": "10-10-10",
+          "status": "rekord"
+        },
+        {
+          "nazwa": "Martwy ciąg jednonóż hantle",
+          "kg": 12,
+          "serie": "12-12-12",
+          "status": "rekord"
+        },
+        {
+          "nazwa": "Przysiad bułgarski",
+          "kg": 12,
+          "serie": "12-12-10",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Wyprosty tułowia",
+          "kg": 20,
+          "serie": "12-12-12",
+          "status": "rekord"
+        },
+        {
+          "nazwa": "Prostowanie nóg maszyna",
+          "kg": 30,
+          "serie": "15-12-10",
+          "status": "uwaga"
+        },
+        {
+          "nazwa": "Pull-through wyciąg",
+          "kg": 20,
+          "serie": "12-12-12",
+          "status": "uwaga"
+        },
+        {
+          "nazwa": "Cable Crunch",
+          "kg": 20,
+          "serie": "15-15-15",
+          "status": "rekord"
+        }
+      ]
+    }
+  ],
+  "ostatni_l2": {
+    "data": "27.04",
+    "cwiczenia": {
+      "l2-trap-bar": {
+        "kg": 35,
+        "serie": "8-8-8-8",
+        "w_zakresie": true,
+        "zakres": "4×6–8"
+      },
+      "l2-zakroki-smith": {
+        "kg": 9,
+        "serie": "10-10-10",
+        "w_zakresie": true,
+        "zakres": "3×8–10"
+      },
+      "l2-martwy-jednonoz": {
+        "kg": 12,
+        "serie": "12-12-12",
+        "w_zakresie": true,
+        "zakres": "3×10–12"
+      },
+      "l2-przysiad-bulgarski": {
+        "kg": 9,
+        "serie": "12-12-12",
+        "w_zakresie": true,
+        "zakres": "3×10–12"
+      },
+      "l2-wyprosty-tulow": {
+        "kg": 20,
+        "serie": "12-12-12",
+        "w_zakresie": true,
+        "zakres": "3×10–12"
+      },
+      "l2-prostowanie-nog": {
+        "kg": 30,
+        "serie": "15-15-15",
+        "w_zakresie": true,
+        "zakres": "3×12–15"
+      },
+      "l2-pull-through": {
+        "kg": 25,
+        "serie": "15-15-15",
+        "w_zakresie": false,
+        "zakres": "3×15–20"
+      },
+      "l2-cable-crunch": {
+        "kg": 35,
+        "serie": "15-15-15",
+        "w_zakresie": true,
+        "zakres": "3×12–15"
+      }
+    }
+  },
+  "ostatni_upper": {
+    "data": "22.04",
+    "cwiczenia": {
+      "upper-wyciskanie": {
+        "kg": 10,
+        "serie": "8-8-8-8",
+        "w_zakresie": true,
+        "zakres": "4×6–8"
+      },
+      "upper-podciaganie": {
+        "kg": 0,
+        "serie": "5-7-7",
+        "w_zakresie": false,
+        "zakres": "3×8–10"
+      },
+      "upper-sciaganie-drążka": {
+        "kg": 25,
+        "serie": "10-10-10",
+        "w_zakresie": true,
+        "zakres": "3×8–10"
+      },
+      "upper-ohp": {
+        "kg": 9,
+        "serie": "10-10-10",
+        "w_zakresie": true,
+        "zakres": "3×8–10"
+      },
+      "upper-odwodzenie-ramion": {
+        "kg": 2.5,
+        "serie": "12-12-12",
+        "w_zakresie": false,
+        "zakres": "3×12–15"
+      },
+      "upper-face-pull": {
+        "kg": 10,
+        "serie": "15-15-15",
+        "w_zakresie": true,
+        "zakres": "3×12–15"
+      },
+      "upper-cable-crunch": {
+        "kg": 15,
+        "serie": "15-15-15",
+        "w_zakresie": true,
+        "zakres": "3×12–15"
+      },
+      "upper-pallof": {
+        "kg": 7.5,
+        "serie": "15-15-15",
+        "w_zakresie": true,
+        "zakres": "3×12–15"
+      }
+    }
+  },
+  "ostatni_l1": {
+    "data": null,
+    "cwiczenia": {}
+  },
+  "ostatni_l1_prev": {
+    "data": null,
+    "cwiczenia": {}
+  },
+  "ostatni_l2_prev": {
+    "data": "20.04",
+    "cwiczenia": {
+      "l2-trap-bar": {
+        "kg": 35,
+        "serie": "8-8-8-8",
+        "w_zakresie": true,
+        "zakres": "4×6–8"
+      },
+      "l2-zakroki-smith": {
+        "kg": 9,
+        "serie": "10-10-10",
+        "w_zakresie": true,
+        "zakres": "3×8–10"
+      },
+      "l2-martwy-jednonoz": {
+        "kg": 12,
+        "serie": "12-12-12",
+        "w_zakresie": true,
+        "zakres": "3×10–12"
+      },
+      "l2-przysiad-bulgarski": {
+        "kg": 12,
+        "serie": "12-12-10",
+        "w_zakresie": false,
+        "zakres": "3×10–12"
+      },
+      "l2-wyprosty-tulow": {
+        "kg": 20,
+        "serie": "12-12-12",
+        "w_zakresie": true,
+        "zakres": "3×10–12"
+      },
+      "l2-prostowanie-nog": {
+        "kg": 30,
+        "serie": "15-12-10",
+        "w_zakresie": false,
+        "zakres": "3×12–15"
+      },
+      "l2-pull-through": {
+        "kg": 20,
+        "serie": "12-12-12",
+        "w_zakresie": false,
+        "zakres": "3×15–20"
+      },
+      "l2-cable-crunch": {
+        "kg": 20,
+        "serie": "15-15-15",
+        "w_zakresie": true,
+        "zakres": "3×12–15"
+      }
+    }
+  },
+  "ostatni_upper_prev": {
+    "data": null,
+    "cwiczenia": {}
+  }
+}

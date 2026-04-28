@@ -1,0 +1,563 @@
+{
+  "cykl": 1,
+  "nazwa": "Faza 1 — Rekompozycja",
+  "aktywna_od": "14.02.2026",
+  "aktywna_do": "05.04.2026",
+  "makra": {
+    "kcal_trening": 1750,
+    "kcal_odpoczynek": 1600,
+    "bialko_min_g": 120,
+    "tluszcze_g": "50–60",
+    "wegle_trening_g": 180,
+    "wegle_odpoczynek_g": 150,
+    "tdee_szac": "1950–2050",
+    "deficyt_dzien": "310–410",
+    "tempo_kg_tyg": "0,3–0,4",
+    "kreatyna": "5g/dzień od 18.01",
+    "suplementy": "wit. D3, magnez",
+    "tabela_tygodnia": [
+      { "dzien": "Pn",  "kcal": 1671, "bialko_g": 121, "typ": "l2" },
+      { "dzien": "Wt",  "kcal": 1577, "bialko_g": 103, "typ": "odpoczynek" },
+      { "dzien": "Śr",  "kcal": 1721, "bialko_g": 123, "typ": "upper" },
+      { "dzien": "Czw", "kcal": 1548, "bialko_g": 114, "typ": "odpoczynek" },
+      { "dzien": "Pt",  "kcal": 1585, "bialko_g": 108, "typ": "core" },
+      { "dzien": "Sob", "kcal": 1497, "bialko_g": 107, "typ": "l1" },
+      { "dzien": "Nd",  "kcal": 1700, "bialko_g": 114, "typ": "core+cheat" }
+    ]
+  },
+  "dni": {
+    "pn": {
+      "label": "Pn — Lower 2 · dzień treningowy",
+      "typ": "l2",
+      "posilki": [
+        {
+          "pora": "🌅 Śniadanie",
+          "kcal": 473,
+          "bialko_g": 31,
+          "skladniki": [
+            { "nazwa": "Płatki owsiane",  "ilosc": "50g" },
+            { "nazwa": "Mleko owsiane",   "ilosc": "200ml" },
+            { "nazwa": "WPC",             "ilosc": "10g" },
+            { "nazwa": "Siemię lniane",   "ilosc": "10g" },
+            { "nazwa": "Skyr Pilos",      "ilosc": "150g" },
+            { "nazwa": "Maliny",          "ilosc": "50g" }
+          ]
+        },
+        {
+          "pora": "🍎 II śniadanie",
+          "kcal": 75,
+          "bialko_g": null,
+          "skladniki": [
+            { "nazwa": "Jabłko", "ilosc": "150g" }
+          ]
+        },
+        {
+          "pora": "🍽️ Obiad",
+          "kcal": 425,
+          "bialko_g": 42,
+          "skladniki": [
+            { "nazwa": "Kurczak",      "ilosc": "150g" },
+            { "nazwa": "Ryż (suchy)", "ilosc": "40g" },
+            { "nazwa": "Warzywa",      "ilosc": "200g" },
+            { "nazwa": "Oliwa",        "ilosc": "1 łyżka" }
+          ]
+        },
+        {
+          "pora": "⚡ Pre-workout",
+          "kcal": 180,
+          "bialko_g": null,
+          "skladniki": [
+            { "nazwa": "Banan",   "ilosc": "100g" },
+            { "nazwa": "Orzechy", "ilosc": "15g" }
+          ]
+        },
+        {
+          "pora": "💪 Post-workout",
+          "kcal": 168,
+          "bialko_g": 21,
+          "skladniki": [
+            { "nazwa": "Zott Drink", "ilosc": "250ml" }
+          ]
+        },
+        {
+          "pora": "🌙 Kolacja",
+          "kcal": 270,
+          "bialko_g": 21,
+          "skladniki": [
+            { "nazwa": "Sardynki w sosie pomidorowym", "ilosc": "100g" },
+            { "nazwa": "Grahamka",                     "ilosc": "35g" },
+            { "nazwa": "Warzywa",                      "ilosc": "150g" }
+          ]
+        },
+        {
+          "pora": "☕ Inne",
+          "kcal": 80,
+          "bialko_g": null,
+          "skladniki": [
+            { "nazwa": "2× cappuccino", "ilosc": "—" }
+          ]
+        }
+      ],
+      "podsumowanie": { "kcal": 1671, "bialko_g": 121 }
+    },
+    "wt": {
+      "label": "Wt — dzień odpoczynku",
+      "typ": "odpoczynek",
+      "posilki": [
+        {
+          "pora": "🌅 Śniadanie",
+          "kcal": 505,
+          "bialko_g": 26,
+          "skladniki": [
+            { "nazwa": "Marchewka",        "ilosc": "80g" },
+            { "nazwa": "Jabłko",           "ilosc": "½ szt." },
+            { "nazwa": "Płatki owsiane",   "ilosc": "30g" },
+            { "nazwa": "Płatki orkiszowe", "ilosc": "15g" },
+            { "nazwa": "Otręby",           "ilosc": "15g" },
+            { "nazwa": "Mleko owsiane",    "ilosc": "180ml" },
+            { "nazwa": "Wiórki kokosowe",  "ilosc": "10g" },
+            { "nazwa": "WPC",              "ilosc": "35g" }
+          ]
+        },
+        {
+          "pora": "🍎 II śniadanie",
+          "kcal": 75,
+          "bialko_g": null,
+          "skladniki": [
+            { "nazwa": "Jabłko", "ilosc": "150g" }
+          ]
+        },
+        {
+          "pora": "🍽️ Obiad",
+          "kcal": 399,
+          "bialko_g": 40,
+          "skladniki": [
+            { "nazwa": "Kurczak",      "ilosc": "150g" },
+            { "nazwa": "Ryż (suchy)", "ilosc": "30g" },
+            { "nazwa": "Warzywa",      "ilosc": "200g" },
+            { "nazwa": "Oliwa",        "ilosc": "1 łyżka" }
+          ]
+        },
+        {
+          "pora": "🥤 Przekąska",
+          "kcal": 168,
+          "bialko_g": 21,
+          "skladniki": [
+            { "nazwa": "Zott Drink", "ilosc": "250ml" }
+          ]
+        },
+        {
+          "pora": "🌙 Kolacja",
+          "kcal": 350,
+          "bialko_g": 14,
+          "skladniki": [
+            { "nazwa": "Hummus pomidorowy Chef Select Bio",     "ilosc": "60g" },
+            { "nazwa": "Grahamka",                              "ilosc": "35g" },
+            { "nazwa": "Warzywa (ogórek, papryka, pomidor)",   "ilosc": "150g" },
+            { "nazwa": "Jajko gotowane",                        "ilosc": "1 szt." }
+          ]
+        },
+        {
+          "pora": "☕ Inne",
+          "kcal": 80,
+          "bialko_g": null,
+          "skladniki": [
+            { "nazwa": "2× cappuccino", "ilosc": "—" }
+          ]
+        }
+      ],
+      "podsumowanie": { "kcal": 1577, "bialko_g": 103 }
+    },
+    "sr": {
+      "label": "Śr — Upper · dzień treningowy",
+      "typ": "upper",
+      "posilki": [
+        {
+          "pora": "🌅 Śniadanie",
+          "kcal": 570,
+          "bialko_g": 49,
+          "skladniki": [
+            { "nazwa": "Płatki owsiane", "ilosc": "50g" },
+            { "nazwa": "Mleko owsiane",  "ilosc": "200ml" },
+            { "nazwa": "WPC",            "ilosc": "35g" },
+            { "nazwa": "Siemię lniane",  "ilosc": "10g" },
+            { "nazwa": "Skyr Pilos",     "ilosc": "150g" },
+            { "nazwa": "Maliny",         "ilosc": "50g" }
+          ]
+        },
+        {
+          "pora": "🍎 II śniadanie",
+          "kcal": 75,
+          "bialko_g": null,
+          "skladniki": [
+            { "nazwa": "Jabłko", "ilosc": "150g" }
+          ]
+        },
+        {
+          "pora": "🍽️ Obiad",
+          "kcal": 368,
+          "bialko_g": 34,
+          "skladniki": [
+            { "nazwa": "Dorsz",          "ilosc": "150g" },
+            { "nazwa": "Ryż (suchy)",   "ilosc": "30g" },
+            { "nazwa": "Warzywa",        "ilosc": "200g" },
+            { "nazwa": "Oliwa",          "ilosc": "1 łyżka" }
+          ]
+        },
+        {
+          "pora": "⚡ Pre-workout",
+          "kcal": 90,
+          "bialko_g": null,
+          "skladniki": [
+            { "nazwa": "Banan", "ilosc": "100g" }
+          ]
+        },
+        {
+          "pora": "💪 Post-workout",
+          "kcal": 168,
+          "bialko_g": 21,
+          "skladniki": [
+            { "nazwa": "Zott Drink", "ilosc": "250ml" }
+          ]
+        },
+        {
+          "pora": "🌙 Kolacja (szakszuka)",
+          "kcal": 370,
+          "bialko_g": 16,
+          "skladniki": [
+            { "nazwa": "Jaja",                 "ilosc": "2 szt." },
+            { "nazwa": "Pomidory",             "ilosc": "200g" },
+            { "nazwa": "Cebula + papryka",     "ilosc": "30g + 50g" },
+            { "nazwa": "Oliwa + grahamka",     "ilosc": "1 łyżka + 35g" }
+          ]
+        },
+        {
+          "pora": "☕ Inne",
+          "kcal": 80,
+          "bialko_g": null,
+          "skladniki": [
+            { "nazwa": "2× cappuccino", "ilosc": "—" }
+          ]
+        }
+      ],
+      "podsumowanie": { "kcal": 1721, "bialko_g": 123 }
+    },
+    "czw": {
+      "label": "Czw — dzień odpoczynku",
+      "typ": "odpoczynek",
+      "posilki": [
+        {
+          "pora": "🌅 Śniadanie (pudding chia)",
+          "kcal": 345,
+          "bialko_g": 14,
+          "skladniki": [
+            { "nazwa": "Nasiona chia",       "ilosc": "30g" },
+            { "nazwa": "Jogurt naturalny",   "ilosc": "200g" },
+            { "nazwa": "Mus mango Freshona", "ilosc": "100g" }
+          ]
+        },
+        {
+          "pora": "🍎 II śniadanie",
+          "kcal": 75,
+          "bialko_g": null,
+          "skladniki": [
+            { "nazwa": "Jabłko", "ilosc": "150g" }
+          ]
+        },
+        {
+          "pora": "🍽️ Obiad (A lub B)",
+          "kcal": null,
+          "bialko_g": null,
+          "warianty": [
+            {
+              "label": "Wariant A — gulasz wołowy ~450 kcal",
+              "skladniki": [
+                { "nazwa": "Wołowina",                           "ilosc": "150g" },
+                { "nazwa": "Kasza gryczana (sucha)",             "ilosc": "40g" },
+                { "nazwa": "Pomidory + papryka + cebula",        "ilosc": "150g + 50g + 30g" },
+                { "nazwa": "Oliwa",                              "ilosc": "1 łyżeczka" }
+              ]
+            },
+            {
+              "label": "Wariant B — dorsz ~368 kcal",
+              "skladniki": [
+                { "nazwa": "Dorsz + ryż (suchy) + warzywa + oliwa", "ilosc": "150g + 30g + 200g + 1 łyżka" }
+              ]
+            }
+          ]
+        },
+        {
+          "pora": "🥤 Przekąska",
+          "kcal": 258,
+          "bialko_g": 21,
+          "skladniki": [
+            { "nazwa": "Zott Drink + banan", "ilosc": "250ml + 100g" }
+          ]
+        },
+        {
+          "pora": "🌙 Kolacja (pancake)",
+          "kcal": 430,
+          "bialko_g": 34,
+          "skladniki": [
+            { "nazwa": "WPC",           "ilosc": "20g" },
+            { "nazwa": "Jaja",          "ilosc": "2 szt." },
+            { "nazwa": "Mąka owsiana",  "ilosc": "40g" },
+            { "nazwa": "Jogurt + owoce","ilosc": "100g + 80g" }
+          ]
+        },
+        {
+          "pora": "☕ Inne",
+          "kcal": 80,
+          "bialko_g": null,
+          "skladniki": [
+            { "nazwa": "2× cappuccino", "ilosc": "—" }
+          ]
+        }
+      ],
+      "podsumowanie": { "kcal": 1548, "bialko_g": 114 }
+    },
+    "pt": {
+      "label": "Pt — Core · dzień lekki",
+      "typ": "core",
+      "posilki": [
+        {
+          "pora": "🌅 Śniadanie",
+          "kcal": 473,
+          "bialko_g": 31,
+          "skladniki": [
+            { "nazwa": "Płatki owsiane", "ilosc": "50g" },
+            { "nazwa": "Mleko owsiane",  "ilosc": "200ml" },
+            { "nazwa": "WPC",            "ilosc": "10g" },
+            { "nazwa": "Siemię lniane",  "ilosc": "10g" },
+            { "nazwa": "Skyr Pilos",     "ilosc": "150g" },
+            { "nazwa": "Maliny",         "ilosc": "50g" }
+          ]
+        },
+        {
+          "pora": "🍎 II śniadanie",
+          "kcal": 75,
+          "bialko_g": null,
+          "skladniki": [
+            { "nazwa": "Jabłko", "ilosc": "150g" }
+          ]
+        },
+        {
+          "pora": "🍽️ Obiad",
+          "kcal": 399,
+          "bialko_g": 40,
+          "skladniki": [
+            { "nazwa": "Kurczak",      "ilosc": "150g" },
+            { "nazwa": "Ryż (suchy)", "ilosc": "30g" },
+            { "nazwa": "Warzywa",      "ilosc": "200g" },
+            { "nazwa": "Oliwa",        "ilosc": "1 łyżka" }
+          ]
+        },
+        {
+          "pora": "🥤 Przekąska",
+          "kcal": 168,
+          "bialko_g": 21,
+          "skladniki": [
+            { "nazwa": "Zott Drink", "ilosc": "250ml" }
+          ]
+        },
+        {
+          "pora": "🌙 Kolacja",
+          "kcal": 330,
+          "bialko_g": 26,
+          "skladniki": [
+            { "nazwa": "Szproty w sosie pomidorowym", "ilosc": "160g" },
+            { "nazwa": "Grahamka",                    "ilosc": "35g" },
+            { "nazwa": "Warzywa",                     "ilosc": "150g" }
+          ]
+        },
+        {
+          "pora": "☕ Inne",
+          "kcal": 80,
+          "bialko_g": null,
+          "skladniki": [
+            { "nazwa": "2× cappuccino", "ilosc": "—" }
+          ]
+        }
+      ],
+      "podsumowanie": { "kcal": 1585, "bialko_g": 108 }
+    },
+    "sob": {
+      "label": "Sob — Lower 1 · dzień treningowy",
+      "typ": "l1",
+      "posilki": [
+        {
+          "pora": "🌅 Śniadanie",
+          "kcal": 473,
+          "bialko_g": 31,
+          "skladniki": [
+            { "nazwa": "Płatki owsiane", "ilosc": "50g" },
+            { "nazwa": "Mleko owsiane",  "ilosc": "200ml" },
+            { "nazwa": "WPC",            "ilosc": "10g" },
+            { "nazwa": "Siemię lniane",  "ilosc": "10g" },
+            { "nazwa": "Skyr Pilos",     "ilosc": "150g" },
+            { "nazwa": "Maliny",         "ilosc": "50g" }
+          ]
+        },
+        {
+          "pora": "🍎 II śniadanie",
+          "kcal": 75,
+          "bialko_g": null,
+          "skladniki": [
+            { "nazwa": "Jabłko", "ilosc": "150g" }
+          ]
+        },
+        {
+          "pora": "🍽️ Obiad",
+          "kcal": 425,
+          "bialko_g": 42,
+          "skladniki": [
+            { "nazwa": "Kurczak",      "ilosc": "150g" },
+            { "nazwa": "Ryż (suchy)", "ilosc": "40g" },
+            { "nazwa": "Warzywa",      "ilosc": "200g" },
+            { "nazwa": "Oliwa",        "ilosc": "1 łyżka" }
+          ]
+        },
+        {
+          "pora": "⚡ Pre-workout",
+          "kcal": 180,
+          "bialko_g": null,
+          "skladniki": [
+            { "nazwa": "Banan",   "ilosc": "100g" },
+            { "nazwa": "Orzechy", "ilosc": "15g" }
+          ]
+        },
+        {
+          "pora": "💪 Post-workout",
+          "kcal": 168,
+          "bialko_g": 21,
+          "skladniki": [
+            { "nazwa": "Zott Drink", "ilosc": "250ml" }
+          ]
+        },
+        {
+          "pora": "🌙 Kolacja",
+          "kcal": 96,
+          "bialko_g": 7,
+          "skladniki": [
+            { "nazwa": "Twarożek chudy", "ilosc": "100g" },
+            { "nazwa": "Warzywa",         "ilosc": "100g" }
+          ]
+        },
+        {
+          "pora": "☕ Inne",
+          "kcal": 80,
+          "bialko_g": null,
+          "skladniki": [
+            { "nazwa": "2× cappuccino", "ilosc": "—" }
+          ]
+        }
+      ],
+      "podsumowanie": { "kcal": 1497, "bialko_g": 107 }
+    },
+    "nd": {
+      "label": "Nd — Core + odpoczynek",
+      "typ": "core",
+      "posilki": [
+        {
+          "pora": "🌅 Śniadanie",
+          "kcal": 473,
+          "bialko_g": 31,
+          "skladniki": [
+            { "nazwa": "Płatki owsiane", "ilosc": "50g" },
+            { "nazwa": "Mleko owsiane",  "ilosc": "200ml" },
+            { "nazwa": "WPC",            "ilosc": "10g" },
+            { "nazwa": "Siemię lniane",  "ilosc": "10g" },
+            { "nazwa": "Skyr Pilos",     "ilosc": "150g" },
+            { "nazwa": "Maliny",         "ilosc": "50g" }
+          ]
+        },
+        {
+          "pora": "🍎 II śniadanie",
+          "kcal": 75,
+          "bialko_g": null,
+          "skladniki": [
+            { "nazwa": "Jabłko", "ilosc": "150g" }
+          ]
+        },
+        {
+          "pora": "🍽️ Obiad",
+          "kcal": 399,
+          "bialko_g": 40,
+          "skladniki": [
+            { "nazwa": "Kurczak",      "ilosc": "150g" },
+            { "nazwa": "Ryż (suchy)", "ilosc": "30g" },
+            { "nazwa": "Warzywa",      "ilosc": "200g" },
+            { "nazwa": "Oliwa",        "ilosc": "1 łyżka" }
+          ]
+        },
+        {
+          "pora": "🥤 Przekąska",
+          "kcal": 168,
+          "bialko_g": 21,
+          "skladniki": [
+            { "nazwa": "Zott Drink", "ilosc": "250ml" }
+          ]
+        },
+        {
+          "pora": "🌙 Kolacja",
+          "kcal": 330,
+          "bialko_g": 26,
+          "skladniki": [
+            { "nazwa": "Szproty w sosie pomidorowym", "ilosc": "160g" },
+            { "nazwa": "Grahamka",                    "ilosc": "35g" },
+            { "nazwa": "Warzywa",                     "ilosc": "150g" }
+          ]
+        },
+        {
+          "pora": "☕ Inne",
+          "kcal": 80,
+          "bialko_g": null,
+          "skladniki": [
+            { "nazwa": "2× cappuccino", "ilosc": "—" }
+          ]
+        }
+      ],
+      "podsumowanie": { "kcal": 1700, "bialko_g": 114 }
+    }
+  },
+  "przepisy": [
+    {
+      "nazwa": "🏋️ Kurczak z pesto",
+      "kcal": 464,
+      "bialko_g": 39,
+      "skladniki": [
+        { "nazwa": "Polędwiczki z kurczaka",    "ilosc": "150g" },
+        { "nazwa": "Ryż basmati (suchy)",        "ilosc": "40g" },
+        { "nazwa": "Cukinia + papryka czerwona","ilosc": "200g" },
+        { "nazwa": "Pesto bazyliowe",           "ilosc": "15g" },
+        { "nazwa": "Oliwa z oliwek",            "ilosc": "5g" }
+      ],
+      "kroki": [
+        "Ugotuj ryż",
+        "Polędwiczki rozbij, sól + pieprz + czosnek gran.",
+        "Grilluj na suchej patelni 3–4 min/stronę",
+        "Zdejmij z ognia → posmaruj pesto z obu stron",
+        "Podsmaż warzywa na oliwie 5 min"
+      ]
+    },
+    {
+      "nazwa": "😴 Kurczak z mango",
+      "kcal": 432,
+      "bialko_g": 39,
+      "skladniki": [
+        { "nazwa": "Polędwiczki z kurczaka",      "ilosc": "150g" },
+        { "nazwa": "Ryż jaśminowy (suchy)",        "ilosc": "30g" },
+        { "nazwa": "Szpinak + pomidor",            "ilosc": "200g" },
+        { "nazwa": "Mus mango Freshona",           "ilosc": "100g" },
+        { "nazwa": "Curry w proszku + czosnek + oliwa","ilosc": "5g" }
+      ],
+      "kroki": [
+        "Ugotuj ryż",
+        "Kurczak w paski, oprósz curry + sól + pieprz",
+        "Podsmaż czosnek 30s, dodaj kurczaka 5–6 min",
+        "Wlej mus mango → gotuj 2 min aż zgęstnieje",
+        "Szpinak na ostatnią minutę (zwiędnie)"
+      ]
+    }
+  ]
+}
