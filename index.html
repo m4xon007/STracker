@@ -391,7 +391,7 @@ Kolumna exercise_name w session_sets MUSI używać dokładnie short_name z tabel
 Poniżej mapa short_name dla ćwiczeń Sylwii:
 
 Lower 2 (L2):
-  Martwy ciąg trap bar | Zakroki wsteczne Smith | Martwy ciąg jednonóż hantle
+  Trap Bar Deadlift | Zakroki wsteczne Smith | Martwy ciąg jednonóż hantle
   Przysiad bułgarski | Wyprosty tułowia | Prostowanie nóg maszyna
   Pull-through wyciąg | Cable Crunch
 
@@ -438,10 +438,10 @@ sets AS (
     true
   FROM new_session s
   CROSS JOIN (VALUES
-    ('Martwy ciąg trap bar', 1, 35.0, 8),
-    ('Martwy ciąg trap bar', 2, 35.0, 8),
+    ('Trap Bar Deadlift',      1, 35.0, 8),
+    ('Trap Bar Deadlift',      2, 35.0, 8),
     -- ... wszystkie serie wszystkich ćwiczeń
-    ('Pull-through wyciąg', 3, 20.0, 12)
+    ('Pull-through wyciąg',    3, 20.0, 12)
   ) AS v(short_name, set_number, kg, reps)
   JOIN public.exercises e ON e.short_name = v.short_name
 ),
@@ -459,7 +459,7 @@ progression AS (
     '4×8',
     'maintain|progress'
   FROM new_session s
-  JOIN public.exercises e ON e.short_name = 'Martwy ciąg trap bar'
+  JOIN public.exercises e ON e.short_name = 'Trap Bar Deadlift'
   -- Powtórz dla każdego ćwiczenia głównego (highlight: true)
 )
 UPDATE public.schedule_entries
