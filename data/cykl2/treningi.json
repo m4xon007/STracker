@@ -1,206 +1,288 @@
 {
   "meta": {
     "cykl": 2,
-    "tydzien": 1,
-    "lacznie": 3,
+    "tydzien": 2,
+    "lacznie": 4,
     "data_start": "20.04.2026",
-    "header_sub": "Cykl 2 · tydzień 1",
-    "header_badge": "Śr 29.04"
+    "header_sub": "Cykl 2 · tydzień 2",
+    "header_badge": "Sob 03.05"
   },
   "nastepny": {
-    "typ": "upper",
-    "emoji": "💪",
-    "label": "Upper — Śr 29.04.2026",
-    "numer": 2,
-    "badge_class": "badge-upper",
-    "alert": "Upper #2. Poprzedni: wyciskanie 10kg 4×8 ✓. Cel: utrzymać jakość, skrócić do ~90 min.",
+    "typ": "l1",
+    "emoji": "🍑",
+    "label": "Lower 1 — Sob 03.05.2026",
+    "numer": 1,
+    "badge_class": "badge-l1",
+    "alert": "Pierwsza sesja L1! Hip thrust start 57,5 kg. Priorytet technika i kontrola czasu.",
     "cwiczenia": [
       {
-        "id": "upper-wyciskanie",
-        "nazwa": "Wyciskanie hantlami płaskie",
+        "id": "l1-hip-thrust",
+        "nazwa": "Hip thrust sztanga",
         "highlight": true,
         "ss": null,
-        "poprzedni_kg": 10,
-        "poprzedni_serie": "8-8-8-8",
+        "poprzedni_kg": null,
+        "poprzedni_serie": null,
         "serie": "4×6–8",
         "przerwa": "240s",
-        "placeholder_kg": "10",
+        "placeholder_kg": "57.5",
         "placeholder_reps": "8"
       },
       {
-        "id": "upper-podciaganie",
-        "nazwa": "Podciąganie australijskie",
+        "id": "l1-sumo-rdl",
+        "nazwa": "Sumo RDL sztanga",
         "highlight": false,
         "ss": null,
-        "poprzedni_kg": 0,
-        "poprzedni_serie": "5-7-7",
+        "poprzedni_kg": null,
+        "poprzedni_serie": null,
         "serie": "3×8–10",
         "przerwa": "120s",
-        "placeholder_kg": "masa",
-        "placeholder_reps": "7"
-      },
-      {
-        "id": "upper-sciaganie-drążka",
-        "nazwa": "Ściąganie drążka maszyna",
-        "highlight": false,
-        "ss": null,
-        "poprzedni_kg": 25,
-        "poprzedni_serie": "10-10-10",
-        "serie": "3×8–10",
-        "przerwa": "120s",
-        "placeholder_kg": "25",
+        "placeholder_kg": "35",
         "placeholder_reps": "10"
       },
       {
-        "id": "upper-ohp",
-        "nazwa": "OHP hantlami",
+        "id": "l1-hip-thrust-jednostronny",
+        "nazwa": "Hip thrust jednostronny hantel",
         "highlight": false,
         "ss": null,
-        "poprzedni_kg": 9,
-        "poprzedni_serie": "10-10-10",
-        "serie": "3×8–10",
+        "poprzedni_kg": null,
+        "poprzedni_serie": null,
+        "serie": "3×10–12",
         "przerwa": "90s",
-        "placeholder_kg": "9",
-        "placeholder_reps": "10"
-      },
-      {
-        "id": "upper-odwodzenie-ramion",
-        "nazwa": "Odwodzenie ramion wyciąg",
-        "highlight": false,
-        "ss": null,
-        "poprzedni_kg": 2.5,
-        "poprzedni_serie": "12-12-12",
-        "serie": "3×12–15",
-        "przerwa": "90s",
-        "placeholder_kg": "2.5",
+        "placeholder_kg": "16",
         "placeholder_reps": "12"
       },
       {
-        "id": "upper-face-pull",
-        "nazwa": "Face pull klęk jednonóż",
+        "id": "l1-odwodzenie-maszyna",
+        "nazwa": "Odwodzenie maszyna",
         "highlight": false,
-        "ss": null,
-        "poprzedni_kg": 10,
-        "poprzedni_serie": "15-15-15",
+        "ss": "SS1",
+        "poprzedni_kg": null,
+        "poprzedni_serie": null,
         "serie": "3×12–15",
-        "przerwa": "90s",
+        "przerwa": "→SS",
+        "placeholder_kg": "50",
+        "placeholder_reps": "15"
+      },
+      {
+        "id": "l1-przywodzenie-maszyna",
+        "nazwa": "Przywodzenie maszyna",
+        "highlight": false,
+        "ss": "SS1",
+        "poprzedni_kg": null,
+        "poprzedni_serie": null,
+        "serie": "3×12–15",
+        "przerwa": "75s",
+        "placeholder_kg": "27.5",
+        "placeholder_reps": "15"
+      },
+      {
+        "id": "l1-donkey-kick",
+        "nazwa": "Cable donkey kick",
+        "highlight": false,
+        "ss": "SS2",
+        "poprzedni_kg": null,
+        "poprzedni_serie": null,
+        "serie": "3×12–15",
+        "przerwa": "→SS",
         "placeholder_kg": "10",
         "placeholder_reps": "15"
       },
       {
-        "id": "upper-cable-crunch",
-        "nazwa": "Cable crunch",
+        "id": "l1-odwodzenie-stojac",
+        "nazwa": "Odwodzenie stojąc wyciąg",
         "highlight": false,
-        "ss": "SS1",
-        "poprzedni_kg": 15,
-        "poprzedni_serie": "15-15-15",
-        "serie": "3×12–15",
-        "przerwa": "→SS",
-        "placeholder_kg": "15",
-        "placeholder_reps": "15"
-      },
-      {
-        "id": "upper-pallof",
-        "nazwa": "Pallof press",
-        "highlight": false,
-        "ss": "SS1",
-        "poprzedni_kg": 7.5,
-        "poprzedni_serie": "15-15-15",
-        "serie": "3×12–15",
-        "przerwa": "60s",
+        "ss": "SS2",
+        "poprzedni_kg": null,
+        "poprzedni_serie": null,
+        "serie": "3×15–20",
+        "przerwa": "75s",
         "placeholder_kg": "7.5",
-        "placeholder_reps": "15"
+        "placeholder_reps": "20"
       }
     ]
   },
   "poprzedni": {
-    "tytul": "🦵 Lower 2 — Pn 27.04",
-    "typ": "l2",
+    "tytul": "💪 Upper — Śr 29.04",
+    "typ": "upper",
     "numer": 2,
-    "tydzien": 1,
-    "kcal": 896,
-    "czas_min": 106,
-    "tetno": 142,
-    "obciazenie_aerobowe": 4.0,
-    "ocena": 10,
-    "opis": "L2 #2 — wszystkie ćwiczenia złożone w zakresie. Przysiad bułgarski obniżony do 9kg — pełny zakres 3×12. Pull-through 25kg ale seria 15 (poniżej zakresu 15–20).",
-    "wnioski": "106 min — nadal za długo. Podwójna progresja: trap bar, zakroki, martwy jednonóż, wyprosty tułowia → +ciężar w następnym L2. Przysiad bułgarski reset do 9kg — mądra decyzja, technika ważniejsza. Pull-through wymaga dociągnięcia do 20 powt.",
+    "tydzien": 2,
+    "kcal": 642,
+    "czas_min": 109,
+    "tetno": 114,
+    "obciazenie_aerobowe": 2.7,
+    "ocena": 8,
+    "opis": "Upper #2. Wyciskanie 10kg 4×10 — powyżej zakresu. Podciąganie australijskie 8×3 ✓. Ściąganie drążka skok do 30kg. Odwodzenie ramion sypnęło ostatnią serię (12-12-8).",
+    "wnioski": "109 min — nadal za długo. Podwójna progresja: wyciskanie (→12kg), OHP (→11kg), Pallof (→10kg). Ściąganie drążka nowy ciężar 30kg bez problemu. Odwodzenie ramion 2,5kg — trzecia sesja poniżej zakresu, rozważyć technikę. Opcjonalne: biceps+triceps wyciąg — dobrze weszły.",
     "cwiczenia": [
       {
-        "nazwa": "Martwy ciąg trap bar",
-        "kg": 35,
-        "wykonano": "8-8-8-8",
-        "ocena_tekst": "Czyste 4×8",
-        "progresja_tekst": "↑ Podwójna progresja → 37,5 kg",
+        "nazwa": "Wyciskanie hantlami płaskie",
+        "kg": 10,
+        "wykonano": "10-10-10-10",
+        "ocena_tekst": "Powyżej zakresu 6-8",
+        "progresja_tekst": "↑ Podwójna progresja",
         "status": "progresja",
         "ss": null
       },
       {
-        "nazwa": "Zakroki wsteczne Smith",
-        "kg": 9,
-        "wykonano": "10-10-10",
-        "ocena_tekst": "W zakresie",
-        "progresja_tekst": "↑ Podwójna progresja → 11 kg",
-        "status": "progresja",
-        "ss": null
-      },
-      {
-        "nazwa": "Martwy ciąg jednonóż hantle",
-        "kg": 12,
-        "wykonano": "12-12-12",
-        "ocena_tekst": "Pełny zakres",
-        "progresja_tekst": "↑ Podwójna progresja → 14 kg",
-        "status": "progresja",
-        "ss": null
-      },
-      {
-        "nazwa": "Przysiad bułgarski",
-        "kg": 9,
-        "wykonano": "12-12-12",
-        "ocena_tekst": "Reset, pełny zakres",
-        "progresja_tekst": "→ Nowy ciężar",
-        "status": "rekord",
-        "ss": null
-      },
-      {
-        "nazwa": "Wyprosty tułowia",
-        "kg": 20,
-        "wykonano": "12-12-12",
-        "ocena_tekst": "W zakresie",
-        "progresja_tekst": "↑ Podwójna progresja → 22,5 kg",
-        "status": "progresja",
-        "ss": null
-      },
-      {
-        "nazwa": "Prostowanie nóg maszyna",
-        "kg": 30,
-        "wykonano": "15-15-15",
-        "ocena_tekst": "Pełny zakres",
+        "nazwa": "Podciąganie australijskie",
+        "kg": 0,
+        "wykonano": "8-8-8",
+        "ocena_tekst": "W zakresie 8-10",
         "progresja_tekst": "→ Prev poza zakresem",
         "status": "utrzymaj",
         "ss": null
       },
       {
-        "nazwa": "Pull-through wyciąg",
-        "kg": 25,
-        "wykonano": "15-15-15",
-        "ocena_tekst": "Poniżej zakresu 15–20",
+        "nazwa": "Ściąganie drążka maszyna",
+        "kg": 30,
+        "wykonano": "10-10-10",
+        "ocena_tekst": "Nowy ciężar, w zakresie",
         "progresja_tekst": "→ Nowy ciężar",
+        "status": "rekord",
+        "ss": null
+      },
+      {
+        "nazwa": "OHP hantlami",
+        "kg": 9,
+        "wykonano": "10-10-10",
+        "ocena_tekst": "W zakresie",
+        "progresja_tekst": "↑ Podwójna progresja",
+        "status": "progresja",
+        "ss": null
+      },
+      {
+        "nazwa": "Odwodzenie ramion wyciąg",
+        "kg": 2.5,
+        "wykonano": "12-12-8",
+        "ocena_tekst": "Sypnęła 3. seria",
+        "progresja_tekst": "→ Poza zakresem",
         "status": "uwaga",
-        "ss": "SS1"
+        "ss": null
+      },
+      {
+        "nazwa": "Face pull klęk jednonóż",
+        "kg": 12.5,
+        "wykonano": "15-15-15",
+        "ocena_tekst": "Nowy ciężar, pełny",
+        "progresja_tekst": "→ Nowy ciężar",
+        "status": "rekord",
+        "ss": null
       },
       {
         "nazwa": "Cable crunch",
-        "kg": 35,
+        "kg": 17.5,
         "wykonano": "15-15-15",
-        "ocena_tekst": "W zakresie, +15kg!",
+        "ocena_tekst": "Nowy ciężar, pełny",
         "progresja_tekst": "→ Nowy ciężar",
         "status": "rekord",
         "ss": "SS1"
+      },
+      {
+        "nazwa": "Pallof press",
+        "kg": 7.5,
+        "wykonano": "15-15-15",
+        "ocena_tekst": "W zakresie",
+        "progresja_tekst": "↑ Podwójna progresja",
+        "status": "progresja",
+        "ss": "SS1"
+      },
+      {
+        "nazwa": "Uginanie ramion wyciąg",
+        "kg": 10,
+        "wykonano": "12-12-12",
+        "ocena_tekst": "Opcjonalne ✓",
+        "progresja_tekst": "→ Start",
+        "status": "rekord",
+        "ss": null
+      },
+      {
+        "nazwa": "Prostowanie ramion wyciąg",
+        "kg": 12.5,
+        "wykonano": "12-12-12",
+        "ocena_tekst": "Opcjonalne ✓",
+        "progresja_tekst": "→ Start",
+        "status": "rekord",
+        "ss": null
       }
     ]
   },
   "historia": [
+    {
+      "id": "c2-upper-002",
+      "data": "29.04.2026",
+      "data_label": "Śr 29.04",
+      "typ": "upper",
+      "numer": 2,
+      "tydzien": 2,
+      "ocena": 8,
+      "kcal": 642,
+      "czas_min": 109,
+      "tetno": 114,
+      "obciazenie_aerobowe": 2.7,
+      "notatka": "Podwójna progresja: wyciskanie→12kg, OHP→11kg, Pallof→10kg. Odwodzenie ramion 3x poniżej zakresu.",
+      "cwiczenia": [
+        {
+          "nazwa": "Wyciskanie hantlami płaskie",
+          "kg": 10,
+          "serie": "10-10-10-10",
+          "status": "progresja"
+        },
+        {
+          "nazwa": "Podciąganie australijskie",
+          "kg": 0,
+          "serie": "8-8-8",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Ściąganie drążka maszyna",
+          "kg": 30,
+          "serie": "10-10-10",
+          "status": "rekord"
+        },
+        {
+          "nazwa": "OHP hantlami",
+          "kg": 9,
+          "serie": "10-10-10",
+          "status": "progresja"
+        },
+        {
+          "nazwa": "Odwodzenie ramion wyciąg",
+          "kg": 2.5,
+          "serie": "12-12-8",
+          "status": "uwaga"
+        },
+        {
+          "nazwa": "Face pull klęk jednonóż",
+          "kg": 12.5,
+          "serie": "15-15-15",
+          "status": "rekord"
+        },
+        {
+          "nazwa": "Cable crunch",
+          "kg": 17.5,
+          "serie": "15-15-15",
+          "status": "rekord"
+        },
+        {
+          "nazwa": "Pallof press",
+          "kg": 7.5,
+          "serie": "15-15-15",
+          "status": "progresja"
+        },
+        {
+          "nazwa": "Uginanie ramion wyciąg",
+          "kg": 10,
+          "serie": "12-12-12",
+          "status": "rekord"
+        },
+        {
+          "nazwa": "Prostowanie ramion wyciąg",
+          "kg": 12.5,
+          "serie": "12-12-12",
+          "status": "rekord"
+        }
+      ]
+    },
     {
       "id": "c2-l2-002",
       "data": "27.04.2026",
@@ -448,22 +530,22 @@
     }
   },
   "ostatni_upper": {
-    "data": "22.04",
+    "data": "29.04",
     "cwiczenia": {
       "upper-wyciskanie": {
         "kg": 10,
-        "serie": "8-8-8-8",
+        "serie": "10-10-10-10",
         "w_zakresie": true,
         "zakres": "4×6–8"
       },
       "upper-podciaganie": {
         "kg": 0,
-        "serie": "5-7-7",
-        "w_zakresie": false,
+        "serie": "8-8-8",
+        "w_zakresie": true,
         "zakres": "3×8–10"
       },
       "upper-sciaganie-drążka": {
-        "kg": 25,
+        "kg": 30,
         "serie": "10-10-10",
         "w_zakresie": true,
         "zakres": "3×8–10"
@@ -476,18 +558,18 @@
       },
       "upper-odwodzenie-ramion": {
         "kg": 2.5,
-        "serie": "12-12-12",
+        "serie": "12-12-8",
         "w_zakresie": false,
         "zakres": "3×12–15"
       },
       "upper-face-pull": {
-        "kg": 10,
+        "kg": 12.5,
         "serie": "15-15-15",
         "w_zakresie": true,
         "zakres": "3×12–15"
       },
       "upper-cable-crunch": {
-        "kg": 15,
+        "kg": 17.5,
         "serie": "15-15-15",
         "w_zakresie": true,
         "zakres": "3×12–15"
@@ -562,7 +644,56 @@
     }
   },
   "ostatni_upper_prev": {
-    "data": null,
-    "cwiczenia": {}
+    "data": "22.04",
+    "cwiczenia": {
+      "upper-wyciskanie": {
+        "kg": 10,
+        "serie": "8-8-8-8",
+        "w_zakresie": true,
+        "zakres": "4×6–8"
+      },
+      "upper-podciaganie": {
+        "kg": 0,
+        "serie": "5-7-7",
+        "w_zakresie": false,
+        "zakres": "3×8–10"
+      },
+      "upper-sciaganie-drążka": {
+        "kg": 25,
+        "serie": "10-10-10",
+        "w_zakresie": true,
+        "zakres": "3×8–10"
+      },
+      "upper-ohp": {
+        "kg": 9,
+        "serie": "10-10-10",
+        "w_zakresie": true,
+        "zakres": "3×8–10"
+      },
+      "upper-odwodzenie-ramion": {
+        "kg": 2.5,
+        "serie": "12-12-12",
+        "w_zakresie": false,
+        "zakres": "3×12–15"
+      },
+      "upper-face-pull": {
+        "kg": 10,
+        "serie": "15-15-15",
+        "w_zakresie": true,
+        "zakres": "3×12–15"
+      },
+      "upper-cable-crunch": {
+        "kg": 15,
+        "serie": "15-15-15",
+        "w_zakresie": true,
+        "zakres": "3×12–15"
+      },
+      "upper-pallof": {
+        "kg": 7.5,
+        "serie": "15-15-15",
+        "w_zakresie": true,
+        "zakres": "3×12–15"
+      }
+    }
   }
 }

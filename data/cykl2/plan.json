@@ -104,7 +104,7 @@
       "cwiczenia": [
         {
           "nazwa": "Wyciskanie hantlami płaskie",
-          "kg": "10",
+          "kg": "12",
           "serie": "4×6–8",
           "przerwa": "240s",
           "ss": null,
@@ -126,7 +126,7 @@
         },
         {
           "nazwa": "Ściąganie drążka maszyna",
-          "kg": "—",
+          "kg": "30",
           "serie": "3×8–10",
           "przerwa": "120s",
           "ss": null,
@@ -137,7 +137,7 @@
         },
         {
           "nazwa": "OHP hantlami",
-          "kg": "9",
+          "kg": "11",
           "serie": "3×8–10",
           "przerwa": "90s",
           "ss": null,
@@ -159,7 +159,7 @@
         },
         {
           "nazwa": "Face pull klęk jednonóż",
-          "kg": "15",
+          "kg": "12.5",
           "serie": "3×12–15",
           "przerwa": "90s",
           "ss": null,
@@ -170,7 +170,7 @@
         },
         {
           "nazwa": "Cable crunch",
-          "kg": "15",
+          "kg": "17.5",
           "serie": "3×12–15",
           "przerwa": "→SS",
           "ss": "SS1",
