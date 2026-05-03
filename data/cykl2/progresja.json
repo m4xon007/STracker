@@ -279,48 +279,92 @@
     "l1": {
       "label": "🍑 Lower 1",
       "badge_class": "prog-title-l1",
-      "naglowki": [],
+      "naglowki": [
+        "02/05"
+      ],
       "cwiczenia": [
         {
           "nazwa": "Hip thrust sztanga",
           "zakres": "4×6–8",
-          "sesje": [],
+          "sesje": [
+            {
+              "ico": "★",
+              "kg": "60",
+              "serie": "8-8-8-8"
+            }
+          ],
           "id": "l1-hip-thrust"
         },
         {
           "nazwa": "Sumo RDL sztanga",
           "zakres": "3×8–10",
-          "sesje": [],
+          "sesje": [
+            {
+              "ico": "★",
+              "kg": "35",
+              "serie": "8×3"
+            }
+          ],
           "id": "l1-sumo-rdl"
         },
         {
           "nazwa": "Hip thrust jednostronny hantel",
           "zakres": "3×10–12",
-          "sesje": [],
+          "sesje": [
+            {
+              "ico": "★",
+              "kg": "16",
+              "serie": "12×3"
+            }
+          ],
           "id": "l1-hip-thrust-jednostronny"
         },
         {
           "nazwa": "Odwodzenie maszyna",
           "zakres": "3×12–15",
-          "sesje": [],
+          "sesje": [
+            {
+              "ico": "★",
+              "kg": "50",
+              "serie": "12×3"
+            }
+          ],
           "id": "l1-odwodzenie-maszyna"
         },
         {
           "nazwa": "Przywodzenie maszyna",
           "zakres": "3×12–15",
-          "sesje": [],
+          "sesje": [
+            {
+              "ico": "★",
+              "kg": "30",
+              "serie": "15×3"
+            }
+          ],
           "id": "l1-przywodzenie-maszyna"
         },
         {
           "nazwa": "Cable donkey kick",
           "zakres": "3×12–15",
-          "sesje": [],
+          "sesje": [
+            {
+              "ico": "★",
+              "kg": "10",
+              "serie": "15×3"
+            }
+          ],
           "id": "l1-donkey-kick"
         },
         {
           "nazwa": "Odwodzenie stojąc wyciąg",
           "zakres": "3×15–20",
-          "sesje": [],
+          "sesje": [
+            {
+              "ico": "★",
+              "kg": "7.5",
+              "serie": "15-13-13"
+            }
+          ],
           "id": "l1-odwodzenie-stojac"
         }
       ]

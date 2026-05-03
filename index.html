@@ -462,6 +462,8 @@ progression AS (
   JOIN public.exercises e ON e.short_name = 'Trap Bar Deadlift'
   -- Powtórz dla każdego ćwiczenia głównego (highlight: true)
 )
+-- Trigger auto_complete_schedule obsługuje to automatycznie po INSERT workout_sessions.
+-- Poniższy UPDATE jest fallbackiem na wypadek gdyby trigger nie zadziałał.
 UPDATE public.schedule_entries
 SET completed = true
 WHERE user_id = '28a1f5aa-0216-4393-afb9-5548b58cabb1'
@@ -476,6 +478,8 @@ ON CONFLICT (user_id, measured_at) DO UPDATE SET value_kg = EXCLUDED.value_kg;
 --- KONIEC SQL ---
 
 WAŻNE:
+• NIE używaj Markdown w SQL — pisz s.id, e.id, v.kg (NIE [s.id](http://s.id))
+• NIE dodawaj spacji w wartościach session_type — 'l2' NIE '  l2'
 • exercise_name = short_name z mapy powyżej (dokładna pisownia!)
 • exercise_id pobierane przez JOIN na exercises.short_name — nie wpisuj UUID ręcznie
 • W CROSS JOIN (VALUES ...) wstaw osobny wiersz dla każdej serii każdego ćwiczenia

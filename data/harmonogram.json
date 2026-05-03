@@ -7,8 +7,8 @@
       "bilans": {
         "l2": 2,
         "upper": 2,
-        "l1": 0,
-        "lacznie": 4
+        "l1": 1,
+        "lacznie": 5
       },
       "miesiace": [
         {
@@ -119,8 +119,8 @@
                 },
                 {
                   "n": 2,
-                  "typ": "plan",
-                  "tekst": "L1"
+                  "typ": "l1",
+                  "tekst": "L1 ✓"
                 },
                 {
                   "n": 3,
