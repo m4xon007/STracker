@@ -1,7 +1,7 @@
 {
   "statystyki": {
-    "ostatnia": "61,5",
-    "ostatnia_data": "19.04",
+    "ostatnia": "61,35",
+    "ostatnia_data": "06.05",
     "minimum": "61,2",
     "bf_procent": "33,4%"
   },
@@ -22,10 +22,82 @@
     {
       "miesiac": "Kwiecień",
       "tekst": "Max retencja 06.04 (62,95 — po sobocie). Trend zniżkowy w trakcie miesiąca: 62,95 → 61,5. Min. folikularne ~61,05–61,1 (15–16.04). Waga bazowa ~61,5–62,0."
+    },
+    {
+      "miesiac": "Maj",
+      "tekst": "Start maja ~61,1–61,4. Skok 04.05 (62,45) — retencja po L1+L2. Min. ~61,0 (25.04). Waga bazowa stabilna ~61,2–61,5."
     }
   ],
-  "wniosek": "Min. folikularne sty→lut→mar→kwi: 61,5→61,5→61,6→61,05 — pierwsze wyraźne zejście. Trend deficytu zaczyna działać. Aktywna rekomposycja — tłuszcz ↓ mięsień ↑ równolegle.",
+  "wniosek": "Min. folikularne sty→lut→mar→kwi→maj: 61,5→61,5→61,6→61,05→61,0 — trend zniżkowy utrzymany. Waga bazowa ~61,2–61,5 kg.",
   "pomiary": [
+    {
+      "data": "06.05",
+      "waga": 61.35
+    },
+    {
+      "data": "05.05",
+      "waga": 61.65
+    },
+    {
+      "data": "04.05",
+      "waga": 62.45
+    },
+    {
+      "data": "03.05",
+      "waga": 61.4
+    },
+    {
+      "data": "02.05",
+      "waga": 61.15
+    },
+    {
+      "data": "01.05",
+      "waga": 61.3
+    },
+    {
+      "data": "30.04",
+      "waga": 61.8
+    },
+    {
+      "data": "29.04",
+      "waga": 62.1
+    },
+    {
+      "data": "28.04",
+      "waga": 61.7
+    },
+    {
+      "data": "27.04",
+      "waga": 61.6
+    },
+    {
+      "data": "26.04",
+      "waga": 61.8
+    },
+    {
+      "data": "25.04",
+      "waga": 61.0
+    },
+    {
+      "data": "24.04",
+      "waga": 61.3
+    },
+    {
+      "data": "23.04",
+      "waga": 61.65
+    },
+    {
+      "data": "22.04",
+      "waga": 61.5
+    },
+    {
+      "data": "21.04",
+      "waga": 61.15
+    },
+    {
+      "data": "20.04",
+      "waga": 61.7
+    },
     {
       "data": "19.04",
       "waga": 61.5
