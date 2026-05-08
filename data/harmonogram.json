@@ -160,8 +160,8 @@
                 },
                 {
                   "n": 9,
-                  "typ": "plan",
-                  "tekst": "L1"
+                  "typ": "skip",
+                  "tekst": "L1 ⊘"
                 },
                 {
                   "n": 10,
@@ -176,8 +176,8 @@
               "dni": [
                 {
                   "n": 11,
-                  "typ": "plan",
-                  "tekst": "L2"
+                  "typ": "skip",
+                  "tekst": "L2 ⊘"
                 },
                 {
                   "n": 12,
@@ -300,8 +300,8 @@
           "suffix": "cel 15.06",
           "tygodnie": [
             {
-              "label": "T7",
-              "label_color": "muted",
+              "label": "T8",
+              "label_color": null,
               "dni": [
                 {
                   "n": 1,
@@ -341,8 +341,8 @@
               ]
             },
             {
-              "label": "T8",
-              "label_color": "muted",
+              "label": "FIN",
+              "label_color": null,
               "dni": [
                 {
                   "n": 8,
@@ -383,7 +383,7 @@
             },
             {
               "label": "FIN",
-              "label_color": "rose",
+              "label_color": null,
               "dni": [
                 {
                   "n": 15,
@@ -421,10 +421,32 @@
                   "tekst": ""
                 }
               ]
+            },
+            {
+              "label": "DELOAD",
+              "label_color": "muted",
+              "dni": [
+                {
+                  "n": 22,
+                  "typ": "deload",
+                  "tekst": "DL 🔻"
+                },
+                {
+                  "n": 24,
+                  "typ": "deload",
+                  "tekst": "DU 🔻"
+                },
+                {
+                  "n": 27,
+                  "typ": "deload",
+                  "tekst": "DL 🔻"
+                }
+              ]
             }
           ]
         }
-      ]
+      ],
+      "do": "28.06.2026"
     },
     {
       "nr": 1,
