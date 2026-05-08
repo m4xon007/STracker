@@ -170,6 +170,7 @@
       "label": "💪 Upper",
       "badge_class": "prog-title-upper",
       "naglowki": [
+        "06/05",
         "29/04",
         "22/04"
       ],
@@ -178,6 +179,11 @@
           "nazwa": "Wyciskanie hantlami płaskie",
           "zakres": "4×6–8",
           "sesje": [
+            {
+              "ico": "↓",
+              "kg": "12",
+              "serie": "8-5-6-6"
+            },
             {
               "ico": "↑",
               "kg": "10",
@@ -201,6 +207,11 @@
               "serie": "8×3"
             },
             {
+              "ico": "→",
+              "kg": "BW",
+              "serie": "8×3"
+            },
+            {
               "ico": "★",
               "kg": "—",
               "serie": "5-7-7"
@@ -212,6 +223,11 @@
           "nazwa": "Ściąganie drążka maszyna",
           "zakres": "3×8–10",
           "sesje": [
+            {
+              "ico": "→",
+              "kg": "30",
+              "serie": "10×3"
+            },
             {
               "ico": "★",
               "kg": "30",
@@ -229,6 +245,11 @@
           "nazwa": "OHP hantlami",
           "zakres": "3×8–10",
           "sesje": [
+            {
+              "ico": "★",
+              "kg": "10",
+              "serie": "7×3"
+            },
             {
               "ico": "↑",
               "kg": "9",
@@ -249,6 +270,11 @@
             {
               "ico": "→",
               "kg": "2.5",
+              "serie": "12×3"
+            },
+            {
+              "ico": "→",
+              "kg": "2.5",
               "serie": "12-12-8"
             },
             {
@@ -263,6 +289,11 @@
           "nazwa": "Face pull klęk jednonóż",
           "zakres": "3×12–15",
           "sesje": [
+            {
+              "ico": "→",
+              "kg": "12.5",
+              "serie": "15×3"
+            },
             {
               "ico": "★",
               "kg": "12.5",
@@ -281,6 +312,11 @@
           "zakres": "3×12–15",
           "sesje": [
             {
+              "ico": "→",
+              "kg": "17.5",
+              "serie": "15×3"
+            },
+            {
               "ico": "★",
               "kg": "17.5",
               "serie": "15×3"
@@ -297,6 +333,11 @@
           "nazwa": "Pallof press",
           "zakres": "3×12–15",
           "sesje": [
+            {
+              "ico": "★",
+              "kg": "10",
+              "serie": "15×3"
+            },
             {
               "ico": "↑",
               "kg": "7.5",
