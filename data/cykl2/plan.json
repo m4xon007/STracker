@@ -244,7 +244,7 @@
       "cwiczenia": [
         {
           "nazwa": "Hip thrust sztanga",
-          "kg": "60",
+          "kg": "62.5",
           "serie": "4×6–8",
           "przerwa": "240s",
           "ss": null,
@@ -266,7 +266,7 @@
         },
         {
           "nazwa": "Hip thrust jednostronny hantel",
-          "kg": "16",
+          "kg": "12",
           "serie": "3×10–12",
           "przerwa": "90s",
           "ss": null,
@@ -288,7 +288,7 @@
         },
         {
           "nazwa": "Przywodzenie maszyna",
-          "kg": "30",
+          "kg": "32.5",
           "serie": "3×12–15",
           "przerwa": "75s",
           "ss": "SS1",
@@ -299,7 +299,7 @@
         },
         {
           "nazwa": "Cable donkey kick",
-          "kg": "10",
+          "kg": "12.5",
           "serie": "3×12–15",
           "przerwa": "→SS",
           "ss": "SS2",
@@ -310,7 +310,7 @@
         },
         {
           "nazwa": "Odwodzenie stojąc wyciąg",
-          "kg": "7,5",
+          "kg": "10",
           "serie": "3×15–20",
           "przerwa": "75s",
           "ss": "SS2",

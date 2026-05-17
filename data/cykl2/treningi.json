@@ -1,206 +1,255 @@
 {
   "meta": {
     "cykl": 2,
-    "tydzien": 2,
-    "lacznie": 7,
+    "tydzien": 4,
+    "lacznie": 9,
     "data_start": "20.04.2026",
-    "header_sub": "Cykl 2 · tydzień 2",
-    "header_badge": "Śr 13.05"
+    "header_sub": "Cykl 2 · tydzień 4",
+    "header_badge": "Pn 18.05"
   },
   "nastepny": {
-    "typ": "upper",
-    "emoji": "💪",
-    "label": "Upper — Śr 13.05.2026",
+    "typ": "l2",
+    "emoji": "🦵",
+    "label": "Lower 2 — Pn 18.05.2026",
     "numer": 4,
-    "badge_class": "badge-upper",
-    "alert": "L1 09.05 i L2 11.05 — skip (wyjazd). Wracamy od Upper. Wyciskanie: nie cofaj do 10kg — spróbuj ponownie 12kg lub zostań przy technice.",
+    "badge_class": "badge-l2",
+    "alert": "Upper 13.05 skip (wyjazd). L2 #4 — sprawdź czy pull-through działa (incydent 04.05). Trap bar 37,5kg.",
     "cwiczenia": [
       {
-        "id": "upper-wyciskanie",
-        "nazwa": "Wyciskanie hantlami płaskie",
+        "id": "l2-trap-bar",
+        "nazwa": "Martwy ciąg trap bar",
         "highlight": true,
         "ss": null,
-        "poprzedni_kg": 12,
-        "poprzedni_serie": "8-5-6-6",
+        "poprzedni_kg": 37.5,
+        "poprzedni_serie": "8-8-8-8",
         "serie": "4×6–8",
         "przerwa": "240s",
-        "placeholder_kg": "12",
+        "placeholder_kg": "37.5",
         "placeholder_reps": "8"
       },
       {
-        "id": "upper-podciaganie",
-        "nazwa": "Podciąganie australijskie",
-        "highlight": false,
-        "ss": null,
-        "poprzedni_kg": 0,
-        "poprzedni_serie": "8-8-8",
-        "serie": "3×8–10",
-        "przerwa": "120s",
-        "placeholder_kg": "masa",
-        "placeholder_reps": "8"
-      },
-      {
-        "id": "upper-sciaganie-drążka",
-        "nazwa": "Ściąganie drążka maszyna",
-        "highlight": false,
-        "ss": null,
-        "poprzedni_kg": 30,
-        "poprzedni_serie": "10-10-10",
-        "serie": "3×8–10",
-        "przerwa": "120s",
-        "placeholder_kg": "30",
-        "placeholder_reps": "10"
-      },
-      {
-        "id": "upper-ohp",
-        "nazwa": "OHP hantlami",
+        "id": "l2-zakroki-smith",
+        "nazwa": "Zakroki wsteczne Smith",
         "highlight": false,
         "ss": null,
         "poprzedni_kg": 10,
-        "poprzedni_serie": "7-7-7",
+        "poprzedni_serie": "10-10-10",
         "serie": "3×8–10",
         "przerwa": "90s",
         "placeholder_kg": "10",
-        "placeholder_reps": "7"
+        "placeholder_reps": "10"
       },
       {
-        "id": "upper-odwodzenie-ramion",
-        "nazwa": "Odwodzenie ramion wyciąg",
+        "id": "l2-martwy-jednonoz",
+        "nazwa": "Martwy ciąg jednonóż hantle",
         "highlight": false,
         "ss": null,
-        "poprzedni_kg": 2.5,
+        "poprzedni_kg": 14,
         "poprzedni_serie": "12-12-12",
-        "serie": "3×12–15",
+        "serie": "3×10–12",
         "przerwa": "90s",
-        "placeholder_kg": "2.5",
+        "placeholder_kg": "14",
         "placeholder_reps": "12"
       },
       {
-        "id": "upper-face-pull",
-        "nazwa": "Face pull klęk jednonóż",
+        "id": "l2-przysiad-bulgarski",
+        "nazwa": "Przysiad bułgarski",
         "highlight": false,
         "ss": null,
-        "poprzedni_kg": 12.5,
-        "poprzedni_serie": "15-15-15",
+        "poprzedni_kg": 10,
+        "poprzedni_serie": "10-10-10",
+        "serie": "3×10–12",
+        "przerwa": "90s",
+        "placeholder_kg": "10",
+        "placeholder_reps": "10"
+      },
+      {
+        "id": "l2-wyprosty-tulow",
+        "nazwa": "Wyprosty tułowia",
+        "highlight": false,
+        "ss": null,
+        "poprzedni_kg": 22,
+        "poprzedni_serie": "12-12-12",
+        "serie": "3×10–12",
+        "przerwa": "90s",
+        "placeholder_kg": "22",
+        "placeholder_reps": "12"
+      },
+      {
+        "id": "l2-prostowanie-nog",
+        "nazwa": "Prostowanie nóg maszyna",
+        "highlight": false,
+        "ss": null,
+        "poprzedni_kg": 35,
+        "poprzedni_serie": "12-12-10",
         "serie": "3×12–15",
         "przerwa": "90s",
-        "placeholder_kg": "12.5",
+        "placeholder_kg": "35",
+        "placeholder_reps": "12"
+      },
+      {
+        "id": "l2-pull-through",
+        "nazwa": "Pull-through wyciąg",
+        "highlight": false,
+        "ss": "SS1",
+        "poprzedni_kg": 17.5,
+        "poprzedni_serie": "15-0-0",
+        "serie": "3×15–20",
+        "przerwa": "→SS",
+        "placeholder_kg": "17.5",
         "placeholder_reps": "15"
       },
       {
-        "id": "upper-cable-crunch",
+        "id": "l2-cable-crunch",
         "nazwa": "Cable crunch",
         "highlight": false,
         "ss": "SS1",
         "poprzedni_kg": 17.5,
         "poprzedni_serie": "15-15-15",
         "serie": "3×12–15",
-        "przerwa": "→SS",
-        "placeholder_kg": "17.5",
-        "placeholder_reps": "15"
-      },
-      {
-        "id": "upper-pallof",
-        "nazwa": "Pallof press",
-        "highlight": false,
-        "ss": "SS1",
-        "poprzedni_kg": 10,
-        "poprzedni_serie": "15-15-15",
-        "serie": "3×12–15",
         "przerwa": "60s",
-        "placeholder_kg": "10",
+        "placeholder_kg": "17.5",
         "placeholder_reps": "15"
       }
     ]
   },
   "poprzedni": {
-    "tytul": "💪 Upper — Wt 06.05",
-    "typ": "upper",
-    "numer": 3,
-    "tydzien": 2,
-    "kcal": 604,
-    "czas_min": 100,
-    "tetno": 114,
-    "obciazenie_aerobowe": 2.6,
-    "ocena": 7,
-    "opis": "Upper #3 w fazie lutealnej. Wyciskanie 12kg pierwsze serie OK (8), potem sypnięcie (5-6-6). OHP 11→10kg ale 7-7-7 poniżej zakresu. Reszta stabilna.",
-    "wnioski": "Klasyczny wzorzec fazy lutealnej — siła na wielostawowych spadła ~15-20%. Wyciskanie 8-5-6-6 = asymetria, nie cofać ciężaru — to faza, nie regres. OHP 10kg za ciężkie, wróci przy kolejnym Upper. Odwodzenie ramion 4. sesja poniżej zakresu — sprawdzić technikę. Izolacje (face pull, cable crunch, pallof) bez problemu.",
+    "tytul": "🍑 Lower 1 — Sob 16.05",
+    "typ": "l1",
+    "numer": 2,
+    "tydzien": 4,
+    "kcal": 804,
+    "czas_min": 112,
+    "tetno": 130,
+    "obciazenie_aerobowe": 3.6,
+    "ocena": 9,
+    "opis": "L1 #2. Hip thrust 60kg 4×8 powtórzone. Sumo RDL poprawiony do 10×3. Odwodzenie maszyna 50kg 15×3 — świetny wynik. Donkey kick 12,5kg nowy ciężar.",
+    "wnioski": "Podwójna progresja: hip thrust (→62,5kg) i przywodzenie (→32,5kg). Sumo RDL naprawione — cel osiągnięty. Hip thrust jednostronny obniżony do 12kg (poprzednio 16kg) — reset techniki. Odwodzenie stojąc 10kg nowy ciężar, poniżej zakresu 20 powt.",
     "cwiczenia": [
       {
-        "nazwa": "Wyciskanie hantlami płaskie",
-        "kg": 12,
-        "wykonano": "8-5-6-6",
-        "ocena_tekst": "Faza lutealna — sypnięcie",
-        "progresja_tekst": "→ Nowy ciężar",
-        "status": "uwaga",
+        "nazwa": "Hip thrust sztanga",
+        "kg": 60,
+        "wykonano": "8-8-8-8",
+        "ocena_tekst": "Podwójna progresja ✓",
+        "progresja_tekst": "↑ →62,5kg",
+        "status": "progresja",
         "ss": null
       },
       {
-        "nazwa": "Podciąganie australijskie",
-        "kg": 0,
-        "wykonano": "8-8-8",
-        "ocena_tekst": "Poniżej górnego zakresu",
-        "progresja_tekst": "→ Poza zakresem",
-        "status": "utrzymaj",
-        "ss": null
-      },
-      {
-        "nazwa": "Ściąganie drążka maszyna",
-        "kg": 30,
+        "nazwa": "Sumo RDL sztanga",
+        "kg": 35,
         "wykonano": "10-10-10",
-        "ocena_tekst": "W zakresie, stabilnie",
-        "progresja_tekst": "→ Utrzymaj",
+        "ocena_tekst": "Naprawione — pełny zakres",
+        "progresja_tekst": "→ Prev poza zak.",
         "status": "utrzymaj",
         "ss": null
       },
       {
-        "nazwa": "OHP hantlami",
-        "kg": 10,
-        "wykonano": "7-7-7",
-        "ocena_tekst": "Poniżej zakresu, faza",
-        "progresja_tekst": "→ Nowy ciężar",
-        "status": "uwaga",
-        "ss": null
-      },
-      {
-        "nazwa": "Odwodzenie ramion wyciąg",
-        "kg": 2.5,
+        "nazwa": "Hip thrust jednostronny hantel",
+        "kg": 12,
         "wykonano": "12-12-12",
-        "ocena_tekst": "4. sesja poniżej zakresu",
-        "progresja_tekst": "→ Poza zakresem",
-        "status": "uwaga",
+        "ocena_tekst": "Reset do 12kg — czyste",
+        "progresja_tekst": "→ Nowy ciężar",
+        "status": "rekord",
         "ss": null
       },
       {
-        "nazwa": "Face pull klęk jednonóż",
-        "kg": 12.5,
+        "nazwa": "Odwodzenie maszyna",
+        "kg": 50,
         "wykonano": "15-15-15",
-        "ocena_tekst": "Pełny zakres",
-        "progresja_tekst": "→ Utrzymaj",
-        "status": "utrzymaj",
-        "ss": null
-      },
-      {
-        "nazwa": "Cable crunch",
-        "kg": 17.5,
-        "wykonano": "15-15-15",
-        "ocena_tekst": "Pełny zakres",
-        "progresja_tekst": "→ Utrzymaj",
+        "ocena_tekst": "Pełny zakres — świetnie",
+        "progresja_tekst": "→ Prev poza zak.",
         "status": "utrzymaj",
         "ss": "SS1"
       },
       {
-        "nazwa": "Pallof press",
-        "kg": 10,
+        "nazwa": "Przywodzenie maszyna",
+        "kg": 30,
+        "wykonano": "15-15-15",
+        "ocena_tekst": "Podwójna progresja ✓",
+        "progresja_tekst": "↑ →32,5kg",
+        "status": "progresja",
+        "ss": "SS1"
+      },
+      {
+        "nazwa": "Cable donkey kick",
+        "kg": 12.5,
         "wykonano": "15-15-15",
         "ocena_tekst": "Nowy ciężar, pełny zakres",
         "progresja_tekst": "→ Nowy ciężar",
         "status": "rekord",
-        "ss": "SS1"
+        "ss": "SS2"
+      },
+      {
+        "nazwa": "Odwodzenie stojąc wyciąg",
+        "kg": 10,
+        "wykonano": "15-15-15",
+        "ocena_tekst": "Nowy ciężar, poniżej zakresu",
+        "progresja_tekst": "→ Nowy ciężar",
+        "status": "uwaga",
+        "ss": "SS2"
       }
     ]
   },
   "historia": [
+    {
+      "id": "c2-l1-002",
+      "data": "16.05.2026",
+      "data_label": "Sob 16.05",
+      "typ": "l1",
+      "numer": 2,
+      "tydzien": 4,
+      "ocena": 9,
+      "kcal": 804,
+      "czas_min": 112,
+      "tetno": 130,
+      "obciazenie_aerobowe": 3.6,
+      "notatka": "Podwójna progresja: hip thrust→62,5kg, przywodzenie→32,5kg. Sumo RDL naprawione 10×3. Odwodzenie maszyna 50kg 15×3 ✓.",
+      "cwiczenia": [
+        {
+          "nazwa": "Hip thrust sztanga",
+          "kg": 60,
+          "serie": "8-8-8-8",
+          "status": "progresja"
+        },
+        {
+          "nazwa": "Sumo RDL sztanga",
+          "kg": 35,
+          "serie": "10-10-10",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Hip thrust jednostronny hantel",
+          "kg": 12,
+          "serie": "12-12-12",
+          "status": "rekord"
+        },
+        {
+          "nazwa": "Odwodzenie maszyna",
+          "kg": 50,
+          "serie": "15-15-15",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Przywodzenie maszyna",
+          "kg": 30,
+          "serie": "15-15-15",
+          "status": "progresja"
+        },
+        {
+          "nazwa": "Cable donkey kick",
+          "kg": 12.5,
+          "serie": "15-15-15",
+          "status": "rekord"
+        },
+        {
+          "nazwa": "Odwodzenie stojąc wyciąg",
+          "kg": 10,
+          "serie": "15-15-15",
+          "status": "uwaga"
+        }
+      ]
+    },
     {
       "id": "c2-upper-003",
       "data": "06.05.2026",
@@ -763,6 +812,53 @@
     }
   },
   "ostatni_l1": {
+    "data": "16.05",
+    "cwiczenia": {
+      "l1-hip-thrust": {
+        "kg": 60,
+        "serie": "8-8-8-8",
+        "w_zakresie": true,
+        "zakres": "4×6–8"
+      },
+      "l1-sumo-rdl": {
+        "kg": 35,
+        "serie": "10-10-10",
+        "w_zakresie": true,
+        "zakres": "3×8–10"
+      },
+      "l1-hip-thrust-jednostronny": {
+        "kg": 12,
+        "serie": "12-12-12",
+        "w_zakresie": true,
+        "zakres": "3×10–12"
+      },
+      "l1-odwodzenie-maszyna": {
+        "kg": 50,
+        "serie": "15-15-15",
+        "w_zakresie": true,
+        "zakres": "3×12–15"
+      },
+      "l1-przywodzenie-maszyna": {
+        "kg": 30,
+        "serie": "15-15-15",
+        "w_zakresie": true,
+        "zakres": "3×12–15"
+      },
+      "l1-donkey-kick": {
+        "kg": 12.5,
+        "serie": "15-15-15",
+        "w_zakresie": true,
+        "zakres": "3×12–15"
+      },
+      "l1-odwodzenie-stojac": {
+        "kg": 10,
+        "serie": "15-15-15",
+        "w_zakresie": false,
+        "zakres": "3×15–20"
+      }
+    }
+  },
+  "ostatni_l1_prev": {
     "data": "02.05",
     "cwiczenia": {
       "l1-hip-thrust": {
@@ -808,10 +904,6 @@
         "zakres": "3×15–20"
       }
     }
-  },
-  "ostatni_l1_prev": {
-    "data": null,
-    "cwiczenia": {}
   },
   "ostatni_l2_prev": {
     "data": "27.04",

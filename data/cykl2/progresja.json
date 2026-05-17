@@ -357,6 +357,7 @@
       "label": "🍑 Lower 1",
       "badge_class": "prog-title-l1",
       "naglowki": [
+        "16/05",
         "02/05"
       ],
       "cwiczenia": [
@@ -364,6 +365,11 @@
           "nazwa": "Hip thrust sztanga",
           "zakres": "4×6–8",
           "sesje": [
+            {
+              "ico": "↑",
+              "kg": "60",
+              "serie": "8-8-8-8"
+            },
             {
               "ico": "★",
               "kg": "60",
@@ -376,6 +382,11 @@
           "nazwa": "Sumo RDL sztanga",
           "zakres": "3×8–10",
           "sesje": [
+            {
+              "ico": "→",
+              "kg": "35",
+              "serie": "10×3"
+            },
             {
               "ico": "★",
               "kg": "35",
@@ -390,6 +401,11 @@
           "sesje": [
             {
               "ico": "★",
+              "kg": "12",
+              "serie": "12×3"
+            },
+            {
+              "ico": "★",
               "kg": "16",
               "serie": "12×3"
             }
@@ -400,6 +416,11 @@
           "nazwa": "Odwodzenie maszyna",
           "zakres": "3×12–15",
           "sesje": [
+            {
+              "ico": "→",
+              "kg": "50",
+              "serie": "15×3"
+            },
             {
               "ico": "★",
               "kg": "50",
@@ -412,6 +433,11 @@
           "nazwa": "Przywodzenie maszyna",
           "zakres": "3×12–15",
           "sesje": [
+            {
+              "ico": "↑",
+              "kg": "30",
+              "serie": "15×3"
+            },
             {
               "ico": "★",
               "kg": "30",
@@ -426,6 +452,11 @@
           "sesje": [
             {
               "ico": "★",
+              "kg": "12.5",
+              "serie": "15×3"
+            },
+            {
+              "ico": "★",
               "kg": "10",
               "serie": "15×3"
             }
@@ -436,6 +467,11 @@
           "nazwa": "Odwodzenie stojąc wyciąg",
           "zakres": "3×15–20",
           "sesje": [
+            {
+              "ico": "★",
+              "kg": "10",
+              "serie": "15×3"
+            },
             {
               "ico": "★",
               "kg": "7.5",
