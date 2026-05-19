@@ -9,7 +9,7 @@
       "cwiczenia": [
         {
           "nazwa": "Martwy ciąg trap bar",
-          "kg": "37.5",
+          "kg": "40",
           "serie": "4×6–8",
           "przerwa": "240s",
           "ss": null,
@@ -20,7 +20,7 @@
         },
         {
           "nazwa": "Zakroki wsteczne Smith",
-          "kg": "10",
+          "kg": "12",
           "serie": "3×8–10",
           "przerwa": "90s",
           "ss": null,
@@ -31,7 +31,7 @@
         },
         {
           "nazwa": "Martwy ciąg jednonóż hantle",
-          "kg": "14",
+          "kg": "16",
           "serie": "3×10–12",
           "przerwa": "90s",
           "ss": null,
@@ -86,7 +86,7 @@
         },
         {
           "nazwa": "Cable crunch",
-          "kg": "17.5",
+          "kg": "22.5",
           "serie": "3×12–15",
           "przerwa": "60s",
           "ss": "SS1",

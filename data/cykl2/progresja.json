@@ -5,6 +5,7 @@
       "label": "🦵 Lower 2",
       "badge_class": "prog-title-l2",
       "naglowki": [
+        "18/05",
         "04/05",
         "27/04",
         "20/04"
@@ -14,6 +15,11 @@
           "nazwa": "Martwy ciąg trap bar",
           "zakres": "4×6–8",
           "sesje": [
+            {
+              "ico": "↑",
+              "kg": "37.5",
+              "serie": "8-8-8-8"
+            },
             {
               "ico": "★",
               "kg": "37.5",
@@ -37,6 +43,11 @@
           "zakres": "3×8–10",
           "sesje": [
             {
+              "ico": "↑",
+              "kg": "10",
+              "serie": "10×3"
+            },
+            {
               "ico": "★",
               "kg": "10",
               "serie": "10×3"
@@ -58,6 +69,11 @@
           "nazwa": "Martwy ciąg jednonóż hantle",
           "zakres": "3×10–12",
           "sesje": [
+            {
+              "ico": "↑",
+              "kg": "14",
+              "serie": "12×3"
+            },
             {
               "ico": "★",
               "kg": "14",
@@ -83,6 +99,11 @@
             {
               "ico": "→",
               "kg": "10",
+              "serie": "12×3"
+            },
+            {
+              "ico": "→",
+              "kg": "10",
               "serie": "10×3"
             },
             {
@@ -102,6 +123,11 @@
           "nazwa": "Wyprosty tułowia",
           "zakres": "3×10–12",
           "sesje": [
+            {
+              "ico": "→",
+              "kg": "22",
+              "serie": "10×3"
+            },
             {
               "ico": "★",
               "kg": "22",
@@ -125,6 +151,11 @@
           "zakres": "3×12–15",
           "sesje": [
             {
+              "ico": "→",
+              "kg": "35",
+              "serie": "12-8-8"
+            },
+            {
               "ico": "★",
               "kg": "35",
               "serie": "12-12-10"
@@ -146,6 +177,11 @@
           "nazwa": "Pull-through wyciąg",
           "zakres": "3×15–20",
           "sesje": [
+            {
+              "ico": "↓",
+              "kg": "17.5",
+              "serie": "12-—-—"
+            },
             {
               "ico": "↓",
               "kg": "17.5",
