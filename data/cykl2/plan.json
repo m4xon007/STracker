@@ -126,7 +126,7 @@
         },
         {
           "nazwa": "Ściąganie drążka maszyna",
-          "kg": "30",
+          "kg": "35",
           "serie": "3×8–10",
           "przerwa": "120s",
           "ss": null,
@@ -159,7 +159,7 @@
         },
         {
           "nazwa": "Face pull klęk jednonóż",
-          "kg": "12.5",
+          "kg": "15",
           "serie": "3×12–15",
           "przerwa": "90s",
           "ss": null,
@@ -170,7 +170,7 @@
         },
         {
           "nazwa": "Cable crunch",
-          "kg": "17.5",
+          "kg": "22.5",
           "serie": "3×12–15",
           "przerwa": "→SS",
           "ss": "SS1",
@@ -181,7 +181,7 @@
         },
         {
           "nazwa": "Pallof press",
-          "kg": "10",
+          "kg": "12.5",
           "serie": "3×12–15",
           "przerwa": "60s",
           "ss": "SS1",
