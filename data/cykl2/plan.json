@@ -255,7 +255,7 @@
         },
         {
           "nazwa": "Sumo RDL sztanga",
-          "kg": "35",
+          "kg": "37.5",
           "serie": "3×8–10",
           "przerwa": "120s",
           "ss": null,
@@ -265,19 +265,19 @@
           "id": "l1-sumo-rdl"
         },
         {
-          "nazwa": "Hip thrust jednostronny hantel",
-          "kg": "12",
+          "nazwa": "Glute bridge z core bag",
+          "kg": "15",
           "serie": "3×10–12",
           "przerwa": "90s",
           "ss": null,
           "bold": false,
           "status": "0/2",
           "status_color": "muted",
-          "id": "l1-hip-thrust-jednostronny"
+          "id": "l1-glute-bridge"
         },
         {
           "nazwa": "Odwodzenie maszyna",
-          "kg": "50",
+          "kg": "52.5",
           "serie": "3×12–15",
           "przerwa": "→SS",
           "ss": "SS1",
@@ -288,7 +288,7 @@
         },
         {
           "nazwa": "Przywodzenie maszyna",
-          "kg": "32.5",
+          "kg": "35",
           "serie": "3×12–15",
           "przerwa": "75s",
           "ss": "SS1",
@@ -299,7 +299,7 @@
         },
         {
           "nazwa": "Cable donkey kick",
-          "kg": "12.5",
+          "kg": "15",
           "serie": "3×12–15",
           "przerwa": "→SS",
           "ss": "SS2",

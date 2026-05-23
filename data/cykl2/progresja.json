@@ -434,6 +434,7 @@
       "label": "🍑 Lower 1",
       "badge_class": "prog-title-l1",
       "naglowki": [
+        "23/05",
         "16/05",
         "02/05"
       ],
@@ -442,6 +443,11 @@
           "nazwa": "Hip thrust sztanga",
           "zakres": "4×6–8",
           "sesje": [
+            {
+              "ico": "★",
+              "kg": "62.5",
+              "serie": "8-8-8-8"
+            },
             {
               "ico": "↑",
               "kg": "60",
@@ -460,6 +466,11 @@
           "zakres": "3×8–10",
           "sesje": [
             {
+              "ico": "↑",
+              "kg": "35",
+              "serie": "10×3"
+            },
+            {
               "ico": "→",
               "kg": "35",
               "serie": "10×3"
@@ -473,9 +484,14 @@
           "id": "l1-sumo-rdl"
         },
         {
-          "nazwa": "Hip thrust jednostronny hantel",
+          "nazwa": "Glute bridge z core bag",
           "zakres": "3×10–12",
           "sesje": [
+            {
+              "ico": "★",
+              "kg": "15",
+              "serie": "12×3"
+            },
             {
               "ico": "★",
               "kg": "12",
@@ -487,12 +503,17 @@
               "serie": "12×3"
             }
           ],
-          "id": "l1-hip-thrust-jednostronny"
+          "id": "l1-glute-bridge"
         },
         {
           "nazwa": "Odwodzenie maszyna",
           "zakres": "3×12–15",
           "sesje": [
+            {
+              "ico": "↑",
+              "kg": "50",
+              "serie": "15×3"
+            },
             {
               "ico": "→",
               "kg": "50",
@@ -511,6 +532,11 @@
           "zakres": "3×12–15",
           "sesje": [
             {
+              "ico": "★",
+              "kg": "35",
+              "serie": "15×3"
+            },
+            {
               "ico": "↑",
               "kg": "30",
               "serie": "15×3"
@@ -528,6 +554,11 @@
           "zakres": "3×12–15",
           "sesje": [
             {
+              "ico": "↑",
+              "kg": "12.5",
+              "serie": "15×3"
+            },
+            {
               "ico": "★",
               "kg": "12.5",
               "serie": "15×3"
@@ -544,6 +575,11 @@
           "nazwa": "Odwodzenie stojąc wyciąg",
           "zakres": "3×15–20",
           "sesje": [
+            {
+              "ico": "→",
+              "kg": "10",
+              "serie": "15×3"
+            },
             {
               "ico": "★",
               "kg": "10",
