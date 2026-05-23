@@ -1,8 +1,8 @@
 {
   "statystyki": {
-    "ostatnia": "61,35",
-    "ostatnia_data": "06.05",
-    "minimum": "61,2",
+    "ostatnia": "60,65",
+    "ostatnia_data": "23.05",
+    "minimum": "60,4",
     "bf_procent": "33,4%"
   },
   "nastepny_pomiar": "~20.04 (pomiar obwodów)",
@@ -25,11 +25,67 @@
     },
     {
       "miesiac": "Maj",
-      "tekst": "Start maja ~61,1–61,4. Skok 04.05 (62,45) — retencja po L1+L2. Min. ~61,0 (25.04). Waga bazowa stabilna ~61,2–61,5."
+      "tekst": "Wyraźne zejście poniżej 61 kg od 16.05. Min. folikularne ~60,4 (17.05). Waga bazowa 60,4–61,0. Skok 04.05 (62,45) = retencja po L1+L2. Trend silnie zniżkowy."
     }
   ],
-  "wniosek": "Min. folikularne sty→lut→mar→kwi→maj: 61,5→61,5→61,6→61,05→61,0 — trend zniżkowy utrzymany. Waga bazowa ~61,2–61,5 kg.",
+  "wniosek": "Min. folikularne sty→lut→mar→kwi→maj: 61,5→61,5→61,6→61,05→60,4 — wyraźny trend zniżkowy. Przełom w maju — waga regularnie poniżej 61 kg. Deficyt działa.",
   "pomiary": [
+    {
+      "data": "23.05",
+      "waga": 60.65
+    },
+    {
+      "data": "22.05",
+      "waga": 60.8
+    },
+    {
+      "data": "21.05",
+      "waga": 61.0
+    },
+    {
+      "data": "20.05",
+      "waga": 60.95
+    },
+    {
+      "data": "19.05",
+      "waga": 60.7
+    },
+    {
+      "data": "18.05",
+      "waga": 60.95
+    },
+    {
+      "data": "17.05",
+      "waga": 60.4
+    },
+    {
+      "data": "16.05",
+      "waga": 60.45
+    },
+    {
+      "data": "15.05",
+      "waga": 60.75
+    },
+    {
+      "data": "14.05",
+      "waga": 61.2
+    },
+    {
+      "data": "13.05",
+      "waga": 61.8
+    },
+    {
+      "data": "09.05",
+      "waga": 61.3
+    },
+    {
+      "data": "08.05",
+      "waga": 61.45
+    },
+    {
+      "data": "07.05",
+      "waga": 61.25
+    },
     {
       "data": "06.05",
       "waga": 61.35
