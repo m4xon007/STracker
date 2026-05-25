@@ -302,9 +302,13 @@ ALGORYTM PROGRESJI (deterministyczny)
 ↑ zwiększ  = ostatni.w_zakresie: true AND prev.w_zakresie: true AND ostatni.kg == prev.kg
 → utrzymaj = nowy ciężar LUB brak prev LUB w_zakresie: false
 
-w_zakresie: true = WSZYSTKIE serie ≥ górny zakres z planu
-Przykład: zakres "4×6–8", wykonano "8-8-8-8" → true
-Przykład: zakres "3×10–12", wykonano "12-12-10" → false
+w_zakresie: true gdy OBA warunki spełnione:
+  1. Co najmniej ⌈N/2⌉ serii osiągnęło górny zakres (zaokrąglone w górę)
+  2. Żadna seria nie spada poniżej (górny_zakres - 2)
+Przykład: zakres "4×6–8", wykonano "8-8-8-5" → false (min=5 < 8-2=6)
+Przykład: zakres "3×10–12", wykonano "12-12-10" → true (2/3 ✓, min=10≥10 ✓)
+Przykład: zakres "3×10–12", wykonano "12-10-10" → false (1/3 ✗)
+Przykład: zakres "4×6–8", wykonano "8-8-7-7" → true (2/4 ✓, min=7≥6 ✓)
 
 Skok ciężaru przy ↑: sztanga +2,5 kg · hantle +2 kg · maszyny/wyciągi +2,5–5 kg
 
@@ -713,6 +717,19 @@ function progresjaIco(p){if(p==='zwieksz')return'<span style="color:var(--green)
 function statusDot(s){const map={rekord:'<span style="color:var(--yellow)">★</span>',progresja:'<span style="color:var(--green)">↑</span>',uwaga:'<span style="color:var(--orange)">⚠</span>',utrzymaj:'<span style="color:var(--muted)">→</span>'};return map[s]||'';}
 function planStatusStyle(color){const map={muted:'color:var(--muted)',rose:'color:var(--rose)',yellow:'color:var(--yellow)',green:'color:var(--green);font-weight:700',orange:'color:var(--orange)'};return map[color]||'';}
 function renderHeader(meta){document.getElementById('header-sub').textContent=meta.header_sub||'';}
+function calcWZakresie(serie,zakres){
+  // Nowa zasada: ⌈N/2⌉ serii ≥ gorny AND min ≥ gorny-2
+  if(!serie||!zakres) return false;
+  const gornyMatch=zakres.match(/[–-](\d+)/);
+  if(!gornyMatch) return false;
+  const gorny=parseInt(gornyMatch[1]);
+  const reps=serie.split('-').map(s=>parseInt(s)).filter(n=>!isNaN(n));
+  if(!reps.length) return false;
+  const n=reps.length;
+  const wZak=reps.filter(r=>r>=gorny).length;
+  const min=Math.min(...reps);
+  return wZak>=Math.ceil(n/2)&&min>=(gorny-2);
+}
 function calcProgresja(exId,ostatni,ostatniPrev){
   if(!exId||!ostatni||!ostatni.cwiczenia) return {prog:'same',ico:'→'};
   const dOst=ostatni.cwiczenia[exId];
