@@ -1,1029 +1,609 @@
 {
-  "cykle": [
-    {
-      "nr": 2,
-      "label": "Cykl 2 — start 20.04.2026",
-      "open": true,
-      "bilans": {
-        "l2": 4,
-        "upper": 4,
-        "l1": 3,
-        "lacznie": 11
-      },
-      "miesiace": [
-        {
-          "nazwa": "Kwiecień 2026",
-          "suffix": "start 20.04",
-          "tygodnie": [
-            {
-              "label": "T1",
-              "label_color": "rose",
-              "dni": [
-                {
-                  "n": 20,
-                  "typ": "l2",
-                  "tekst": "L2 ✓"
-                },
-                {
-                  "n": 21,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 22,
-                  "typ": "upper",
-                  "tekst": "U ✓"
-                },
-                {
-                  "n": 23,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 24,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 25,
-                  "typ": "skip",
-                  "tekst": "L1 ⊘"
-                },
-                {
-                  "n": 26,
-                  "typ": "waga",
-                  "tekst": "⚖️"
-                }
-              ]
-            },
-            {
-              "label": "T2",
-              "label_color": "muted",
-              "dni": [
-                {
-                  "n": 27,
-                  "typ": "l2",
-                  "tekst": "L2 ✓"
-                },
-                {
-                  "n": 28,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 29,
-                  "typ": "upper",
-                  "tekst": "U ✓"
-                },
-                {
-                  "n": 30,
-                  "typ": "empty",
-                  "tekst": ""
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "nazwa": "Maj 2026",
-          "suffix": null,
-          "tygodnie": [
-            {
-              "label": "T2",
-              "label_color": "muted",
-              "dni": [
-                {
-                  "n": "spacer",
-                  "typ": "spacer",
-                  "tekst": ""
-                },
-                {
-                  "n": "spacer",
-                  "typ": "spacer",
-                  "tekst": ""
-                },
-                {
-                  "n": "spacer",
-                  "typ": "spacer",
-                  "tekst": ""
-                },
-                {
-                  "n": "spacer",
-                  "typ": "spacer",
-                  "tekst": ""
-                },
-                {
-                  "n": 1,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 2,
-                  "typ": "l1",
-                  "tekst": "L1 ✓"
-                },
-                {
-                  "n": 3,
-                  "typ": "empty",
-                  "tekst": ""
-                }
-              ]
-            },
-            {
-              "label": "T3",
-              "label_color": "muted",
-              "dni": [
-                {
-                  "n": 4,
-                  "typ": "l2",
-                  "tekst": "L2 ✓"
-                },
-                {
-                  "n": 5,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 6,
-                  "typ": "upper",
-                  "tekst": "U ✓"
-                },
-                {
-                  "n": 7,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 8,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 9,
-                  "typ": "skip",
-                  "tekst": "L1 ⊘"
-                },
-                {
-                  "n": 10,
-                  "typ": "waga",
-                  "tekst": "⚖️"
-                }
-              ]
-            },
-            {
-              "label": "T4",
-              "label_color": "muted",
-              "dni": [
-                {
-                  "n": 11,
-                  "typ": "skip",
-                  "tekst": "L2 ⊘"
-                },
-                {
-                  "n": 12,
-                  "typ": "pomiary",
-                  "tekst": "📐"
-                },
-                {
-                  "n": 13,
-                  "typ": "skip",
-                  "tekst": "U ⊘"
-                },
-                {
-                  "n": 14,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 15,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 16,
-                  "typ": "l1",
-                  "tekst": "L1 ✓"
-                },
-                {
-                  "n": 17,
-                  "typ": "empty",
-                  "tekst": ""
-                }
-              ]
-            },
-            {
-              "label": "T5",
-              "label_color": "muted",
-              "dni": [
-                {
-                  "n": 18,
-                  "typ": "l2",
-                  "tekst": "L2 ✓"
-                },
-                {
-                  "n": 19,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 20,
-                  "typ": "upper",
-                  "tekst": "U ✓"
-                },
-                {
-                  "n": 21,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 22,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 23,
-                  "typ": "l1",
-                  "tekst": "L1 ✓"
-                },
-                {
-                  "n": 24,
-                  "typ": "waga",
-                  "tekst": "⚖️"
-                }
-              ]
-            },
-            {
-              "label": "T6",
-              "label_color": "muted",
-              "dni": [
-                {
-                  "n": 25,
-                  "typ": "plan",
-                  "tekst": "L2"
-                },
-                {
-                  "n": 26,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 27,
-                  "typ": "plan",
-                  "tekst": "U"
-                },
-                {
-                  "n": 28,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 29,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 30,
-                  "typ": "plan",
-                  "tekst": "L1"
-                },
-                {
-                  "n": 31,
-                  "typ": "empty",
-                  "tekst": ""
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "nazwa": "Czerwiec 2026",
-          "suffix": "cel 15.06",
-          "tygodnie": [
-            {
-              "label": "T8",
-              "label_color": null,
-              "dni": [
-                {
-                  "n": 1,
-                  "typ": "plan",
-                  "tekst": "L2"
-                },
-                {
-                  "n": 2,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 3,
-                  "typ": "plan",
-                  "tekst": "U"
-                },
-                {
-                  "n": 4,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 5,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 6,
-                  "typ": "plan",
-                  "tekst": "L1"
-                },
-                {
-                  "n": 7,
-                  "typ": "waga",
-                  "tekst": "⚖️"
-                }
-              ]
-            },
-            {
-              "label": "FIN",
-              "label_color": null,
-              "dni": [
-                {
-                  "n": 8,
-                  "typ": "plan",
-                  "tekst": "L2"
-                },
-                {
-                  "n": 9,
-                  "typ": "pomiary",
-                  "tekst": "📐"
-                },
-                {
-                  "n": 10,
-                  "typ": "plan",
-                  "tekst": "U"
-                },
-                {
-                  "n": 11,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 12,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 13,
-                  "typ": "plan",
-                  "tekst": "L1"
-                },
-                {
-                  "n": 14,
-                  "typ": "empty",
-                  "tekst": ""
-                }
-              ]
-            },
-            {
-              "label": "FIN",
-              "label_color": null,
-              "dni": [
-                {
-                  "n": 15,
-                  "typ": "pomiary",
-                  "tekst": "🎯"
-                },
-                {
-                  "n": "spacer",
-                  "typ": "spacer",
-                  "tekst": ""
-                },
-                {
-                  "n": "spacer",
-                  "typ": "spacer",
-                  "tekst": ""
-                },
-                {
-                  "n": "spacer",
-                  "typ": "spacer",
-                  "tekst": ""
-                },
-                {
-                  "n": "spacer",
-                  "typ": "spacer",
-                  "tekst": ""
-                },
-                {
-                  "n": "spacer",
-                  "typ": "spacer",
-                  "tekst": ""
-                },
-                {
-                  "n": "spacer",
-                  "typ": "spacer",
-                  "tekst": ""
-                }
-              ]
-            },
-            {
-              "label": "DELOAD",
-              "label_color": "muted",
-              "dni": [
-                {
-                  "n": 22,
-                  "typ": "deload",
-                  "tekst": "DL 🔻"
-                },
-                {
-                  "n": 24,
-                  "typ": "deload",
-                  "tekst": "DU 🔻"
-                },
-                {
-                  "n": 27,
-                  "typ": "deload",
-                  "tekst": "DL 🔻"
-                }
-              ]
-            }
-          ]
-        }
+  "cykl": 2,
+  "sekcje": {
+    "l2": {
+      "label": "🦵 Lower 2",
+      "badge_class": "prog-title-l2",
+      "naglowki": [
+        "25/05",
+        "18/05",
+        "04/05",
+        "27/04",
+        "20/04"
       ],
-      "do": "28.06.2026"
-    },
-    {
-      "nr": 1,
-      "label": "Cykl 1 — Luty–Kwiecień 2026",
-      "open": false,
-      "bilans": {
-        "l2": 8,
-        "upper": 9,
-        "l1": 7,
-        "core": 0,
-        "lacznie": 23
-      },
-      "miesiace": [
+      "cwiczenia": [
         {
-          "nazwa": "Kwiecień 2026",
-          "suffix": "deload od 13.04",
-          "tygodnie": [
+          "nazwa": "Martwy ciąg trap bar",
+          "zakres": "4×6–8",
+          "sesje": [
             {
-              "label": "DL",
-              "label_color": "yellow",
-              "dni": [
-                {
-                  "n": 13,
-                  "typ": "dl",
-                  "tekst": "D·L2 ✓ ✓"
-                },
-                {
-                  "n": 14,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 15,
-                  "typ": "dl",
-                  "tekst": "D·U ✓ ✓"
-                },
-                {
-                  "n": 16,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 17,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 18,
-                  "typ": "dl",
-                  "tekst": "D·L1 ✓ ✓"
-                },
-                {
-                  "n": 19,
-                  "typ": "empty",
-                  "tekst": ""
-                }
-              ]
+              "ico": "★",
+              "kg": "40",
+              "serie": "8-8-8-8"
             },
             {
-              "label": "T8",
-              "label_color": "muted",
-              "dni": [
-                {
-                  "n": 6,
-                  "typ": "l2",
-                  "tekst": "L2 ✓"
-                },
-                {
-                  "n": 7,
-                  "typ": "pomiary",
-                  "tekst": "📐"
-                },
-                {
-                  "n": 8,
-                  "typ": "waga",
-                  "tekst": "⚖️"
-                },
-                {
-                  "n": 9,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 10,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 11,
-                  "typ": "l1",
-                  "tekst": "L1 ✓"
-                },
-                {
-                  "n": 12,
-                  "typ": "empty",
-                  "tekst": ""
-                }
-              ]
+              "ico": "↑",
+              "kg": "37.5",
+              "serie": "8-8-8-8"
             },
             {
-              "label": "T7",
-              "label_color": "muted",
-              "dni": [
-                {
-                  "n": null,
-                  "typ": "spacer",
-                  "tekst": ""
-                },
-                {
-                  "n": null,
-                  "typ": "spacer",
-                  "tekst": ""
-                },
-                {
-                  "n": 1,
-                  "typ": "plan",
-                  "tekst": "U"
-                },
-                {
-                  "n": 2,
-                  "typ": "l2",
-                  "tekst": "L2 ✓"
-                },
-                {
-                  "n": 3,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 4,
-                  "typ": "plan",
-                  "tekst": "L1"
-                },
-                {
-                  "n": 5,
-                  "typ": "l1",
-                  "tekst": "L1 ✓"
-                }
-              ]
+              "ico": "★",
+              "kg": "37.5",
+              "serie": "8-8-8-8"
+            },
+            {
+              "ico": "↑",
+              "kg": "35",
+              "serie": "8-8-8-8"
+            },
+            {
+              "ico": "★",
+              "kg": "35",
+              "serie": "8×4"
             }
           ],
-          "waga_dni": [
-            {
-              "n": 8,
-              "typ": "waga",
-              "tekst": "⚖️"
-            },
-            {
-              "n": 7,
-              "typ": "pomiary",
-              "tekst": "📐"
-            }
-          ]
+          "id": "l2-trap-bar"
         },
         {
-          "nazwa": "Marzec 2026",
-          "suffix": "",
-          "tygodnie": [
+          "nazwa": "Zakroki wsteczne Smith",
+          "zakres": "3×8–10",
+          "sesje": [
             {
-              "label": "→",
-              "label_color": "muted",
-              "dni": [
-                {
-                  "n": 30,
-                  "typ": "upper",
-                  "tekst": "U ✓"
-                },
-                {
-                  "n": 31,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": null,
-                  "typ": "spacer",
-                  "tekst": ""
-                },
-                {
-                  "n": null,
-                  "typ": "spacer",
-                  "tekst": ""
-                },
-                {
-                  "n": null,
-                  "typ": "spacer",
-                  "tekst": ""
-                },
-                {
-                  "n": null,
-                  "typ": "spacer",
-                  "tekst": ""
-                },
-                {
-                  "n": null,
-                  "typ": "spacer",
-                  "tekst": ""
-                }
-              ]
+              "ico": "★",
+              "kg": "12.5",
+              "serie": "10×3"
             },
             {
-              "label": "T7",
-              "label_color": "rose",
-              "dni": [
-                {
-                  "n": 23,
-                  "typ": "l2",
-                  "tekst": "L2 ✓"
-                },
-                {
-                  "n": 24,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 25,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 26,
-                  "typ": "upper",
-                  "tekst": "U ✓"
-                },
-                {
-                  "n": 27,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 28,
-                  "typ": "l1",
-                  "tekst": "L1 ✓"
-                },
-                {
-                  "n": 29,
-                  "typ": "upper",
-                  "tekst": "U ✓"
-                }
-              ]
+              "ico": "↑",
+              "kg": "10",
+              "serie": "10×3"
             },
             {
-              "label": "T6",
-              "label_color": "muted",
-              "dni": [
-                {
-                  "n": 16,
-                  "typ": "l2",
-                  "tekst": "L2 ✓"
-                },
-                {
-                  "n": 17,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 18,
-                  "typ": "upper",
-                  "tekst": "U ✓"
-                },
-                {
-                  "n": 19,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 20,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 21,
-                  "typ": "l1",
-                  "tekst": "L1 ✓"
-                },
-                {
-                  "n": 22,
-                  "typ": "empty",
-                  "tekst": ""
-                }
-              ]
+              "ico": "★",
+              "kg": "10",
+              "serie": "10×3"
             },
             {
-              "label": "T5",
-              "label_color": "muted",
-              "dni": [
-                {
-                  "n": 9,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 10,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 11,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 12,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 13,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 14,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 15,
-                  "typ": "upper",
-                  "tekst": "U 🩹"
-                }
-              ]
+              "ico": "↑",
+              "kg": "9",
+              "serie": "10×3"
             },
             {
-              "label": "T4",
-              "label_color": "muted",
-              "dni": [
-                {
-                  "n": 2,
-                  "typ": "l2",
-                  "tekst": "L2 ✓"
-                },
-                {
-                  "n": 3,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 4,
-                  "typ": "upper",
-                  "tekst": "U ✓"
-                },
-                {
-                  "n": 5,
-                  "typ": "l1",
-                  "tekst": "L1 ✓"
-                },
-                {
-                  "n": 6,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 7,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 8,
-                  "typ": "empty",
-                  "tekst": ""
-                }
-              ]
-            },
-            {
-              "label": "—",
-              "label_color": "muted",
-              "dni": [
-                {
-                  "n": null,
-                  "typ": "spacer",
-                  "tekst": ""
-                },
-                {
-                  "n": null,
-                  "typ": "spacer",
-                  "tekst": ""
-                },
-                {
-                  "n": null,
-                  "typ": "spacer",
-                  "tekst": ""
-                },
-                {
-                  "n": null,
-                  "typ": "spacer",
-                  "tekst": ""
-                },
-                {
-                  "n": null,
-                  "typ": "spacer",
-                  "tekst": ""
-                },
-                {
-                  "n": null,
-                  "typ": "spacer",
-                  "tekst": ""
-                },
-                {
-                  "n": 1,
-                  "typ": "empty",
-                  "tekst": ""
-                }
-              ]
+              "ico": "★",
+              "kg": "9",
+              "serie": "10×3"
             }
-          ]
+          ],
+          "id": "l2-zakroki-smith"
         },
         {
-          "nazwa": "Luty 2026",
-          "suffix": "",
-          "tygodnie": [
+          "nazwa": "Martwy ciąg jednonóż hantle",
+          "zakres": "3×10–12",
+          "sesje": [
             {
-              "label": "T3",
-              "label_color": "muted",
-              "dni": [
-                {
-                  "n": 23,
-                  "typ": "l2",
-                  "tekst": "L2 ✓"
-                },
-                {
-                  "n": 24,
-                  "typ": "upper",
-                  "tekst": "U ✓"
-                },
-                {
-                  "n": 25,
-                  "typ": "upper",
-                  "tekst": "U ✓"
-                },
-                {
-                  "n": 26,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 27,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 28,
-                  "typ": "l1",
-                  "tekst": "L1 ✓"
-                },
-                {
-                  "n": null,
-                  "typ": "spacer",
-                  "tekst": ""
-                }
-              ]
+              "ico": "★",
+              "kg": "16",
+              "serie": "12×3"
             },
             {
-              "label": "T2",
-              "label_color": "muted",
-              "dni": [
-                {
-                  "n": 16,
-                  "typ": "l2",
-                  "tekst": "L2 ✓"
-                },
-                {
-                  "n": 17,
-                  "typ": "l2",
-                  "tekst": "L2 ✓"
-                },
-                {
-                  "n": 18,
-                  "typ": "upper",
-                  "tekst": "U ✓"
-                },
-                {
-                  "n": 19,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 20,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 21,
-                  "typ": "l1",
-                  "tekst": "L1 ✓"
-                },
-                {
-                  "n": 22,
-                  "typ": "empty",
-                  "tekst": ""
-                }
-              ]
+              "ico": "↑",
+              "kg": "14",
+              "serie": "12×3"
             },
             {
-              "label": "T1",
-              "label_color": "muted",
-              "dni": [
-                {
-                  "n": 9,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 10,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 11,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 12,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 13,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": 14,
-                  "typ": "l1",
-                  "tekst": "L1 🌸"
-                },
-                {
-                  "n": 15,
-                  "typ": "upper",
-                  "tekst": "U 🩹"
-                }
-              ]
+              "ico": "★",
+              "kg": "14",
+              "serie": "12×3"
             },
             {
-              "label": "—",
-              "label_color": "muted",
-              "dni": [
-                {
-                  "n": null,
-                  "typ": "spacer",
-                  "tekst": ""
-                },
-                {
-                  "n": null,
-                  "typ": "spacer",
-                  "tekst": ""
-                },
-                {
-                  "n": null,
-                  "typ": "spacer",
-                  "tekst": ""
-                },
-                {
-                  "n": null,
-                  "typ": "spacer",
-                  "tekst": ""
-                },
-                {
-                  "n": null,
-                  "typ": "spacer",
-                  "tekst": ""
-                },
-                {
-                  "n": 1,
-                  "typ": "empty",
-                  "tekst": ""
-                },
-                {
-                  "n": null,
-                  "typ": "spacer",
-                  "tekst": ""
-                }
-              ]
+              "ico": "↑",
+              "kg": "12",
+              "serie": "12×3"
+            },
+            {
+              "ico": "★",
+              "kg": "12",
+              "serie": "12×3"
             }
-          ]
+          ],
+          "id": "l2-martwy-jednonoz"
+        },
+        {
+          "nazwa": "Przysiad bułgarski",
+          "zakres": "3×10–12",
+          "sesje": [
+            {
+              "ico": "↑",
+              "kg": "10",
+              "serie": "12×3"
+            },
+            {
+              "ico": "→",
+              "kg": "10",
+              "serie": "12×3"
+            },
+            {
+              "ico": "→",
+              "kg": "10",
+              "serie": "10×3"
+            },
+            {
+              "ico": "★",
+              "kg": "9",
+              "serie": "12×3"
+            },
+            {
+              "ico": "★",
+              "kg": "12",
+              "serie": "12-12-10"
+            }
+          ],
+          "id": "l2-przysiad-bulgarski"
+        },
+        {
+          "nazwa": "Wyprosty tułowia",
+          "zakres": "3×10–12",
+          "sesje": [
+            {
+              "ico": "→",
+              "kg": "22",
+              "serie": "10×3"
+            },
+            {
+              "ico": "→",
+              "kg": "22",
+              "serie": "10×3"
+            },
+            {
+              "ico": "★",
+              "kg": "22",
+              "serie": "12×3"
+            },
+            {
+              "ico": "↑",
+              "kg": "20",
+              "serie": "12×3"
+            },
+            {
+              "ico": "★",
+              "kg": "20",
+              "serie": "12×3"
+            }
+          ],
+          "id": "l2-wyprosty-tulow"
+        },
+        {
+          "nazwa": "Prostowanie nóg maszyna",
+          "zakres": "3×12–15",
+          "sesje": [
+            {
+              "ico": "★",
+              "kg": "38",
+              "serie": "12-10-10"
+            },
+            {
+              "ico": "→",
+              "kg": "35",
+              "serie": "12-8-8"
+            },
+            {
+              "ico": "★",
+              "kg": "35",
+              "serie": "12-12-10"
+            },
+            {
+              "ico": "→",
+              "kg": "30",
+              "serie": "15×3"
+            },
+            {
+              "ico": "★",
+              "kg": "30",
+              "serie": "15-12-10"
+            }
+          ],
+          "id": "l2-prostowanie-nog"
+        },
+        {
+          "nazwa": "Sumo RDL Smith",
+          "zakres": "3×10–12",
+          "sesje": [],
+          "id": "l2-smith-rdl"
+        }
+      ]
+    },
+    "upper": {
+      "label": "💪 Upper",
+      "badge_class": "prog-title-upper",
+      "naglowki": [
+        "20/05",
+        "06/05",
+        "29/04",
+        "22/04"
+      ],
+      "cwiczenia": [
+        {
+          "nazwa": "Wyciskanie hantlami płaskie",
+          "zakres": "4×6–8",
+          "sesje": [
+            {
+              "ico": "→",
+              "kg": "12",
+              "serie": "7×4"
+            },
+            {
+              "ico": "↓",
+              "kg": "12",
+              "serie": "8-5-6-6"
+            },
+            {
+              "ico": "↑",
+              "kg": "10",
+              "serie": "10×4"
+            },
+            {
+              "ico": "★",
+              "kg": "10",
+              "serie": "8-8-8-8"
+            }
+          ],
+          "id": "upper-wyciskanie"
+        },
+        {
+          "nazwa": "Podciąganie australijskie",
+          "zakres": "3×8–10",
+          "sesje": [
+            {
+              "ico": "→",
+              "kg": "BW",
+              "serie": "10×3"
+            },
+            {
+              "ico": "→",
+              "kg": "BW",
+              "serie": "8×3"
+            },
+            {
+              "ico": "→",
+              "kg": "BW",
+              "serie": "8×3"
+            },
+            {
+              "ico": "★",
+              "kg": "—",
+              "serie": "5-7-7"
+            }
+          ],
+          "id": "upper-podciaganie"
+        },
+        {
+          "nazwa": "Ściąganie drążka maszyna",
+          "zakres": "3×8–10",
+          "sesje": [
+            {
+              "ico": "★",
+              "kg": "35",
+              "serie": "10×3"
+            },
+            {
+              "ico": "→",
+              "kg": "30",
+              "serie": "10×3"
+            },
+            {
+              "ico": "★",
+              "kg": "30",
+              "serie": "10×3"
+            },
+            {
+              "ico": "★",
+              "kg": "25",
+              "serie": "10×3"
+            }
+          ],
+          "id": "upper-sciaganie-drążka"
+        },
+        {
+          "nazwa": "OHP hantlami",
+          "zakres": "3×8–10",
+          "sesje": [
+            {
+              "ico": "↓",
+              "kg": "10",
+              "serie": "7-7-4"
+            },
+            {
+              "ico": "★",
+              "kg": "10",
+              "serie": "7×3"
+            },
+            {
+              "ico": "↑",
+              "kg": "9",
+              "serie": "10×3"
+            },
+            {
+              "ico": "★",
+              "kg": "9",
+              "serie": "10×3"
+            }
+          ],
+          "id": "upper-ohp"
+        },
+        {
+          "nazwa": "Odwodzenie ramion wyciąg",
+          "zakres": "3×12–15",
+          "sesje": [
+            {
+              "ico": "→",
+              "kg": "2.5",
+              "serie": "14-12-12"
+            },
+            {
+              "ico": "→",
+              "kg": "2.5",
+              "serie": "12×3"
+            },
+            {
+              "ico": "→",
+              "kg": "2.5",
+              "serie": "12-12-8"
+            },
+            {
+              "ico": "★",
+              "kg": "2.5",
+              "serie": "12×3"
+            }
+          ],
+          "id": "upper-odwodzenie-ramion"
+        },
+        {
+          "nazwa": "Face pull klęk jednonóż",
+          "zakres": "3×12–15",
+          "sesje": [
+            {
+              "ico": "★",
+              "kg": "15",
+              "serie": "12×3"
+            },
+            {
+              "ico": "→",
+              "kg": "12.5",
+              "serie": "15×3"
+            },
+            {
+              "ico": "★",
+              "kg": "12.5",
+              "serie": "15×3"
+            },
+            {
+              "ico": "★",
+              "kg": "10",
+              "serie": "15×3"
+            }
+          ],
+          "id": "upper-face-pull"
+        },
+        {
+          "nazwa": "Cable crunch",
+          "zakres": "3×12–15",
+          "sesje": [
+            {
+              "ico": "★",
+              "kg": "22.5",
+              "serie": "15×3"
+            },
+            {
+              "ico": "→",
+              "kg": "17.5",
+              "serie": "15×3"
+            },
+            {
+              "ico": "★",
+              "kg": "17.5",
+              "serie": "15×3"
+            },
+            {
+              "ico": "★",
+              "kg": "15",
+              "serie": "15×3"
+            }
+          ],
+          "id": "upper-cable-crunch"
+        },
+        {
+          "nazwa": "Pallof press",
+          "zakres": "3×12–15",
+          "sesje": [
+            {
+              "ico": "↑",
+              "kg": "10",
+              "serie": "15×3"
+            },
+            {
+              "ico": "★",
+              "kg": "10",
+              "serie": "15×3"
+            },
+            {
+              "ico": "↑",
+              "kg": "7.5",
+              "serie": "15×3"
+            },
+            {
+              "ico": "★",
+              "kg": "7.5",
+              "serie": "15×3"
+            }
+          ],
+          "id": "upper-pallof"
+        }
+      ]
+    },
+    "l1": {
+      "label": "🍑 Lower 1",
+      "badge_class": "prog-title-l1",
+      "naglowki": [
+        "23/05",
+        "16/05",
+        "02/05"
+      ],
+      "cwiczenia": [
+        {
+          "nazwa": "Hip thrust sztanga",
+          "zakres": "4×6–8",
+          "sesje": [
+            {
+              "ico": "★",
+              "kg": "62.5",
+              "serie": "8-8-8-8"
+            },
+            {
+              "ico": "↑",
+              "kg": "60",
+              "serie": "8-8-8-8"
+            },
+            {
+              "ico": "★",
+              "kg": "60",
+              "serie": "8-8-8-8"
+            }
+          ],
+          "id": "l1-hip-thrust"
+        },
+        {
+          "nazwa": "Sumo RDL sztanga",
+          "zakres": "3×8–10",
+          "sesje": [
+            {
+              "ico": "↑",
+              "kg": "35",
+              "serie": "10×3"
+            },
+            {
+              "ico": "→",
+              "kg": "35",
+              "serie": "10×3"
+            },
+            {
+              "ico": "★",
+              "kg": "35",
+              "serie": "8×3"
+            }
+          ],
+          "id": "l1-sumo-rdl"
+        },
+        {
+          "nazwa": "Glute bridge z core bag",
+          "zakres": "3×10–12",
+          "sesje": [
+            {
+              "ico": "★",
+              "kg": "15",
+              "serie": "12×3"
+            },
+            {
+              "ico": "★",
+              "kg": "12",
+              "serie": "12×3"
+            },
+            {
+              "ico": "★",
+              "kg": "16",
+              "serie": "12×3"
+            }
+          ],
+          "id": "l1-glute-bridge"
+        },
+        {
+          "nazwa": "Odwodzenie maszyna",
+          "zakres": "3×12–15",
+          "sesje": [
+            {
+              "ico": "↑",
+              "kg": "50",
+              "serie": "15×3"
+            },
+            {
+              "ico": "→",
+              "kg": "50",
+              "serie": "15×3"
+            },
+            {
+              "ico": "★",
+              "kg": "50",
+              "serie": "12×3"
+            }
+          ],
+          "id": "l1-odwodzenie-maszyna"
+        },
+        {
+          "nazwa": "Przywodzenie maszyna",
+          "zakres": "3×12–15",
+          "sesje": [
+            {
+              "ico": "★",
+              "kg": "35",
+              "serie": "15×3"
+            },
+            {
+              "ico": "↑",
+              "kg": "30",
+              "serie": "15×3"
+            },
+            {
+              "ico": "★",
+              "kg": "30",
+              "serie": "15×3"
+            }
+          ],
+          "id": "l1-przywodzenie-maszyna"
+        },
+        {
+          "nazwa": "Cable donkey kick",
+          "zakres": "3×12–15",
+          "sesje": [
+            {
+              "ico": "↑",
+              "kg": "12.5",
+              "serie": "15×3"
+            },
+            {
+              "ico": "★",
+              "kg": "12.5",
+              "serie": "15×3"
+            },
+            {
+              "ico": "★",
+              "kg": "10",
+              "serie": "15×3"
+            }
+          ],
+          "id": "l1-donkey-kick"
+        },
+        {
+          "nazwa": "Odwodzenie stojąc wyciąg",
+          "zakres": "3×15–20",
+          "sesje": [
+            {
+              "ico": "→",
+              "kg": "10",
+              "serie": "15×3"
+            },
+            {
+              "ico": "★",
+              "kg": "10",
+              "serie": "15×3"
+            },
+            {
+              "ico": "★",
+              "kg": "7.5",
+              "serie": "15-13-13"
+            }
+          ],
+          "id": "l1-odwodzenie-stojac"
         }
       ]
     }
-  ]
+  }
 }
