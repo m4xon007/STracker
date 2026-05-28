@@ -126,7 +126,7 @@
         },
         {
           "nazwa": "Ściąganie drążka maszyna",
-          "kg": "35",
+          "kg": "37.5",
           "serie": "3×8–10",
           "przerwa": "120s",
           "ss": null,
@@ -170,7 +170,7 @@
         },
         {
           "nazwa": "Cable crunch",
-          "kg": "22.5",
+          "kg": "25",
           "serie": "3×12–15",
           "przerwa": "→SS",
           "ss": "SS1",
