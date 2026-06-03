@@ -5,6 +5,7 @@
       "label": "🦵 Lower 2",
       "badge_class": "prog-title-l2",
       "naglowki": [
+        "02/06",
         "25/05",
         "18/05",
         "04/05",
@@ -16,6 +17,11 @@
           "nazwa": "Martwy ciąg trap bar",
           "zakres": "4×6–8",
           "sesje": [
+            {
+              "ico": "↑",
+              "kg": "40",
+              "serie": "8-8-8-8"
+            },
             {
               "ico": "★",
               "kg": "40",
@@ -49,6 +55,11 @@
           "zakres": "3×8–10",
           "sesje": [
             {
+              "ico": "↑",
+              "kg": "12.5",
+              "serie": "10×3"
+            },
+            {
               "ico": "★",
               "kg": "12.5",
               "serie": "10×3"
@@ -80,6 +91,11 @@
           "nazwa": "Martwy ciąg jednonóż hantle",
           "zakres": "3×10–12",
           "sesje": [
+            {
+              "ico": "↑",
+              "kg": "16",
+              "serie": "12×3"
+            },
             {
               "ico": "★",
               "kg": "16",
@@ -113,6 +129,11 @@
           "zakres": "3×10–12",
           "sesje": [
             {
+              "ico": "↓",
+              "kg": "0",
+              "serie": "—"
+            },
+            {
               "ico": "↑",
               "kg": "10",
               "serie": "12×3"
@@ -144,6 +165,11 @@
           "nazwa": "Wyprosty tułowia",
           "zakres": "3×10–12",
           "sesje": [
+            {
+              "ico": "★",
+              "kg": "24",
+              "serie": "10×3"
+            },
             {
               "ico": "→",
               "kg": "22",
@@ -177,6 +203,11 @@
           "zakres": "3×12–15",
           "sesje": [
             {
+              "ico": "↓",
+              "kg": "35",
+              "serie": "10×3"
+            },
+            {
               "ico": "★",
               "kg": "38",
               "serie": "12-10-10"
@@ -207,7 +238,13 @@
         {
           "nazwa": "Sumo RDL Smith",
           "zakres": "3×10–12",
-          "sesje": [],
+          "sesje": [
+            {
+              "ico": "→",
+              "kg": "0",
+              "serie": "—"
+            }
+          ],
           "id": "l2-smith-rdl"
         }
       ]
