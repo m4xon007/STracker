@@ -1,0 +1,281 @@
+{
+  "cykl": 3,
+  "nazwa": "Cykl 3 — Hipertrofia + Deficyt",
+  "aktywny_od": "01.07.2026",
+  "sekcje": {
+    "l2": {
+      "label": "🦵 Lower 2 — Nogi dominujące",
+      "czas": "~90 min",
+      "cwiczenia": [
+        {
+          "id": "l2-trap-bar",
+          "nazwa": "Martwy ciąg trap bar",
+          "kg": "42.5",
+          "serie": "4×6–8",
+          "przerwa": "240s",
+          "ss": null,
+          "bold": true,
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "id": "l2-zakroki-smith",
+          "nazwa": "Zakroki wsteczne Smith",
+          "kg": "15",
+          "serie": "3×8–10",
+          "przerwa": "90s",
+          "ss": null,
+          "bold": false,
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "id": "l2-martwy-jednonoz",
+          "nazwa": "Martwy ciąg jednonóż hantle",
+          "kg": "18",
+          "serie": "3×10–12",
+          "przerwa": "90s",
+          "ss": null,
+          "bold": false,
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "id": "l2-przysiad-bulgarski",
+          "nazwa": "Przysiad bułgarski",
+          "kg": "12",
+          "serie": "3×10–12",
+          "przerwa": "90s",
+          "ss": null,
+          "bold": false,
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "id": "l2-wyprosty-tulow",
+          "nazwa": "Wyprosty tułowia",
+          "kg": "24",
+          "serie": "3×10–12",
+          "przerwa": "90s",
+          "ss": null,
+          "bold": false,
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "id": "l2-prostowanie-nog",
+          "nazwa": "Prostowanie nóg maszyna",
+          "kg": "35",
+          "serie": "3×12–15",
+          "przerwa": "90s",
+          "ss": null,
+          "bold": false,
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "id": "l2-smith-rdl",
+          "nazwa": "Sumo RDL Smith",
+          "kg": "20",
+          "serie": "3×10–12",
+          "przerwa": "90s",
+          "ss": null,
+          "bold": false,
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "id": "l2-cable-crunch",
+          "nazwa": "Cable crunch",
+          "kg": "25",
+          "serie": "3×12–15",
+          "przerwa": "60s",
+          "ss": null,
+          "bold": false,
+          "status": "0/2",
+          "status_color": "muted"
+        }
+      ],
+      "opcjonalne": []
+    },
+    "upper": {
+      "label": "💪 Upper — Górna partia",
+      "czas": "~90 min",
+      "cwiczenia": [
+        {
+          "id": "upper-wyciskanie",
+          "nazwa": "Wyciskanie hantlami płaskie",
+          "kg": "12",
+          "serie": "4×6–8",
+          "przerwa": "180s",
+          "ss": null,
+          "bold": true,
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "id": "upper-podciaganie",
+          "nazwa": "Podciąganie australijskie",
+          "kg": "masa",
+          "serie": "3×8–10",
+          "przerwa": "120s",
+          "ss": null,
+          "bold": false,
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "id": "upper-sciaganie-drążka",
+          "nazwa": "Ściąganie drążka maszyna",
+          "kg": "37.5",
+          "serie": "3×8–10",
+          "przerwa": "120s",
+          "ss": null,
+          "bold": false,
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "id": "upper-ohp",
+          "nazwa": "OHP hantlami",
+          "kg": "10",
+          "serie": "3×8–10",
+          "przerwa": "120s",
+          "ss": null,
+          "bold": false,
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "id": "upper-odwodzenie-ramion",
+          "nazwa": "Odwodzenie ramion wyciąg",
+          "kg": "2.5",
+          "serie": "3×12–15",
+          "przerwa": "60s",
+          "ss": null,
+          "bold": false,
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "id": "upper-face-pull",
+          "nazwa": "Face pull klęk jednonóż",
+          "kg": "15",
+          "serie": "3×12–15",
+          "przerwa": "60s",
+          "ss": null,
+          "bold": false,
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "id": "upper-cable-crunch",
+          "nazwa": "Cable crunch",
+          "kg": "25",
+          "serie": "3×12–15",
+          "przerwa": "60s",
+          "ss": "SS1→",
+          "bold": false,
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "id": "upper-pallof",
+          "nazwa": "Pallof press",
+          "kg": "12.5",
+          "serie": "3×12–15",
+          "przerwa": "60s",
+          "ss": "SS1",
+          "bold": false,
+          "status": "0/2",
+          "status_color": "muted"
+        }
+      ],
+      "opcjonalne": []
+    },
+    "l1": {
+      "label": "🍑 Lower 1 — Pośladki",
+      "czas": "~90 min",
+      "cwiczenia": [
+        {
+          "id": "l1-hip-thrust",
+          "nazwa": "Hip thrust sztanga",
+          "kg": "65",
+          "serie": "4×6–8",
+          "przerwa": "240s",
+          "ss": null,
+          "bold": true,
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "id": "l1-sumo-rdl",
+          "nazwa": "Sumo RDL sztanga",
+          "kg": "37.5",
+          "serie": "3×8–10",
+          "przerwa": "120s",
+          "ss": null,
+          "bold": false,
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "id": "l1-glute-bridge",
+          "nazwa": "Glute bridge z core bag",
+          "kg": "17.5",
+          "serie": "3×10–12",
+          "przerwa": "90s",
+          "ss": null,
+          "bold": false,
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "id": "l1-odwodzenie-maszyna",
+          "nazwa": "Odwodzenie maszyna",
+          "kg": "55",
+          "serie": "3×12–15",
+          "przerwa": "60s",
+          "ss": "SS1→",
+          "bold": false,
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "id": "l1-przywodzenie-maszyna",
+          "nazwa": "Przywodzenie maszyna",
+          "kg": "37.5",
+          "serie": "3×12–15",
+          "przerwa": "60s",
+          "ss": "SS1",
+          "bold": false,
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "id": "l1-donkey-kick",
+          "nazwa": "Cable donkey kick",
+          "kg": "15",
+          "serie": "3×12–15",
+          "przerwa": "60s",
+          "ss": "SS2→",
+          "bold": false,
+          "status": "0/2",
+          "status_color": "muted"
+        },
+        {
+          "id": "l1-odwodzenie-stojac",
+          "nazwa": "Odwodzenie stojąc wyciąg",
+          "kg": "12.5",
+          "serie": "3×15–20",
+          "przerwa": "60s",
+          "ss": "SS2",
+          "bold": false,
+          "status": "0/2",
+          "status_color": "muted"
+        }
+      ],
+      "opcjonalne": []
+    }
+  }
+}

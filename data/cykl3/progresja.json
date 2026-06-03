@@ -1,0 +1,164 @@
+{
+  "cykl": 3,
+  "sekcje": {
+    "l2": {
+      "label": "🦵 Lower 2",
+      "badge_class": "prog-title-l2",
+      "naglowki": [],
+      "cwiczenia": [
+        {
+          "id": "l2-trap-bar",
+          "nazwa": "Martwy ciąg trap bar",
+          "zakres": "4×6–8",
+          "sesje": []
+        },
+        {
+          "id": "l2-zakroki-smith",
+          "nazwa": "Zakroki wsteczne Smith",
+          "zakres": "3×8–10",
+          "sesje": []
+        },
+        {
+          "id": "l2-martwy-jednonoz",
+          "nazwa": "Martwy ciąg jednonóż hantle",
+          "zakres": "3×10–12",
+          "sesje": []
+        },
+        {
+          "id": "l2-przysiad-bulgarski",
+          "nazwa": "Przysiad bułgarski",
+          "zakres": "3×10–12",
+          "sesje": []
+        },
+        {
+          "id": "l2-wyprosty-tulow",
+          "nazwa": "Wyprosty tułowia",
+          "zakres": "3×10–12",
+          "sesje": []
+        },
+        {
+          "id": "l2-prostowanie-nog",
+          "nazwa": "Prostowanie nóg maszyna",
+          "zakres": "3×12–15",
+          "sesje": []
+        },
+        {
+          "id": "l2-smith-rdl",
+          "nazwa": "Sumo RDL Smith",
+          "zakres": "3×10–12",
+          "sesje": []
+        },
+        {
+          "id": "l2-cable-crunch",
+          "nazwa": "Cable crunch",
+          "zakres": "3×12–15",
+          "sesje": []
+        }
+      ]
+    },
+    "upper": {
+      "label": "💪 Upper",
+      "badge_class": "prog-title-upper",
+      "naglowki": [],
+      "cwiczenia": [
+        {
+          "id": "upper-wyciskanie",
+          "nazwa": "Wyciskanie hantlami płaskie",
+          "zakres": "4×6–8",
+          "sesje": []
+        },
+        {
+          "id": "upper-podciaganie",
+          "nazwa": "Podciąganie australijskie",
+          "zakres": "3×8–10",
+          "sesje": []
+        },
+        {
+          "id": "upper-sciaganie-drążka",
+          "nazwa": "Ściąganie drążka maszyna",
+          "zakres": "3×8–10",
+          "sesje": []
+        },
+        {
+          "id": "upper-ohp",
+          "nazwa": "OHP hantlami",
+          "zakres": "3×8–10",
+          "sesje": []
+        },
+        {
+          "id": "upper-odwodzenie-ramion",
+          "nazwa": "Odwodzenie ramion wyciąg",
+          "zakres": "3×12–15",
+          "sesje": []
+        },
+        {
+          "id": "upper-face-pull",
+          "nazwa": "Face pull klęk jednonóż",
+          "zakres": "3×12–15",
+          "sesje": []
+        },
+        {
+          "id": "upper-cable-crunch",
+          "nazwa": "Cable crunch",
+          "zakres": "3×12–15",
+          "sesje": []
+        },
+        {
+          "id": "upper-pallof",
+          "nazwa": "Pallof press",
+          "zakres": "3×12–15",
+          "sesje": []
+        }
+      ]
+    },
+    "l1": {
+      "label": "🍑 Lower 1",
+      "badge_class": "prog-title-l1",
+      "naglowki": [],
+      "cwiczenia": [
+        {
+          "id": "l1-hip-thrust",
+          "nazwa": "Hip thrust sztanga",
+          "zakres": "4×6–8",
+          "sesje": []
+        },
+        {
+          "id": "l1-sumo-rdl",
+          "nazwa": "Sumo RDL sztanga",
+          "zakres": "3×8–10",
+          "sesje": []
+        },
+        {
+          "id": "l1-glute-bridge",
+          "nazwa": "Glute bridge z core bag",
+          "zakres": "3×10–12",
+          "sesje": []
+        },
+        {
+          "id": "l1-odwodzenie-maszyna",
+          "nazwa": "Odwodzenie maszyna",
+          "zakres": "3×12–15",
+          "sesje": []
+        },
+        {
+          "id": "l1-przywodzenie-maszyna",
+          "nazwa": "Przywodzenie maszyna",
+          "zakres": "3×12–15",
+          "sesje": []
+        },
+        {
+          "id": "l1-donkey-kick",
+          "nazwa": "Cable donkey kick",
+          "zakres": "3×12–15",
+          "sesje": []
+        },
+        {
+          "id": "l1-odwodzenie-stojac",
+          "nazwa": "Odwodzenie stojąc wyciąg",
+          "zakres": "3×15–20",
+          "sesje": []
+        }
+      ]
+    }
+  }
+}

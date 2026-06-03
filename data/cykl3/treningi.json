@@ -1,0 +1,424 @@
+{
+  "meta": {
+    "cykl": 3,
+    "tydzien": 1,
+    "lacznie": 0,
+    "data_start": "01.07.2026",
+    "header_sub": "Cykl 3 · tydzień 1",
+    "header_badge": "Start"
+  },
+  "nastepny": {
+    "typ": "l2",
+    "emoji": "🦵",
+    "label": "Lower 2 — Pn 01.07.2026",
+    "numer": 1,
+    "badge_class": "badge-l2",
+    "alert": "Cykl 3 start! L2 #1. Ciężary startowe z końca C2.",
+    "cwiczenia": [
+      {
+        "id": "l2-trap-bar",
+        "nazwa": "Martwy ciąg trap bar",
+        "highlight": true,
+        "ss": null,
+        "poprzedni_kg": 40,
+        "poprzedni_serie": "8-8-8-8",
+        "serie": "4×6–8",
+        "przerwa": "240s",
+        "placeholder_kg": "42.5",
+        "placeholder_reps": "8"
+      },
+      {
+        "id": "l2-zakroki-smith",
+        "nazwa": "Zakroki wsteczne Smith",
+        "highlight": false,
+        "ss": null,
+        "poprzedni_kg": 12.5,
+        "poprzedni_serie": "10-10-10",
+        "serie": "3×8–10",
+        "przerwa": "90s",
+        "placeholder_kg": "15",
+        "placeholder_reps": "10"
+      },
+      {
+        "id": "l2-martwy-jednonoz",
+        "nazwa": "Martwy ciąg jednonóż hantle",
+        "highlight": false,
+        "ss": null,
+        "poprzedni_kg": 16,
+        "poprzedni_serie": "12-12-12",
+        "serie": "3×10–12",
+        "przerwa": "90s",
+        "placeholder_kg": "18",
+        "placeholder_reps": "12"
+      },
+      {
+        "id": "l2-przysiad-bulgarski",
+        "nazwa": "Przysiad bułgarski",
+        "highlight": false,
+        "ss": null,
+        "poprzedni_kg": 0,
+        "poprzedni_serie": "—",
+        "serie": "3×10–12",
+        "przerwa": "90s",
+        "placeholder_kg": "12",
+        "placeholder_reps": "10"
+      },
+      {
+        "id": "l2-wyprosty-tulow",
+        "nazwa": "Wyprosty tułowia",
+        "highlight": false,
+        "ss": null,
+        "poprzedni_kg": 24,
+        "poprzedni_serie": "10-10-10",
+        "serie": "3×10–12",
+        "przerwa": "90s",
+        "placeholder_kg": "24",
+        "placeholder_reps": "10"
+      },
+      {
+        "id": "l2-prostowanie-nog",
+        "nazwa": "Prostowanie nóg maszyna",
+        "highlight": false,
+        "ss": null,
+        "poprzedni_kg": 35,
+        "poprzedni_serie": "10-10-10",
+        "serie": "3×12–15",
+        "przerwa": "90s",
+        "placeholder_kg": "35",
+        "placeholder_reps": "12"
+      },
+      {
+        "id": "l2-smith-rdl",
+        "nazwa": "Sumo RDL Smith",
+        "highlight": false,
+        "ss": null,
+        "poprzedni_kg": 0,
+        "poprzedni_serie": "—",
+        "serie": "3×10–12",
+        "przerwa": "90s",
+        "placeholder_kg": "20",
+        "placeholder_reps": "10"
+      },
+      {
+        "id": "l2-cable-crunch",
+        "nazwa": "Cable crunch",
+        "highlight": false,
+        "ss": null,
+        "poprzedni_kg": 25,
+        "poprzedni_serie": "15-15-15",
+        "serie": "3×12–15",
+        "przerwa": "60s",
+        "placeholder_kg": "25",
+        "placeholder_reps": "15"
+      }
+    ]
+  },
+  "poprzedni": null,
+  "historia": [],
+  "ostatni_l2": {
+    "data": "02.06",
+    "cwiczenia": {
+      "l2-trap-bar": {
+        "kg": 40,
+        "serie": "8-8-8-8",
+        "w_zakresie": true,
+        "zakres": "4×6–8"
+      },
+      "l2-zakroki-smith": {
+        "kg": 12.5,
+        "serie": "10-10-10",
+        "w_zakresie": true,
+        "zakres": "3×8–10"
+      },
+      "l2-martwy-jednonoz": {
+        "kg": 16,
+        "serie": "12-12-12",
+        "w_zakresie": true,
+        "zakres": "3×10–12"
+      },
+      "l2-przysiad-bulgarski": {
+        "kg": 0,
+        "serie": "—",
+        "w_zakresie": false,
+        "zakres": "3×10–12"
+      },
+      "l2-wyprosty-tulow": {
+        "kg": 24,
+        "serie": "10-10-10",
+        "w_zakresie": true,
+        "zakres": "3×10–12"
+      },
+      "l2-prostowanie-nog": {
+        "kg": 35,
+        "serie": "10-10-10",
+        "w_zakresie": false,
+        "zakres": "3×12–15"
+      },
+      "l2-smith-rdl": {
+        "kg": 0,
+        "serie": "—",
+        "w_zakresie": false,
+        "zakres": "3×10–12"
+      },
+      "l2-cable-crunch": {
+        "kg": 25,
+        "serie": "15-15-15",
+        "w_zakresie": true,
+        "zakres": "3×12–15"
+      }
+    }
+  },
+  "ostatni_upper": {
+    "data": "27.05",
+    "cwiczenia": {
+      "upper-wyciskanie": {
+        "kg": 12,
+        "serie": "7-7-7-7",
+        "w_zakresie": false,
+        "zakres": "4×6–8"
+      },
+      "upper-podciaganie": {
+        "kg": 0,
+        "serie": "10-10-10",
+        "w_zakresie": true,
+        "zakres": "3×8–10"
+      },
+      "upper-sciaganie-drążka": {
+        "kg": 35,
+        "serie": "10-10-10",
+        "w_zakresie": true,
+        "zakres": "3×8–10"
+      },
+      "upper-ohp": {
+        "kg": 10,
+        "serie": "8-8-8",
+        "w_zakresie": false,
+        "zakres": "3×8–10"
+      },
+      "upper-odwodzenie-ramion": {
+        "kg": 2.5,
+        "serie": "10-10-10",
+        "w_zakresie": false,
+        "zakres": "3×12–15"
+      },
+      "upper-face-pull": {
+        "kg": 15,
+        "serie": "15-15-15",
+        "w_zakresie": true,
+        "zakres": "3×12–15"
+      },
+      "upper-cable-crunch": {
+        "kg": 22.5,
+        "serie": "15-15-15",
+        "w_zakresie": true,
+        "zakres": "3×12–15"
+      },
+      "upper-pallof": {
+        "kg": 12.5,
+        "serie": "12-12-—",
+        "w_zakresie": false,
+        "zakres": "3×12–15"
+      }
+    }
+  },
+  "ostatni_l1": {
+    "data": "30.05",
+    "cwiczenia": {
+      "l1-hip-thrust": {
+        "kg": 62.5,
+        "serie": "8-8-8-8",
+        "w_zakresie": true,
+        "zakres": "4×6–8"
+      },
+      "l1-sumo-rdl": {
+        "kg": 37.5,
+        "serie": "10-10-10",
+        "w_zakresie": true,
+        "zakres": "3×8–10"
+      },
+      "l1-glute-bridge": {
+        "kg": 15,
+        "serie": "12-12-12",
+        "w_zakresie": true,
+        "zakres": "3×10–12"
+      },
+      "l1-odwodzenie-maszyna": {
+        "kg": 55,
+        "serie": "15-15-15",
+        "w_zakresie": true,
+        "zakres": "3×12–15"
+      },
+      "l1-przywodzenie-maszyna": {
+        "kg": 35,
+        "serie": "15-15-15",
+        "w_zakresie": true,
+        "zakres": "3×12–15"
+      },
+      "l1-donkey-kick": {
+        "kg": 15,
+        "serie": "15-15-15",
+        "w_zakresie": true,
+        "zakres": "3×12–15"
+      },
+      "l1-odwodzenie-stojac": {
+        "kg": 12.5,
+        "serie": "15-15-15",
+        "w_zakresie": false,
+        "zakres": "3×15–20"
+      }
+    }
+  },
+  "ostatni_l2_prev": {
+    "data": "25.05",
+    "cwiczenia": {
+      "l2-trap-bar": {
+        "kg": 40,
+        "serie": "8-8-8-8",
+        "w_zakresie": true,
+        "zakres": "4×6–8"
+      },
+      "l2-zakroki-smith": {
+        "kg": 12.5,
+        "serie": "10-10-10",
+        "w_zakresie": true,
+        "zakres": "3×8–10"
+      },
+      "l2-martwy-jednonoz": {
+        "kg": 16,
+        "serie": "12-12-12",
+        "w_zakresie": true,
+        "zakres": "3×10–12"
+      },
+      "l2-przysiad-bulgarski": {
+        "kg": 10,
+        "serie": "12-12-12",
+        "w_zakresie": true,
+        "zakres": "3×10–12"
+      },
+      "l2-wyprosty-tulow": {
+        "kg": 22,
+        "serie": "10-10-10",
+        "w_zakresie": false,
+        "zakres": "3×10–12"
+      },
+      "l2-prostowanie-nog": {
+        "kg": 38,
+        "serie": "12-10-10",
+        "w_zakresie": false,
+        "zakres": "3×12–15"
+      },
+      "l2-smith-rdl": {
+        "kg": 0,
+        "serie": "—",
+        "w_zakresie": false,
+        "zakres": "3×10–12"
+      },
+      "l2-cable-crunch": {
+        "kg": 22.5,
+        "serie": "15-15-15",
+        "w_zakresie": true,
+        "zakres": "3×12–15"
+      }
+    }
+  },
+  "ostatni_upper_prev": {
+    "data": "20.05",
+    "cwiczenia": {
+      "upper-wyciskanie": {
+        "kg": 12,
+        "serie": "7-7-7-7",
+        "w_zakresie": false,
+        "zakres": "4×6–8"
+      },
+      "upper-podciaganie": {
+        "kg": 0,
+        "serie": "10-10-10",
+        "w_zakresie": true,
+        "zakres": "3×8–10"
+      },
+      "upper-sciaganie-drążka": {
+        "kg": 35,
+        "serie": "10-10-10",
+        "w_zakresie": true,
+        "zakres": "3×8–10"
+      },
+      "upper-ohp": {
+        "kg": 10,
+        "serie": "7-7-4",
+        "w_zakresie": false,
+        "zakres": "3×8–10"
+      },
+      "upper-odwodzenie-ramion": {
+        "kg": 2.5,
+        "serie": "14-12-12",
+        "w_zakresie": false,
+        "zakres": "3×12–15"
+      },
+      "upper-face-pull": {
+        "kg": 15,
+        "serie": "12-12-12",
+        "w_zakresie": false,
+        "zakres": "3×12–15"
+      },
+      "upper-cable-crunch": {
+        "kg": 22.5,
+        "serie": "15-15-15",
+        "w_zakresie": true,
+        "zakres": "3×12–15"
+      },
+      "upper-pallof": {
+        "kg": 10,
+        "serie": "15-15-15",
+        "w_zakresie": true,
+        "zakres": "3×12–15"
+      }
+    }
+  },
+  "ostatni_l1_prev": {
+    "data": "23.05",
+    "cwiczenia": {
+      "l1-hip-thrust": {
+        "kg": 62.5,
+        "serie": "8-8-8-8",
+        "w_zakresie": true,
+        "zakres": "4×6–8"
+      },
+      "l1-sumo-rdl": {
+        "kg": 35,
+        "serie": "10-10-10",
+        "w_zakresie": true,
+        "zakres": "3×8–10"
+      },
+      "l1-glute-bridge": {
+        "kg": 15,
+        "serie": "12-12-12",
+        "w_zakresie": true,
+        "zakres": "3×10–12"
+      },
+      "l1-odwodzenie-maszyna": {
+        "kg": 50,
+        "serie": "15-15-15",
+        "w_zakresie": true,
+        "zakres": "3×12–15"
+      },
+      "l1-przywodzenie-maszyna": {
+        "kg": 35,
+        "serie": "15-15-15",
+        "w_zakresie": true,
+        "zakres": "3×12–15"
+      },
+      "l1-donkey-kick": {
+        "kg": 12.5,
+        "serie": "15-15-15",
+        "w_zakresie": true,
+        "zakres": "3×12–15"
+      },
+      "l1-odwodzenie-stojac": {
+        "kg": 10,
+        "serie": "15-15-15",
+        "w_zakresie": false,
+        "zakres": "3×15–20"
+      }
+    }
+  }
+}
