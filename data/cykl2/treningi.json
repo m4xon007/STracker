@@ -1,183 +1,192 @@
 {
   "meta": {
     "cykl": 2,
-    "tydzien": 6,
-    "lacznie": 16,
+    "tydzien": 7,
+    "lacznie": 17,
     "data_start": "20.04.2026",
-    "header_sub": "Cykl 2 · tydzień 6",
-    "header_badge": "Sob 07.06"
+    "header_sub": "Cykl 2 · tydzień 7",
+    "header_badge": "Śr 11.06"
   },
   "nastepny": {
-    "typ": "l2",
-    "emoji": "🦵",
-    "label": "Lower 2 — Pn 09.06.2026",
+    "typ": "upper",
+    "emoji": "💪",
+    "label": "Upper — Śr 11.06.2026",
     "numer": 7,
-    "badge_class": "badge-l2",
-    "alert": "L1 #5 skip (07.06). L2 #7 — trap bar 42,5 kg, zakroki 15 kg, martwy jednonóż 18 kg.",
+    "badge_class": "badge-upper",
+    "alert": "Upper #7. Tydzień 7. Wyciskanie 8-8-8-7 poprzednio — szansa na pełne 8×4. Face pull 17,5 kg nowy ciężar.",
     "cwiczenia": [
       {
-        "id": "l2-trap-bar",
-        "nazwa": "Martwy ciąg trap bar",
+        "id": "upper-wyciskanie",
+        "nazwa": "Wyciskanie hantlami płaskie",
         "highlight": true,
         "ss": null,
-        "poprzedni_kg": 40,
-        "poprzedni_serie": "8-8-8-8",
+        "poprzedni_kg": 12,
+        "poprzedni_serie": "8-8-8-7",
         "serie": "4×6–8",
-        "przerwa": "240s",
-        "placeholder_kg": "42.5",
+        "przerwa": "180s",
+        "placeholder_kg": "12",
         "placeholder_reps": "8"
       },
       {
-        "id": "l2-zakroki-smith",
-        "nazwa": "Zakroki wsteczne Smith",
+        "id": "upper-podciaganie",
+        "nazwa": "Podciąganie australijskie",
         "highlight": false,
         "ss": null,
-        "poprzedni_kg": 12.5,
+        "poprzedni_kg": 2.5,
+        "poprzedni_serie": "10-8-8",
+        "serie": "3×8–10",
+        "przerwa": "120s",
+        "placeholder_kg": "2.5",
+        "placeholder_reps": "10"
+      },
+      {
+        "id": "upper-sciaganie-drążka",
+        "nazwa": "Ściąganie drążka maszyna",
+        "highlight": false,
+        "ss": null,
+        "poprzedni_kg": 37.5,
         "poprzedni_serie": "10-10-10",
         "serie": "3×8–10",
-        "przerwa": "90s",
-        "placeholder_kg": "15",
+        "przerwa": "120s",
+        "placeholder_kg": "37.5",
         "placeholder_reps": "10"
       },
       {
-        "id": "l2-martwy-jednonoz",
-        "nazwa": "Martwy ciąg jednonóż hantle",
+        "id": "upper-ohp",
+        "nazwa": "OHP hantlami",
         "highlight": false,
         "ss": null,
-        "poprzedni_kg": 16,
-        "poprzedni_serie": "12-12-12",
-        "serie": "3×10–12",
-        "przerwa": "90s",
-        "placeholder_kg": "18",
-        "placeholder_reps": "12"
+        "poprzedni_kg": 10,
+        "poprzedni_serie": "8-8-8",
+        "serie": "3×8–10",
+        "przerwa": "120s",
+        "placeholder_kg": "10",
+        "placeholder_reps": "8"
       },
       {
-        "id": "l2-przysiad-bulgarski",
-        "nazwa": "Przysiad bułgarski",
+        "id": "upper-odwodzenie-ramion",
+        "nazwa": "Odwodzenie ramion wyciąg",
         "highlight": false,
         "ss": null,
-        "poprzedni_kg": 0,
-        "poprzedni_serie": "—",
-        "serie": "3×10–12",
-        "przerwa": "90s",
-        "placeholder_kg": "12",
-        "placeholder_reps": "10"
-      },
-      {
-        "id": "l2-wyprosty-tulow",
-        "nazwa": "Wyprosty tułowia",
-        "highlight": false,
-        "ss": null,
-        "poprzedni_kg": 24,
-        "poprzedni_serie": "10-10-10",
-        "serie": "3×10–12",
-        "przerwa": "90s",
-        "placeholder_kg": "24",
-        "placeholder_reps": "10"
-      },
-      {
-        "id": "l2-prostowanie-nog",
-        "nazwa": "Prostowanie nóg maszyna",
-        "highlight": false,
-        "ss": null,
-        "poprzedni_kg": 35,
+        "poprzedni_kg": 2.5,
         "poprzedni_serie": "10-10-10",
         "serie": "3×12–15",
-        "przerwa": "90s",
-        "placeholder_kg": "35",
-        "placeholder_reps": "12"
-      },
-      {
-        "id": "l2-smith-rdl",
-        "nazwa": "Sumo RDL Smith",
-        "highlight": false,
-        "ss": null,
-        "poprzedni_kg": 0,
-        "poprzedni_serie": "—",
-        "serie": "3×10–12",
-        "przerwa": "90s",
-        "placeholder_kg": "20",
+        "przerwa": "60s",
+        "placeholder_kg": "2.5",
         "placeholder_reps": "10"
       },
       {
-        "id": "l2-cable-crunch",
-        "nazwa": "Cable crunch",
+        "id": "upper-face-pull",
+        "nazwa": "Face pull klęk jednonóż",
         "highlight": false,
         "ss": null,
+        "poprzedni_kg": 15,
+        "poprzedni_serie": "15-15-15",
+        "serie": "3×12–15",
+        "przerwa": "60s",
+        "placeholder_kg": "17.5",
+        "placeholder_reps": "15"
+      },
+      {
+        "id": "upper-cable-crunch",
+        "nazwa": "Cable crunch",
+        "highlight": false,
+        "ss": "SS1→",
         "poprzedni_kg": 25,
         "poprzedni_serie": "15-15-15",
         "serie": "3×12–15",
         "przerwa": "60s",
         "placeholder_kg": "25",
         "placeholder_reps": "15"
+      },
+      {
+        "id": "upper-pallof",
+        "nazwa": "Pallof press",
+        "highlight": false,
+        "ss": "SS1",
+        "poprzedni_kg": 12.5,
+        "poprzedni_serie": "12-12-12",
+        "serie": "3×12–15",
+        "przerwa": "60s",
+        "placeholder_kg": "12.5",
+        "placeholder_reps": "12"
       }
     ]
   },
   "poprzedni": {
-    "tytul": "Upper #6",
-    "typ": "upper",
-    "numer": 6,
-    "tydzien": 6,
-    "kcal": 698,
-    "czas_min": 103,
-    "tetno": 124,
-    "obciazenie_aerobowe": 3.1,
-    "ocena": 10,
-    "opis": "Śr 04.06.2026",
-    "wnioski": "Solid sesja. Wyciskanie 8-8-8-7 — pierwszy raz w zakresie po 5 sesjach plateau, prev było ✗ więc utrzymaj, ale przełom widoczny. Face pull podwójna progresja → 17,5 kg. Ściąganie drążka 37,5 kg (nowy ciężar). Podciąganie z obciążeniem 2,5 kg — nowy ciężar, ale serie sypią (10-8-8). OHP i odwodzenie ramion nadal poniżej zakresu — praca techniczna.",
+    "tytul": "Lower 2 #7",
+    "typ": "l2",
+    "numer": 7,
+    "tydzien": 7,
+    "kcal": 811,
+    "czas_min": 100,
+    "tetno": 139,
+    "obciazenie_aerobowe": 3.8,
+    "ocena": 8,
+    "opis": "Nd 08.06.2026",
+    "wnioski": "Trap bar 42,5 kg pierwsze podejście — 8×4 bez problemu, nowy ciężar. Zakroki 12,5 kg podwójna progresja → 15 kg. Martwy jednonóż 18 kg (nowy) w zakresie. Przysiad bułgarski powrót 10 kg — w zakresie, ale prev był skip. Wyprosty tułowia cofnięte do 22,5 kg — série 8×3 poniżej zakresu (10–12). Prostowanie nóg 40 kg — sypanie serii (15-12-10) ⚠️ klasyczne zmęczenie CNS. Sumo RDL Smith 15 kg pierwsze prawdziwe podejście — w zakresie. Cable crunch 25 kg utrzymane.",
     "cwiczenia": [
       {
-        "nazwa": "Wyciskanie hantlami płaskie",
-        "kg": 12,
-        "wykonano": "8-8-8-7",
+        "nazwa": "Martwy ciąg trap bar",
+        "kg": 42.5,
+        "wykonano": "8-8-8-8",
         "ocena_tekst": "W zakresie 4×6–8",
-        "progresja_tekst": "→ 12 kg (prev ✗)",
+        "progresja_tekst": "→ 42,5 kg (nowy)",
         "status": "utrzymaj",
         "ss": null
       },
       {
-        "nazwa": "Podciąganie australijskie",
-        "kg": 2.5,
-        "wykonano": "10-8-8",
-        "ocena_tekst": "Poniżej zakresu 3×8–10",
-        "progresja_tekst": "→ 2,5 kg (nowy)",
-        "status": "uwaga",
-        "ss": null
-      },
-      {
-        "nazwa": "Ściąganie drążka maszyna",
-        "kg": 37.5,
+        "nazwa": "Zakroki wsteczne Smith",
+        "kg": 12.5,
         "wykonano": "10-10-10",
         "ocena_tekst": "W zakresie 3×8–10",
-        "progresja_tekst": "→ 37,5 kg (nowy)",
+        "progresja_tekst": "→ 15 kg",
+        "status": "progresja",
+        "ss": null
+      },
+      {
+        "nazwa": "Martwy ciąg jednonóż hantle",
+        "kg": 18,
+        "wykonano": "12-12-12",
+        "ocena_tekst": "W zakresie 3×10–12",
+        "progresja_tekst": "→ 18 kg (nowy)",
         "status": "utrzymaj",
         "ss": null
       },
       {
-        "nazwa": "OHP hantlami",
+        "nazwa": "Przysiad bułgarski",
         "kg": 10,
+        "wykonano": "12-12-12",
+        "ocena_tekst": "W zakresie 3×10–12",
+        "progresja_tekst": "→ 10 kg (prev skip)",
+        "status": "utrzymaj",
+        "ss": null
+      },
+      {
+        "nazwa": "Wyprosty tułowia",
+        "kg": 22.5,
         "wykonano": "8-8-8",
-        "ocena_tekst": "Poniżej zakresu 3×8–10",
-        "progresja_tekst": "→ 10 kg",
+        "ocena_tekst": "Poniżej zakresu 3×10–12",
+        "progresja_tekst": "→ 22,5 kg",
         "status": "uwaga",
         "ss": null
       },
       {
-        "nazwa": "Odwodzenie ramion wyciąg",
-        "kg": 2.5,
-        "wykonano": "10-10-10",
-        "ocena_tekst": "Poniżej zakresu 3×12–15",
-        "progresja_tekst": "→ 2,5 kg",
+        "nazwa": "Prostowanie nóg maszyna",
+        "kg": 40,
+        "wykonano": "15-12-10",
+        "ocena_tekst": "Sypanie serii ⚠️",
+        "progresja_tekst": "→ 40 kg (nowy)",
         "status": "uwaga",
         "ss": null
       },
       {
-        "nazwa": "Face pull klęk jednonóż",
+        "nazwa": "Sumo RDL Smith",
         "kg": 15,
-        "wykonano": "15-15-15",
-        "ocena_tekst": "W zakresie 3×12–15",
-        "progresja_tekst": "→ 17,5 kg",
-        "status": "progresja",
+        "wykonano": "10-10-10",
+        "ocena_tekst": "W zakresie 3×10–12",
+        "progresja_tekst": "→ 15 kg (nowy)",
+        "status": "utrzymaj",
         "ss": null
       },
       {
@@ -187,20 +196,75 @@
         "ocena_tekst": "W zakresie 3×12–15",
         "progresja_tekst": "→ 25 kg (nowy)",
         "status": "utrzymaj",
-        "ss": "SS1"
-      },
-      {
-        "nazwa": "Pallof press",
-        "kg": 12.5,
-        "wykonano": "12-12-12",
-        "ocena_tekst": "Poniżej zakresu 3×12–15",
-        "progresja_tekst": "→ 12,5 kg",
-        "status": "uwaga",
-        "ss": "SS1"
+        "ss": null
       }
     ]
   },
   "historia": [
+    {
+      "id": "c2-l2-007",
+      "data": "08.06.2026",
+      "data_label": "Nd 08.06",
+      "typ": "l2",
+      "numer": 7,
+      "tydzien": 7,
+      "ocena": 8,
+      "kcal": 811,
+      "czas_min": 100,
+      "tetno": 139,
+      "obciazenie_aerobowe": 3.8,
+      "notatka": "Trap bar 42,5 kg nowy. Zakroki →15 kg. Martwy jednonóż 18 kg. Sumo RDL Smith 15 kg pierwsze podejście. Prostowanie nóg 40 kg sypanie serii ⚠️",
+      "cwiczenia": [
+        {
+          "nazwa": "Martwy ciąg trap bar",
+          "kg": 42.5,
+          "serie": "8-8-8-8",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Zakroki wsteczne Smith",
+          "kg": 12.5,
+          "serie": "10-10-10",
+          "status": "progresja"
+        },
+        {
+          "nazwa": "Martwy ciąg jednonóż hantle",
+          "kg": 18,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Przysiad bułgarski",
+          "kg": 10,
+          "serie": "12-12-12",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Wyprosty tułowia",
+          "kg": 22.5,
+          "serie": "8-8-8",
+          "status": "uwaga"
+        },
+        {
+          "nazwa": "Prostowanie nóg maszyna",
+          "kg": 40,
+          "serie": "15-12-10",
+          "status": "uwaga"
+        },
+        {
+          "nazwa": "Sumo RDL Smith",
+          "kg": 15,
+          "serie": "10-10-10",
+          "status": "utrzymaj"
+        },
+        {
+          "nazwa": "Cable crunch",
+          "kg": 25,
+          "serie": "15-15-15",
+          "status": "utrzymaj"
+        }
+      ]
+    },
     {
       "id": "c2-upper-006",
       "data": "04.06.2026",
@@ -1209,10 +1273,10 @@
     }
   ],
   "ostatni_l2": {
-    "data": "02.06",
+    "data": "08.06",
     "cwiczenia": {
       "l2-trap-bar": {
-        "kg": 40,
+        "kg": 42.5,
         "serie": "8-8-8-8",
         "w_zakresie": true,
         "zakres": "4×6–8"
@@ -1224,33 +1288,33 @@
         "zakres": "3×8–10"
       },
       "l2-martwy-jednonoz": {
-        "kg": 16,
+        "kg": 18,
         "serie": "12-12-12",
         "w_zakresie": true,
         "zakres": "3×10–12"
       },
       "l2-przysiad-bulgarski": {
-        "kg": 0,
-        "serie": "—",
-        "w_zakresie": false,
-        "zakres": "3×10–12"
-      },
-      "l2-wyprosty-tulow": {
-        "kg": 24,
-        "serie": "10-10-10",
+        "kg": 10,
+        "serie": "12-12-12",
         "w_zakresie": true,
         "zakres": "3×10–12"
       },
+      "l2-wyprosty-tulow": {
+        "kg": 22.5,
+        "serie": "8-8-8",
+        "w_zakresie": false,
+        "zakres": "3×10–12"
+      },
       "l2-prostowanie-nog": {
-        "kg": 35,
-        "serie": "10-10-10",
+        "kg": 40,
+        "serie": "15-12-10",
         "w_zakresie": false,
         "zakres": "3×12–15"
       },
       "l2-smith-rdl": {
-        "kg": 0,
-        "serie": "—",
-        "w_zakresie": false,
+        "kg": 15,
+        "serie": "10-10-10",
+        "w_zakresie": true,
         "zakres": "3×10–12"
       },
       "l2-cable-crunch": {
@@ -1409,7 +1473,7 @@
     }
   },
   "ostatni_l2_prev": {
-    "data": "25.05",
+    "data": "02.06",
     "cwiczenia": {
       "l2-trap-bar": {
         "kg": 40,
@@ -1430,20 +1494,20 @@
         "zakres": "3×10–12"
       },
       "l2-przysiad-bulgarski": {
-        "kg": 10,
-        "serie": "12-12-12",
-        "w_zakresie": true,
-        "zakres": "3×10–12"
-      },
-      "l2-wyprosty-tulow": {
-        "kg": 22,
-        "serie": "10-10-10",
+        "kg": 0,
+        "serie": "—",
         "w_zakresie": false,
         "zakres": "3×10–12"
       },
+      "l2-wyprosty-tulow": {
+        "kg": 24,
+        "serie": "10-10-10",
+        "w_zakresie": true,
+        "zakres": "3×10–12"
+      },
       "l2-prostowanie-nog": {
-        "kg": 38,
-        "serie": "12-10-10",
+        "kg": 35,
+        "serie": "10-10-10",
         "w_zakresie": false,
         "zakres": "3×12–15"
       },
@@ -1454,7 +1518,7 @@
         "zakres": "3×10–12"
       },
       "l2-cable-crunch": {
-        "kg": 22.5,
+        "kg": 25,
         "serie": "15-15-15",
         "w_zakresie": true,
         "zakres": "3×12–15"
