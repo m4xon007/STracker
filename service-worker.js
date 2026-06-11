@@ -1,7 +1,7 @@
 // service-worker.js
 // STracker PWA — offline cache
 // Zmień CACHE_VERSION przy każdym deployu żeby wymusić odświeżenie cache
-const CACHE_VERSION = 'stracker-v2.5.16';
+const CACHE_VERSION = 'stracker-v2.5.17';
 const CACHE_NAME = CACHE_VERSION;
 
 const PRECACHE_URLS = [
