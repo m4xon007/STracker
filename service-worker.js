@@ -1,9 +1,11 @@
 // service-worker.js
-// STracker PWA — offline cache
+// MTracker PWA — offline cache
 // Zmień CACHE_VERSION przy każdym deployu żeby wymusić odświeżenie cache
-const CACHE_VERSION = 'stracker-v2.5.17';
+const CACHE_VERSION = 'stracker-v2.5.19';
 const CACHE_NAME = CACHE_VERSION;
 
+// Nowa architektura: dane z Supabase (REST), nie z JSON-ów
+// Cachujemy tylko shell aplikacji — dane odświeżane przez localStorage w JS
 const PRECACHE_URLS = [
   '/STracker/',
   '/STracker/index.html',
@@ -11,17 +13,6 @@ const PRECACHE_URLS = [
   '/STracker/version.json',
   '/STracker/icons/icon-192_v2.png',
   '/STracker/icons/icon-512_v2.png',
-  '/STracker/data/config.json',
-  '/STracker/data/harmonogram.json',
-  '/STracker/data/waga.json',
-  '/STracker/data/cykl1/treningi.json',
-  '/STracker/data/cykl1/plan.json',
-  '/STracker/data/cykl1/progresja.json',
-  '/STracker/data/cykl1/dieta.json',
-  '/STracker/data/cykl2/treningi.json',
-  '/STracker/data/cykl2/plan.json',
-  '/STracker/data/cykl2/progresja.json',
-  '/STracker/data/cykl2/dieta.json',
 ];
 
 const CDN_CACHE_NAME = 'stracker-cdn-v1';
@@ -51,6 +42,10 @@ self.addEventListener('fetch', (event) => {
   const url = new URL(request.url);
   if (request.method !== 'GET') return;
   if (url.protocol === 'chrome-extension:') return;
+
+  // Supabase REST — nie cachuj, zawsze network
+  if (url.hostname.includes('supabase.co')) return;
+
   const isCDN = (
     url.hostname.includes('googleapis.com') ||
     url.hostname.includes('gstatic.com') ||
@@ -59,6 +54,7 @@ self.addEventListener('fetch', (event) => {
     url.hostname.includes('unpkg.com')
   );
   if (isCDN) { event.respondWith(staleWhileRevalidate(request, CDN_CACHE_NAME)); return; }
+
   event.respondWith(cacheFirst(request, CACHE_NAME));
 });
 
