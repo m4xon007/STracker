@@ -653,10 +653,84 @@
         width: 70px;
       }
     }
+
+    /* ── Temporary authenticated static shell ───────────── */
+    .auth-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 1000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background: var(--bg);
+    }
+    .auth-overlay.show { display: flex; }
+    .auth-card {
+      width: min(100%, 380px);
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .auth-title { font-size: 18px; font-weight: 700; color: var(--accent2); margin-bottom: 6px; }
+    .auth-sub { font-size: 11px; color: var(--text3); margin-bottom: 16px; }
+    .auth-field { display: flex; flex-direction: column; gap: 5px; margin-bottom: 10px; }
+    .auth-field label { font-size: 10px; color: var(--text3); }
+    .auth-input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 7px;
+      border: 1px solid var(--border);
+      background: var(--bg3);
+      color: var(--text);
+      font-family: var(--mono);
+    }
+    .auth-submit {
+      width: 100%;
+      margin-top: 6px;
+      padding: 10px;
+      border: 1px solid var(--accent2);
+      border-radius: 7px;
+      background: rgba(34, 211, 238, .15);
+      color: var(--accent2);
+      font-family: var(--mono);
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .auth-error { min-height: 20px; margin-top: 10px; font-size: 11px; color: var(--red); }
+    .logout-btn {
+      border: 1px solid var(--border);
+      background: var(--bg3);
+      color: var(--text2);
+      border-radius: 6px;
+      padding: 4px 8px;
+      font-family: var(--mono);
+      font-size: 10px;
+      cursor: pointer;
+    }
+
   </style>
 </head>
 
 <body>
+  <div class="auth-overlay" id="auth-overlay">
+    <form class="auth-card" onsubmit="login(event)">
+      <div class="auth-title">MTracker</div>
+      <div class="auth-sub">Zaloguj się kontem Supabase Auth</div>
+      <div class="auth-field">
+        <label for="auth-email">E-mail</label>
+        <input class="auth-input" id="auth-email" type="email" autocomplete="username" value="marcin.branski@gmail.com" required>
+      </div>
+      <div class="auth-field">
+        <label for="auth-password">Hasło</label>
+        <input class="auth-input" id="auth-password" type="password" autocomplete="current-password" required>
+      </div>
+      <button class="auth-submit" id="auth-submit" type="submit">Zaloguj</button>
+      <div class="auth-error" id="auth-error"></div>
+    </form>
+  </div>
+
   <div id="app">
 
     <!-- Header -->
@@ -665,9 +739,9 @@
         <div class="hdr-title">MTracker · Następny trening</div>
         <div class="hdr-sub" id="hdr-sub">Wybierz użytkownika</div>
       </div>
-      <div class="user-toggle">
-        <button class="user-btn" id="btn-marcin" onclick="selectUser('marcin')">Marcin</button>
-        <button class="user-btn active" id="btn-sylwia" onclick="selectUser('sylwia')">Sylwia</button>
+      <div style="display:flex;align-items:center;gap:6px">
+        <div class="user-toggle" id="user-toggle"></div>
+        <button class="logout-btn" onclick="logout()">Wyloguj</button>
       </div>
     </div>
 
@@ -688,39 +762,68 @@
 
   <div class="offline-banner" id="offline-banner">⚠️ Tryb offline — dane z ostatniego pobrania</div>
 
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script>
     // ── Config ────────────────────────────────────────────────────────
     const SUPABASE_URL = 'https://nayveopouqlymclmxfkn.supabase.co';
     const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5heXZlb3BvdXFseW1jbG14ZmtuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzYzMjQ5OTQsImV4cCI6MjA5MTkwMDk5NH0.VXv8iPJN_ILnbixQP3Ndq15FRnHhtIfkIuSIGHY3eQo'; // wklej swój anon key
 
-    const USERS = {
-      marcin: '03483a1f-c0b6-4261-ab40-2a4870172106',
-      sylwia: '28a1f5aa-0216-4393-afb9-5548b58cabb1'
+    const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
+      auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true }
+    });
+
+    const PROFILE_LABELS = {
+      '03483a1f-c0b6-4261-ab40-2a4870172106': 'Marcin',
+      '28a1f5aa-0216-4393-afb9-5548b58cabb1': 'Sylwia',
+      '5d5e25f6-3cd5-45e7-bb63-38250a3161ac': 'FitTracker QA'
     };
+
+    let authorizedProfiles = [];
 
     const CACHE_KEY = uid => `mtracker_workout_${uid}`;
     const CACHE_KEY_SESSION = (uid, type) => `mtracker_workout_${uid}_${type}`;
 
     // ── State ─────────────────────────────────────────────────────────
-    let selectedUser = 'sylwia';
+    let selectedUser = null;
     let selectedSession = 'auto';  // 'auto' | 'upper_a' | 'lower' | 'upper_b'
     let workoutData = [];   // surowe wiersze z v_next_workout
     let formData = {};   // { exId: { kg, reps: [] } }
     let headerData = {};   // { czas, kcal, tetno, obciazenie, ocena }
 
     // ── User select ───────────────────────────────────────────────────
-    function selectUser(u) {
-      selectedUser = u;
+    function selectUser(profileUserId) {
+      if (!authorizedProfiles.some(p => p.profile_user_id === profileUserId && p.can_read)) return;
+      selectedUser = profileUserId;
+      supabaseClient.auth.getSession().then(({ data }) => {
+        if (data.session) localStorage.setItem(`mtracker_selected_profile_${data.session.user.id}`, profileUserId);
+      });
       activeCycleId = null;
       activeCycleLabel = '';
       availableSessions = [];
-      document.getElementById('btn-marcin').classList.toggle('active', u === 'marcin');
-      document.getElementById('btn-sylwia').classList.toggle('active', u === 'sylwia');
+      document.querySelectorAll('.user-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.profileId === profileUserId);
+      });
       selectedSession = 'auto';
       formData = {}; headerData = {};
-      // Reset selector do tylko Auto
       buildSessionSelector([]);
       loadWorkout();
+    }
+
+    function profileLabel(profile) {
+      return PROFILE_LABELS[profile.profile_user_id] || profile.profile_name || 'Profil';
+    }
+
+    function buildUserToggle() {
+      const target = document.getElementById('user-toggle');
+      target.innerHTML = '';
+      authorizedProfiles.filter(p => p.can_read).forEach(profile => {
+        const btn = document.createElement('button');
+        btn.className = 'user-btn' + (profile.profile_user_id === selectedUser ? ' active' : '');
+        btn.dataset.profileId = profile.profile_user_id;
+        btn.textContent = profileLabel(profile);
+        btn.onclick = () => selectUser(profile.profile_user_id);
+        target.appendChild(btn);
+      });
     }
 
     // ── Session select ────────────────────────────────────────────────
@@ -734,6 +837,98 @@
       loadWorkout();
     }
 
+
+    // ── Auth ──────────────────────────────────────────────────────────
+    async function authHeaders() {
+      const { data: { session } } = await supabaseClient.auth.getSession();
+      if (!session?.access_token) throw new Error('Brak aktywnej sesji');
+      return {
+        'apikey': SUPABASE_ANON_KEY,
+        'Authorization': `Bearer ${session.access_token}`
+      };
+    }
+
+    function showLogin(message = '') {
+      document.getElementById('auth-error').textContent = message;
+      document.getElementById('auth-overlay').classList.add('show');
+    }
+
+    function hideLogin() {
+      document.getElementById('auth-overlay').classList.remove('show');
+      document.getElementById('auth-error').textContent = '';
+    }
+
+    async function login(event) {
+      event.preventDefault();
+      const email = document.getElementById('auth-email').value.trim();
+      const password = document.getElementById('auth-password').value;
+      const submit = document.getElementById('auth-submit');
+      submit.disabled = true;
+      document.getElementById('auth-error').textContent = '';
+      try {
+        const { error } = await supabaseClient.auth.signInWithPassword({ email, password });
+        if (error) throw error;
+        document.getElementById('auth-password').value = '';
+        await loadAuthorizedProfiles();
+      } catch {
+        showLogin('Nie udało się zalogować. Sprawdź dane.');
+      } finally {
+        submit.disabled = false;
+      }
+    }
+
+    async function logout() {
+      await supabaseClient.auth.signOut();
+      authorizedProfiles = [];
+      selectedUser = null;
+      workoutData = [];
+      document.getElementById('user-toggle').innerHTML = '';
+      document.getElementById('content').innerHTML = '';
+      showLogin();
+    }
+
+    async function loadAuthorizedProfiles() {
+      const { data: { session } } = await supabaseClient.auth.getSession();
+      if (!session) {
+        showLogin();
+        return;
+      }
+      const { data, error } = await supabaseClient
+        .from('v_authorized_profiles')
+        .select('account_user_id,profile_user_id,profile_name,role,can_read,can_write,can_manage')
+        .eq('account_user_id', session.user.id);
+      if (error) {
+        showLogin('Nie udało się pobrać autoryzowanych profili.');
+        return;
+      }
+      authorizedProfiles = (data || []).filter(p => p.can_read);
+      if (!authorizedProfiles.length) {
+        showLogin('To konto nie ma przypisanych profili.');
+        return;
+      }
+      const stored = localStorage.getItem(`mtracker_selected_profile_${session.user.id}`);
+      selectedUser = authorizedProfiles.some(p => p.profile_user_id === stored)
+        ? stored
+        : authorizedProfiles[0].profile_user_id;
+      localStorage.setItem(`mtracker_selected_profile_${session.user.id}`, selectedUser);
+      buildUserToggle();
+      hideLogin();
+      await loadWorkout();
+    }
+
+    async function initAuth() {
+      const { data: { session } } = await supabaseClient.auth.getSession();
+      if (!session) {
+        showLogin();
+        return;
+      }
+      await loadAuthorizedProfiles();
+    }
+
+    supabaseClient.auth.onAuthStateChange((event) => {
+      if (event === 'SIGNED_OUT') showLogin();
+    });
+
     // ── Fetch ─────────────────────────────────────────────────────────
     let activeCycleId = null;
     let activeCycleLabel = '';
@@ -745,7 +940,7 @@
         + `&cycle_id=eq.${cycleId}`
         + `&select=session_type`;
       const res = await fetch(url, {
-        headers: { 'apikey': SUPABASE_ANON_KEY, 'Authorization': `Bearer ${SUPABASE_ANON_KEY}` }
+        headers: await authHeaders()
       });
       if (!res.ok) return [];
       const data = await res.json();
@@ -785,7 +980,7 @@
         + `&select=id,label`
         + `&limit=1`;
       const res = await fetch(url, {
-        headers: { 'apikey': SUPABASE_ANON_KEY, 'Authorization': `Bearer ${SUPABASE_ANON_KEY}` }
+        headers: await authHeaders()
       });
       if (!res.ok) throw new Error('Błąd pobierania cyklu: HTTP ' + res.status);
       const data = await res.json();
@@ -802,7 +997,7 @@
         + `&exercise_id=in.(${exerciseIds.join(',')})`
         + `&select=exercise_id,last_weight,last_sets_reps,last_session_date,last_cycle_id`;
       const res = await fetch(url, {
-        headers: { 'apikey': SUPABASE_ANON_KEY, 'Authorization': `Bearer ${SUPABASE_ANON_KEY}` }
+        headers: await authHeaders()
       });
       if (!res.ok) return {};
       const data = await res.json();
@@ -813,7 +1008,8 @@
 
     async function loadWorkout() {
       showLoading();
-      const uid = USERS[selectedUser];
+      const uid = selectedUser;
+      if (!uid) return showError('Brak autoryzowanego profilu.');
       const isAuto = selectedSession === 'auto';
       const cacheKey = `mtracker_workout_${uid}_${selectedSession}`;
 
@@ -825,7 +1021,7 @@
             + `&select=*`
             + `&order=position.asc`;
           const res = await fetch(url, {
-            headers: { 'apikey': SUPABASE_ANON_KEY, 'Authorization': `Bearer ${SUPABASE_ANON_KEY}` }
+            headers: await authHeaders()
           });
           if (!res.ok) throw new Error('HTTP ' + res.status);
           data = await res.json();
@@ -852,7 +1048,7 @@
             + `&select=*`
             + `&order=position.asc`;
           const res = await fetch(url, {
-            headers: { 'apikey': SUPABASE_ANON_KEY, 'Authorization': `Bearer ${SUPABASE_ANON_KEY}` }
+            headers: await authHeaders()
           });
           if (!res.ok) throw new Error('HTTP ' + res.status);
           data = await res.json();
@@ -1187,7 +1383,7 @@
     window.addEventListener('offline', () => showBanner());
 
     // ── Init ──────────────────────────────────────────────────────────
-    loadWorkout();
+    initAuth();
   </script>
 </body>
 
